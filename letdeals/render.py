@@ -10,6 +10,7 @@ from __future__ import annotations
 import html
 import json
 import os
+import re
 import shutil
 from datetime import datetime, timezone
 
@@ -164,6 +165,25 @@ def _header_links_html() -> str:
                      '</span>' % (html.escape(url, quote=True),
                                   html.escape(name)))
     return "\n    ".join(parts)
+
+
+_URL_RE = re.compile(r"https?://[^\s<>\"']+")
+
+
+def _footer_html() -> str:
+    """渲染页脚文案：先转义，再把裸 URL 转成可点击链接，整体包一层 div。
+
+    SITE_FOOTER 是纯文本配置（如「Telegram：https://t.me/xxx」），
+    直接转义输出会得到不可点击的裸链接，因此在这里做链接化。"""
+    raw = getattr(config, "SITE_FOOTER", "") or ""
+    if not raw:
+        return ""
+    esc = html.escape(raw)
+    linked = _URL_RE.sub(
+        lambda m: ('<a href="%s" target="_blank" rel="noopener">%s</a>'
+                   % (m.group(0), m.group(0))),
+        esc)
+    return "<div>%s</div>" % linked
 
 
 SITE_TEMPLATE = r"""<!DOCTYPE html>
@@ -321,7 +341,6 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
     <span>数据来源 · 公开优惠信息</span>
     <span>共 <b id="m-total">@@COUNT@@</b> 条</span>
     <span>生成于 <b>@@GENERATED@@</b></span>
-    <span><a href="data/deals.json">原始 JSON</a></span>
     @@HEADER_LINKS@@
   </div>
 </header>
@@ -729,9 +748,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
                 .replace("@@AVAIL_CN@@", json.dumps(AVAIL_CN, ensure_ascii=False))
                 .replace("@@FXNOTE@@", html.escape(config.FX_NOTE))
                 .replace("@@HEADER_LINKS@@", _header_links_html())
-                .replace("@@FOOTER@@",
-                         html.escape(config.SITE_FOOTER) if config.SITE_FOOTER
-                         else ""))
+                .replace("@@FOOTER@@", _footer_html()))
 
     index_path = os.path.join(out_dir, "index.html")
     with open(index_path, "w", encoding="utf-8") as f:
