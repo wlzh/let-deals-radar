@@ -8,8 +8,8 @@ name: Update deals
 
 on:
   schedule:
-    # 每 6 小时一次（UTC）。GitHub 的 cron 在高负载时可能延后几分钟，属正常。
-    - cron: '17 */6 * * *'
+    # 每天一次（UTC 01:23，约北京时间 09:23）。GitHub 的 cron 在高负载时可能延后几分钟，属正常。
+    - cron: '23 1 * * *'
   workflow_dispatch:
     inputs:
       with_replies:
@@ -52,10 +52,10 @@ jobs:
       - name: Fetch, extract and build site
         env:
           # 站点与域名配置（在仓库 Settings → Variables 中设置）
-          LDR_SITE_TITLE: ${{ vars.LDR_SITE_TITLE }}
-          LDR_SITE_URL: ${{ vars.LDR_SITE_URL }}
-          LDR_SITE_DESC: ${{ vars.LDR_SITE_DESC }}
-          LDR_SITE_FOOTER: ${{ vars.LDR_SITE_FOOTER }}
+          LDR_SITE_TITLE: ${{ vars.LDR_SITE_TITLE || '大坝的VPS优惠大超市' }}
+          LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
+          LDR_SITE_DESC: ${{ vars.LDR_SITE_DESC || '自动汇总 LowEndTalk / LowEndBox 的 VPS 优惠活动，标注折扣力度、循环折扣与库存状态。' }}
+          LDR_SITE_FOOTER: ${{ vars.LDR_SITE_FOOTER || 'Telegram：https://t.me/tgmShare/3385' }}
           # 抓取参数：手动触发时用输入值，定时触发时用默认值
           WITH_REPLIES: ${{ github.event.inputs.with_replies || '1' }}
           RECENT_DAYS: ${{ github.event.inputs.recent_days || '90' }}
@@ -79,26 +79,6 @@ jobs:
           path: site/
           retention-days: 7
           if-no-files-found: error
-
-      - name: Post to forum
-        # 把优惠帖搬运到 LowSeek 论坛。
-        #
-        # 默认关闭：LDR_FORUM_ENABLED 未设置时该步骤只打印「已关闭」并退出，
-        # 不会发布任何内容。想开启时在仓库 Variables 里设：
-        #   LDR_FORUM_ENABLED = true
-        #   LDR_FORUM_DRY_RUN = false   （先设 true 可只看演练日志）
-        # 并在 Secrets 里配置 LDR_FORUM_API_KEY。
-        env:
-          LDR_FORUM_ENABLED: ${{ vars.LDR_FORUM_ENABLED || 'false' }}
-          LDR_FORUM_DRY_RUN: ${{ vars.LDR_FORUM_DRY_RUN || 'true' }}
-          LDR_FORUM_API_KEY: ${{ secrets.LDR_FORUM_API_KEY }}
-          LDR_FORUM_URL: ${{ vars.LDR_FORUM_URL || 'https://lowseek.ai' }}
-          LDR_FORUM_TAG_ID: ${{ vars.LDR_FORUM_TAG_ID || '21' }}
-          LDR_FORUM_MAX_PER_RUN: ${{ vars.LDR_FORUM_MAX_PER_RUN || '3' }}
-          LDR_FORUM_MAX_AGE_DAYS: ${{ vars.LDR_FORUM_MAX_AGE_DAYS || '3' }}
-          LDR_FORUM_MIN_PERCENT: ${{ vars.LDR_FORUM_MIN_PERCENT || '30' }}
-        # 读上一步生成的 deals.json，不重复抓取
-        run: python -m letdeals --forum-only
 
       - name: Commit refreshed data
         run: |
