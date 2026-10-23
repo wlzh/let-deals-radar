@@ -1,5 +1,6 @@
 | 来源 | 厂商 | 活动性质 | 力度 | 配置/CPU | 旗舰价 | 状态 | 置信度 |
 |---|---|---|---|---|---|---|---|
+| LET | Caliber Node | 常规促销 | — | 15GSSD | $10/年 | 待确认 | 0.33 |
 | LET | Halloween VPS @ Frankfurt Equinix | 节日促销 | 循环/永久 | 3C/10G/100G | €31/年 | 待确认 | 0.83 |
 | LET | Linceris.com | 常规促销 | 循环/永久 · 码 FIRSTORDER50 | 2C/4G/50GNVMe Gen4 / Ryzen 9 9950X | — | 待确认 | 0.83 |
 | LET | ipye.com | 常规帖 | — | 16C/1024GSSD | — | 待确认 | 0.33 |
@@ -17,7 +18,6 @@
 | LET | bgp.sa | 常规帖 | — | 1C/2G | $9.99/月 | 待确认 | 0.50 |
 | LET | VM6 | 常规帖 | — | 4G/100GNVMe / Ryzen 9 9950X | £1.75/月 | 待确认 | 0.67 |
 | LET | hostdare.com | 常规促销 | 循环/永久 · 最高 25% off · double bandwidth+double ram | 2C/2G/50GNVMe SSD | $19.49/年 | 待确认 | 0.83 |
-| LET | Caliber Node | 常规促销 | — | 15GSSD | $10/年 | 待确认 | 0.33 |
 | LET | kukara4 | 常规帖 | — | 8C/32G/640G / EPYC 7543 | €1/月 | 待确认 | 0.83 |
 | LET | servitro.com | 常规促销 | 码 BFJH1873LA | 1C/4G/25GSSD / EPYC 7443P, Ryzen 9 9950X | $12/年 | 待确认(较旧) | 1.00 |
 | LET | Meet Arct Cloud | 常规帖 | 循环/永久 · 最高 10% off | 2C/4G/40GNVMe | $3.89/月 | 待确认 | 0.83 |
