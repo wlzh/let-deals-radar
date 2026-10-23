@@ -153,9 +153,15 @@ def parse_flat_tables(body: str) -> list[dict]:
     lines = [ln.strip() for ln in body.split("\n")]
     plans: list[dict] = []
     i, n = 0, len(lines)
+    cycle = None
 
     while i < n:
         name = lines[i]
+        header = re.search(r"\bprice\s*/\s*(year|month|quarter)\b", name, re.I)
+        if header:
+            cycle = header.group(1).lower()
+        elif name.lower() in ("price", "pricing"):
+            cycle = None
         if (not name or not CELL_PLAN.match(name) or is_value_cell(name)
                 or len(name.split()) > 5):
             i += 1
@@ -232,7 +238,7 @@ def parse_flat_tables(body: str) -> list[dict]:
                 "storage_gb": storage["gb"] if storage else None,
                 "storage_type": storage["type"] if storage else None,
                 "bandwidth_tb": bw,
-                "price": ({"amount": price[0], "currency": price[1]}
+                "price": ({"amount": price[0], "currency": price[1], "cycle": cycle}
                           if price else None),
             })
             i = last + 1

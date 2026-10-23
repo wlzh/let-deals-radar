@@ -133,12 +133,16 @@ def main(argv: list[str] | None = None) -> int:
         verbose=verbose,
     )
 
+    if payload.get("source_failures"):
+        print("!! 数据源缺失，拒绝覆盖现有站点：" + ", ".join(payload["source_failures"]))
+        return 1
     if not payload.get("records"):
         print("!! 没有抓到任何记录；为避免发布空数据，已中止。")
         print("   提示：可用 --offline-let data/feed_let.xml 复用缓存重跑。")
         return 1
 
     # 输出：JSON + Markdown
+    render.enrich(payload["records"])
     json_out = args.json_out or str(config.DEALS_JSON)
     md_out = args.md_out or str(config.DEALS_MD)
     pipeline.save(payload, json_out, md_out)

@@ -68,7 +68,17 @@
         "Germany"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 4 GB 内存 / 50 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 48,
+      "annual_eur": null
     },
     {
       "thread_id": "222164",
@@ -163,7 +173,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–12 核 / 3–128 GB 内存 / 2048–8192 GB 存储",
+      "display_price": "€18/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 18.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 32,
+      "annual_eur": 18.0
     },
     {
       "thread_id": "221797",
@@ -230,7 +254,17 @@
         "Restock",
         "restock"
       ],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1 GB 内存 / 8–80 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "查看活动与下单",
+      "score": 15,
+      "annual_eur": null
     },
     {
       "thread_id": "221258",
@@ -307,7 +341,21 @@
         "Frankfurt"
       ],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$2.25/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 2.25,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 18,
+      "annual_eur": 24.84
     },
     {
       "thread_id": "221896",
@@ -394,7 +442,21 @@
         "Limited stock",
         "sold out"
       ],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：96–384 GB 内存",
+      "display_price": "$150.5/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 150.5,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 69,
+      "annual_eur": 1661.52
     },
     {
       "thread_id": "222168",
@@ -419,11 +481,10 @@
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 码 HAS/OCTRYZI92GB",
+        "strength": "循环/永久 · 码 OCTRYZI92GB",
         "percent_max": null,
         "recurring": true,
         "codes": [
-          "HAS",
           "OCTRYZI92GB"
         ],
         "extras": []
@@ -471,7 +532,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：0.25 GB 内存 / 50 GB 存储",
+      "display_price": "$22.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 22.99,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 47,
+      "annual_eur": 21.15
     },
     {
       "thread_id": "222415",
@@ -564,7 +639,21 @@
       "stock_hints": [
         "limited stock"
       ],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2–3 核 / 3–10 GB 内存 / 50–100 GB 存储",
+      "display_price": "€31/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 31.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 53,
+      "annual_eur": 31.0
     },
     {
       "thread_id": "221473",
@@ -589,12 +678,10 @@
       },
       "event_type": "black_friday",
       "discount": {
-        "strength": "循环/永久 · 最高 30% off · 12 months free · 码 GOOD",
+        "strength": "循环/永久 · 最高 30% off · 12 months free",
         "percent_max": 30,
         "recurring": true,
-        "codes": [
-          "GOOD"
-        ],
+        "codes": [],
         "extras": [
           "12 months free"
         ]
@@ -641,7 +728,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 2–32 GB 内存 / 25–1024 GB 存储",
+      "display_price": "$399/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 399.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 99,
+      "annual_eur": 367.08
     },
     {
       "thread_id": "221311",
@@ -810,7 +911,21 @@
         "out of stock",
         "restock"
       ],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–4 核 / 0.5–16 GB 内存 / 10–80 GB 存储",
+      "display_price": "€6.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 6.99,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 15,
+      "annual_eur": 6.99
     },
     {
       "thread_id": "221603",
@@ -886,7 +1001,21 @@
         "Germany"
       ],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：15 GB 存储",
+      "display_price": "$10/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 10.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 8,
+      "annual_eur": 9.2
     },
     {
       "thread_id": "222302",
@@ -941,7 +1070,17 @@
       "prices": [],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8–16 核 / 240–1024 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 3,
+      "annual_eur": null
     },
     {
       "thread_id": "222165",
@@ -998,7 +1137,17 @@
       "stock_hints": [
         "sold out"
       ],
-      "confidence": 0.17
+      "confidence": 0.17,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：256–512 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "查看补货与替代套餐",
+      "score": 2,
+      "annual_eur": null
     },
     {
       "thread_id": "222403",
@@ -1075,7 +1224,21 @@
         "Hong Kong"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 4 GB 内存 / 40 GB 存储",
+      "display_price": "$9.3/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 9.3,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 35,
+      "annual_eur": 102.67
     },
     {
       "thread_id": "219781",
@@ -1191,7 +1354,21 @@
         "Phoenix"
       ],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8 核 / 32 GB 内存",
+      "display_price": "$29.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 29.99,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 7,
+      "annual_eur": 331.09
     },
     {
       "thread_id": "221564",
@@ -1278,7 +1455,21 @@
         "back in stock",
         "restocked"
       ],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–6 核",
+      "display_price": "$3.33/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.33,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 54,
+      "annual_eur": 36.76
     },
     {
       "thread_id": "220998",
@@ -1405,7 +1596,21 @@
       "stock_hints": [
         "Limited stock"
       ],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–3 核 / 1–4 GB 内存 / 10–4096 GB 存储",
+      "display_price": "€12.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 12.99,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 75,
+      "annual_eur": 12.99
     },
     {
       "thread_id": "222201",
@@ -1466,7 +1671,21 @@
         "Kansas"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 2 GB 存储",
+      "display_price": "$9.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 9.99,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 5,
+      "annual_eur": 110.29
     },
     {
       "thread_id": "221961",
@@ -1549,7 +1768,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–4 GB 内存 / 20–100 GB 存储",
+      "display_price": "£6/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 6.0,
+        "currency": "£",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 7,
+      "annual_eur": 84.24
     },
     {
       "thread_id": "221777",
@@ -1627,11 +1860,25 @@
         }
       ],
       "locations": [
-        "JAPAN",
+        "Japan",
         "Los Angeles"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 0.75–2 GB 内存 / 25–50 GB 存储",
+      "display_price": "$19.49/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 19.49,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 73,
+      "annual_eur": 17.93
     },
     {
       "thread_id": "222400",
@@ -1725,7 +1972,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–8 核 / 0.75–32 GB 内存 / 10–640 GB 存储",
+      "display_price": "€1/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 1.0,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 8,
+      "annual_eur": 12.0
     },
     {
       "thread_id": "220866",
@@ -1806,7 +2067,21 @@
         "Frankfurt"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储",
+      "display_price": "$12/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 12.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 20,
+      "annual_eur": 11.04
     },
     {
       "thread_id": "221949",
@@ -1883,7 +2158,21 @@
         "Milan"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 1–4 GB 内存 / 15–40 GB 存储",
+      "display_price": "$3.89/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.89,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 46,
+      "annual_eur": 42.95
     },
     {
       "thread_id": "219837",
@@ -1999,7 +2288,21 @@
       "stock_hints": [
         "restock"
       ],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：16–128 GB 内存 / 1024 GB 存储",
+      "display_price": "$25/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 25.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 21,
+      "annual_eur": 276.0
     },
     {
       "thread_id": "221289",
@@ -2054,7 +2357,17 @@
         "Milan"
       ],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 4 GB 内存",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 3,
+      "annual_eur": null
     },
     {
       "thread_id": "222117",
@@ -2128,7 +2441,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：15 GB 存储",
+      "display_price": "£3.37/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.37,
+        "currency": "£",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 60,
+      "annual_eur": 3.94
     },
     {
       "thread_id": "222157",
@@ -2232,7 +2559,21 @@
         "Limited stock",
         "while stock lasts"
       ],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–5 核 / 1–16 GB 内存 / 10–500 GB 存储",
+      "display_price": "€12.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 12.99,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 70,
+      "annual_eur": 12.99
     },
     {
       "thread_id": "221713",
@@ -2558,15 +2899,29 @@
         "Germany"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–8 核 / 1–32 GB 内存 / 10–300 GB 存储",
+      "display_price": "€129/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 129.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 78,
+      "annual_eur": 129.0
     },
     {
       "thread_id": "222186",
       "source": "let",
-      "provider": "billing.svr",
+      "provider": "SVR4U",
       "title": "[MY/SG/US] SVR4U KVM VPS From $3.15/mo | 30% OFF ALL VPS | Ryzen 5700G $79.90/100TB | 1Gbps",
       "url": "https://lowendtalk.com/discussion/222186/my-sg-us-svr4u-kvm-vps-from-3-15-mo-30-off-all-vps-ryzen-5700g-79-90-100tb-1gbps",
-      "vendor_url": null,
+      "vendor_url": "https://billing.svr4u.com/aff.php?aff=56",
       "author": "bbmmsvr4u",
       "posted": "Sat, 17 Oct 2026 06:57:08 +0000",
       "age_days": 6,
@@ -2583,14 +2938,10 @@
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 最高 30% off · 码 APPLIES/AUTOMATICALLY/DOES",
+        "strength": "循环/永久 · 最高 30% off · 码 SEGSJ1ZL0Z",
         "percent_max": 30,
         "recurring": true,
         "codes": [
-          "APPLIES",
-          "AUTOMATICALLY",
-          "DOES",
-          "EXCLUSIONS",
           "SEGSJ1ZL0Z"
         ],
         "extras": []
@@ -2645,7 +2996,21 @@
         "Singapore"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8 核 / 32 GB 内存 / 400 GB 存储",
+      "display_price": "$3.15/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.15,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 74,
+      "annual_eur": 34.78
     },
     {
       "thread_id": "222143",
@@ -2711,7 +3076,21 @@
         "Hong Kong"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：24 核 / 2048 GB 存储",
+      "display_price": "$181.37/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 181.37,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 65,
+      "annual_eur": 2002.32
     },
     {
       "thread_id": "219721",
@@ -2780,7 +3159,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1 GB 内存 / 10–20 GB 存储",
+      "display_price": "$14.8/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 14.8,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 39,
+      "annual_eur": 13.62
     },
     {
       "thread_id": "222121",
@@ -2869,7 +3262,21 @@
         "Buffalo"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 10–4096 GB 存储",
+      "display_price": "$2.04/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 2.04,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 64,
+      "annual_eur": 22.52
     },
     {
       "thread_id": "221937",
@@ -2943,7 +3350,21 @@
         "Atlanta"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$14/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 14.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 45,
+      "annual_eur": 12.88
     },
     {
       "thread_id": "220098",
@@ -3079,7 +3500,21 @@
         "Australia"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 2–24 GB 内存 / 20–80 GB 存储",
+      "display_price": "$38.21/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 38.21,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 116,
+      "annual_eur": 35.15
     },
     {
       "thread_id": "220041",
@@ -3179,7 +3614,21 @@
         "Hong Kong"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$3.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.99,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 35,
+      "annual_eur": 44.05
     },
     {
       "thread_id": "221558",
@@ -3255,7 +3704,21 @@
         "New York"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 4 GB 内存 / 80–120 GB 存储",
+      "display_price": "$49/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 49.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 8,
+      "annual_eur": 45.08
     },
     {
       "thread_id": "220354",
@@ -3356,7 +3819,21 @@
       "stock_hints": [
         "Limited Stock"
       ],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：4–8 核 / 8–32 GB 内存 / 50–300 GB 存储",
+      "display_price": "$2/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 2.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 79,
+      "annual_eur": 22.08
     },
     {
       "thread_id": "221060",
@@ -3444,7 +3921,17 @@
         "Milan"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：4–6 核 / 8–12 GB 内存 / 100–200 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 15,
+      "annual_eur": null
     },
     {
       "thread_id": "221167",
@@ -3501,7 +3988,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "€12/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 12.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 25,
+      "annual_eur": 12.0
     },
     {
       "thread_id": "220060",
@@ -3610,7 +4111,21 @@
         "Romania"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2–20 核 / 4–64 GB 内存 / 100–500 GB 存储",
+      "display_price": "€5/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 5.0,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 8,
+      "annual_eur": 60.0
     },
     {
       "thread_id": "219747",
@@ -3729,13 +4244,27 @@
         }
       ],
       "locations": [
-        "CHICAGO",
-        "NEW YORK",
-        "LOS ANGELES",
-        "SALT LAKE CITY"
+        "Chicago",
+        "New York",
+        "Los Angeles",
+        "Salt Lake City"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8–40 核 / 64–256 GB 内存 / 1024–4096 GB 存储",
+      "display_price": "$69.95/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 69.95,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 35,
+      "annual_eur": 772.25
     },
     {
       "thread_id": "221991",
@@ -3849,7 +4378,21 @@
       "stock_hints": [
         "limited Stock"
       ],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–4 核 / 0.25–4 GB 内存 / 5–80 GB 存储",
+      "display_price": "$5.5/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 5.5,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 7,
+      "annual_eur": 5.06
     },
     {
       "thread_id": "221924",
@@ -3932,7 +4475,21 @@
         "India"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 8–10 GB 内存 / 40–80 GB 存储",
+      "display_price": "$10/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 10.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 53,
+      "annual_eur": 110.4
     },
     {
       "thread_id": "222107",
@@ -4026,7 +4583,21 @@
         "Germany"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8–16 核 / 64–256 GB 内存 / 512–1024 GB 存储",
+      "display_price": "€95/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 95.0,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 40,
+      "annual_eur": 1140.0
     },
     {
       "thread_id": "221711",
@@ -4123,7 +4694,21 @@
         "Germany"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 25–75 GB 存储",
+      "display_price": "€3.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.99,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 43,
+      "annual_eur": 47.88
     },
     {
       "thread_id": "221980",
@@ -4180,7 +4765,17 @@
       "stock_hints": [
         "Limited Stock"
       ],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：4 核 / 16 GB 内存 / 100 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 5,
+      "annual_eur": null
     },
     {
       "thread_id": "221103",
@@ -4240,7 +4835,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$8.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 8.99,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 48,
+      "annual_eur": 8.27
     },
     {
       "thread_id": "220831",
@@ -4350,15 +4959,29 @@
         "India"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 1–2 GB 内存 / 500–5120 GB 存储",
+      "display_price": "$35.95/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 35.95,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 88,
+      "annual_eur": 33.07
     },
     {
       "thread_id": "220717",
       "source": "let",
-      "provider": "More Capacity + New Features",
+      "provider": "LayerOne",
       "title": "[LayerOne] More Capacity + New Features - VPS from $1.89/mo | 1GB–8GB RAM",
       "url": "https://lowendtalk.com/discussion/220717/layerone-more-capacity-new-features-vps-from-1-89-mo-1gb-8gb-ram",
-      "vendor_url": null,
+      "vendor_url": "https://layeronecloud.com/r/KMA9RZRD/",
       "author": "LayerOne",
       "posted": "Wed, 02 Sep 2026 16:00:40 +0000",
       "age_days": 50,
@@ -4428,7 +5051,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 0.001–8 GB 内存",
+      "display_price": "$1.89/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 1.89,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 10,
+      "annual_eur": 20.87
     },
     {
       "thread_id": "221826",
@@ -4506,7 +5143,21 @@
         "Dallas"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$5.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 5.99,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 35,
+      "annual_eur": 66.13
     },
     {
       "thread_id": "222136",
@@ -4531,12 +5182,10 @@
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 最高 30% off · 12 months for the price of 10+2 months free · 码 WORKS",
+        "strength": "循环/永久 · 最高 30% off · 12 months for the price of 10+2 months free",
         "percent_max": 30,
         "recurring": true,
-        "codes": [
-          "WORKS"
-        ],
+        "codes": [],
         "extras": [
           "12 months for the price of 10",
           "2 months free"
@@ -4595,7 +5244,21 @@
         "Canada"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：16 核 / 2–4 GB 内存 / 20–40 GB 存储",
+      "display_price": "€38/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 38.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 77,
+      "annual_eur": 38.0
     },
     {
       "thread_id": "220957",
@@ -4685,7 +5348,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2048–20480 GB 存储",
+      "display_price": "$45/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 45.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 20,
+      "annual_eur": 496.8
     },
     {
       "thread_id": "221735",
@@ -4758,7 +5435,21 @@
         "Switzerland"
       ],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：28 核 / 1024 GB 存储",
+      "display_price": "€164.61/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 164.61,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 60,
+      "annual_eur": 1975.32
     },
     {
       "thread_id": "220764",
@@ -4847,7 +5538,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：0.25–16 GB 内存 / 30–480 GB 存储",
+      "display_price": "$16.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 16.99,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 22,
+      "annual_eur": 15.63
     },
     {
       "thread_id": "222110",
@@ -4919,7 +5624,21 @@
         "back in stock",
         "while stock lasts"
       ],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：500–1024 GB 存储",
+      "display_price": "$75/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 75.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 50,
+      "annual_eur": 828.0
     },
     {
       "thread_id": "221165",
@@ -5012,7 +5731,21 @@
         "Los Angeles"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–4 核 / 1–8 GB 内存 / 4–100 GB 存储",
+      "display_price": "$9.95/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 9.95,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 48,
+      "annual_eur": 9.15
     },
     {
       "thread_id": "221641",
@@ -5101,7 +5834,21 @@
         "Los Angeles"
       ],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：32 GB 内存 / 500–2048 GB 存储",
+      "display_price": "$99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 99.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 37,
+      "annual_eur": 1092.96
     },
     {
       "thread_id": "221186",
@@ -5188,7 +5935,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–8 核 / 2–16 GB 内存 / 40–200 GB 存储",
+      "display_price": "$5.56/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 5.56,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 13,
+      "annual_eur": 61.38
     },
     {
       "thread_id": "221894",
@@ -5250,7 +6011,17 @@
         "Amsterdam"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 2 GB 内存 / 20–30 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 10,
+      "annual_eur": null
     },
     {
       "thread_id": "222078",
@@ -5329,7 +6100,21 @@
         "Canada"
       ],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 2–256 GB 内存 / 50–120 GB 存储",
+      "display_price": "$48/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 48.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 7,
+      "annual_eur": 44.16
     },
     {
       "thread_id": "222052",
@@ -5421,7 +6206,21 @@
       "stock_hints": [
         "sold out"
       ],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：6 核 / 1024–2048 GB 存储",
+      "display_price": "$49/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 49.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 58,
+      "annual_eur": 540.96
     },
     {
       "thread_id": "221159",
@@ -5446,12 +6245,10 @@
       },
       "event_type": "launch",
       "discount": {
-        "strength": "码 CONNECT",
+        "strength": "",
         "percent_max": null,
         "recurring": false,
-        "codes": [
-          "CONNECT"
-        ],
+        "codes": [],
         "extras": []
       },
       "specs": {
@@ -5479,7 +6276,17 @@
         "Hong Kong"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 2 GB 内存",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 15,
+      "annual_eur": null
     },
     {
       "thread_id": "221321",
@@ -5587,7 +6394,21 @@
         "Hong Kong"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：16 核 / 2048 GB 存储",
+      "display_price": "$149/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 149.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 43,
+      "annual_eur": 1644.96
     },
     {
       "thread_id": "220847",
@@ -5659,7 +6480,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–8 核 / 4 GB 内存 / 50 GB 存储",
+      "display_price": "$9.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 9.99,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 18,
+      "annual_eur": 110.29
     },
     {
       "thread_id": "220775",
@@ -5746,7 +6581,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：0.5–2 GB 内存 / 5–40 GB 存储",
+      "display_price": "$3.3/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.3,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 84,
+      "annual_eur": 36.43
     },
     {
       "thread_id": "221747",
@@ -5833,7 +6682,21 @@
         "Romania"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 2–4 GB 内存 / 30–50 GB 存储",
+      "display_price": "$4/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 4.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 55,
+      "annual_eur": 44.16
     },
     {
       "thread_id": "221418",
@@ -5908,7 +6771,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8–32 核 / 8–32 GB 内存 / 100 GB 存储",
+      "display_price": "$25/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 25.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 17,
+      "annual_eur": 276.0
     },
     {
       "thread_id": "220383",
@@ -5975,7 +6852,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 250 GB 内存 / 50 GB 存储",
+      "display_price": "$20/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 20.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 7,
+      "annual_eur": 18.4
     },
     {
       "thread_id": "221869",
@@ -6000,12 +6891,11 @@
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 最高 50% off · 码 FS101026/VALIDITY",
+        "strength": "循环/永久 · 最高 50% off · 码 FS101026",
         "percent_max": 50,
         "recurring": true,
         "codes": [
-          "FS101026",
-          "VALIDITY"
+          "FS101026"
         ],
         "extras": []
       },
@@ -6060,7 +6950,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 1–4 GB 内存 / 25–40 GB 存储",
+      "display_price": "$19.2/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 19.2,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 88,
+      "annual_eur": 17.66
     },
     {
       "thread_id": "222007",
@@ -6151,7 +7055,21 @@
         "Ohio"
       ],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：4–40 核 / 32–256 GB 内存 / 128–2048 GB 存储",
+      "display_price": "$100/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 100.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 7,
+      "annual_eur": 1104.0
     },
     {
       "thread_id": "221719",
@@ -6220,7 +7138,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1 GB 内存 / 10–960 GB 存储",
+      "display_price": "£4/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 4.0,
+        "currency": "£",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 12,
+      "annual_eur": 56.16
     },
     {
       "thread_id": "221349",
@@ -6284,7 +7216,21 @@
         "Restock",
         "restock"
       ],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1 GB 内存",
+      "display_price": "€6/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 6.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 15,
+      "annual_eur": 6.0
     },
     {
       "thread_id": "leb-get-cheap-hosting-in-la-ny-or-atlanta-from-flipperhost-only-29-99-year-for-a-2gb-vps",
@@ -6373,7 +7319,21 @@
         "New York"
       ],
       "stock_hints": [],
-      "confidence": 0.83
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2–7 核 / 2–256 GB 内存 / 60–2048 GB 存储",
+      "display_price": "$29.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 29.99,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 8,
+      "annual_eur": 27.59
     },
     {
       "thread_id": "leb-early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium",
@@ -6442,7 +7402,21 @@
         "Arizona"
       ],
       "stock_hints": [],
-      "confidence": 0.33
+      "confidence": 0.33,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$29/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 29.0,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 18,
+      "annual_eur": 320.16
     },
     {
       "thread_id": "leb-virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only",
@@ -6459,12 +7433,10 @@
       "replies": null,
       "event_type": "regular",
       "discount": {
-        "strength": "码 HTTPS",
+        "strength": "",
         "percent_max": null,
         "recurring": false,
-        "codes": [
-          "HTTPS"
-        ],
+        "codes": [],
         "extras": []
       },
       "specs": {
@@ -6541,7 +7513,21 @@
         "Netherlands"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–12 核 / 4–64 GB 内存 / 50–300 GB 存储",
+      "display_price": "€3.99/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.99,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 10,
+      "annual_eur": 47.88
     },
     {
       "thread_id": "leb-more-of-racknerd-adminbolt-heres-50-more-free-vps-10-lifetime-licenses",
@@ -6588,7 +7574,17 @@
       "prices": [],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：3 核 / 4 GB 内存 / 60 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 37,
+      "annual_eur": null
     },
     {
       "thread_id": "leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
@@ -6671,7 +7667,21 @@
         "Velbert"
       ],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–10 核 / 4–512 GB 内存 / 4096 GB 存储",
+      "display_price": "€2.6/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 2.6,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 53,
+      "annual_eur": 31.2
     },
     {
       "thread_id": "leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
@@ -6748,7 +7758,21 @@
       ],
       "locations": [],
       "stock_hints": [],
-      "confidence": 1.0
+      "confidence": 1.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–2 核 / 2–4 GB 内存 / 30–50 GB 存储",
+      "display_price": "$1.83/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 1.83,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 25,
+      "annual_eur": 20.2
     },
     {
       "thread_id": "leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
@@ -6795,7 +7819,17 @@
       "prices": [],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.67
+      "confidence": 0.67,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：3 核 / 4 GB 内存 / 60 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 37,
+      "annual_eur": null
     },
     {
       "thread_id": "leb-high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month",
@@ -6870,7 +7904,21 @@
         "Germany"
       ],
       "stock_hints": [],
-      "confidence": 0.5
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–8 核 / 6–40 GB 内存",
+      "display_price": "€3.49/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.49,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 5,
+      "annual_eur": 41.88
     },
     {
       "thread_id": "219671",
@@ -6895,13 +7943,10 @@
       },
       "event_type": "regular",
       "discount": {
-        "strength": "码 NOT/SIGNED",
+        "strength": "",
         "percent_max": null,
         "recurring": false,
-        "codes": [
-          "NOT",
-          "SIGNED"
-        ],
+        "codes": [],
         "extras": []
       },
       "specs": {
@@ -6922,7 +7967,17 @@
       "prices": [],
       "locations": [],
       "stock_hints": [],
-      "confidence": 0.17
+      "confidence": 0.17,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 2,
+      "annual_eur": null
     },
     {
       "thread_id": "220609",
@@ -6996,7 +8051,17 @@
         "Canada"
       ],
       "stock_hints": [],
-      "confidence": 0.17
+      "confidence": 0.17,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "查看活动与下单",
+      "score": 7,
+      "annual_eur": null
     }
   ]
 }

@@ -108,6 +108,7 @@ def run(
     """执行完整管线，返回 payload。"""
     offline = offline or {}
     all_items: list[dict] = []
+    source_failures = []
 
     # 1) 采集 ---------------------------------------------------------------
     if verbose:
@@ -116,10 +117,13 @@ def run(
         try:
             items = fetch_source(name, offline=offline.get(name),
                                  verbose=verbose)
+            if not items:
+                source_failures.append(name)
             all_items.extend(items)
         except Exception as e:                       # noqa: BLE001
             # 单一源失败不应中断整体
             print(f"  !! 数据源 {name} 失败: {type(e).__name__}: {e}")
+            source_failures.append(name)
 
     if limit:
         all_items = all_items[:limit]
@@ -127,7 +131,7 @@ def run(
         print(f"  合计 {len(all_items)} 条原始条目")
 
     if not all_items:
-        return {"source": "all", "count": 0, "records": [],
+        return {"source": "all", "count": 0, "records": [], "source_failures": source_failures,
                 "generated_at": datetime.now(timezone.utc)
                 .isoformat(timespec="seconds")}
 
@@ -207,6 +211,7 @@ def run(
         "count": len(records),
         "by_source": by_source,
         "deduped": merged,
+        "source_failures": source_failures,
         "records": records,
     }
 

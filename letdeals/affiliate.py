@@ -108,8 +108,13 @@ def _load() -> dict[str, object]:
 
 
 def _domain_of(url: str) -> str:
-    m = re.match(r"https?://(?:www\.)?([a-z0-9][a-z0-9\-\.]*)", url or "", re.I)
-    return m.group(1).lower().rstrip(".") if m else ""
+    try:
+        parts = urlsplit(url or "")
+        if parts.scheme not in ("http", "https") or parts.username or parts.password:
+            return ""
+        return (parts.hostname or "").lower().removeprefix("www.").rstrip(".")
+    except ValueError:
+        return ""
 
 
 def _match(url: str, table: dict[str, object]):
@@ -134,8 +139,9 @@ def append_param(url: str, param: str, value: str) -> str:
     ``?ref=old&ref=new`` 这类让厂商解析歧义的链接。
     """
     parts = urlsplit(url)
-    q = dict(parse_qsl(parts.query, keep_blank_values=True))
-    q[param] = value
+    q = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+         if k.lower() != param.lower()]
+    q.append((param, value))
     return urlunsplit((parts.scheme, parts.netloc, parts.path,
                        urlencode(q), parts.fragment))
 

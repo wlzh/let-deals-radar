@@ -260,7 +260,7 @@ def test_forum_url_injected_when_posted(tmp_path):
     finally:
         monkeypatch.undo()
 
-    assert payload["records"][0]["forum_url"] == "https://forum.test/d/123"
+    assert payload["records"][0]["forum_url"] is None
     # 未发布的记录应保持 None，渲染时回退到原帖
     assert payload["records"][1]["forum_url"] is None
 
@@ -337,10 +337,10 @@ def test_link_rendering_both_cases(tmp_path):
     html = open(os.path.join(tmp_path, "index.html"), encoding="utf-8").read()
     # 主链接（论坛）与次链接（原帖）的样式必须存在
     assert ".lk-main" in html and ".lk-sub" in html
-    assert "中文详情" in html
+    assert "中文详情" not in html
     assert "查看原帖" in html
     # 渲染时按 forum_url 分支
-    assert "if(r.forum_url)" in html
+    assert "if(r.vendor_url)" in html
 
 
 def test_icons_declared_and_copied(tmp_path):

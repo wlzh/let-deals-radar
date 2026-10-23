@@ -88,6 +88,9 @@ RE_CODE_BARE = re.compile(
 
 # 误报黑名单：这些「大写词」不是优惠码
 CODE_STOP = {
+    "HTTPS", "HTTP", "WORKS", "GOOD", "VALIDITY", "APPLIES", "AUTOMATICALLY",
+    "DOES", "NOT", "SIGNED", "IS", "ARE", "WILL", "CAN", "WITH", "ONLY",
+    "EXCLUSIONS", "HAS", "HAVE", "CONNECT", "PLEASE", "ENTER", "THIS", "THAT",
     "CODE", "CODES", "DISCOUNT", "REQUIRED", "NEEDED", "APPLICABLE",
     "AVAILABLE", "EXPIRES", "PROMO", "COUPON", "GUTSCHEIN", "FREE",
     "PLAN", "PLANS", "VPS", "SSD", "NVME", "HDD", "RAM", "CPU", "USD",
@@ -199,6 +202,11 @@ def extract_provider(title: str, author: str, body: str,
     source="leb" 时**不能**回退到作者名 —— LEB 是博客，
     作者是编辑（如 raindog308）而非商家，回退会让所有条目同名。
     """
+    # Explicit brand prefixes survive geographic/title decorations.
+    branded = re.sub(r"^\[(?:MY/SG/US|US|EU|UK)\]\s*", "", title, flags=re.I)
+    for name in ("LayerOne", "SVR4U"):
+        if re.match(r"^\[?" + name + r"\b", branded, re.I):
+            return name
     head = re.split(r"\s*[|│｜–—]\s*|\s+-\s+", title, maxsplit=1)[0].strip()
     head = re.sub(r"^[\[\【(（][^\])）]{0,30}[\])）]\s*", "", head).strip()
     head = re.sub(r"\s*[:\-]\s*$", "", head)
@@ -361,6 +369,8 @@ def extract_vendor_url(provider: str, body: str) -> str | None:
 
     body = body or ""
     pk = _key(p)
+    if pk == "layerone":
+        pk = "layeronecloud"
 
     # 收集正文外链，按「是否匹配厂商域名」筛选
     cands: list[tuple[str, str]] = []      # (完整 URL, 域名)
@@ -561,8 +571,8 @@ def extract_discount(text: str) -> dict:
     codes = set()
     for m in RE_CODE.findall(text):
         u = m.upper()
-        if u not in CODE_STOP and not u.isdigit():
-            codes.add(u)
+        if u not in CODE_STOP and not u.isdigit() and (m.isupper() or any(c.isdigit() for c in m)):
+            codes.add(m)
     for m in RE_CODE_BARE.findall(text):
         u = m.upper()
         if u not in CODE_STOP:
@@ -703,9 +713,9 @@ def build_record(item: dict, reply_info: dict | None = None) -> dict:
         if top_plan["bandwidth_tb"]:
             specs["bandwidth_tb"] = top_plan["bandwidth_tb"]
         tp = top_plan.get("price")
-        if tp:
+        if tp and tp.get("cycle"):
             flagship_price = {"amount": tp["amount"],
-                              "currency": tp["currency"], "cycle": "year"}
+                              "currency": tp["currency"], "cycle": tp["cycle"]}
             prices = [flagship_price] + [
                 p for p in prices
                 if not (abs(p["amount"] - tp["amount"]) < 1e-9
@@ -752,6 +762,16 @@ def build_record(item: dict, reply_info: dict | None = None) -> dict:
     # 厂商链接：优先取原帖里的活动/购买页；若该厂商配置了推广链接
     # （letdeals/affiliate.py），则替换成你的推广链接。
     vendor_url = extract_vendor_url(provider, raw_body)
+    if not vendor_url:
+        candidates = {}
+        for url in re.findall(r'href=["\'](https?://[^"\']+)["\']', raw_body, re.I):
+            domain = affiliate._domain_of(url)
+            domain = _registrable(domain) if domain else ""
+            if domain and domain not in VENDOR_SKIP and _looks_like_offer_page(url) and _is_usable_deep_link(url):
+                candidates.setdefault(domain, url.replace("&amp;", "&"))
+        # Do not guess between several merchants mentioned in the same post.
+        if len(candidates) == 1:
+            provider, vendor_url = next(iter(candidates.items()))
     vendor_url = affiliate.rewrite(vendor_url)
 
     return {

@@ -14,7 +14,8 @@ import re
 import shutil
 from datetime import datetime, timezone
 
-from . import config
+from . import config, affiliate
+from .presentation import prepare, safe_url
 from .extract import AVAIL_CN, EVENT_CN
 
 # 活动性质的「力度权重」，用于综合评分
@@ -48,7 +49,7 @@ def deal_score(rec: dict) -> int:
 
 def annual_eur(rec: dict) -> float | None:
     """年化价格（欧元近似），仅用于排序。"""
-    p = rec.get("flagship_price") or (
+    p = rec.get("sort_price") if "sort_price" in rec else rec.get("flagship_price") or (
         (rec.get("prices") or [None])[0])
     if not p:
         return None
@@ -61,6 +62,8 @@ CYCLE_CN = {"year": "/年", "quarter": "/季", "month": "/月"}
 
 
 def price_text(rec: dict) -> str:
+    if "display_price" in rec:
+        return rec["display_price"] + "（" + rec["display_price_note"] + "）"
     p = rec.get("flagship_price") or ((rec.get("prices") or [None])[0])
     if not p:
         return "—"
@@ -69,6 +72,8 @@ def price_text(rec: dict) -> str:
 
 
 def spec_text(rec: dict) -> str:
+    if "display_spec" in rec:
+        return rec["display_spec"]
     s = rec.get("specs") or {}
     bits = []
     if s.get("vcpu"):
@@ -90,7 +95,7 @@ def spec_text(rec: dict) -> str:
 
 
 def to_markdown(rows: list[dict]) -> str:
-    lines = ["| 来源 | 厂商 | 活动性质 | 力度 | 配置/CPU | 旗舰价 | 状态 | 置信度 |",
+    lines = ["| 来源 | 厂商 | 活动性质 | 力度 | 配置范围/套餐 | 帖文报价 | 状态 | 信息完整度 |",
              "|---|---|---|---|---|---|---|---|"]
     for r in rows:
         lines.append("| {} | {} | {} | {} | {} | {} | {} | {} |".format(
@@ -134,12 +139,10 @@ def _load_forum_links() -> dict:
 
 def enrich(records: list[dict]) -> list[dict]:
     """为展示补充派生字段。"""
-    forum_links = _load_forum_links()
     for r in records:
+        prepare(r)
         r["score"] = deal_score(r)
         r["annual_eur"] = annual_eur(r)
-        # 论坛对应帖子的链接；没有则为 None（渲染时回退到原帖）
-        r["forum_url"] = forum_links.get(str(r.get("thread_id")))
     return records
 
 
@@ -168,6 +171,69 @@ def _header_links_html() -> str:
 
 
 _URL_RE = re.compile(r"https?://[^\s<>\"']+")
+
+
+def _merchant_links_html():
+    entries = [
+        ("RackNerd", "https://racknerd.com/", "查看年付活动；先确认机房与续费金额"),
+        ("CloudCone", "https://app.cloudcone.com/", "比较套餐与计费周期，按实际资源需求选择"),
+        ("DMIT", "https://www.dmit.io/", "关注线路与流量配额，先选机房再选套餐"),
+        ("搬瓦工", "https://bandwagonhost.com/", "核对线路、机房和迁移规则"),
+        ("ZgoVPS", "https://clients.zgovps.com/", "查看当前套餐、库存与续费条件"),
+        ("VIRCS", "https://www.vircs.com/welcome", "核对 IP 类型、地区与使用限制"),
+        ("Geelinx", "https://www.geelinx.com/", "查看可选机房，延迟以实际测试为准"),
+        ("GreenCloud", "https://greencloudvps.com/billing/aff.php", "比较机房与年付方案，确认活动库存"),
+        ("丽萨主机", "https://lisahost.com/", "按地区与 IP 需求筛选套餐"),
+        ("LayerOne", "https://layeronecloud.com/", "查看当前 KVM 套餐与促销条件"),
+        ("VoyraCloud", "https://www.voyracloud.com/", "核对 IP 属性、带宽与计费规则"),
+        ("SmokyHosts", "https://members.smokyhosts.com/", "核对优惠码适用套餐与续费折扣"),
+        ("SVR4U", "https://billing.svr4u.com/", "比较地区、配置和账单总额"),
+        ("DeluxHost", "https://deluxhost.net/", "查看当前 VPS 与存储套餐"),
+    ]
+    links = []
+    for name, url, desc in entries:
+        target = safe_url(affiliate.rewrite(url))
+        if not target:
+            continue
+        links.append('<a href="%s" target="_blank" rel="noopener nofollow sponsored">'
+                     '<b>%s</b><span>%s</span><span class="go">查看商家活动</span></a>' %
+                     (html.escape(target, quote=True), html.escape(name), html.escape(desc)))
+    return "\n".join(links)
+
+
+def _initial_rows(records):
+    """Readable links and prices before JS loads, including without JS."""
+    rows = []
+    closed = {"SOLD_OUT", "ENDED", "RESTOCKING", "LIKELY_SOLD_OUT"}
+    for r in records:
+        if r.get("availability") in closed:
+            continue
+        esc = html.escape
+        link = r.get("vendor_url") or r.get("url")
+        action = ('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %
+                  (esc(link, quote=True), esc(r["purchase_label"] if r.get("vendor_url") else "查看原帖找购买入口"))) if link else ""
+        cells = [("商家", esc(r.get("provider") or "") + "<br>" + action),
+                 ("活动", esc(EVENT_CN.get(r.get("event_type"), ""))),
+                 ("优惠", esc((r.get("discount") or {}).get("strength") or "未提及")),
+                 ("配置", esc(r["display_spec"])),
+                 ("报价", esc(price_text(r))),
+                 ("库存", esc(AVAIL_CN.get(r.get("availability"), "待确认"))),
+                 ("信息完整度", str(round((r.get("confidence") or 0) * 100)) + "%"),
+                 ("发布", esc(r.get("posted") or "待确认"))]
+        rows.append('<tr class="row">' + ''.join('<td data-label="%s">%s</td>' % c for c in cells) + '</tr>')
+    return "\n".join(rows)
+
+
+def _affiliate_shortcuts_html():
+    links = []
+    for name, url in (("RackNerd 活动", "https://racknerd.com/"),
+                      ("DMIT 套餐", "https://www.dmit.io/"),
+                      ("DeluxHost 活动", "https://deluxhost.net/")):
+        target = safe_url(affiliate.rewrite(url))
+        if target:
+            links.append('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %
+                         (html.escape(target, quote=True), html.escape(name)))
+    return " ".join(links)
 
 
 def _footer_html() -> str:
@@ -309,8 +375,7 @@ a.pv-link:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .tag{display:inline-block;background:var(--chip);border-radius:5px;
   padding:1px 6px;font-size:11.5px;margin-right:4px;
   font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-/* 详情底部的链接区：主链接（中文详情）实心、次链接（原帖）描边，
-   视觉上引导用户先看论坛，同时保留核对原帖的入口。 */
+/* Purchase is primary; the source remains available for verification. */
 .links{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .lk{display:inline-block;padding:5px 12px;border-radius:6px;
   font-size:12.5px;text-decoration:none;white-space:nowrap}
@@ -334,6 +399,38 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
 .feat b{font-size:13.5px}
 .feat span{display:block;color:var(--muted);font-size:12px;margin-top:2px;line-height:1.5}
 .feat .go{color:var(--accent);font-size:12px;margin-top:4px}
+.intro h2{font-size:clamp(20px,3vw,28px);margin:0 0 10px;line-height:1.4}
+.intro p{color:var(--muted);line-height:1.8;margin:8px 0}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+button{font:inherit;cursor:pointer;color:var(--ink);background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
+button:hover{border-color:var(--accent)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.merchants summary{cursor:pointer;color:var(--accent);padding:8px 0}
+.disclosure{font-size:12px}
+.purchase{display:inline-block!important;background:var(--accent)!important;color:var(--bg)!important;font-weight:700;padding:9px 12px;border-radius:8px;text-decoration:none!important;white-space:normal;line-height:1.5}
+.price small,.spec small{display:block;color:var(--muted);font-size:11px;white-space:normal;max-width:230px;font-weight:400;margin-top:5px}
+.row td{vertical-align:top;overflow-wrap:anywhere}
+.spec{white-space:normal;min-width:150px;max-width:240px}
+.detin{overflow-wrap:anywhere}
+.row .actions{display:flex;flex-direction:column;gap:8px;margin-top:10px;min-width:145px}
+.row .actions button{font-size:12px;padding:6px 8px}
+.intro{border-top:3px solid var(--accent)}
+.aff-quick{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
+.controls label{font-size:12px;color:var(--muted)}
+#feedback{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);border-radius:8px;padding:10px 16px;z-index:10}
+@media(max-width:700px){
+ .tblwrap{overflow:visible} .tblwrap>table>thead{display:none}
+ .tblwrap>table,.tblwrap>table>tbody,.tblwrap>table>tbody>tr,.tblwrap>table>tbody>tr>td{display:block;width:auto}
+ .tblwrap .row{padding:14px 0;border-bottom:1px solid var(--line)}
+ .tblwrap .row td{padding:5px 12px;border:0;white-space:normal;max-width:none;min-width:0}
+ .tblwrap .row td:before{content:attr(data-label);display:inline-block;color:var(--muted);font-size:11px;margin-right:10px}
+ .tblwrap .row td:first-child:before{display:none}
+ .tblwrap .row td.hidesm{display:none}
+ .row .actions{flex-direction:row;flex-wrap:wrap;align-items:center}
+ .price small,.spec small{max-width:none}
+ .detin{padding:12px}.pt{display:block;overflow:auto;max-width:100%}
+ .controls select{max-width:100%}.feat{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -345,39 +442,31 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
   <div class="meta">
     <span>数据来源 · 公开优惠信息</span>
     <span>共 <b id="m-total">@@COUNT@@</b> 条</span>
-    <span>生成于 <b>@@GENERATED@@</b></span>
+    <span>数据更新 <b>@@GENERATED@@</b></span>
     @@HEADER_LINKS@@
   </div>
 </header>
 
 
-<div class="card">
-  <h3 style="margin:0 0 4px;font-size:15px">📌 推荐商家（站长自用 / 严选）</h3>
-  <p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格。</p>
-  <div class="feat">
-    <a href="https://my.racknerd.com/aff.php?aff=15809" target="_blank" rel="noopener nofollow sponsored"><b>RackNerd</b><span>主打性价比的老牌美国 VPS，常年有年付特价机。</span><span class="go">去看看 →</span></a>
-    <a href="https://app.cloudcone.com/?ref=13794" target="_blank" rel="noopener nofollow sponsored"><b>CloudCone</b><span>美国 VPS，活动时年付约 70 美金，弹性升降配。</span><span class="go">去看看 →</span></a>
-    <a href="https://www.dmit.io/aff.php?aff=21728" target="_blank" rel="noopener nofollow sponsored"><b>DMIT</b><span>高端线路代表，CN2 GIA / CMIN2，对国内访问友好。</span><span class="go">去看看 →</span></a>
-    <a href="https://bandwagonhost.com/aff.php?aff=84775" target="_blank" rel="noopener nofollow sponsored"><b>搬瓦工 BandwagonHost</b><span>老牌商家，CN2 GIA-E 线路口碑稳定，机房可切换。</span><span class="go">去看看 →</span></a>
-    <a href="https://clients.zgovps.com/?affid=1207" target="_blank" rel="noopener nofollow sponsored"><b>ZgoVPS</b><span>站长多年自用的小鸡，稳定省心。</span><span class="go">去看看 →</span></a>
-    <a href="https://www.vircs.com/welcome?vcd=61a4aae4" target="_blank" rel="noopener nofollow sponsored"><b>VIRCS</b><span>家宽落地机，住宅 IP 属性，适合需要原生 IP 的场景。</span><span class="go">去看看 →</span></a>
-    <a href="https://www.geelinx.com/aff/BLXJTGUH" target="_blank" rel="noopener nofollow sponsored"><b>Geelinx</b><span>到日本线路的 VPS，低延迟。</span><span class="go">去看看 →</span></a>
-    <a href="https://greencloudvps.com/billing/aff.php?aff=10419" target="_blank" rel="noopener nofollow sponsored"><b>GreenCloud</b><span>老牌商家，Budget KVM 年付特价常年有货，机房多。</span><span class="go">去看看 →</span></a>
-    <a href="https://lisahost.com/aff.php?aff=9424" target="_blank" rel="noopener nofollow sponsored"><b>丽萨主机 LisaHost</b><span>老牌主机商，线路与机房选择多。</span><span class="go">去看看 →</span></a>
-        <a href="https://layeronecloud.com/r/KMA9RZRD/" target="_blank" rel="noopener nofollow sponsored"><b>LayerOne</b><span>性价比 KVM 小鸡，LET 促销机常年有货。</span><span class="go">去看看 →</span></a>
-    <a href="https://www.voyracloud.com/?ref_code=GLGHABPA" target="_blank" rel="noopener nofollow sponsored"><b>VoyraCloud</b><span>主打住宅 IP 的云主机，原生 IP 场景适用。</span><span class="go">去看看 →</span></a>
-  </div>
-</div>
+<section class="card intro">
+  <p id="stale" hidden>数据更新已超过 48 小时，活动和库存可能变化，请务必到商家复核。</p>
+  <h2>少翻帖子，找到合适的 VPS 优惠。</h2>
+  <p>对比预算、机房与续费条件，复制优惠码，直达商家活动页。先选适合自己的，再看实际到手价。</p>
+  <div class="aff-quick"><b>直达商家活动</b> @@AFF_SHORTCUTS@@</div>
+  <div class="quick"><button type="button" data-preset="budget">找低预算年付</button><button type="button" data-preset="new">看最近发布</button><button type="button" data-preset="sale">看标注在售</button><button type="button" id="reset">重置筛选</button></div>
+  <details class="merchants"><summary>已有心仪商家？展开查看商家活动入口</summary><div class="feat">@@MERCHANTS@@</div></details>
+  <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
+</section>
 
 <div class="card">
   <div class="controls">
-    <input type="search" id="q" placeholder="搜索厂商 / CPU / 优惠码 / 地点…">
-    <select id="src">
+    <input type="search" id="q" aria-label="搜索优惠" placeholder="搜商家、地区、CPU 或优惠码">
+    <select id="src" aria-label="数据来源">
       <option value="all">全部来源</option>
       <option value="let">LET</option>
       <option value="leb">LEB</option>
     </select>
-    <select id="avail">
+    <select id="avail" aria-label="库存状态">
       <option value="all">全部状态</option>
       <option value="ON_SALE">在售</option>
       <option value="SOLD_OUT">售罄</option>
@@ -385,15 +474,18 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
       <option value="PARTIAL">部分售罄</option>
       <option value="UNVERIFIED">待确认</option>
     </select>
-    <select id="sort">
-      <option value="score">按活动力度</option>
+    <select id="sort" aria-label="排序方式">
+      <option value="score">优先看近期可选优惠</option>
       <option value="new">按最新</option>
       <option value="price">按价格(低→高)</option>
-      <option value="conf">按置信度</option>
+      <option value="conf">按信息完整度</option>
       <option value="provider">按厂商</option>
     </select>
     <label class="toggle"><input type="checkbox" id="bigonly"> 只看大力度</label>
     <label class="toggle"><input type="checkbox" id="hideold"> 隐藏 30 天前</label>
+    <label class="toggle"><input type="checkbox" id="hideclosed" checked> 隐藏售罄 / 补货中</label>
+    <label>年付预算 <select id="budget" aria-label="年付预算"><option value="0">不限</option><option value="25">约 €25 内</option><option value="50">约 €50 内</option><option value="100">约 €100 内</option></select></label>
+    <select id="location" aria-label="机房地区"><option value="">全部地区</option></select>
   </div>
   <div class="chips" id="chips"></div>
   <div class="note">
@@ -409,22 +501,24 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
       <thead>
         <tr>
           <th data-s="provider">厂商 <span class="ar"></span></th>
-          <th data-s="event">活动性质 <span class="ar"></span></th>
+          <th>活动性质</th>
           <th data-s="score">力度 <span class="ar"></span></th>
-          <th data-s="spec">配置 / CPU <span class="ar"></span></th>
-          <th data-s="price">旗舰价 <span class="ar"></span></th>
-          <th data-s="avail">状态 <span class="ar"></span></th>
-          <th data-s="conf">置信度 <span class="ar"></span></th>
+          <th>套餐 / 配置范围</th>
+          <th data-s="price">报价与周期 <span class="ar"></span></th>
+          <th>状态</th>
+          <th data-s="conf" title="字段齐全程度，不代表真实性或库存保证">信息完整度 <span class="ar"></span></th>
           <th class="hidesm" data-s="age">发布于 <span class="ar"></span></th>
         </tr>
       </thead>
-      <tbody id="tb"></tbody>
+      <tbody id="tb">@@ROWS@@</tbody>
     </table>
   </div>
-  <div class="empty" id="empty" style="display:none">没有匹配的条目</div>
+  <div class="empty" id="empty" style="display:none">暂时没有匹配的优惠。试试放宽预算、切换地区，或点击上方“重置筛选”。</div>
 </div>
 
 <footer>
+  <div><b>下单前核对：</b>首期总价、续费金额、税费、机房、IPv4、流量和退款条件。优惠码复制后请确认结算页确实生效。</div>
+  <div>信息完整度只表示字段覆盖，不是质量评分。配置范围来自帖文，未绑定套餐的报价不能与最高配置组合理解。</div>
   <div>本站汇总公开渠道的优惠信息，仅作信息聚合，<b>不构成购买建议</b>。</div>
   <div>@@FXNOTE@@</div>
   <div>库存与价格以厂商官网为准；标注「待确认」表示未能自动验证。</div>
@@ -436,15 +530,18 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
 </div>
 
 <script type="application/json" id="deals-data">@@DATA@@</script>
+<div id="feedback" role="status" hidden></div>
 <script>
 (function(){
   var DATA = JSON.parse(document.getElementById('deals-data').textContent);
   var R = DATA.records || [];
+  var updated=Date.parse(DATA.generated_at);
+  if(!Number.isFinite(updated) || Date.now()-updated>48*60*60*1000) document.getElementById('stale').hidden=false;
   var EVENT_CN = @@EVENT_CN@@;
   var AVAIL_CN = @@AVAIL_CN@@;
 
   var st = { q:'', event:'all', src:'all', avail:'all', big:false,
-             hideold:false, sort:'score', open:{} };
+             hideold:false, hideclosed:true, budget:0, location:'', sort:'score', open:{} };
 
   function esc(s){
     return String(s==null?'':s).replace(/[&<>"']/g, function(c){
@@ -452,6 +549,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
     });
   }
   function specText(r){
+    if(r.display_spec) return r.display_spec;
     var s=r.specs||{}, b=[];
     if(s.vcpu) b.push(s.vcpu+'C');
     if(s.ram_gb) b.push(Math.round(s.ram_gb)+'G');
@@ -469,6 +567,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
     return '—';
   }
   function priceText(r){
+    if(r.display_price) return r.display_price;
     var p=r.flagship_price||((r.prices||[])[0]);
     if(!p) return '—';
     var c={year:'/年',quarter:'/季',month:'/月'}[p.cycle]||'';
@@ -485,6 +584,9 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
               || r.event_type==='anniversary' || r.event_type==='black_friday');
   }
   function passes(r){
+    if(st.hideclosed && ['SOLD_OUT','ENDED','RESTOCKING','LIKELY_SOLD_OUT'].indexOf(r.availability)>=0) return false;
+    if(st.budget && (!r.sort_price || r.sort_price.cycle!=='year' || r.annual_eur==null || r.annual_eur>st.budget)) return false;
+    if(st.location && (r.locations||[]).indexOf(st.location)<0) return false;
     if(st.event!=='all' && r.event_type!==st.event) return false;
     if(st.src!=='all' && r.source!==st.src) return false;
     if(st.avail!=='all'){
@@ -516,7 +618,14 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
       case 'conf': return (b.confidence||0)-(a.confidence||0);
       case 'provider': return String(a.provider).localeCompare(String(b.provider));
       case 'age': return (a.age_days==null?1e9:a.age_days)-(b.age_days==null?1e9:b.age_days);
-      default: return (b.score||0)-(a.score||0);
+      default: {
+        function rank(r){
+          if(['SOLD_OUT','ENDED','RESTOCKING','LIKELY_SOLD_OUT'].indexOf(r.availability)>=0) return 3;
+          if(r.age_days==null || r.age_days>30) return 2;
+          return r.availability==='ON_SALE'?0:1;
+        }
+        return rank(a)-rank(b) || (b.score||0)-(a.score||0) || (a.age_days||0)-(b.age_days||0);
+      }
     }
   }
   function planRows(r){
@@ -536,7 +645,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
          '<td>'+(p.storage_gb?Math.round(p.storage_gb)+'G'+
               ((p.storage_type&&p.storage_type!=='unspecified')?' '+esc(p.storage_type):''):'—')+'</td>'+
          '<td>'+(p.bandwidth_tb?p.bandwidth_tb+'TB':'—')+'</td>'+
-         '<td>'+(p.price?(p.price.currency+(+p.price.amount)+'/年'):'—')+'</td></tr>';
+         '<td>'+(p.price?(esc(p.price.currency)+(+p.price.amount)+({year:'/年',month:'/月',quarter:'/季'}[p.price.cycle]||'（周期待核对）')):'—')+'</td></tr>';
     });
     return '<h4>套餐明细（自动解析 '+ps.length+' 条）</h4>'+
            '<table class="pt"><thead><tr><th>套餐</th><th>CPU</th><th>内存</th>'+
@@ -546,12 +655,14 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
   function detail(r){
     var d=r.discount||{}, codes=d.codes||[], ex=d.extras||[];
     var h='<div class="detin">';
+    h+='<h4>'+esc(r.title)+'</h4>';
+    h+='<p>先核对首期与续费总价、机房和流量，再决定是否下单。以下为自动抽取，最终以商家结算页为准。</p>';
     h+=planRows(r);
     h+='<h4>抽取信息</h4><div class="kv">';
     h+='<span>来源 <b>'+esc((r.source||'').toUpperCase())+'</b></span>';
-    h+='<span>地点 <b>'+((r.locations||[]).join(', ')||'—')+'</b></span>';
+    h+='<span>地点 <b>'+esc((r.locations||[]).join(', ')||'—')+'</b></span>';
     h+='<span>活动性质 <b>'+(EVENT_CN[r.event_type]||r.event_type)+'</b></span>';
-    h+='<span>置信度 <b>'+Math.round((r.confidence||0)*100)+'%</b></span>';
+    h+='<span>信息完整度 <b>'+Math.round((r.confidence||0)*100)+'%</b>（非质量评分）</span>';
     h+='<span>循环折扣 <b>'+(d.recurring?'是':'否/未提及')+'</b></span>';
     if(d.percent_max) h+='<span>最大折扣 <b>'+d.percent_max+'%</b></span>';
     if(r.age_days!=null) h+='<span>发布 <b>'+ageText(r)+'</b></span>';
@@ -560,7 +671,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
     h+='</div>';
     if(codes.length){
       h+='<h4 style="margin-top:12px">优惠码（需复核）</h4><div>';
-      codes.forEach(function(c){ h+='<span class="tag">'+esc(c)+'</span>'; });
+      codes.forEach(function(c){ h+='<button type="button" data-copy="'+esc(c)+'">复制 '+esc(c)+'</button> '; });
       h+='</div>';
     }
     if(ex.length){
@@ -602,18 +713,13 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
         h+='</div>';
       }
     }
-    // 链接区：优先引导到论坛的中文详情，同时保留原帖供核对。
-    // 站点建站早于发帖，所以 forum_url 来自上一轮结果；没有对应
-    // 帖子时只显示原帖链接，不会出现死链。
     h+='<div class="links">';
-    if(r.forum_url){
-      h+='<a class="lk lk-main" href="'+esc(r.forum_url)+
-         '" target="_blank" rel="noopener">中文详情 &rarr;</a>';
+    if(r.vendor_url){
+      h+='<a class="lk lk-main purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+    }
+    if(r.url){
       h+='<a class="lk lk-sub" href="'+esc(r.url)+
-         '" target="_blank" rel="noopener">原帖 &rarr;</a>';
-    } else {
-      h+='<a class="lk lk-sub" href="'+esc(r.url)+
-         '" target="_blank" rel="noopener">查看原帖 &rarr;</a>';
+         '" target="_blank" rel="noopener">查看原帖与完整条款</a>';
     }
     h+='</div>';
     return h+'</div>';
@@ -629,18 +735,21 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
       var pv = esc(r.provider);
       if(r.vendor_url){
         pv = '<a class="pv-link" href="'+esc(r.vendor_url)+
-             '" target="_blank" rel="noopener nofollow" '+
+             '" target="_blank" rel="noopener nofollow sponsored" '+
              'title="访问官网 '+esc(r.vendor_url)+'">'+pv+'</a>';
       }
-      out+='<td><div class="pv">'+pv+'</div></td>';
-      out+='<td><span class="badge b-'+esc(r.event_type)+'">'+
+      out+='<td><div class="pv">'+pv+'</div><div class="actions">';
+      if(r.vendor_url) out+='<a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+      else if(r.url) out+='<a href="'+esc(r.url)+'" target="_blank" rel="noopener">查看原帖找购买入口</a>';
+      out+='<button type="button" aria-expanded="'+open+'">'+(open?'收起详情':'核对套餐与优惠码')+'</button></div></td>';
+      out+='<td data-label="活动"><span class="badge b-'+esc(r.event_type)+'">'+
            esc(EVENT_CN[r.event_type]||r.event_type)+'</span></td>';
-      out+='<td>'+(esc((r.discount||{}).strength)||'<span style="color:var(--muted)">—</span>')+'</td>';
-      out+='<td class="spec">'+esc(specText(r))+'</td>';
-      out+='<td class="price">'+esc(priceText(r))+'</td>';
-      out+='<td><span class="av av-'+esc(r.availability)+'">'+
+      out+='<td data-label="优惠">'+(esc((r.discount||{}).strength)||'<span style="color:var(--muted)">未提及优惠码</span>')+'</td>';
+      out+='<td data-label="配置" class="spec">'+esc(specText(r))+'<small>'+esc((r.locations||[]).join(' / '))+'</small></td>';
+      out+='<td data-label="报价" class="price">'+esc(priceText(r))+'<small>'+esc(r.display_price_note)+'</small></td>';
+      out+='<td data-label="库存"><span class="av av-'+esc(r.availability)+'">'+
            esc(AVAIL_CN[r.availability]||r.availability)+'</span></td>';
-      out+='<td class="cf"><span class="bar"><i style="width:'+
+      out+='<td data-label="信息完整度" class="cf"><span class="bar"><i style="width:'+
            Math.round((r.confidence||0)*100)+'%"></i></span>'+
            Math.round((r.confidence||0)*100)+'%</td>';
       out+='<td class="hidesm">'+esc(ageText(r))+'</td>';
@@ -655,10 +764,10 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
     var cnt={};
     R.forEach(function(r){ cnt[r.event_type]=(cnt[r.event_type]||0)+1; });
     var keys=Object.keys(cnt).sort(function(a,b){ return cnt[b]-cnt[a]; });
-    var h='<div class="chip on" data-e="all">全部<span class="n">'+R.length+'</span></div>';
+    var h='<button type="button" class="chip on" data-e="all">全部<span class="n">'+R.length+'</span></button>';
     keys.forEach(function(k){
-      h+='<div class="chip" data-e="'+esc(k)+'">'+esc(EVENT_CN[k]||k)+
-         '<span class="n">'+cnt[k]+'</span></div>';
+      h+='<button type="button" class="chip" data-e="'+esc(k)+'">'+esc(EVENT_CN[k]||k)+
+         '<span class="n">'+cnt[k]+'</span></button>';
     });
     var box=document.getElementById('chips');
     box.innerHTML=h;
@@ -676,22 +785,59 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
   document.getElementById('src').addEventListener('change',function(e){
     st.src=e.target.value; render(); });
   document.getElementById('avail').addEventListener('change',function(e){
-    st.avail=e.target.value; render(); });
+    st.avail=e.target.value;
+    if(st.avail!=='all'){st.hideclosed=false;document.getElementById('hideclosed').checked=false;}
+    render(); });
   document.getElementById('sort').addEventListener('change',function(e){
     st.sort=e.target.value; render(); });
   document.getElementById('bigonly').addEventListener('change',function(e){
     st.big=e.target.checked; render(); });
   document.getElementById('hideold').addEventListener('change',function(e){
     st.hideold=e.target.checked; render(); });
+  document.getElementById('hideclosed').addEventListener('change',function(e){st.hideclosed=e.target.checked;render();});
+  document.getElementById('budget').addEventListener('change',function(e){st.budget=Number(e.target.value);render();});
+  document.getElementById('location').addEventListener('change',function(e){st.location=e.target.value;render();});
+  var locations=[];
+  R.forEach(function(r){(r.locations||[]).forEach(function(l){if(locations.indexOf(l)<0) locations.push(l);});});
+  locations.sort().forEach(function(l){var o=document.createElement('option');o.value=l;o.textContent=l;document.getElementById('location').appendChild(o);});
+  function reset(){
+    st={q:'',event:'all',src:'all',avail:'all',big:false,hideold:false,hideclosed:true,budget:0,location:'',sort:'score',open:{}};
+    ['q','location'].forEach(function(id){document.getElementById(id).value='';});
+    ['src','avail'].forEach(function(id){document.getElementById(id).value='all';});
+    ['bigonly','hideold'].forEach(function(id){document.getElementById(id).checked=false;});
+    document.getElementById('hideclosed').checked=true;
+    document.getElementById('budget').value='0';document.getElementById('sort').value='score';
+    document.querySelectorAll('.chip').forEach(function(c){c.classList.toggle('on',c.getAttribute('data-e')==='all');});
+  }
+  document.getElementById('reset').addEventListener('click',function(){reset();render();});
+  document.querySelectorAll('[data-preset]').forEach(function(b){b.addEventListener('click',function(){
+    reset();var p=b.getAttribute('data-preset');
+    if(p==='budget'){st.budget=25;st.sort='price';document.getElementById('budget').value='25';}
+    if(p==='new'){st.hideold=true;st.sort='new';document.getElementById('hideold').checked=true;}
+    if(p==='sale'){st.avail='ON_SALE';document.getElementById('avail').value='ON_SALE';}
+    document.getElementById('sort').value=st.sort;render();
+  });});
+  var feedbackTimer;
+  document.addEventListener('click',async function(e){
+    var b=e.target.closest('[data-copy]');if(!b)return;
+    var message;
+    try{await navigator.clipboard.writeText(b.getAttribute('data-copy'));message='优惠码已复制，请在结算页确认折扣生效';}
+    catch(err){message='未能自动复制，请手动复制：'+b.getAttribute('data-copy');}
+    var feedback=document.getElementById('feedback');feedback.textContent=message;feedback.hidden=false;
+    clearTimeout(feedbackTimer);feedbackTimer=setTimeout(function(){feedback.hidden=true;},5000);
+  });
   document.getElementById('tb').addEventListener('click',function(e){
     // 点在厂商官网链接上时，只跳转、不展开该行
     if(e.target.closest('a')) return;
+    if(e.target.closest('[data-copy]')) return;
     var tr=e.target.closest('tr.row'); if(!tr) return;
     var id=tr.getAttribute('data-id');
     st.open[id]=!st.open[id];
     render();
   });
   Array.prototype.forEach.call(document.querySelectorAll('th[data-s]'),function(th){
+    th.tabIndex=0;th.setAttribute('role','button');
+    th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();th.click();}});
     th.addEventListener('click',function(){
       st.sort=th.getAttribute('data-s');
       document.getElementById('sort').value=st.sort;
@@ -720,7 +866,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     with open(api_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    generated = str(payload.get("generated_at") or "未知，请到商家复核")
     canonical = ""
     ogtags = ""
     if config.SITE_URL:
@@ -747,6 +893,9 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
                 .replace("@@TITLE@@", html.escape(config.SITE_TITLE))
                 .replace("@@DESC@@", html.escape(config.SITE_DESC, quote=True))
                 .replace("@@CANONICAL@@", canonical)
+                .replace("@@MERCHANTS@@", _merchant_links_html())
+                .replace("@@AFF_SHORTCUTS@@", _affiliate_shortcuts_html())
+                .replace("@@ROWS@@", _initial_rows(payload.get("records", [])))
                 .replace("@@OGTAGS@@", ogtags)
                 .replace("@@DATA@@", _json_for_script(payload))
                 .replace("@@COUNT@@", str(payload.get("count", 0)))

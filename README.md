@@ -42,6 +42,14 @@
 
 ## 快速开始
 
+### 当前页面优化
+
+支持年付预算、机房地区和库存筛选，提供直接商家入口、优惠码复制与移动端卡片。
+未绑定套餐的报价与配置范围分开展示，信息完整度不代表准确率。
+商家目录与动态优惠统一使用本站推广配置；不增加转化统计或后台。
+发布前运行 `python -m tools.audit_site`。详细边界与验收见 [页面优化说明](docs/CONVERSION.md)。
+现有个人 AFF 与待补商家见 [推广清单](docs/AFFILIATE_INVENTORY.md)，可用 `python -m tools.affiliate_inventory` 重新盘点。
+
 ```bash
 python -m letdeals                 # 抓取两个数据源并生成站点
 python -m letdeals --with-replies  # 同时抓回帖（库存判定准确率高得多）

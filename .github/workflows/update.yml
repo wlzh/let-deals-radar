@@ -56,6 +56,7 @@ jobs:
           LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
           LDR_SITE_DESC: ${{ vars.LDR_SITE_DESC || '自动汇总 LowEndTalk / LowEndBox 的 VPS 优惠活动，标注折扣力度、循环折扣与库存状态。' }}
           LDR_SITE_FOOTER: ${{ vars.LDR_SITE_FOOTER || 'Telegram：https://t.me/tgmShare/3385' }}
+          LDR_AFFILIATES: ${{ vars.LDR_AFFILIATES }}
           # 抓取参数：手动触发时用输入值，定时触发时用默认值
           WITH_REPLIES: ${{ github.event.inputs.with_replies || '1' }}
           RECENT_DAYS: ${{ github.event.inputs.recent_days || '90' }}
@@ -71,6 +72,11 @@ jobs:
             echo "::error::记录数为 0，拒绝提交（保留上次数据）"
             exit 1
           fi
+
+      - name: Audit revenue links and price context
+        env:
+          LDR_AFFILIATES: ${{ vars.LDR_AFFILIATES }}
+        run: python -m tools.audit_site
 
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
