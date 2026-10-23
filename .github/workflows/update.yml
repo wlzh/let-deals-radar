@@ -63,7 +63,7 @@ jobs:
         run: bash deploy/run_pipeline.sh
 
       - name: Verify output is non-empty
-        # 安全网：抓取失败或全部被过滤时，拒绝提交，保留上次线上数据
+        # 安全网：抓取失败或全部被过滤时，拒绝提交，保留上次数据
         run: |
           COUNT=$(python -c "import json;print(json.load(open('data/deals.json'))['count'])")
           echo "记录数: $COUNT"
@@ -100,7 +100,7 @@ jobs:
             echo "无变化，跳过提交"
             exit 0
           fi
-          git commit -m "chore: refresh deals [skip ci]"
+          git commit -m "chore: refresh deals"
 
           # 远端可能已被另一次运行推进（手动重跑、cron 延迟等），
           # 直接 push 会因非快进而被拒。做法：把 HEAD 移到远端最新提交，
@@ -112,7 +112,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "与远端一致，无需提交"
           else
-            git commit -m "chore: refresh deals [skip ci]"
+            git commit -m "chore: refresh deals"
           fi
           git push
 
@@ -137,4 +137,4 @@ jobs:
           ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
           rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -p $PORT" \
             site/ "$USER@$HOST:$TARGET/"
-          echo "已推送到 $USER@$HOST:$TARGET"
+          echo "已推送到 $USER@$HOST:$TARGET/"
