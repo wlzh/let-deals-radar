@@ -715,7 +715,12 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
     }
     h+='<div class="links">';
     if(r.vendor_url){
-      h+='<a class="lk lk-main purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+      if(r.order_url){
+        h+='<a class="lk lk-main purchase" href="'+esc(r.order_url)+'" target="_blank" rel="noopener nofollow sponsored">下单</a>';
+        h+='<a class="lk lk-sub" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">注册</a>';
+      }else{
+        h+='<a class="lk lk-main purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+      }
     }
     if(r.url){
       h+='<a class="lk lk-sub" href="'+esc(r.url)+
@@ -739,7 +744,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
              'title="访问官网 '+esc(r.vendor_url)+'">'+pv+'</a>';
       }
       out+='<td><div class="pv">'+pv+'</div><div class="actions">';
-      if(r.vendor_url) out+='<a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+      if(r.vendor_url){
+        if(r.order_url) out+='<a class="purchase" href="'+esc(r.order_url)+'" target="_blank" rel="noopener nofollow sponsored">下单</a> <a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">注册</a>';
+        else out+='<a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+      }
       else if(r.url) out+='<a href="'+esc(r.url)+'" target="_blank" rel="noopener">查看原帖找购买入口</a>';
       out+='<button type="button" aria-expanded="'+open+'">'+(open?'收起详情':'核对套餐与优惠码')+'</button></div></td>';
       out+='<td data-label="活动"><span class="badge b-'+esc(r.event_type)+'">'+

@@ -8,6 +8,7 @@ from __future__ import annotations
 import re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from urllib.parse import urlsplit
 
 from . import affiliate, config
 from .textutil import parse_flat_tables, strip_html, to_float, to_gb, to_tb
@@ -772,7 +773,19 @@ def build_record(item: dict, reply_info: dict | None = None) -> dict:
         # Do not guess between several merchants mentioned in the same post.
         if len(candidates) == 1:
             provider, vendor_url = next(iter(candidates.items()))
+    _origin_url = vendor_url
     vendor_url = affiliate.rewrite(vendor_url)
+    # 整体替换型厂商：推广链接只能落在专属入口，会丢掉原帖的具体
+    # 套餐/下单页。把原始深链单独保留为 order_url，页面据此渲染
+    # 「下单」（直达套餐页）+「注册」（推广入口，先注册再下单，
+    # 订单照样归属推广）两个按钮；参数追加型不丢链接，不需要。
+    _order_url = None
+    if _origin_url and vendor_url and vendor_url != _origin_url:
+        _cfg, _hit = affiliate._match(_origin_url, affiliate._load())
+        if isinstance(_cfg, str):
+            _p = urlsplit(_origin_url)
+            if (_p.path or "").strip("/") or _p.query:
+                _order_url = _origin_url
 
     return {
         "thread_id": str(item.get("thread_id", "")),
@@ -783,6 +796,7 @@ def build_record(item: dict, reply_info: dict | None = None) -> dict:
         # 必须用**原始 HTML** 抽取：strip_html 会把 <a href> 一并剥掉，
         # 而厂商链接恰恰只存在于 href 里。
         "vendor_url": vendor_url,
+        "order_url": _order_url,
         "author": item.get("author", ""),
         "posted": item.get("pubDate", ""),
         "age_days": days,

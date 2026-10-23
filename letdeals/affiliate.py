@@ -146,6 +146,34 @@ def append_param(url: str, param: str, value: str) -> str:
                        urlencode(q), parts.fragment))
 
 
+# 他人推广参数黑名单。原始帖子里的厂商链接有时混着发帖人自己的
+# 推广参数；站内只允许出现站长自己的推广参数，因此未命中站长配置
+# 的链接在进站前先剥掉这些参数（优惠码 promocode/coupon 与产品
+# 参数 pid 等购买必需参数不在此列，不动）。
+_FOREIGN_AFF_PARAMS = {
+    "aff", "affid", "aff_id", "affiliate", "affiliate_id", "a_aid",
+    "ref", "ref_code", "refid", "referral", "referrer",
+    "partner", "partner_id", "vcd",
+}
+
+
+def _strip_foreign(url: str, keep: str | None = None) -> str:
+    """剥离 URL 里的他人推广参数；keep 指定要保留的参数名（站长自己的）。"""
+    try:
+        parts = urlsplit(url)
+    except ValueError:
+        return url
+    if not parts.query:
+        return url
+    keep_l = keep.lower() if keep else None
+    q = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+         if k.lower() not in _FOREIGN_AFF_PARAMS or k.lower() == keep_l]
+    if len(q) == len(parse_qsl(parts.query, keep_blank_values=True)):
+        return url
+    return urlunsplit((parts.scheme, parts.netloc, parts.path,
+                       urlencode(q), parts.fragment))
+
+
 def rewrite(vendor_url: str | None,
             mapping: dict[str, object] | None = None) -> str | None:
     """把厂商链接改写为带推广参数的版本；未配置则原样返回。
@@ -156,18 +184,21 @@ def rewrite(vendor_url: str | None,
         return vendor_url
     table = _load() if mapping is None else mapping
     if not table:
-        return vendor_url
+        return _strip_foreign(vendor_url)
 
     cfg, _hit = _match(vendor_url, table)
     if cfg is None:
-        return vendor_url
+        # 未配置的厂商：原样保留购买链接，但剥掉他人推广参数 ——
+        # 站内只允许出现站长自己的推广参数。
+        return _strip_foreign(vendor_url)
 
     # 完整链接模式：整体替换
     if isinstance(cfg, str):
         return cfg
 
-    # 参数追加模式：保留路径，仅加参数
-    return append_param(vendor_url, cfg["param"], cfg["value"])
+    # 参数追加模式：保留路径，先剥掉同名/异名的他人推广参数，再加站长的
+    return append_param(_strip_foreign(vendor_url, keep=cfg["param"]),
+                        cfg["param"], cfg["value"])
 
 
 def summary(mapping: dict[str, object] | None = None) -> str:
