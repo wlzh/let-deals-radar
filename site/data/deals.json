@@ -1,6 +1,6 @@
 {
   "source": "LowEndTalk Offers + LowEndBox",
-  "generated_at": "2026-10-23T11:45:45+00:00",
+  "generated_at": "2026-10-23T12:05:22+00:00",
   "count": 81,
   "by_source": {
     "let": 73,
@@ -27,7 +27,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:36+00:00"
+        "fetched_at": "2026-10-23T12:04:09+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -125,7 +125,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:36+00:00"
+        "fetched_at": "2026-10-23T12:04:09+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -221,7 +221,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:36+00:00"
+        "fetched_at": "2026-10-23T12:04:10+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -301,7 +301,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:37+00:00"
+        "fetched_at": "2026-10-23T12:04:11+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -381,7 +381,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:39+00:00"
+        "fetched_at": "2026-10-23T12:04:12+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -471,7 +471,7 @@
             "offset": 55
           }
         ],
-        "fetched_at": "2026-10-23T11:44:40+00:00"
+        "fetched_at": "2026-10-23T12:04:13+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -623,7 +623,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:44+00:00"
+        "fetched_at": "2026-10-23T12:04:15+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -702,7 +702,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:45+00:00"
+        "fetched_at": "2026-10-23T12:04:17+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -767,7 +767,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:45+00:00"
+        "fetched_at": "2026-10-23T12:04:17+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -825,7 +825,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:45+00:00"
+        "fetched_at": "2026-10-23T12:04:17+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -885,7 +885,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:47+00:00"
+        "fetched_at": "2026-10-23T12:04:18+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -995,7 +995,7 @@
             "offset": 39
           }
         ],
-        "fetched_at": "2026-10-23T11:44:48+00:00"
+        "fetched_at": "2026-10-23T12:04:19+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1084,7 +1084,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:49+00:00"
+        "fetched_at": "2026-10-23T12:04:20+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -1164,7 +1164,7 @@
       "vendor_url": "https://nolimitcloud.eu/pages/storage-vps",
       "author": "NolimitHost",
       "posted": "Thu, 10 Sep 2026 11:45:59 +0000",
-      "age_days": 42,
+      "age_days": 43,
       "age_status": "STALE",
       "availability": "ON_SALE",
       "replies": {
@@ -1204,7 +1204,7 @@
             "offset": 11
           }
         ],
-        "fetched_at": "2026-10-23T11:44:49+00:00"
+        "fetched_at": "2026-10-23T12:04:20+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -1304,7 +1304,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:49+00:00"
+        "fetched_at": "2026-10-23T12:04:21+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1393,7 +1393,7 @@
           "offset": 110
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:51+00:00"
+        "fetched_at": "2026-10-23T12:04:22+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1474,7 +1474,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:51+00:00"
+        "fetched_at": "2026-10-23T12:04:22+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1538,7 +1538,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:52+00:00"
+        "fetched_at": "2026-10-23T12:04:23+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1624,7 +1624,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:52+00:00"
+        "fetched_at": "2026-10-23T12:04:23+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1709,7 +1709,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:53+00:00"
+        "fetched_at": "2026-10-23T12:04:24+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1806,7 +1806,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:54+00:00"
+        "fetched_at": "2026-10-23T12:04:25+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1890,7 +1890,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:44:55+00:00"
+        "fetched_at": "2026-10-23T12:04:26+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1990,7 +1990,7 @@
             "offset": 7
           }
         ],
-        "fetched_at": "2026-10-23T11:45:00+00:00"
+        "fetched_at": "2026-10-23T12:04:30+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -2089,7 +2089,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:01+00:00"
+        "fetched_at": "2026-10-23T12:04:31+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -2147,7 +2147,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:02+00:00"
+        "fetched_at": "2026-10-23T12:04:32+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -2224,7 +2224,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:03+00:00"
+        "fetched_at": "2026-10-23T12:04:32+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2371,7 +2371,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-10-23T11:45:04+00:00"
+        "fetched_at": "2026-10-23T12:04:33+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -2660,7 +2660,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:04+00:00"
+        "fetched_at": "2026-10-23T12:04:33+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2750,7 +2750,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:04+00:00"
+        "fetched_at": "2026-10-23T12:04:34+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2819,7 +2819,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:05+00:00"
+        "fetched_at": "2026-10-23T12:04:35+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2891,7 +2891,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:05+00:00"
+        "fetched_at": "2026-10-23T12:04:35+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2983,7 +2983,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:07+00:00"
+        "fetched_at": "2026-10-23T12:04:36+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3100,7 +3100,7 @@
             "offset": 28
           }
         ],
-        "fetched_at": "2026-10-23T11:45:07+00:00"
+        "fetched_at": "2026-10-23T12:04:36+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -3219,7 +3219,7 @@
             "offset": 27
           }
         ],
-        "fetched_at": "2026-10-23T11:45:08+00:00"
+        "fetched_at": "2026-10-23T12:04:37+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3302,7 +3302,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:09+00:00"
+        "fetched_at": "2026-10-23T12:04:39+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3390,7 +3390,7 @@
           "offset": 111
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:10+00:00"
+        "fetched_at": "2026-10-23T12:04:40+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -3485,7 +3485,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:11+00:00"
+        "fetched_at": "2026-10-23T12:04:41+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3576,7 +3576,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:12+00:00"
+        "fetched_at": "2026-10-23T12:04:42+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3656,7 +3656,7 @@
             "offset": 803
           }
         ],
-        "fetched_at": "2026-10-23T11:45:13+00:00"
+        "fetched_at": "2026-10-23T12:04:43+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3768,7 +3768,7 @@
             "offset": 57
           }
         ],
-        "fetched_at": "2026-10-23T11:45:14+00:00"
+        "fetched_at": "2026-10-23T12:04:45+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3896,7 +3896,7 @@
             "offset": 222
           }
         ],
-        "fetched_at": "2026-10-23T11:45:15+00:00"
+        "fetched_at": "2026-10-23T12:04:46+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3993,7 +3993,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:15+00:00"
+        "fetched_at": "2026-10-23T12:04:46+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4079,7 +4079,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:15+00:00"
+        "fetched_at": "2026-10-23T12:04:46+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4196,7 +4196,7 @@
             "offset": 52
           }
         ],
-        "fetched_at": "2026-10-23T11:45:16+00:00"
+        "fetched_at": "2026-10-23T12:04:48+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4276,7 +4276,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:17+00:00"
+        "fetched_at": "2026-10-23T12:04:49+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4336,7 +4336,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:19+00:00"
+        "fetched_at": "2026-10-23T12:04:51+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -4419,7 +4419,7 @@
             "offset": 31
           }
         ],
-        "fetched_at": "2026-10-23T11:45:22+00:00"
+        "fetched_at": "2026-10-23T12:04:54+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4512,7 +4512,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:23+00:00"
+        "fetched_at": "2026-10-23T12:04:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4593,7 +4593,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:23+00:00"
+        "fetched_at": "2026-10-23T12:04:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4674,7 +4674,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:23+00:00"
+        "fetched_at": "2026-10-23T12:04:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4775,7 +4775,7 @@
           "offset": 43
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:23+00:00"
+        "fetched_at": "2026-10-23T12:04:56+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4859,7 +4859,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:24+00:00"
+        "fetched_at": "2026-10-23T12:04:57+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -4935,7 +4935,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:26+00:00"
+        "fetched_at": "2026-10-23T12:04:59+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5027,7 +5027,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:26+00:00"
+        "fetched_at": "2026-10-23T12:04:59+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -5102,7 +5102,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:26+00:00"
+        "fetched_at": "2026-10-23T12:05:00+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5198,7 +5198,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:27+00:00"
+        "fetched_at": "2026-10-23T12:05:01+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -5290,7 +5290,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:28+00:00"
+        "fetched_at": "2026-10-23T12:05:02+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5380,7 +5380,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:29+00:00"
+        "fetched_at": "2026-10-23T12:05:03+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5445,7 +5445,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:30+00:00"
+        "fetched_at": "2026-10-23T12:05:05+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5527,7 +5527,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:31+00:00"
+        "fetched_at": "2026-10-23T12:05:05+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5622,7 +5622,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:32+00:00"
+        "fetched_at": "2026-10-23T12:05:06+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5713,7 +5713,7 @@
             "offset": 31
           }
         ],
-        "fetched_at": "2026-10-23T11:45:32+00:00"
+        "fetched_at": "2026-10-23T12:05:06+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5794,7 +5794,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:32+00:00"
+        "fetched_at": "2026-10-23T12:05:07+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5869,7 +5869,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:36+00:00"
+        "fetched_at": "2026-10-23T12:05:11+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5959,7 +5959,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:36+00:00"
+        "fetched_at": "2026-10-23T12:05:11+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6049,7 +6049,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:37+00:00"
+        "fetched_at": "2026-10-23T12:05:13+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6127,7 +6127,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:39+00:00"
+        "fetched_at": "2026-10-23T12:05:15+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6197,7 +6197,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:41+00:00"
+        "fetched_at": "2026-10-23T12:05:17+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6285,7 +6285,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:42+00:00"
+        "fetched_at": "2026-10-23T12:05:18+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6379,7 +6379,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:42+00:00"
+        "fetched_at": "2026-10-23T12:05:18+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6451,7 +6451,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:45+00:00"
+        "fetched_at": "2026-10-23T12:05:21+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -7128,7 +7128,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T11:45:34+00:00"
+        "fetched_at": "2026-10-23T12:05:09+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7203,7 +7203,7 @@
             "offset": 17
           }
         ],
-        "fetched_at": "2026-10-23T11:45:43+00:00"
+        "fetched_at": "2026-10-23T12:05:19+00:00"
       },
       "event_type": "regular",
       "discount": {
