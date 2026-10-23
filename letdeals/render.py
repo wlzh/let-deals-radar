@@ -405,7 +405,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
 button{font:inherit;cursor:pointer;color:var(--ink);background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
 button:hover{border-color:var(--accent)}
 button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.merchants summary{cursor:pointer;color:var(--accent);padding:8px 0}
+.merchants-title{color:var(--accent);padding:8px 0;margin:0;font-size:15px}
 .disclosure{font-size:12px}
 .purchase{display:inline-block!important;background:var(--accent)!important;color:var(--bg)!important;font-weight:700;padding:9px 12px;border-radius:8px;text-decoration:none!important;white-space:normal;line-height:1.5}
 .price small,.spec small{display:block;color:var(--muted);font-size:11px;white-space:normal;max-width:230px;font-weight:400;margin-top:5px}
@@ -454,7 +454,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <p>对比预算、机房与续费条件，复制优惠码，直达商家活动页。先选适合自己的，再看实际到手价。</p>
   <div class="aff-quick"><b>直达商家活动</b> @@AFF_SHORTCUTS@@</div>
   <div class="quick"><button type="button" data-preset="budget">找低预算年付</button><button type="button" data-preset="new">看最近发布</button><button type="button" data-preset="sale">看标注在售</button><button type="button" id="reset">重置筛选</button></div>
-  <details class="merchants"><summary>已有心仪商家？展开查看商家活动入口</summary><div class="feat">@@MERCHANTS@@</div></details>
+  <div class="merchants"><h3 class="merchants-title">已有心仪商家</h3><div class="feat">@@MERCHANTS@@</div></div>
   <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
 </section>
 
