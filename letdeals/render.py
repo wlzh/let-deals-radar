@@ -684,7 +684,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
                 .replace("@@FXNOTE@@", html.escape(config.FX_NOTE))
                 .replace("@@HEADER_LINKS@@", _header_links_html())
                 .replace("@@FOOTER@@",
-                         html.escape(config.SITE_FOOTER) if config.SITE_FOOTER
+                         config.SITE_FOOTER if config.SITE_FOOTER
                          else ""))
 
     index_path = os.path.join(out_dir, "index.html")

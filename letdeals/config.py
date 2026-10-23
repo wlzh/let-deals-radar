@@ -61,15 +61,19 @@ SITE_DESC = _env(
 )
 # 例：https://deals.example.com  （末尾不要带 /）
 SITE_URL = _env("LDR_SITE_URL", "").rstrip("/")
-SITE_FOOTER = _env("LDR_SITE_FOOTER", "")
+SITE_FOOTER = _env(
+    "LDR_SITE_FOOTER",
+    "大坝家族站点：<a href='https://869hr.uk/'>📖 技术博客</a> · <a href='https://doc.869hr.uk/'>📚 资源收集站</a> · <a href='https://t.me/tgmShareAI'>📢 TG频道</a>",
+)
 
 # 页头的附加链接，格式 "名称|地址"，多项用逗号分隔。
 # 例：LDR_HEADER_LINKS="GitHub|https://github.com/x/y, Telegram|https://t.me/z"
 # 留空则不显示 —— 不影响现有布局。
 HEADER_LINKS_RAW = _env(
     "LDR_HEADER_LINKS",
-    "GitHub|https://github.com/lowseekai/let-deals-radar,"
-    " Telegram 频道|https://t.me/LowSeekNews",
+    "📖 博客|https://869hr.uk/,"
+    " 📚 资源站|https://doc.869hr.uk/,"
+    " 📢 TG|https://t.me/tgmShareAI",
 )
 
 
