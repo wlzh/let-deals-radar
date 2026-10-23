@@ -171,13 +171,18 @@ _URL_RE = re.compile(r"https?://[^\s<>\"']+")
 
 
 def _footer_html() -> str:
-    """渲染页脚文案：先转义，再把裸 URL 转成可点击链接，整体包一层 div。
+    """渲染页脚文案（SITE_FOOTER 为站长本人在仓库变量里维护的可信配置）：
 
-    SITE_FOOTER 是纯文本配置（如「Telegram：https://t.me/xxx」），
-    直接转义输出会得到不可点击的裸链接，因此在这里做链接化。"""
+    - 值里已带 <a> 链接标记时，说明站长写的是现成 HTML，原样输出；
+      若像纯文本一样转义，页面上会把整坨标记当文本显示出来。
+    - 纯文本值（如「Telegram：https://t.me/xxx」）则先转义，再把裸 URL
+      转成可点击链接，避免出现不可点击的裸地址。
+    两种情况整体都包一层 div。"""
     raw = getattr(config, "SITE_FOOTER", "") or ""
     if not raw:
         return ""
+    if "<a" in raw.lower():
+        return "<div>%s</div>" % raw
     esc = html.escape(raw)
     linked = _URL_RE.sub(
         lambda m: ('<a href="%s" target="_blank" rel="noopener">%s</a>'
