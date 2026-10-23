@@ -353,7 +353,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
 
 <div class="card">
   <h3 style="margin:0 0 4px;font-size:15px">📌 推荐商家（站长自用 / 严选）</h3>
-  <p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格，部分链接含推广佣金（由商家承担，不影响你的价格）。</p>
+  <p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格。</p>
   <div class="feat">
     <a href="https://my.racknerd.com/aff.php?aff=15809" target="_blank" rel="noopener nofollow sponsored"><b>RackNerd</b><span>主打性价比的老牌美国 VPS，常年有年付特价机。</span><span class="go">去看看 →</span></a>
     <a href="https://app.cloudcone.com/?ref=13794" target="_blank" rel="noopener nofollow sponsored"><b>CloudCone</b><span>美国 VPS，活动时年付约 70 美金，弹性升降配。</span><span class="go">去看看 →</span></a>
