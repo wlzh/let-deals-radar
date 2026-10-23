@@ -174,6 +174,7 @@ SITE_TEMPLATE = r"""<!DOCTYPE html>
 <title>@@TITLE@@</title>
 <meta name="description" content="@@DESC@@">
 @@CANONICAL@@
+@@OGTAGS@@
 <!-- 站点图标：沿用论坛的 LS 品牌图标，保持视觉一致。
      ico 供浏览器标签页（多尺寸），PNG 供 Android/PWA 与 iOS 主屏。 -->
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -301,6 +302,13 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
   .hidesm{display:none}
   input[type=search]{min-width:100%}
 }
+
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:12px}
+.feat a{display:block;background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink);text-decoration:none}
+.feat a:hover{border-color:var(--accent);text-decoration:none}
+.feat b{font-size:13.5px}
+.feat span{display:block;color:var(--muted);font-size:12px;margin-top:2px;line-height:1.5}
+.feat .go{color:var(--accent);font-size:12px;margin-top:4px}
 </style>
 </head>
 <body>
@@ -317,6 +325,25 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
     @@HEADER_LINKS@@
   </div>
 </header>
+
+
+<div class="card">
+  <h3 style="margin:0 0 4px;font-size:15px">📌 推荐商家（站长自用 / 严选）</h3>
+  <p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格，部分链接含推广佣金（由商家承担，不影响你的价格）。</p>
+  <div class="feat">
+    <a href="https://my.racknerd.com/aff.php?aff=15809" target="_blank" rel="noopener nofollow sponsored"><b>RackNerd</b><span>主打性价比的老牌美国 VPS，常年有年付特价机。</span><span class="go">去看看 →</span></a>
+    <a href="https://app.cloudcone.com/?ref=13794" target="_blank" rel="noopener nofollow sponsored"><b>CloudCone</b><span>美国 VPS，活动时年付约 70 美金，弹性升降配。</span><span class="go">去看看 →</span></a>
+    <a href="https://www.dmit.io/aff.php?aff=21728" target="_blank" rel="noopener nofollow sponsored"><b>DMIT</b><span>高端线路代表，CN2 GIA / CMIN2，对国内访问友好。</span><span class="go">去看看 →</span></a>
+    <a href="https://bandwagonhost.com/aff.php?aff=84775" target="_blank" rel="noopener nofollow sponsored"><b>搬瓦工 BandwagonHost</b><span>老牌商家，CN2 GIA-E 线路口碑稳定，机房可切换。</span><span class="go">去看看 →</span></a>
+    <a href="https://clients.zgovps.com/?affid=1207" target="_blank" rel="noopener nofollow sponsored"><b>ZgoVPS</b><span>站长多年自用的小鸡，稳定省心。</span><span class="go">去看看 →</span></a>
+    <a href="https://www.vircs.com/welcome?vcd=61a4aae4" target="_blank" rel="noopener nofollow sponsored"><b>VIRCS</b><span>家宽落地机，住宅 IP 属性，适合需要原生 IP 的场景。</span><span class="go">去看看 →</span></a>
+    <a href="https://www.geelinx.com/aff/BLXJTGUH" target="_blank" rel="noopener nofollow sponsored"><b>Geelinx</b><span>到日本线路的 VPS，低延迟。</span><span class="go">去看看 →</span></a>
+    <a href="https://greencloudvps.com/billing/aff.php?aff=10419" target="_blank" rel="noopener nofollow sponsored"><b>GreenCloud</b><span>老牌商家，Budget KVM 年付特价常年有货，机房多。</span><span class="go">去看看 →</span></a>
+    <a href="https://lisahost.com/aff.php?aff=9424" target="_blank" rel="noopener nofollow sponsored"><b>丽萨主机 LisaHost</b><span>老牌主机商，线路与机房选择多。</span><span class="go">去看看 →</span></a>
+        <a href="https://layeronecloud.com/r/KMA9RZRD/" target="_blank" rel="noopener nofollow sponsored"><b>LayerOne</b><span>性价比 KVM 小鸡，LET 促销机常年有货。</span><span class="go">去看看 →</span></a>
+    <a href="https://www.voyracloud.com/?ref_code=GLGHABPA" target="_blank" rel="noopener nofollow sponsored"><b>VoyraCloud</b><span>主打住宅 IP 的云主机，原生 IP 场景适用。</span><span class="go">去看看 →</span></a>
+  </div>
+</div>
 
 <div class="card">
   <div class="controls">
@@ -669,13 +696,32 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
 
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     canonical = ""
+    ogtags = ""
     if config.SITE_URL:
         canonical = f'<link rel="canonical" href="{config.SITE_URL}/">'
+        _t = html.escape(config.SITE_TITLE)
+        _d = html.escape(config.SITE_DESC)
+        _img = f"{config.SITE_URL}/og-image.png"
+        ogtags = "\n".join([
+            '<meta property="og:type" content="website">',
+            f'<meta property="og:site_name" content="{_t}">',
+            f'<meta property="og:title" content="{_t}">',
+            f'<meta property="og:description" content="{_d}">',
+            f'<meta property="og:url" content="{config.SITE_URL}/">',
+            f'<meta property="og:image" content="{_img}">',
+            '<meta property="og:image:width" content="1200">',
+            '<meta property="og:image:height" content="630">',
+            '<meta name="twitter:card" content="summary_large_image">',
+            f'<meta name="twitter:title" content="{_t}">',
+            f'<meta name="twitter:description" content="{_d}">',
+            f'<meta name="twitter:image" content="{_img}">',
+        ])
 
     html_out = (SITE_TEMPLATE
                 .replace("@@TITLE@@", html.escape(config.SITE_TITLE))
                 .replace("@@DESC@@", html.escape(config.SITE_DESC, quote=True))
                 .replace("@@CANONICAL@@", canonical)
+                .replace("@@OGTAGS@@", ogtags)
                 .replace("@@DATA@@", _json_for_script(payload))
                 .replace("@@COUNT@@", str(payload.get("count", 0)))
                 .replace("@@GENERATED@@", generated)
@@ -684,7 +730,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
                 .replace("@@FXNOTE@@", html.escape(config.FX_NOTE))
                 .replace("@@HEADER_LINKS@@", _header_links_html())
                 .replace("@@FOOTER@@",
-                         config.SITE_FOOTER if config.SITE_FOOTER
+                         html.escape(config.SITE_FOOTER) if config.SITE_FOOTER
                          else ""))
 
     index_path = os.path.join(out_dir, "index.html")
@@ -723,7 +769,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
 
 # 需要随站点发布的图标文件
 ICON_FILES = ("favicon.ico", "icon-192.png", "icon-512.png",
-              "apple-touch-icon.png")
+              "apple-touch-icon.png", "og-image.png")
 
 
 def _copy_icons(out_dir: str, verbose: bool = True) -> None:
