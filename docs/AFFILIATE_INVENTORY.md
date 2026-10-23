@@ -27,7 +27,11 @@
 |---|---:|---|
 | godlike.host | 2 | [原帖](https://lowendtalk.com/discussion/221747/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9) |
 | linceris.com | 2 | [原帖](https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips) |
+| mailbig.net | 2 | [原帖](https://lowendtalk.com/discussion/222117/mailbig-halloween-sale-email-hosting-from-3-37-yr-25-recurring-off-let-exclusive) |
+| portal.cloudnium.net | 2 | [原帖](https://lowendtalk.com/discussion/222110/dallas-dedicated-dual-e5-2699v4-64gb-75-mo-recurring) |
+| quickservers.net | 2 | [原帖](https://lowendtalk.com/discussion/222165/big-ram-servers-raw-storage-monsters-and-dedicated-mac-minis-from-44-99) |
 | servury.com | 2 | [原帖](https://lowendtalk.com/discussion/220847/blackbox-2-vcpu-4-gb-50-gb-nvme-encrypted-ram-disk-100-anonymous-9-99-mo) |
+| vpshostingservice.co | 2 | [原帖](https://lowendtalk.com/discussion/222168/serverhost-ryzen-i9-vps-from-22-99-year-october-haunt) |
 | adminbolt.com | 1 | [原帖](https://lowendbox.com/blog/more-of-racknerd-adminbolt-heres-50-more-free-vps-10-lifetime-licenses/) |
 | ava.hosting | 1 | [原帖](https://lowendtalk.com/discussion/221167/ava-hosting-new-deploy-self-hosted-apps-cloud-apps-15-off-discount) |
 | bero-host.de | 1 | [原帖](https://lowendtalk.com/discussion/221713/bero-host-10th-anniversary-deals-epyc-turin-ryzen-9950x-ipv6-only-vps) |
@@ -40,6 +44,7 @@
 | cloudblast.io | 1 | [原帖](https://lowendtalk.com/discussion/221159/cloudblast-workers-are-live-app-platform-per-minute-billing-giveaway-usa-hk) |
 | colocrossing.com | 1 | [原帖](https://lowendtalk.com/discussion/219837/colocrossing-special-offers-dedicated-servers-from-just-25-month-limited-flash-offers) |
 | console.arct.cloud | 1 | [原帖](https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel) |
+| console.serverscamp.com | 1 | [原帖](https://lowendtalk.com/discussion/222400/serverscamp-new-simple-vps-starting-1-month) |
 | cubepath.com | 1 | [原帖](https://lowendtalk.com/discussion/221186/looking-for-a-hetzner-alternative-compare-our-cloud-vps) |
 | dartnode.com | 1 | [原帖](https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now) |
 | ethernetservers.com | 1 | [原帖](https://lowendtalk.com/discussion/221258/from-2-25-mo-10-gbps-kvm-vps-los-angeles-new-jersey-miami-london-frankfurt) |
@@ -47,56 +52,48 @@
 | flipperhost.com | 1 | [原帖](https://lowendbox.com/blog/get-cheap-hosting-in-la-ny-or-atlanta-from-flipperhost-only-29-99-year-for-a-2gb-vps/) |
 | hostaddon.com | 1 | [原帖](https://lowendtalk.com/discussion/220041/hostaddon-vps-1-2-10gbps-nvme-from-3-99-mo-25-off-30-locales-storage-streaming-vpn) |
 | hostdzire.com | 1 | [原帖](https://lowendtalk.com/discussion/222164/early-black-friday-sale-vps-dedicated-server-deals-starting-at-just-18-year) |
+| hostmayo.com | 1 | [原帖](https://lowendtalk.com/discussion/222007/usa-dedicated-servers-2xe5-2690v4-128gb-ddr4-100-00-mo) |
 | hostnamaste.com | 1 | [原帖](https://lowendtalk.com/discussion/222078/yearly-kvm-vps-in-ssd-raid10-ipv4-ipv6-since-2016-hostnamaste) |
 | infrawire.net | 1 | [原帖](https://lowendtalk.com/discussion/222403/infrawire-vps-now-in-turkey-10-gbps-linux-windows-starting-at-9-30-mo) |
+| just.hosting | 1 | [原帖](https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99) |
 | khanwebhost.com | 1 | [原帖](https://lowendtalk.com/discussion/221991/khanwebhost-canada-kvm-2gb-5-mo-texas-kvm-5-mo-7-global-locations-nat-vps-5-50-year) |
 | manager.systemfreaks.com | 1 | [原帖](https://lowendtalk.com/discussion/220609/systemfreaks-s3-object-storage-from-4-tb-unmetered-bandwidth-from-6-tb-singapore-16-tb) |
+| metricservers.co.uk | 1 | [原帖](https://lowendtalk.com/discussion/221719/west-midlands-dedicated-servers-kvm-gpu-colocation) |
 | my.d4networks.com | 1 | [原帖](https://lowendtalk.com/discussion/221558/d4-networks-4gb-kvm-80-120gb-nvme-49-year-renews-at-49-dallas-amsterdam-new-york) |
 | my.ipye.com | 1 | [原帖](https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com) |
 | my.privatebyte.com | 1 | [原帖](https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25) |
 | my.servitro.com | 1 | [原帖](https://lowendtalk.com/discussion/220866/12-year-vps-in-frankfurt-50-giveaway-servitro-s-another-let-post) |
 | nolimitcloud.eu | 1 | [原帖](https://lowendtalk.com/discussion/220998/nolimithost-storage-vps-launch-sale-hdd-nvme-kvm-vps-freebie-nl) |
 | nuxoa.de | 1 | [原帖](https://lowendtalk.com/discussion/222107/frankfurt-dedicated-servers-from-95-mo-ryzen-xeon-nuxoa) |
+| onlyservers.com | 1 | [原帖](https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers) |
+| panel.affordablebytes.com | 1 | [原帖](https://lowendbox.com/blog/high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month/) |
 | panel.nolimitcloud.eu | 1 | [原帖](https://lowendtalk.com/discussion/222157/nolimithost-budget-sale-offers-from-12-99-year-nvme-kvm-vps-freebie-de) |
 | portal.calibernode.com | 1 | [原帖](https://lowendtalk.com/discussion/221603/caliber-node-10-year-cloud-apps-dallas-nuremberg-singapore-new-bring-your-own-server) |
-| portal.cloudnium.net | 1 | [原帖](https://lowendbox.com/blog/early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium/) |
 | portal.orangevps.com | 1 | [原帖](https://lowendtalk.com/discussion/221869/vps-promo-10-10-50-off-claim-your-bonus-vcpu-ram-or-double-transfer-data) |
+| portal.packetra.com | 1 | [原帖](https://lowendtalk.com/discussion/221735/switzerland-dual-xeon-e5-dedicated-56-threads-64gb-no-kyc-btc-xmr-164-61-mo-187) |
 | portal.serverpoint.com | 1 | [原帖](https://lowendtalk.com/discussion/221564/new-amd-epyc-in-singapore-vault-storage-plans-a-100-cpu-option-and-our-popular-plans-are-back) |
-| quickservers.net | 1 | [原帖](https://lowendtalk.com/discussion/219781/6-dedicated-servers-under-65-dual-cpu-1gbps-unmetered-ddos-protection-available) |
+| prohosting24.de | 1 | [原帖](https://lowendtalk.com/discussion/221060/ph24-first-vps-deal-in-2026-flash-sale-epyc-7xx3) |
 | ravnix.gg | 1 | [原帖](https://lowendtalk.com/discussion/221937/ravnix-is-back-new-atlanta-location-upgraded-network-vps-offers-starting-at-14-year) |
+| reliablesite.net | 1 | [原帖](https://lowendtalk.com/discussion/222052/dedicated-performance-fast-deployment-servers-starting-at-49-mo) |
 | royal-server.ro | 1 | [原帖](https://lowendtalk.com/discussion/220060/royal-server-ro-kvm-vps-ryzen-9-9950x-intel-core-i9-10gbps-own-datacenter-since-2017) |
 | servers.guru | 1 | [原帖](https://lowendtalk.com/discussion/222136/servers-guru-netherlands-10gbps-30-off-recurring-vps-from-3-84) |
 | serverscamp.com | 1 | [原帖](https://lowendtalk.com/discussion/221289/serverscamp-database-tuned-cloud-25-free-test-credit) |
 | softshellweb.com | 1 | [原帖](https://lowendtalk.com/discussion/221165/softshellweb-from-9-95-yr-nvme-10-gbps-ddos-protection-2-bandwidth) |
+| solidvps.com | 1 | [原帖](https://lowendtalk.com/discussion/221418/ai-ready-vps-cloud-resources-28-ai-templates-cross-region-vrack-floating-ips-solid-ai) |
 | velohost.de | 1 | [原帖](https://lowendbox.com/blog/velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month/) |
 | virtbase.com | 1 | [原帖](https://lowendbox.com/blog/virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only/) |
+| wlx.hk | 1 | [原帖](https://lowendtalk.com/discussion/222143/wlx-hk-dedicated-servers-oct-promo-ryzen-9955hx-epyc-instant-setup) |
 
 ## 尚未确认购买入口
 
-- [25G Unmetered 30% lifetime discount - Dedicated Servers](https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers)
-- [ServerHost Ryzen/i9 VPS from $22.99/year - October Haunt](https://lowendtalk.com/discussion/222168/serverhost-ryzen-i9-vps-from-22-99-year-october-haunt)
 - [Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more](https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more)
 - [KVM VPS – From €6.99/year (~$8.03) – 512MB–16GB RAM – NVMe – 1Gbps – Amsterdam](https://lowendtalk.com/discussion/221311/kvm-vps-from-6-99-year-8-03-512mb-16gb-ram-nvme-1gbps-amsterdam)
-- [Big RAM Servers | Raw Storage Monsters | and Dedicated Mac Minis | from $44.99](https://lowendtalk.com/discussion/222165/big-ram-servers-raw-storage-monsters-and-dedicated-mac-minis-from-44-99)
 - [Only 6: UK Ryzen 5900X 4GB/100GB NVMe £6/mo | 9950X from £6 | Gold 6230 from £1.75 | Win £50 credit!](https://lowendtalk.com/discussion/221961/only-6-uk-ryzen-5900x-4gb-100gb-nvme-6-mo-9950x-from-6-gold-6230-from-1-75-win-50-credit)
-- [ServersCamp: new Simple VPS, starting €1/month](https://lowendtalk.com/discussion/222400/serverscamp-new-simple-vps-starting-1-month)
-- [MailBig Halloween Sale - Email Hosting From £3.37/yr - 25% Recurring OFF | LET Exclusive](https://lowendtalk.com/discussion/222117/mailbig-halloween-sale-email-hosting-from-3-37-yr-25-recurring-off-let-exclusive)
-- [WLX HK Dedicated Servers Oct Promo | Ryzen 9955HX & EPYC · Instant Setup](https://lowendtalk.com/discussion/222143/wlx-hk-dedicated-servers-oct-promo-ryzen-9955hx-epyc-instant-setup)
 - [TrumVPS | Vietnam VPS | 20% OFF with LOWEND20 | Starting at $14.80/Year | Bonus for LET Members](https://lowendtalk.com/discussion/219721/trumvps-vietnam-vps-20-off-with-lowend20-starting-at-14-80-year-bonus-for-let-members)
-- [ph24 first vps deal in 2026 + flash sale (EPYC 7XX3)](https://lowendtalk.com/discussion/221060/ph24-first-vps-deal-in-2026-flash-sale-epyc-7xx3)
 - [(UK) INTEL | SSD | RDNS | Arbor Anti DDOS | IPv4 & IPv6 /64 | UNMETERED BW](https://lowendtalk.com/discussion/221980/uk-intel-ssd-rdns-arbor-anti-ddos-ipv4-ipv6-64-unmetered-bw)
-- [(Mailbig.net) Email Hosting (Flash Deal) | Unlimited Mailbox @ $8.99/year](https://lowendtalk.com/discussion/221103/mailbig-net-email-hosting-flash-deal-unlimited-mailbox-8-99-year)
-- [(Switzerland) Dual Xeon E5 Dedicated | 56 Threads, 64GB | No KYC, BTC/XMR | €164.61/mo (~$187)](https://lowendtalk.com/discussion/221735/switzerland-dual-xeon-e5-dedicated-56-threads-64gb-no-kyc-btc-xmr-164-61-mo-187)
-- [ServerHost September Savings – OpenClaw VPS - Ryzen/i9 - KVM VPS from $16.99/YEAR](https://lowendtalk.com/discussion/220764/serverhost-september-savings-openclaw-vps-ryzen-i9-kvm-vps-from-16-99-year)
-- [Dallas Dedicated — Dual E5-2699v4 | 64GB | $75/mo Recurring](https://lowendtalk.com/discussion/222110/dallas-dedicated-dual-e5-2699v4-64gb-75-mo-recurring)
 - [(Update) K.N Cloud — LET Cloud VPS Offers in Miami, Frankfurt & Amsterdam | Hourly Billing](https://lowendtalk.com/discussion/221894/update-k-n-cloud-let-cloud-vps-offers-in-miami-frankfurt-amsterdam-hourly-billing)
-- [Dedicated Performance | Fast Deployment | Servers starting at $49/mo.](https://lowendtalk.com/discussion/222052/dedicated-performance-fast-deployment-servers-starting-at-49-mo)
 - [(WLX) Hong Kong Dedicated – Ryzen 9 9955HX (9950X-class) from $149/mo | Price Locked on Renewal](https://lowendtalk.com/discussion/221321/wlx-hong-kong-dedicated-ryzen-9-9955hx-9950x-class-from-149-mo-price-locked-on-renewal)
-- [(JUST.HOSTING) AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99](https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99)
-- [AI-Ready VPS + Cloud Resources | 28 AI Templates, Cross-Region vRack, Floating IPs & Solid AI](https://lowendtalk.com/discussion/221418/ai-ready-vps-cloud-resources-28-ai-templates-cross-region-vrack-floating-ips-solid-ai)
-- [USA Dedicated Servers –2xE5-2690v4 128GB DDR4 $100.00/mo](https://lowendtalk.com/discussion/222007/usa-dedicated-servers-2xe5-2690v4-128gb-ddr4-100-00-mo)
-- [West Midlands | Dedicated Servers | KVM | GPU | Colocation](https://lowendtalk.com/discussion/221719/west-midlands-dedicated-servers-kvm-gpu-colocation)
-- [High Ram, Low Prices? Must be an AffordableBytes Offer! Get a 6GB VPS for Only €3.49 / Month!](https://lowendbox.com/blog/high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month/)
 - [Nobody needs another SSH client. We made one anyway.](https://lowendtalk.com/discussion/219671/nobody-needs-another-ssh-client-we-made-one-anyway)
 
 补充每家后台提供的个人推广链接后，再核对域名、深链支持与商家归因规则。不猜测佣金率、Cookie 时长或账户归属。
+
