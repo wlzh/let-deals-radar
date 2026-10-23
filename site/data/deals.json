@@ -1,6 +1,6 @@
 {
   "source": "LowEndTalk Offers + LowEndBox",
-  "generated_at": "2026-10-23T15:49:21+00:00",
+  "generated_at": "2026-10-23T15:59:51+00:00",
   "count": 81,
   "by_source": {
     "let": 73,
@@ -9,6 +9,107 @@
   "deduped": 0,
   "source_failures": [],
   "records": [
+    {
+      "thread_id": "221896",
+      "source": "let",
+      "provider": "onlyservers.com",
+      "title": "25G Unmetered 30% lifetime discount - Dedicated Servers",
+      "url": "https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers",
+      "vendor_url": "https://onlyservers.com/dedicatedservers/instant-buy#range",
+      "author": "dan_onlyservers",
+      "posted": "Fri, 09 Oct 2026 14:24:18 +0000",
+      "age_days": 14,
+      "age_status": "ACTIVE",
+      "availability": "SOLD_OUT",
+      "replies": {
+        "reply_count": 45,
+        "vendor_reply_count": 2,
+        "status": "SOLD_OUT",
+        "source": "user",
+        "evidence": {
+          "status": "SOLD_OUT",
+          "author": "tanksock",
+          "is_vendor": false,
+          "datetime": "2026-10-19T18:42:13+00:00",
+          "match": " sold out",
+          "snippet": "l there be any EPYC servers be available before the offer ends? Currently, they seem to be sold out.",
+          "comment_id": "4892093",
+          "offset": 110
+        },
+        "vendor_signals": [],
+        "fetched_at": "2026-10-23T15:58:26+00:00"
+      },
+      "event_type": "sale",
+      "discount": {
+        "strength": "循环/永久 · 最高 30% off · 码 LETJHUWQ",
+        "percent_max": 30,
+        "recurring": true,
+        "codes": [
+          "LETJHUWQ"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": 384.0,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [
+          384.0,
+          96.0
+        ],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 150.5,
+          "currency": "$",
+          "cycle": "month"
+        },
+        {
+          "amount": 296.1,
+          "currency": "$",
+          "cycle": "month"
+        },
+        {
+          "amount": 304.85,
+          "currency": "$",
+          "cycle": "month"
+        },
+        {
+          "amount": 399.0,
+          "currency": "$",
+          "cycle": "month"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [
+        "Limited stock",
+        "sold out"
+      ],
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：96–384 GB 内存",
+      "display_price": "$150.5/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 150.5,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "查看补货与替代套餐",
+      "score": 69,
+      "annual_eur": 1661.52
+    },
     {
       "thread_id": "221797",
       "source": "let",
@@ -22,13 +123,13 @@
       "age_status": "ACTIVE",
       "availability": "ON_SALE",
       "replies": {
-        "reply_count": 58,
+        "reply_count": 59,
         "vendor_reply_count": 13,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:47:54+00:00"
+        "fetched_at": "2026-10-23T15:58:27+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -105,7 +206,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:47:55+00:00"
+        "fetched_at": "2026-10-23T15:58:28+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -214,7 +315,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:47:56+00:00"
+        "fetched_at": "2026-10-23T15:58:29+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -315,7 +416,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:47:58+00:00"
+        "fetched_at": "2026-10-23T15:58:31+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -387,7 +488,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:47:58+00:00"
+        "fetched_at": "2026-10-23T15:58:31+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -460,107 +561,6 @@
       "annual_eur": 24.84
     },
     {
-      "thread_id": "221896",
-      "source": "let",
-      "provider": "onlyservers.com",
-      "title": "25G Unmetered 30% lifetime discount - Dedicated Servers",
-      "url": "https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers",
-      "vendor_url": "https://onlyservers.com/dedicatedservers/instant-buy#range",
-      "author": "dan_onlyservers",
-      "posted": "Fri, 09 Oct 2026 14:24:18 +0000",
-      "age_days": 14,
-      "age_status": "ACTIVE",
-      "availability": "SOLD_OUT",
-      "replies": {
-        "reply_count": 44,
-        "vendor_reply_count": 2,
-        "status": "SOLD_OUT",
-        "source": "user",
-        "evidence": {
-          "status": "SOLD_OUT",
-          "author": "tanksock",
-          "is_vendor": false,
-          "datetime": "2026-10-19T18:42:13+00:00",
-          "match": " sold out",
-          "snippet": "l there be any EPYC servers be available before the offer ends? Currently, they seem to be sold out.",
-          "comment_id": "4892093",
-          "offset": 110
-        },
-        "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:00+00:00"
-      },
-      "event_type": "sale",
-      "discount": {
-        "strength": "循环/永久 · 最高 30% off · 码 LETJHUWQ",
-        "percent_max": 30,
-        "recurring": true,
-        "codes": [
-          "LETJHUWQ"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": 384.0,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [
-          384.0,
-          96.0
-        ],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 150.5,
-          "currency": "$",
-          "cycle": "month"
-        },
-        {
-          "amount": 296.1,
-          "currency": "$",
-          "cycle": "month"
-        },
-        {
-          "amount": 304.85,
-          "currency": "$",
-          "cycle": "month"
-        },
-        {
-          "amount": 399.0,
-          "currency": "$",
-          "cycle": "month"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [
-        "Limited stock",
-        "sold out"
-      ],
-      "confidence": 0.5,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：96–384 GB 内存",
-      "display_price": "$150.5/月",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 150.5,
-        "currency": "$",
-        "cycle": "month"
-      },
-      "purchase_label": "查看补货与替代套餐",
-      "score": 69,
-      "annual_eur": 1661.52
-    },
-    {
       "thread_id": "222168",
       "source": "let",
       "provider": "vpshostingservice.co",
@@ -579,7 +579,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:00+00:00"
+        "fetched_at": "2026-10-23T15:58:32+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -669,7 +669,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:02+00:00"
+        "fetched_at": "2026-10-23T15:58:34+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -776,7 +776,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:03+00:00"
+        "fetched_at": "2026-10-23T15:58:35+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -885,7 +885,7 @@
             "offset": 55
           }
         ],
-        "fetched_at": "2026-10-23T15:48:05+00:00"
+        "fetched_at": "2026-10-23T15:58:36+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -1048,7 +1048,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:07+00:00"
+        "fetched_at": "2026-10-23T15:58:39+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1138,7 +1138,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:07+00:00"
+        "fetched_at": "2026-10-23T15:58:39+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1203,7 +1203,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:08+00:00"
+        "fetched_at": "2026-10-23T15:58:39+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1270,7 +1270,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:09+00:00"
+        "fetched_at": "2026-10-23T15:58:40+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -1391,7 +1391,7 @@
             "offset": 39
           }
         ],
-        "fetched_at": "2026-10-23T15:48:10+00:00"
+        "fetched_at": "2026-10-23T15:58:41+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1521,7 +1521,7 @@
             "offset": 11
           }
         ],
-        "fetched_at": "2026-10-23T15:48:10+00:00"
+        "fetched_at": "2026-10-23T15:58:42+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -1632,7 +1632,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:10+00:00"
+        "fetched_at": "2026-10-23T15:58:42+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1707,7 +1707,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:12+00:00"
+        "fetched_at": "2026-10-23T15:58:43+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1804,7 +1804,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:12+00:00"
+        "fetched_at": "2026-10-23T15:58:43+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1900,7 +1900,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:12+00:00"
+        "fetched_at": "2026-10-23T15:58:44+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -2008,7 +2008,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:14+00:00"
+        "fetched_at": "2026-10-23T15:58:45+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2103,7 +2103,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:15+00:00"
+        "fetched_at": "2026-10-23T15:58:47+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -2214,7 +2214,7 @@
             "offset": 7
           }
         ],
-        "fetched_at": "2026-10-23T15:48:19+00:00"
+        "fetched_at": "2026-10-23T15:58:50+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -2324,7 +2324,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:21+00:00"
+        "fetched_at": "2026-10-23T15:58:52+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -2389,7 +2389,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:22+00:00"
+        "fetched_at": "2026-10-23T15:58:53+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -2477,7 +2477,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:22+00:00"
+        "fetched_at": "2026-10-23T15:58:53+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2635,7 +2635,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-10-23T15:48:24+00:00"
+        "fetched_at": "2026-10-23T15:58:55+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -2950,7 +2950,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:24+00:00"
+        "fetched_at": "2026-10-23T15:58:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3047,7 +3047,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:24+00:00"
+        "fetched_at": "2026-10-23T15:58:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3127,7 +3127,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:26+00:00"
+        "fetched_at": "2026-10-23T15:58:56+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3210,7 +3210,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:26+00:00"
+        "fetched_at": "2026-10-23T15:58:57+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3313,7 +3313,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:27+00:00"
+        "fetched_at": "2026-10-23T15:58:58+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3441,7 +3441,7 @@
             "offset": 28
           }
         ],
-        "fetched_at": "2026-10-23T15:48:27+00:00"
+        "fetched_at": "2026-10-23T15:58:58+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -3571,7 +3571,7 @@
             "offset": 27
           }
         ],
-        "fetched_at": "2026-10-23T15:48:29+00:00"
+        "fetched_at": "2026-10-23T15:59:00+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3655,7 +3655,7 @@
       "vendor_url": "https://my.d4networks.com/index.php?rp=/store/let-special/dallas-let-special",
       "author": "D4Networks",
       "posted": "Mon, 28 Sep 2026 15:58:40 +0000",
-      "age_days": 24,
+      "age_days": 25,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -3665,7 +3665,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:30+00:00"
+        "fetched_at": "2026-10-23T15:59:01+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3764,7 +3764,7 @@
           "offset": 111
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:31+00:00"
+        "fetched_at": "2026-10-23T15:59:02+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -3870,7 +3870,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:32+00:00"
+        "fetched_at": "2026-10-23T15:59:03+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3968,7 +3968,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:34+00:00"
+        "fetched_at": "2026-10-23T15:59:05+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4059,7 +4059,7 @@
             "offset": 803
           }
         ],
-        "fetched_at": "2026-10-23T15:48:35+00:00"
+        "fetched_at": "2026-10-23T15:59:06+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4182,7 +4182,7 @@
             "offset": 57
           }
         ],
-        "fetched_at": "2026-10-23T15:48:37+00:00"
+        "fetched_at": "2026-10-23T15:59:08+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -4321,7 +4321,7 @@
             "offset": 222
           }
         ],
-        "fetched_at": "2026-10-23T15:48:38+00:00"
+        "fetched_at": "2026-10-23T15:59:10+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4429,7 +4429,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:39+00:00"
+        "fetched_at": "2026-10-23T15:59:10+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4526,7 +4526,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:39+00:00"
+        "fetched_at": "2026-10-23T15:59:10+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4654,7 +4654,7 @@
             "offset": 52
           }
         ],
-        "fetched_at": "2026-10-23T15:48:40+00:00"
+        "fetched_at": "2026-10-23T15:59:12+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4745,7 +4745,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:42+00:00"
+        "fetched_at": "2026-10-23T15:59:13+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4812,7 +4812,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:44+00:00"
+        "fetched_at": "2026-10-23T15:59:16+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -4906,7 +4906,7 @@
             "offset": 31
           }
         ],
-        "fetched_at": "2026-10-23T15:48:47+00:00"
+        "fetched_at": "2026-10-23T15:59:19+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5010,7 +5010,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:48+00:00"
+        "fetched_at": "2026-10-23T15:59:20+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5102,7 +5102,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:48+00:00"
+        "fetched_at": "2026-10-23T15:59:21+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5194,7 +5194,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:48+00:00"
+        "fetched_at": "2026-10-23T15:59:21+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5304,7 +5304,7 @@
           "offset": 43
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:49+00:00"
+        "fetched_at": "2026-10-23T15:59:21+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5399,7 +5399,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:50+00:00"
+        "fetched_at": "2026-10-23T15:59:23+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5486,7 +5486,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:53+00:00"
+        "fetched_at": "2026-10-23T15:59:26+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5589,7 +5589,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:53+00:00"
+        "fetched_at": "2026-10-23T15:59:26+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -5675,7 +5675,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:53+00:00"
+        "fetched_at": "2026-10-23T15:59:26+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5782,7 +5782,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:55+00:00"
+        "fetched_at": "2026-10-23T15:59:27+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -5885,7 +5885,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:56+00:00"
+        "fetched_at": "2026-10-23T15:59:29+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5986,7 +5986,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:57+00:00"
+        "fetched_at": "2026-10-23T15:59:30+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6058,7 +6058,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:59+00:00"
+        "fetched_at": "2026-10-23T15:59:32+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6151,7 +6151,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:48:59+00:00"
+        "fetched_at": "2026-10-23T15:59:32+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6257,7 +6257,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:01+00:00"
+        "fetched_at": "2026-10-23T15:59:34+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6353,7 +6353,7 @@
             "offset": 31
           }
         ],
-        "fetched_at": "2026-10-23T15:49:01+00:00"
+        "fetched_at": "2026-10-23T15:59:34+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6445,7 +6445,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:01+00:00"
+        "fetched_at": "2026-10-23T15:59:34+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6531,7 +6531,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:07+00:00"
+        "fetched_at": "2026-10-23T15:59:39+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6631,7 +6631,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:07+00:00"
+        "fetched_at": "2026-10-23T15:59:39+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6732,7 +6732,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:09+00:00"
+        "fetched_at": "2026-10-23T15:59:41+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6821,7 +6821,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:12+00:00"
+        "fetched_at": "2026-10-23T15:59:44+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6902,7 +6902,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:15+00:00"
+        "fetched_at": "2026-10-23T15:59:46+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7000,7 +7000,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:16+00:00"
+        "fetched_at": "2026-10-23T15:59:47+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7105,7 +7105,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:16+00:00"
+        "fetched_at": "2026-10-23T15:59:47+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7188,7 +7188,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:21+00:00"
+        "fetched_at": "2026-10-23T15:59:51+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -7954,7 +7954,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-23T15:49:04+00:00"
+        "fetched_at": "2026-10-23T15:59:37+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -8033,7 +8033,7 @@
             "offset": 17
           }
         ],
-        "fetched_at": "2026-10-23T15:49:18+00:00"
+        "fetched_at": "2026-10-23T15:59:48+00:00"
       },
       "event_type": "regular",
       "discount": {
