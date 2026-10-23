@@ -429,7 +429,9 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
   <div>@@FXNOTE@@</div>
   <div>库存与价格以厂商官网为准；标注「待确认」表示未能自动验证。</div>
   @@FOOTER@@
+  <div><span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人</span> | <span id="busuanzi_container_site_pv">访问量 <span id="busuanzi_value_site_pv"></span> 次</span></div>
 </footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </div>
 
