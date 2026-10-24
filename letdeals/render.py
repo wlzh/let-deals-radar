@@ -217,6 +217,8 @@ def _merchant_links_html():
         ("Servury", "https://servury.com/", "查看零知识加密 VPS 套餐与隐私方案"),
         ("Royal Server", "https://royal-server.ro/", "查看罗马尼亚机房 KVM 套餐与库存"),
         ("ReliableSite", "https://www.reliablesite.net/", "查看美国独服与裸金属服务器套餐"),
+        ("AdminBolt", "https://adminbolt.com/", "查看共享主机与 VPS 套餐活动"),
+        ("SoftShellWeb", "https://softshellweb.com/", "查看 VPS 套餐与长期循环优惠"),
     ]
     links = []
     for name, url, desc in entries:
