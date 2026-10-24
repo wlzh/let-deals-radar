@@ -71,6 +71,9 @@ DEFAULTS: dict[str, object] = {
     "layeronecloud.com": "https://layeronecloud.com/r/KMA9RZRD/",
     "svr4u.com": "https://billing.svr4u.com/aff.php?aff=56",
     "deluxhost.net": {"param": "ref", "value": "4L64TH55"},
+    "ethernetservers.com": "https://www.ethernetservers.com/aff.php?aff=3294",
+    "nolimitcloud.eu": "https://panel.nolimitcloud.eu/aff.php?t=d5b7f82f9b30fda818d044fd4760126b",
+    "hostdare.com": "https://bill.hostdare.com/aff.php?aff=4796",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
