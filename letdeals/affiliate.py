@@ -83,6 +83,7 @@ DEFAULTS: dict[str, object] = {
     "cloudnium.net": {"param": "affid", "value": "359"},
     "ava.hosting": "https://my.ava.hosting/aff.php?aff=15927",
     "aspirehosting.net": "https://billing.aspirehosting.net/aff.php?aff=81",
+    "fiberstate.com": "https://billing.fiberstate.com/aff.php?aff=523",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
