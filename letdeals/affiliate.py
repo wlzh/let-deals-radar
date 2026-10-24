@@ -90,6 +90,9 @@ DEFAULTS: dict[str, object] = {
     "just.hosting": {"param": "ref", "value": "382103"},
     "infrawire.net": {"param": "aff", "value": "81"},
     "hostaddon.com": "https://www.hostaddon.com/clients/aff.php?aff=47",
+    "systemfreaks.com": {"param": "a", "value": "MTAwMg=="},
+    "privatebyte.com": {"param": "ref", "value": "PBT4TBQY"},
+    "khanwebhost.com": "https://khanwebhost.com/aff.php?aff=239",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
