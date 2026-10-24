@@ -91,9 +91,9 @@ def test_closed_offer_has_non_urgent_call_to_action():
 def test_page_conversion_controls_and_single_affiliate_source(tmp_path):
     render.build_site({"records": [], "count": 0}, tmp_path, verbose=False)
     page = (tmp_path / "index.html").read_text()
-    for text in ("id=\"budget\"", "id=\"location\"", "data-preset=\"budget\"", "核对套餐与优惠码", "可能为本站带来佣金"):
+    for text in ("id=\"budget\"", "id=\"location\"", "data-preset=\"budget\"", "核对套餐与优惠码", "以下为长期在用的商家，通过链接下单可享与官网相同的价格。", "可能为本站带来佣金"):
         assert text in page
-    assert "长期在用" not in page and "常年有货" not in page
+    assert "常年有货" not in page
     assert "lowseek.ai/d/" not in page
     assert "@@MERCHANTS@@" not in page
 
