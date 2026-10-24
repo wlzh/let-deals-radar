@@ -94,6 +94,8 @@ DEFAULTS: dict[str, object] = {
     "privatebyte.com": {"param": "ref", "value": "PBT4TBQY"},
     "khanwebhost.com": "https://khanwebhost.com/aff.php?aff=239",
     "metricservers.co.uk": "https://metricservers.co.uk/aff.php?aff=2",
+    "orangevps.com": "https://portal.orangevps.com/aff.php?aff=503",
+    "servitro.com": "https://my.servitro.com/aff.php?aff=235",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
