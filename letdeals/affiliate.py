@@ -96,6 +96,9 @@ DEFAULTS: dict[str, object] = {
     "metricservers.co.uk": "https://metricservers.co.uk/aff.php?aff=2",
     "orangevps.com": "https://portal.orangevps.com/aff.php?aff=503",
     "servitro.com": "https://my.servitro.com/aff.php?aff=235",
+    "servury.com": "https://servury.com/ref/gxjdian",
+    "royal-server.ro": "https://royaldata.ro/aff.php?aff=9",
+    "reliablesite.net": "https://payments.reliablesite.net/aff.php?aff=2285",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
@@ -210,6 +213,11 @@ def rewrite(vendor_url: str | None,
     table = _load() if mapping is None else mapping
     if not table:
         return _strip_foreign(vendor_url)
+
+    # 已是站长自己的整体替换型推广链接时原样返回（幂等）：跨域名落地时
+    # 链接域名与配置键不同，不能再按域名匹配，更不能被剥参数逻辑误伤。
+    if vendor_url in {v for v in table.values() if isinstance(v, str)}:
+        return vendor_url
 
     cfg, _hit = _match(vendor_url, table)
     if cfg is None:
