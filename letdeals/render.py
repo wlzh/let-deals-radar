@@ -486,7 +486,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="aff-quick"><b>直达商家活动</b> @@AFF_SHORTCUTS@@</div>
   <div class="quick"><button type="button" data-preset="budget">找低预算年付</button><button type="button" data-preset="new">看最近发布</button><button type="button" data-preset="sale">看标注在售</button><button type="button" id="reset">重置筛选</button></div>
   <div class="merchants"><h3 class="merchants-title">已有心仪商家</h3><p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格。</p><div class="feat">@@MERCHANTS@@</div></div>
-  <p class="disclosure">价格、续费与优惠资格以结算页为准。</p>
+  <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
 </section>
 
 <div class="card">
