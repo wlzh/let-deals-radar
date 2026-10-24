@@ -395,7 +395,9 @@ def test_build_record_includes_vendor_url():
         "description": '<p>Deals!</p><a href="https://dartnode.com">官网</a>',
     }
     r = build_record(item)
-    assert r["vendor_url"] == "https://dartnode.com"
+    # DartNode 已配置参数型推广（aff=LazyMonkey767）：vendor_url 取自原始
+    # HTML 后按 affiliate 配置改写为带推广参数的链接（设计如此）。
+    assert r["vendor_url"] == "https://dartnode.com?aff=LazyMonkey767"
 
 
 def test_vendor_url_prefers_offer_page_over_homepage():
