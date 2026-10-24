@@ -214,6 +214,9 @@ def _merchant_links_html():
         ("MetricServers", "https://metricservers.co.uk/", "查看英国机房套餐与当前库存"),
         ("OrangeVPS", "https://orangevps.com/", "查看 NVMe 套餐与年付活动"),
         ("Servitro", "https://servitro.com/", "查看 Ryzen 与 EPYC 套餐活动"),
+        ("Servury", "https://servury.com/", "查看零知识加密 VPS 套餐与隐私方案"),
+        ("Royal Server", "https://royal-server.ro/", "查看罗马尼亚机房 KVM 套餐与库存"),
+        ("ReliableSite", "https://www.reliablesite.net/", "查看美国独服与裸金属服务器套餐"),
     ]
     links = []
     for name, url, desc in entries:
