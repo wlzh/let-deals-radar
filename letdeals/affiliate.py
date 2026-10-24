@@ -87,6 +87,9 @@ DEFAULTS: dict[str, object] = {
     "centrixnodes.net": "https://billing.centrixnodes.net/aff.php?aff=109",
     "flipperhost.com": "https://www.flipperhost.com/billing/aff.php?aff=386",
     "hostnamaste.com": "https://www.hostnamaste.com/clients/aff.php?aff=387",
+    "just.hosting": {"param": "ref", "value": "382103"},
+    "infrawire.net": {"param": "aff", "value": "81"},
+    "hostaddon.com": "https://www.hostaddon.com/clients/aff.php?aff=47",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
