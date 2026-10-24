@@ -86,6 +86,7 @@ DEFAULTS: dict[str, object] = {
     "fiberstate.com": "https://billing.fiberstate.com/aff.php?aff=523",
     "centrixnodes.net": "https://billing.centrixnodes.net/aff.php?aff=109",
     "flipperhost.com": "https://www.flipperhost.com/billing/aff.php?aff=386",
+    "hostnamaste.com": "https://www.hostnamaste.com/clients/aff.php?aff=387",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
