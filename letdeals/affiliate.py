@@ -101,6 +101,7 @@ DEFAULTS: dict[str, object] = {
     "reliablesite.net": "https://payments.reliablesite.net/aff.php?aff=2285",
     "adminbolt.com": "https://billing.adminbolt.com/aff.php?aff=13",
     "softshellweb.com": "https://softshellweb.com/client/aff.php?aff=504",
+    "solidvps.com": "https://my.solidvps.com/aff.php?aff=758",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
