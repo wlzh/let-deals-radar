@@ -80,6 +80,9 @@ DEFAULTS: dict[str, object] = {
     "tier.net": "https://billing.tier.net/aff.php?aff=369",
     "colocrossing.com": "https://cloud.colocrossing.com/aff.php?aff=2253",
     "budgetvm.com": {"param": "affid", "value": "23706"},
+    "cloudnium.net": {"param": "affid", "value": "359"},
+    "ava.hosting": "https://my.ava.hosting/aff.php?aff=15927",
+    "aspirehosting.net": "https://billing.aspirehosting.net/aff.php?aff=81",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
