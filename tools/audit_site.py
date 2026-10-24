@@ -31,7 +31,12 @@ def audit(root):
     parser.feed(page)
     mapping = affiliate._load()
     for domain in affiliate.DEFAULTS:
-        matches = [url for url in parser.urls if affiliate._match(url, mapping)[1] == domain]
+        cfg = mapping.get(domain)
+        # 整体替换型推广链接可能落在与配置键不同的域名上（如 royaldata.ro），
+        # 页面上出现该链接本身即视为该商家的推广入口已就位。
+        matches = [url for url in parser.urls
+                   if affiliate._match(url, mapping)[1] == domain
+                   or (isinstance(cfg, str) and url == cfg)]
         assert matches, f"Missing merchant affiliate entry: {domain}"
         assert all(affiliate.rewrite(url) == url for url in matches), f"Wrong merchant ID: {domain}"
     covered = 0
