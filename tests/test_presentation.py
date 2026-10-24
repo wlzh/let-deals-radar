@@ -107,11 +107,11 @@ def test_missing_source_does_not_overwrite_site(monkeypatch):
     assert cli.main(["--quiet"]) == 1
 
 
-def test_affiliate_audit_preserves_all_fourteen_merchants(tmp_path, monkeypatch):
+def test_affiliate_audit_preserves_all_merchants(tmp_path, monkeypatch):
     from tools.audit_site import audit
     monkeypatch.setattr(render.config, "SITE_URL", "https://vps.869hr.uk")
     render.build_site({"records": [{"title": "[SVR4U] VPS", "url": "https://lowendtalk.com/1"}], "count": 1}, tmp_path, verbose=False)
-    assert audit(tmp_path)["affiliate_merchants"] == 14
+    assert audit(tmp_path)["affiliate_merchants"] == len(affiliate.DEFAULTS)
 
 
 def test_coupon_case_is_not_changed():
