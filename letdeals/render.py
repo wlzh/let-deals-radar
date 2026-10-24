@@ -211,6 +211,7 @@ def _merchant_links_html():
         ("SystemFreaks", "https://manager.systemfreaks.com/", "查看欧洲机房套餐与促销"),
         ("PrivateByte", "https://privatebyte.com/", "查看当前套餐与库存状态"),
         ("KhanWebHost", "https://khanwebhost.com/", "查看加拿大机房套餐与活动"),
+        ("MetricServers", "https://metricservers.co.uk/", "查看英国机房套餐与当前库存"),
     ]
     links = []
     for name, url, desc in entries:
