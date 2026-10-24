@@ -99,6 +99,8 @@ DEFAULTS: dict[str, object] = {
     "servury.com": "https://servury.com/ref/gxjdian",
     "royal-server.ro": "https://royaldata.ro/aff.php?aff=9",
     "reliablesite.net": "https://payments.reliablesite.net/aff.php?aff=2285",
+    "adminbolt.com": "https://billing.adminbolt.com/aff.php?aff=13",
+    "softshellweb.com": "https://softshellweb.com/client/aff.php?aff=504",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
