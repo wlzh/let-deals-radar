@@ -212,6 +212,8 @@ def _merchant_links_html():
         ("PrivateByte", "https://privatebyte.com/", "查看当前套餐与库存状态"),
         ("KhanWebHost", "https://khanwebhost.com/", "查看加拿大机房套餐与活动"),
         ("MetricServers", "https://metricservers.co.uk/", "查看英国机房套餐与当前库存"),
+        ("OrangeVPS", "https://orangevps.com/", "查看 NVMe 套餐与年付活动"),
+        ("Servitro", "https://servitro.com/", "查看 Ryzen 与 EPYC 套餐活动"),
     ]
     links = []
     for name, url, desc in entries:
