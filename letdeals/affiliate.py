@@ -78,6 +78,7 @@ DEFAULTS: dict[str, object] = {
     "dartnode.com": {"param": "aff", "value": "LazyMonkey767"},
     "bero-host.de": "https://bero-host.de/affiliate/TGdu8zEWPF",
     "tier.net": "https://billing.tier.net/aff.php?aff=369",
+    "colocrossing.com": "https://cloud.colocrossing.com/aff.php?aff=2253",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
