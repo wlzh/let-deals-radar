@@ -74,6 +74,8 @@ DEFAULTS: dict[str, object] = {
     "ethernetservers.com": "https://www.ethernetservers.com/aff.php?aff=3294",
     "nolimitcloud.eu": "https://panel.nolimitcloud.eu/aff.php?t=d5b7f82f9b30fda818d044fd4760126b",
     "hostdare.com": "https://bill.hostdare.com/aff.php?aff=4796",
+    "linceris.com": "https://dashboard.linceris.com/aff.php?aff=28",
+    "dartnode.com": {"param": "aff", "value": "LazyMonkey767"},
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
