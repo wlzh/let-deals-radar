@@ -93,6 +93,7 @@ DEFAULTS: dict[str, object] = {
     "systemfreaks.com": {"param": "a", "value": "MTAwMg=="},
     "privatebyte.com": {"param": "ref", "value": "PBT4TBQY"},
     "khanwebhost.com": "https://khanwebhost.com/aff.php?aff=239",
+    "metricservers.co.uk": "https://metricservers.co.uk/aff.php?aff=2",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
