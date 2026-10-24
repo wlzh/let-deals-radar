@@ -76,6 +76,8 @@ DEFAULTS: dict[str, object] = {
     "hostdare.com": "https://bill.hostdare.com/aff.php?aff=4796",
     "linceris.com": "https://dashboard.linceris.com/aff.php?aff=28",
     "dartnode.com": {"param": "aff", "value": "LazyMonkey767"},
+    "bero-host.de": "https://bero-host.de/affiliate/TGdu8zEWPF",
+    "tier.net": "https://billing.tier.net/aff.php?aff=369",
     # 待注册补齐：deluxhost.net 及其余数据中厂商
 }
 
