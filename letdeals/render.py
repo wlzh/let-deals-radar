@@ -219,6 +219,7 @@ def _merchant_links_html():
         ("ReliableSite", "https://www.reliablesite.net/", "查看美国独服与裸金属服务器套餐"),
         ("AdminBolt", "https://adminbolt.com/", "查看共享主机与 VPS 套餐活动"),
         ("SoftShellWeb", "https://softshellweb.com/", "查看 VPS 套餐与长期循环优惠"),
+        ("SolidVPS", "https://solidvps.com/", "查看美国机房 VPS 套餐与阶梯返佣"),
     ]
     links = []
     for name, url, desc in entries:
