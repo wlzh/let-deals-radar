@@ -32,6 +32,15 @@ Variable `LDR_VERIFY_LIVE=true` 开启发布等待与验收，`LDR_SITE_URL` 必
 参考：[GitHub 事件与定时调度](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)、
 [启用工作流及 fork 默认行为](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows)。
 
+### 2026-10-25 验证记录
+
+- 已同步 `origin/main`，确认 fork、默认分支 `main`、仓库 Actions 与工作流均启用。
+- 重新启用工作流并实际修改 cron 为每 5 分钟进行短时测试，仍未观察到 `schedule` 运行；
+  这不足以判断 fork 不支持定时运行，也不能确定 GitHub 调度服务的具体故障原因。
+- [手动运行 40163248884](https://github.com/wlzh/let-deals-radar/actions/runs/40163248884) 成功，
+  260 项测试、真实抓取、提交回主仓库、Cloudflare Pages 与线上三文件比对全部通过。
+- 已恢复正式每天北京时间 09:23，未创建独立调度仓库、未解除 fork，原生定时触发仍待验收。
+
 ---
 
 ## 第 0 步：本地确认（已完成 ✅）

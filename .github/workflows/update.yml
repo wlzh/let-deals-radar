@@ -8,8 +8,8 @@ name: Update deals
 
 on:
   schedule:
-    # Temporary native-schedule acceptance test; restore daily after a schedule run.
-    - cron: '*/5 * * * *'
+    # Daily at 09:23 Asia/Shanghai. Native schedule also works in enabled forks.
+    - cron: '23 1 * * *'
   workflow_dispatch:
     inputs:
       with_replies:
