@@ -32,6 +32,10 @@ on:
       REPO_PUSH_KEY:
         description: 'Write-enabled deploy key limited to target_repository'
         required: true
+    outputs:
+      refreshed_sha:
+        description: 'Original repository revision after refreshing generated files'
+        value: ${{ jobs.update.outputs.refreshed_sha }}
   workflow_dispatch:
     inputs:
       with_replies:
@@ -55,6 +59,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      refreshed_sha: ${{ steps.publish.outputs.sha }}
 
     steps:
       - name: Checkout
@@ -116,8 +122,10 @@ jobs:
           if-no-files-found: error
 
       - name: Commit refreshed data
+        id: publish
         run: |
           bash deploy/commit_refresh.sh
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       # 可选：推送到自有服务器（配置 LDR_DEPLOY_HOST 后自动启用）
       - name: Deploy to own server
