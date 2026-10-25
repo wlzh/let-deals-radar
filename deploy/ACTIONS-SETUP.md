@@ -2,6 +2,35 @@
 
 按顺序做，约 15 分钟。**每一步都有验证点**，失败时能立刻定位。
 
+## 当前站点与 fork 定时任务
+
+`wlzh/let-deals-radar` 是 fork，**同样支持原生 `schedule`，不要求另建仓库**。
+GitHub 在 fork 时默认禁用定时工作流，需要在自己的仓库启用，而不是只查看上游的运行记录。
+
+```bash
+gh workflow enable update.yml -R wlzh/let-deals-radar
+gh api repos/wlzh/let-deals-radar/actions/workflows/update.yml --jq .state
+gh run list -R wlzh/let-deals-radar --event schedule --limit 10
+```
+
+验收必须出现 `event=schedule` 的实际运行；手动 `workflow_dispatch` 成功不代表定时器已生效。
+排查时确认默认分支为 `main`、工作流文件位于默认分支且已启用。
+修改实际 cron 表达式可重新注册调度；仅修改注释不等于更改 cron。
+临时高频测试结束后应恢复正式频率，不把几分钟未运行直接判为永久故障。
+GitHub 的调度可能延迟或丢弃，公共仓库长期无活动也可能被禁用。
+
+当前 `vps.869hr.uk` 由 Cloudflare Pages 跟随主仓库 `main` 部署。
+`Deploy to own server` 未配置时跳过正常，不代表没有 Pages 部署。
+Variable `LDR_VERIFY_LIVE=true` 开启发布等待与验收，`LDR_SITE_URL` 必须指向该仓库的站点。
+工作流比对线上 `index.html`、`data/deals.json` 和 `sitemap.xml` 与本次产物，
+超时不一致会失败，避免将“提交成功”误报为“网站更新成功”。
+
+抓取期间 `main` 若被其他提交推进，`deploy/commit_refresh.sh` 拒绝推送过时产物。
+此时请重新触发最新 `main` 的工作流，不要强制推送或把旧构建覆盖到新代码之上。
+
+参考：[GitHub 事件与定时调度](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)、
+[启用工作流及 fork 默认行为](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows)。
+
 ---
 
 ## 第 0 步：本地确认（已完成 ✅）
@@ -183,8 +212,9 @@ RECENT_DAYS: ${{ github.event.inputs.recent_days || '90' }}
 可在 Actions 页面点 **Re-run** 重试。
 
 **Q：`Commit refreshed data` 失败（push 被拒）？**
-通常是同时有别的提交。工作流已设 `concurrency` 避免并发，
-若仍发生，点 **Re-run** 即可。
+通常是同时有别的提交。工作流已设 `concurrency` 避免同工作流并发，
+但不能阻止开发者推送。请用 **Run workflow** 重新触发最新 `main`，
+不要强推，也不要复用旧代码构建的产物。
 
 **Q：想改运行频率？**
 编辑 `.github/workflows/update.yml` 的 cron：

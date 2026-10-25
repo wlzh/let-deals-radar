@@ -19,7 +19,8 @@ def git(repo, *args):
 
 
 @pytest.fixture
-def refresh_repo(tmp_path):
+def refresh_repo(tmp_path, monkeypatch):
+    monkeypatch.delenv("BUILD_SOURCE_SHA", raising=False)
     remote = tmp_path / "remote.git"
     subprocess.run(["git", "init", "--bare", str(remote)], check=True, capture_output=True)
     work = tmp_path / "work"
@@ -80,6 +81,12 @@ def test_refresh_rejects_unexpected_staged_source(refresh_repo):
     git(work, "add", "source.py")
     assert run_refresh(work).returncode != 0
     assert git(remote, "show", "main:source.py") == "initial"
+
+
+def test_refresh_rejects_wrong_build_revision(refresh_repo, monkeypatch):
+    work, _ = refresh_repo
+    monkeypatch.setenv("BUILD_SOURCE_SHA", "0" * 40)
+    assert run_refresh(work).returncode != 0
 
 
 @pytest.mark.parametrize("mode", ["match", "stale", "unreachable"])

@@ -203,6 +203,9 @@ LEB 是编辑博客，会混入大量非优惠内容（如「微软砍存储」�
 
 完整指南见 **[deploy/DEPLOY.md](deploy/DEPLOY.md)**。
 
+Fork 也支持原生定时 Actions，不必须另建仓库。启用、真实 `schedule` 验收与当前
+Cloudflare Pages 发布检查见 [Actions 上线清单](deploy/ACTIONS-SETUP.md#当前站点与-fork-定时任务)。
+
 两种方案：
 
 | 方案 | 抓取方 | 网站 |
