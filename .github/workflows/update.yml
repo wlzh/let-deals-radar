@@ -32,6 +32,9 @@ on:
       REPO_PUSH_KEY:
         description: 'Write-enabled deploy key limited to target_repository'
         required: true
+      LDR_DEPLOY_SSH_KEY:
+        description: 'Optional existing own-server deployment key'
+        required: false
     outputs:
       refreshed_sha:
         description: 'Original repository revision after refreshing generated files'
