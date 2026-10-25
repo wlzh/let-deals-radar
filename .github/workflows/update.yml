@@ -8,8 +8,8 @@ name: Update deals
 
 on:
   schedule:
-    # Daily at 09:23 Asia/Shanghai. Native schedule also works in enabled forks.
-    - cron: '23 1 * * *'
+    # Temporary acceptance window, registered by the repository owner's account.
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       with_replies:
