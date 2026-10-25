@@ -19,6 +19,8 @@ on:
   schedule:
     # Daily at 09:23 Asia/Shanghai; keep cron edits attributed to the active owner.
     - cron: '23 1 * * *'
+    # Temporary probe: 2026-10-25 14:03 Asia/Shanghai; remove after observation.
+    - cron: '3 6 25 10 *'
   workflow_dispatch:
     inputs:
       with_replies:
