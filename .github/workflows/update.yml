@@ -1,6 +1,5 @@
 name: Update deals
 
-# 2026-10-25：定时重注册复验——Disable→Enable 后补提交，逼 GitHub 重新注册 schedule（内容逻辑未改）
 # 定时抓取 → 生成站点 → 提交回仓库 →（可选）推送到自有服务器
 #
 # 为什么用 GitHub Actions 抓取而不是自有服务器：
@@ -9,8 +8,8 @@ name: Update deals
 
 on:
   schedule:
-    # 每天一次（UTC 01:23，约北京时间 09:23）。GitHub 的 cron 在高负载时可能延后几分钟，属正常。
-    - cron: '23 1 * * *'
+    # Temporary native-schedule acceptance test; restore daily after a schedule run.
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       with_replies:
@@ -38,6 +37,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Record build source
+        run: echo "BUILD_SOURCE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -89,39 +93,7 @@ jobs:
 
       - name: Commit refreshed data
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # forum_posted.json 是幂等依据，必须提交；但它只在真正发过帖时
-          # 才存在。文件不存在时若直接 git add 会报
-          # "pathspec did not match"，因此先判断再添加。
-          add_all() {
-            git add data/deals.json data/deals.md site/
-            if [ -f data/forum_posted.json ]; then
-              git add data/forum_posted.json
-            fi
-          }
-
-          add_all
-          if git diff --staged --quiet; then
-            echo "无变化，跳过提交"
-            exit 0
-          fi
-          git commit -m "chore: refresh deals"
-
-          # 远端可能已被另一次运行推进（手动重跑、cron 延迟等），
-          # 直接 push 会因非快进而被拒。做法：把 HEAD 移到远端最新提交，
-          # 保留我们刚生成的数据（这些是产物，永远以最新一次为准），
-          # 在其之上重新提交，从而始终是快进推送。
-          git fetch origin main
-          git reset --soft origin/main
-          add_all
-          if git diff --staged --quiet; then
-            echo "与远端一致，无需提交"
-          else
-            git commit -m "chore: refresh deals"
-          fi
-          git push
+          bash deploy/commit_refresh.sh
 
       # 可选：推送到自有服务器（配置 LDR_DEPLOY_HOST 后自动启用）
       - name: Deploy to own server
@@ -145,3 +117,9 @@ jobs:
           rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -p $PORT" \
             site/ "$USER@$HOST:$TARGET/"
           echo "已推送到 $USER@$HOST:$TARGET/"
+
+      - name: Verify public deployment
+        if: ${{ vars.LDR_VERIFY_LIVE == 'true' }}
+        env:
+          LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
+        run: python -m tools.verify_live --url "$LDR_SITE_URL" --attempts 40 --delay 15
