@@ -88,6 +88,7 @@ jobs:
         run: python -m pytest tests -q
 
       - name: Fetch, extract and build site
+        id: build
         env:
           # 站点与域名配置（在仓库 Settings → Variables 中设置）
           LDR_SITE_TITLE: ${{ vars.LDR_SITE_TITLE || '大坝的VPS优惠大超市' }}
@@ -154,7 +155,31 @@ jobs:
           echo "已推送到 $USER@$HOST:$TARGET/"
 
       - name: Verify public deployment
-        if: ${{ vars.LDR_VERIFY_LIVE == 'true' }}
+        id: live
+        # Production cannot report success without checking the actual website.
+        if: ${{ github.repository == 'wlzh/let-deals-radar' || inputs.target_repository == 'wlzh/let-deals-radar' || vars.LDR_VERIFY_LIVE == 'true' }}
         env:
           LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
         run: python -m tools.verify_live --url "$LDR_SITE_URL" --attempts 40 --delay 15
+
+      - name: Publish refresh summary
+        if: ${{ always() }}
+        env:
+          BUILD_RESULT: ${{ steps.build.outcome }}
+          COMMIT_RESULT: ${{ steps.publish.outcome }}
+          LIVE_RESULT: ${{ steps.live.outcome }}
+          REFRESHED_SHA: ${{ steps.publish.outputs.sha }}
+          SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
+          TARGET_REPO: ${{ inputs.target_repository || github.repository }}
+        run: |
+          {
+            echo '## Deal refresh result'
+            printf '\nRepository: `%s`\n' "$TARGET_REPO"
+            printf '\n| Gate | Result |\n| --- | --- |\n'
+            printf '| Fetch and build | %s |\n' "$BUILD_RESULT"
+            printf '| Commit generated files | %s |\n' "$COMMIT_RESULT"
+            printf '| Public HTML, deals JSON and sitemap | %s |\n' "$LIVE_RESULT"
+            printf '\nPublished revision: `%s`\n' "$REFRESHED_SHA"
+            printf '\nWebsite: %s\n' "$SITE_URL"
+            echo 'A successful commit alone is not proof of a successful public deployment.'
+          } >> "$GITHUB_STEP_SUMMARY"
