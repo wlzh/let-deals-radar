@@ -1,5 +1,6 @@
 name: Update deals
 
+# 2026-10-25：定时重注册复验——Disable→Enable 后补提交，逼 GitHub 重新注册 schedule（内容逻辑未改）
 # 定时抓取 → 生成站点 → 提交回仓库 →（可选）推送到自有服务器
 #
 # 为什么用 GitHub Actions 抓取而不是自有服务器：
