@@ -7,9 +7,18 @@ name: Update deals
 #   而站点仍可发布到自己的域名与服务器。
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update.yml'
+      - 'letdeals/**'
+      - 'assets/**'
+      - 'deploy/*.sh'
+      - 'tools/*.py'
+      - 'tests/**'
   schedule:
-    # Temporary acceptance window, registered by the repository owner's account.
-    - cron: '*/5 * * * *'
+    # Daily at 09:23 Asia/Shanghai; keep cron edits attributed to the active owner.
+    - cron: '23 1 * * *'
   workflow_dispatch:
     inputs:
       with_replies:
