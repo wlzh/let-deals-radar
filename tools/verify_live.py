@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 from pathlib import Path
+import re
 import time
 from urllib.error import URLError
 from urllib.parse import urlsplit
@@ -11,6 +12,18 @@ from urllib.request import Request, urlopen
 
 
 FILES = ("index.html", "data/deals.json", "sitemap.xml")
+_CF_BEACON = re.compile(
+    rb'\n?<script\b(?=[^>]*\bdata-cf-beacon=)[^>]*\bsrc=["\x27]'
+    rb'https://static\.cloudflareinsights\.com/beacon\.min\.js(?:/[^"\x27]*)?'
+    rb'["\x27][^>]*></script>'
+)
+
+
+def content_digest(name: str, content: bytes) -> bytes:
+    # Pages injects this optional analytics tag for some user agents only.
+    if name == "index.html":
+        content = _CF_BEACON.sub(b"", content)
+    return hashlib.sha256(content).digest()
 
 
 def verify_once(url: str, site: Path) -> list[str]:
@@ -24,7 +37,7 @@ def verify_once(url: str, site: Path) -> list[str]:
         try:
             with urlopen(request, timeout=20) as response:
                 actual = response.read()
-            if hashlib.sha256(expected).digest() != hashlib.sha256(actual).digest():
+            if content_digest(name, expected) != content_digest(name, actual):
                 mismatches.append(f"{name}: content differs")
         except (URLError, TimeoutError, OSError) as exc:
             mismatches.append(f"{name}: {exc}")

@@ -23,6 +23,7 @@ GitHub 的调度可能延迟或丢弃，公共仓库长期无活动也可能被�
 `Deploy to own server` 未配置时跳过正常，不代表没有 Pages 部署。
 Variable `LDR_VERIFY_LIVE=true` 开启发布等待与验收，`LDR_SITE_URL` 必须指向该仓库的站点。
 工作流比对线上 `index.html`、`data/deals.json` 和 `sitemap.xml` 与本次产物，
+仅忽略 Cloudflare 额外注入的官方统计脚本，其余内容严格比较。
 超时不一致会失败，避免将“提交成功”误报为“网站更新成功”。
 
 抓取期间 `main` 若被其他提交推进，`deploy/commit_refresh.sh` 拒绝推送过时产物。

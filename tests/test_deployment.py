@@ -107,3 +107,17 @@ def test_live_check_compares_all_artifacts(tmp_path, monkeypatch, mode):
     errors = verify_live.verify_once("https://example.invalid/", tmp_path)
     assert len(calls) == 3
     assert len(errors) == (0 if mode == "match" else 3)
+
+
+def test_live_check_ignores_only_known_cloudflare_beacon():
+    html = b"<html><body>fresh\n</body></html>"
+    beacon = (
+        b'\n<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/version" '
+        b'integrity="sha512-test" data-cf-beacon=\'{"token":"test"}\'></script>'
+    )
+    injected = html.replace(b"\n</body>", beacon + b"\n</body>")
+    digest = verify_live.content_digest("index.html", html)
+    assert digest == verify_live.content_digest("index.html", injected)
+    assert digest != verify_live.content_digest("index.html", injected.replace(b"fresh", b"old"))
+    assert digest != verify_live.content_digest("index.html", injected.replace(b"static.cloudflareinsights.com", b"example.invalid"))
+    assert verify_live.content_digest("data/deals.json", html) != verify_live.content_digest("data/deals.json", injected)
