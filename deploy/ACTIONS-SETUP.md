@@ -2,7 +2,38 @@
 
 按顺序做，约 15 分钟。**每一步都有验证点**，失败时能立刻定位。
 
-## 当前站点与 fork 定时任务
+## 当前生产调度
+
+独立的非 fork 仓库 [wlzh/let-deals-radar-scheduler](https://github.com/wlzh/let-deals-radar-scheduler)
+负责云端定时调用本仓库 `.github/workflows/update.yml` 的 `workflow_call` 入口。
+本仓库仍是代码、AFF 配置、数据和 `site/` 的唯一来源，fork 关系与 Cloudflare Pages 项目不变。
+为避免双重调度，原 fork 的 `schedule` 已移除，`push` 和 `workflow_dispatch` 保留。
+
+- 调度仓库使用 `LDR_REPO_PUSH_KEY` Secret，内容是只对本仓库有写权限的专用 Deploy Key。
+  不使用或保存个人全局 GitHub Token；可以在本仓库 Settings / Deploy keys 单独撤销该密钥。
+- 跨仓库调用会显式 checkout 本仓库最新 `main`，而不是把调度仓库当作项目源码。
+- Variables 在调用方解析：调度仓库已配置 `LDR_VERIFY_LIVE=true` 和 `LDR_SITE_URL=https://vps.869hr.uk`。
+  如要使用 `LDR_SITE_*` / `LDR_AFFILIATES` 覆盖配置，需同时更新调度仓库对应变量。
+  源码中的 AFF 默认配置仍随本仓库代码更新，无需复制。
+- 成功顺序是测试、抓取、非空与链接审计、推送回原仓库、Cloudflare Pages 线上三文件比对。
+  只有全部成功，才会把原仓库 SHA 和运行 URL 写入调度仓库的 `last-success.json`。
+  该成功记录也为调度仓库提供持续 Git 活动，避免仅更新原仓库而调度仓库长期无提交。
+- 主仓库前进时，旧构建拒绝推送，不强制覆盖新代码。重新运行最新 `main` 即可。
+- 紧急停止自动更新时，禁用调度仓库的 `refresh.yml`；原仓库和线上旧版本无需删除。
+
+[跨仓库管线验收 40168787171](https://github.com/wlzh/let-deals-radar-scheduler/actions/runs/40168787171)
+已通过测试、真实抓取、专用密钥推送、线上校验和成功记录。该次是手动触发，不算定时验收。
+调度仓库暂用每 5 分钟 cron 做真实 `schedule` 验收，观察成功后恢复每天北京时间 09:23。
+GitHub 调度是 best-effort，不能承诺精确到分钟。
+
+```bash
+gh run list -R wlzh/let-deals-radar-scheduler --event schedule --limit 10
+gh workflow run refresh.yml -R wlzh/let-deals-radar-scheduler
+```
+
+## 原生 fork 定时排查（历史记录）
+
+以下为切换独立调度前的历史排查，不是当前生产定时入口。
 
 `wlzh/let-deals-radar` 是 fork，**同样支持原生 `schedule`，不要求另建仓库**。
 GitHub 在 fork 时默认禁用定时工作流，需要在自己的仓库启用，而不是只查看上游的运行记录。
@@ -46,6 +77,8 @@ Variable `LDR_VERIFY_LIVE=true` 开启发布等待与验收，`LDR_SITE_URL` 必
 - 默认分支曾短暂切换到指向同一 SHA 的临时分支再恢复 `main`，以重新关联调度身份；
   已确认临时分支清理、默认分支仍为 `main`、fork 关系不变、工作流 `active`。
   此后观察窗口仍无 `schedule` 记录，已再次恢复每天 09:23，不能宣称定时故障已解决。
+- 北京时间 14:03 的单独定时探针也未创建 `schedule` 运行，截至 14:18 仍为 0。
+  随后按用户选择建立独立调度仓库，移除了原 fork 的 cron 和临时探针。
 
 ### 代码推送自动更新
 

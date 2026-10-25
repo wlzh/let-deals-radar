@@ -203,8 +203,10 @@ LEB 是编辑博客，会混入大量非优惠内容（如「微软砍存储」�
 
 完整指南见 **[deploy/DEPLOY.md](deploy/DEPLOY.md)**。
 
-Fork 也支持原生定时 Actions，不必须另建仓库。启用、真实 `schedule` 验收与当前
-Cloudflare Pages 发布检查见 [Actions 上线清单](deploy/ACTIONS-SETUP.md#当前站点与-fork-定时任务)。
+当前云端定时入口是独立的 [let-deals-radar-scheduler](https://github.com/wlzh/let-deals-radar-scheduler)，
+复用本仓库管线并将产物提交回来，不依赖本机在线。本仓库仍保留源代码推送自动更新和手动运行。
+调度权限、真实 `schedule` 验收及 Cloudflare Pages 发布检查见
+[Actions 上线清单](deploy/ACTIONS-SETUP.md#当前生产调度)。
 
 两种方案：
 
