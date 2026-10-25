@@ -5,7 +5,7 @@
 ## 当前生产调度
 
 独立的非 fork 仓库 [wlzh/let-deals-radar-scheduler](https://github.com/wlzh/let-deals-radar-scheduler)
-负责云端定时调用本仓库 `.github/workflows/update.yml` 的 `workflow_call` 入口。
+负责云端等待计时后调用本仓库 `.github/workflows/update.yml` 的 `workflow_call` 入口。
 本仓库仍是代码、AFF 配置、数据和 `site/` 的唯一来源，fork 关系与 Cloudflare Pages 项目不变。
 为避免双重调度，原 fork 的 `schedule` 已移除，`push` 和 `workflow_dispatch` 保留。
 
@@ -23,12 +23,27 @@
 
 [跨仓库管线验收 40168787171](https://github.com/wlzh/let-deals-radar-scheduler/actions/runs/40168787171)
 已通过测试、真实抓取、专用密钥推送、线上校验和成功记录。该次是手动触发，不算定时验收。
-调度仓库暂用每 5 分钟 cron 做真实 `schedule` 验收，观察成功后恢复每天北京时间 09:23。
-GitHub 调度是 best-effort，不能承诺精确到分钟。
+原 fork 的 14:03 探针和新非 fork 仓库的 cron 均未在观察窗口内产生定时事件，
+因此不能把原因简单归为 fork，也不能把手动成功视为 cron 已恢复。
+上游也观察到小时级调度错位。用户随后选择了不依赖 cron 的 Actions 环境等待计时链。
+
+`refresh-delay-5m` 环境等待 5 分钟，探针完成后自动创建 `mode=auto` 的下一条运行；
+`refresh-delay-24h` 环境等待 1440 分钟，每次更新完成再排入下一天。
+这是滚动日频，不是每天固定 09:23；等待不占用 runner，也不计入等待计费时间。
+环境计时结束后仍可能有 runner 排队，不能保证精确到秒。
+
+调度仓库的控制器仅用本仓库临时 `GITHUB_TOKEN` 的 `actions: write` 自接续，不存个人 Token。
+控制器会核对实际经过的时间，计时环境被删除或缩短时拒绝刷新，避免快速循环。
+已有接续或活跃链时不重复排队，POST 结果不明确时先查询，不盲目重复创建。
+抓取失败也会排入下一天重试；主动取消不自动重启。计时或控制器故障需检查失败运行并重新启动。
+`.next-run.json` 记录已创建的下一条运行 ID，不表示下一天的更新已成功。
+
+停止时先禁用 `refresh.yml`，再取消所有等待/运行中的链；仅禁用不会取消已有运行。
+重启前确认旧链停止，再启动新的 `mode=probe`。不要通过重跑历史完成记录启动第二条链。
 
 ```bash
-gh run list -R wlzh/let-deals-radar-scheduler --event schedule --limit 10
-gh workflow run refresh.yml -R wlzh/let-deals-radar-scheduler
+gh run list -R wlzh/let-deals-radar-scheduler --workflow refresh.yml --limit 10
+gh workflow run refresh.yml -R wlzh/let-deals-radar-scheduler -f mode=probe
 ```
 
 ## 原生 fork 定时排查（历史记录）
