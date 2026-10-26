@@ -2,6 +2,11 @@ name: Test Telegram notification
 
 on:
   workflow_dispatch:
+    inputs:
+      preview:
+        description: 'Preview actual daily changes privately; never publish to groups'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -24,4 +29,5 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           NOTIFICATION_TEST: 'true'
+          NOTIFICATION_PREVIEW: ${{ inputs.preview && 'true' || 'false' }}
         run: python3 -m tools.telegram_notify

@@ -1,4 +1,5 @@
-"""Send bounded plain-text reports; never print API URLs or credentials."""
+"""Send bounded, escaped reports; never print API URLs or credentials."""
+import html
 import json
 import os
 import re
@@ -95,27 +96,85 @@ def error_hint(error):
     return next((hint for pattern, hint in reasons if pattern in text), "通知配置或发送失败，请检查运行记录")
 
 
+def change_lines(changes):
+    from letdeals.updates import describe_changes
+    lines = []
+    discount = changes.get("优惠规则")
+    if discount:
+        current = discount.get("after") or {}
+        if current.get("percent_max"):
+            lines.append(f"最高优惠：{current['percent_max']}%")
+        if current.get("codes"):
+            lines.append("优惠码：" + "、".join(current["codes"]))
+        if current.get("rule_conflict"):
+            lines.append("续费提醒：首期与循环描述不一致，暂不按永久折扣展示。")
+        elif current.get("introductory"):
+            lines.append("续费提醒：首期优惠，续费价格待核对。")
+        elif current.get("recurring"):
+            lines.append("优惠规则：帖文标注循环优惠，适用条件请到商家核对。")
+        else:
+            lines.append("优惠规则：条款有调整，请查看完整说明。")
+        if current.get("extras"):
+            lines.append("附加赠送条件请到网页核对。")
+    for label, pair in changes.items():
+        if label != "优惠规则":
+            lines.append(describe_changes({label: pair}).replace(" → ", " 改为 "))
+    return lines
+
+
+def escaped(value, limit=180):
+    return html.escape(clean(value, limit), quote=True)
+
+
+def message_size(text):
+    # Count raw UTF-16 conservatively; Telegram limits text after entity parsing.
+    return len(text.encode("utf-16-le", errors="replace")) // 2
+
+
 def message(status, payload, site_url, run_url, stage=""):
     if status != "success":
         return f"VPS 优惠更新异常\n阶段：{stage_text(stage or status)}\n本轮未确认发布成功，请检查运行记录；网页可能仍是上次成功版本。\n{run_url}"
     report = payload.get("updates") or {}
-    from letdeals.updates import describe_changes, display_time
-    lines = ["VPS 优惠信息更新", f"更新时间：{display_time(payload.get('generated_at'))}",
-             f"共 {payload.get('count', 0)} 条，本轮检出 {payload.get('observed_count', payload.get('count', 0))} 条"]
-    labels = {"added": "新增", "changed": "信息变化", "missing": "未检出（非停售）", "restored": "重新检出", "expired": "移出保留窗口"}
-    lines.append("；".join(f"{label} {len(report.get(key, []))}" for key, label in labels.items()))
+    from letdeals.updates import display_time
+    lines = ["<b>VPS 优惠信息更新</b>", escaped(display_time(payload.get('generated_at'))),
+             f"本站收录 {escaped(payload.get('count', 0), 20)} 条活动", "", "<b>本次看点</b>"]
+    labels = {"added": "新增优惠", "changed": "优惠信息更新", "restored": "重新检出的活动", "missing": "本轮未检出（非停售）", "expired": "移出保留窗口"}
+    counts = [f"{label}：{len(report.get(key, []))} 条" for key, label in labels.items() if report.get(key)]
+    lines += counts or ["本轮暂无新增或变化"]
     if report.get("baseline"):
         lines.append("本轮建立变化基线，不把全部记录当新增。")
+    changed = report.get("changed", [])
+    if changed and all(set(record.get("changes", {})) == {"优惠规则"} for record in changed):
+        lines += ["", "本次主要核对优惠规则，不代表商家实际调价。"]
+    footer = "\n\n<b>查看全部优惠与更新明细</b>\n" + escaped(site_url, 250)
+    footer += "\n\n<i>报价、库存与续费以商家结算页为准。</i>"
+    if run_url:
+        footer += "\n" + escaped(run_url, 250)
+    total = sum(len(report.get(key, [])) for key in labels)
+    displayed = 0
     for key, label in labels.items():
+        heading_added = False
         for record in report.get(key, [])[:4]:
-            fields = ' / ' + clean(describe_changes(record["changes"]), 400) if record.get("changes") else ''
+            if displayed >= 6:
+                break
+            provider = str(record.get("provider") or "商家待核实").replace("_", " ")
+            provider = {"bero-host.de": "BERO HOST", "servers guru": "Servers Guru"}.get(provider, provider)
+            block = [] if heading_added else ["", f"<b>{label}</b>"]
+            block += ["", f"<b>{displayed + 1}. {escaped(provider, 80)}</b>"]
             if record.get("changes"):
-                lines.append(f"{label}：{clean(record.get('provider'))}{fields}")
+                block += [escaped(line, 180) for line in change_lines(record["changes"])[:5]]
             else:
                 summary = record.get("summary") or "活动详情、价格及库存请到网页核实"
-                lines.append(f"{label}：{clean(record.get('provider'))} · {clean(summary, 300)}")
-    footer = "\n报价/库存以商家结算页为准；变化可能来自原帖或解析调整。\n" + site_url + "\n" + run_url
-    return "\n".join(lines)[:max(0, 3900 - len(footer))] + footer
+                block += [escaped(part, 180) for part in str(summary).split(" · ")[:4]]
+            candidate = "\n".join(lines + block) + footer
+            if message_size(candidate) > 3700:
+                break
+            lines += block
+            heading_added = True
+            displayed += 1
+    if total > displayed:
+        lines += ["", f"以上展示 {displayed} 条，其余 {total - displayed} 条请到网站查看。"]
+    return "\n".join(lines) + footer
 
 
 def outcome(state):
@@ -146,16 +205,21 @@ def destinations(raw):
     return targets
 
 
-def send(token, target, text):
-    if not any(line.strip().rstrip("/") in {SITE_LINK, "网站：" + SITE_LINK} for line in text.splitlines()):
-        text = text[:3900] + "\n网站：" + SITE_LINK
+def send(token, target, text, formatted=False):
+    visible = html.unescape(re.sub(r"<[^>]*>", "", text)) if formatted else text
+    if not any(line.strip().rstrip("/") in {SITE_LINK, "网站：" + SITE_LINK} for line in visible.splitlines()):
+        text = (text if formatted else text[:3900]) + "\n网站：" + SITE_LINK
+    if formatted and message_size(text) > 3900:
+        raise TelegramError("Formatted report exceeds safe Telegram size")
     body = {"chat_id": target["chat_id"], "text": text, "link_preview_options": {"is_disabled": True}}
+    if formatted:
+        body["parse_mode"] = "HTML"
     if target.get("message_thread_id"):
         body["message_thread_id"] = target["message_thread_id"]
     return api(token, "sendMessage", body)
 
 
-def private_alert(token, chat, text):
+def private_alert(token, chat, text, formatted=False):
     # The error path never loads publication targets. Positive IDs are private
     # users; also verify chat type with Telegram before sending any diagnostics.
     if not re.fullmatch(r"[1-9]\d*", chat):
@@ -166,7 +230,7 @@ def private_alert(token, chat, text):
     info = api(token, "getChat", {"chat_id": chat})
     if info.get("type") != "private":
         raise TelegramError("Refusing to send diagnostics outside a private chat")
-    send(token, {"chat_id": chat}, text)
+    send(token, {"chat_id": chat}, text, formatted=formatted)
 
 
 def main():
@@ -184,10 +248,11 @@ def main():
     status = os.environ.get("REFRESH_STATUS", "failure")
     payload = {}
     testing = os.environ.get("NOTIFICATION_TEST") == "true"
-    if status == "success" and not testing:
+    preview = os.environ.get("NOTIFICATION_PREVIEW") == "true"
+    if (status == "success" and not testing) or preview:
         try:
             payload = json.loads(Path("site/data/deals.json").read_text())
-            if os.environ.get("PUBLICATION_SCOPE") == "today":
+            if os.environ.get("PUBLICATION_SCOPE") == "today" or preview:
                 from letdeals.updates import daily_report
                 payload["updates"] = daily_report(payload.get("update_history", []))
         except (ValueError, OSError):
@@ -201,16 +266,18 @@ def main():
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     run = os.environ.get("GITHUB_RUN_ID", "")
     run_url = f"https://github.com/{repo}/actions/runs/{run}"
-    text = message(status, payload, os.environ.get("LDR_SITE_URL", "https://vps.869hr.uk"),
+    text = message("success" if preview else status, payload, os.environ.get("LDR_SITE_URL", "https://vps.869hr.uk"),
                    "" if status == "success" else run_url, os.environ.get("FAILURE_STAGE", ""))
     if status == "success" and os.environ.get("PUBLICATION_SCOPE") == "today":
         text = text.replace("VPS 优惠信息更新", "VPS 优惠今日变化汇总（补发）", 1)
-    if testing:
+    if testing and not preview:
         text = f"VPS 优惠雷达：Telegram 私聊连接测试成功。本消息不代表执行了数据更新。\nhttps://github.com/{repo}/actions/runs/{run}"
+    if preview:
+        text = "<b>排版预览（仅私聊，不向群重复发布）</b>\n\n" + text
     alert_sent = False
     try:
-        if testing or status != "success":
-            private_alert(token, alert, text)
+        if testing or preview or status != "success":
+            private_alert(token, alert, text, formatted=preview)
             print("Telegram private message delivered; no publication targets contacted.")
             outcome("private-delivered")
             return 0
@@ -224,7 +291,7 @@ def main():
         receipts = []
         for index, target in enumerate(publication_targets, 1):
             try:
-                result = send(token, target, text)
+                result = send(token, target, text, formatted=True)
                 receipts.append({"target_index": index, "status": "delivered", "message_id": result.get("message_id")})
             except TelegramError as exc:
                 failures.append(index)

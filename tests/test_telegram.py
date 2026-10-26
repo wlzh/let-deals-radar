@@ -13,7 +13,7 @@ TOKEN = "123456:" + "x" * 32
 def test_success_message_is_bounded_and_has_changes():
     data = {"count": 82, "updates": {"added": [{"provider": "X", "title": "new\nactivity"}]}}
     text = tg.message("success", data, "https://example.invalid", "https://github.com/run")
-    assert "新增 1" in text and "活动详情" in text
+    assert "新增优惠：1 条" in text and "活动详情" in text
     assert "new activity" not in text
     assert "优惠信息更新" in text
     assert len(text) <= 3900
@@ -213,3 +213,63 @@ def test_site_link_is_not_duplicated(monkeypatch):
     monkeypatch.setattr(tg, "api", lambda token, method, body: sent.append(body) or {})
     tg.send(TOKEN, {"chat_id": "1"}, "更新\nhttps://vps.869hr.uk")
     assert sent[0]["text"].count(tg.SITE_LINK) == 1
+
+
+def test_rule_update_is_readable_without_repeating_unchanged_values():
+    pair = {"before": {"recurring": True, "percent_max": 10, "codes": ["LET10"]},
+            "after": {"introductory": True, "rule_conflict": True, "percent_max": 10, "codes": ["LET10"]}}
+    records = [{"provider": "bero-host.de", "changes": {"优惠规则": pair}}] * 14
+    text = tg.message("success", {"count": 81, "updates": {"changed": records}}, tg.SITE_LINK, "")
+    assert "<b>本次看点</b>" in text and "优惠信息更新：14 条" in text
+    assert "<b>1. BERO HOST</b>\n最高优惠：10%\n优惠码：LET10\n续费提醒：" in text
+    assert "不代表商家实际调价" in text
+    assert "新增优惠：0" not in text and "→" not in text
+    assert "其余 10 条" in text
+
+
+def test_html_content_is_escaped_and_not_cut_mid_tag():
+    from html.parser import HTMLParser
+    class Tags(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.stack = []
+        def handle_starttag(self, tag, attrs):
+            assert tag in {"b", "i"} and not attrs
+            self.stack.append(tag)
+        def handle_endtag(self, tag):
+            assert self.stack.pop() == tag
+    changes = [{"provider": "<script>x</script> & " + "𠮷" * 160, "summary": "<b>bad</b> & " + "𠮷" * 300} for _ in range(20)]
+    text = tg.message("success", {"updates": {key: changes for key in ("added", "changed", "restored", "missing", "expired")}}, tg.SITE_LINK, "")
+    parser = Tags()
+    parser.feed(text)
+    assert not parser.stack
+    assert "<script>" not in text and "&lt;script&gt;" in text
+    assert tg.message_size(text) <= 3900
+    assert tg.SITE_LINK in text
+
+
+def test_public_html_mode_does_not_affect_private_plain_text(monkeypatch):
+    bodies = []
+    monkeypatch.setattr(tg, "api", lambda token, method, body: bodies.append(body) or {})
+    tg.send(TOKEN, {"chat_id": "-1001"}, "<b>优惠更新</b>\n" + tg.SITE_LINK, formatted=True)
+    tg.send(TOKEN, {"chat_id": "123"}, "错误提醒")
+    assert bodies[0]["parse_mode"] == "HTML"
+    assert "parse_mode" not in bodies[1]
+
+
+def test_preview_is_formatted_and_private_only(monkeypatch, tmp_path):
+    setup_public(monkeypatch, tmp_path, {"added": [{"provider": "X"}]})
+    monkeypatch.setenv("NOTIFICATION_PREVIEW", "true")
+    monkeypatch.setenv("NOTIFICATION_TEST", "true")
+    bodies = []
+    def respond(token, method, body):
+        if method == "getMe":
+            return {"id": 999}
+        if method == "getChat":
+            return {"type": "private"}
+        bodies.append(body)
+        return {}
+    monkeypatch.setattr(tg, "api", respond)
+    assert tg.main() == 0
+    assert len(bodies) == 1 and bodies[0]["chat_id"] == "123"
+    assert "排版预览" in bodies[0]["text"] and bodies[0]["parse_mode"] == "HTML"
