@@ -259,25 +259,48 @@ def _initial_rows(records):
 
 
 def _updates_html(payload):
-    from .updates import daily_report, describe_changes, display_time
+    from .updates import daily_report, describe_changes, display_time, history_reports
     reports = payload.get("update_history") or ([payload["updates"]] if payload.get("updates") else [])
-    if not reports:
+    checked_at = payload.get("generated_at") or (reports[0].get("generated_at") if reports else None)
+    if not checked_at:
         return ""
     labels = {"added": "新增", "changed": "信息变化", "missing": "本轮未检出", "restored": "重新检出", "expired": "移出保留窗口"}
-    report = daily_report(reports)
-    parts = ['<section class="card intro" aria-label="每日更新"><h2>今日更新与核实记录</h2>',
-             '<p>最近成功更新：' + html.escape(display_time(report.get("generated_at"))) + '</p>',
-             '<p>' + ' · '.join(f'{label} {len(report.get(key, []))} 条' for key, label in labels.items()) + '</p>']
-    if report.get("baseline"):
-        parts.append('<p>首次建立变化基线，本轮不把全部记录误报为新增。</p>')
-    for item in reports[:5]:
-        parts.append('<details><summary>' + html.escape(display_time(item.get("generated_at"))) + ' 更新明细</summary><ul>')
+    history = history_reports(reports, checked_at)
+    report = daily_report(history, checked_at)
+
+    def counts(item):
+        return ' · '.join(f'{label} {len(item[key])} 条' for key, label in labels.items() if item.get(key))
+
+    def merchants(item):
+        grouped = {}
         for key, label in labels.items():
-            for record in item.get(key, [])[:20]:
-                detail = '；' + describe_changes(record["changes"]) if record.get("changes") else ''
-                parts.append('<li>' + html.escape(f'{label}：{record.get("provider", "")} / {record.get("title", "")}{detail}') + '</li>')
-        parts.append('</ul></details>')
-    parts.append('<p>未检出不等于停售；保留旧记录最多 30 天，并遵循活动时间窗口。报价变化也可能是原帖或解析结果变化，不代表商家已确认调价。</p><a href="data/updates.json">完整变化记录（最近 30 次）</a></section>')
+            for record in item.get(key, []):
+                identity = record.get("id") or record.get("url") or record.get("title", "")
+                group = grouped.setdefault(identity, {"provider": record.get("provider") or "商家待核实", "notes": []})
+                detail = describe_changes(record["changes"]) if record.get("changes") else record.get("summary") or record.get("title", "")
+                group["notes"].append(f'{label}：{detail}')
+        if not grouped:
+            return '<p>今日暂无新增或变化。</p>'
+        return '<ul>' + ''.join('<li><strong>' + html.escape(group["provider"]) + '</strong>' +
+                                ''.join('<p>' + html.escape(note) + '</p>' for note in group["notes"]) + '</li>'
+                                for group in grouped.values()) + '</ul>'
+
+    last_change = payload.get("last_change_at") or (history[0]["generated_at"] if history else None)
+    parts = ['<section class="card updates" aria-label="更新记录">',
+             '<details id="today-updates"><summary><strong>今日更新</strong><span>' + html.escape(counts(report) or '暂无新增或变化') + '</span></summary>',
+             '<div class="update-panel" tabindex="0" role="region" aria-label="今日变化明细">',
+             '<p>最近检查：' + html.escape(display_time(checked_at)) + '</p>',
+             '<p>最近发现变化：' + html.escape(display_time(last_change) if last_change else '暂无已记录的变化') + '</p>',
+             merchants(report), '</div></details>',
+             '<details id="history-updates"><summary><strong>历史记录</strong><span>最近 30 天 · ' + str(len(history)) + ' 个有变化日</span></summary>',
+             '<div class="update-panel" tabindex="0" role="region" aria-label="最近30天变化明细">']
+    if not history:
+        parts.append('<p>最近 30 天暂无已记录的变化，后续会按日期归档。</p>')
+    for item in history:
+        parts += ['<h3>' + html.escape(display_time(item["generated_at"])[:10]) + '</h3>',
+                  '<p>' + html.escape(counts(item)) + '</p>', merchants(item)]
+    parts += ['<p>仅展示有变化的日期；未检出不代表停售，报价变化也可能来自原帖或解析调整。</p>',
+              '</div></details></section>']
     return '\n'.join(parts)
 
 
@@ -354,6 +377,16 @@ header p{margin:0;color:var(--muted);font-size:13px}
 .meta b{color:var(--ink);font-weight:600}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
   padding:16px;margin-top:18px}
+.updates{padding:0;overflow:hidden}
+.updates>details+details{border-top:1px solid var(--line)}
+.updates summary{padding:12px 16px;cursor:pointer}
+.updates summary strong{margin-right:12px}
+.updates summary span{color:var(--muted);font-size:12px}
+.update-panel{max-height:440px;overflow:auto;padding:0 16px 16px;overflow-wrap:anywhere}
+.update-panel p{margin:6px 0;color:var(--muted);font-size:12px}
+.update-panel ul{padding-left:20px;margin:12px 0}
+.update-panel li{margin:12px 0}
+.update-panel h3{font-size:14px;margin:18px 0 8px}
 .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 input[type=search],select{background:var(--card);color:var(--ink);
   border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;
@@ -504,6 +537,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   </div>
 </header>
 
+@@UPDATES@@
 
 <section class="card intro">
   <p id="stale" hidden>数据更新已超过 48 小时，活动和库存可能变化，请务必到商家复核。</p>
@@ -514,8 +548,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="merchants"><h3 class="merchants-title">已有心仪商家</h3><p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格。</p><div class="feat">@@MERCHANTS@@</div></div>
   <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
 </section>
-
-@@UPDATES@@
 
 <div class="card">
   <div class="controls">

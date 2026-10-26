@@ -254,7 +254,7 @@ def main():
             payload = json.loads(Path("site/data/deals.json").read_text())
             if os.environ.get("PUBLICATION_SCOPE") == "today" or preview:
                 from letdeals.updates import daily_report
-                payload["updates"] = daily_report(payload.get("update_history", []))
+                payload["updates"] = daily_report(payload.get("update_history", []), payload.get("generated_at"))
         except (ValueError, OSError):
             outcome("failed")
             print("::error::Cannot read verified report for Telegram.")

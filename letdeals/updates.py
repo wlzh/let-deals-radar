@@ -19,19 +19,51 @@ def display_time(value):
     return parsed.astimezone(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S 北京时间") if parsed else "未知"
 
 
-def daily_report(reports):
-    if not reports:
-        return {}
-    today = display_time(reports[0].get("generated_at"))[:10]
-    result = {"generated_at": reports[0].get("generated_at"), "baseline": reports[0].get("baseline")}
+def daily_report(reports, checked_at=None):
+    stamp = checked_at or (reports[0].get("generated_at") if reports else None)
+    today = display_time(stamp)[:10]
+    result = {"generated_at": stamp, "baseline": reports[0].get("baseline") if reports else False}
     for category in ("added", "changed", "missing", "restored", "expired"):
         unique = {}
-        for report in reports:
+        for report in reversed(reports):
             if display_time(report.get("generated_at"))[:10] == today:
                 for item in report.get(category, []):
-                    unique.setdefault(item["id"], item)
+                    identity = item["id"]
+                    latest = deepcopy(item)
+                    if category == "changed" and identity in unique:
+                        merged = deepcopy(unique[identity].get("changes", {}))
+                        for field, pair in latest.get("changes", {}).items():
+                            merged[field] = {"before": merged.get(field, pair).get("before"), "after": pair.get("after")}
+                        latest["changes"] = merged
+                    unique[identity] = latest
         result[category] = list(unique.values())
     return result
+
+
+def has_changes(report):
+    return any(report.get(key) for key in ("added", "changed", "missing", "restored", "expired"))
+
+
+def history_reports(reports, checked_at):
+    """One meaningful snapshot per China calendar day, over the last 30 days."""
+    now = _date(checked_at)
+    if now is None:
+        return []
+    today = now.astimezone(timezone(timedelta(hours=8))).date()
+    oldest = today - timedelta(days=29)
+    groups = {}
+    for report in reports:
+        stamp = _date(report.get("generated_at"))
+        if stamp is None or not has_changes(report):
+            continue
+        day = stamp.astimezone(timezone(timedelta(hours=8))).date()
+        if oldest <= day <= today:
+            groups.setdefault(day, []).append(report)
+    history = []
+    for day in sorted(groups, reverse=True):
+        entries = sorted(groups[day], key=lambda r: _date(r["generated_at"]), reverse=True)
+        history.append(daily_report(entries))
+    return history
 
 
 def describe_changes(changes):
@@ -184,6 +216,7 @@ def reconcile(payload, previous, recent_days=90):
                             for source in {r.get("source") for r in fresh}}
     payload["updates"] = report
     history = previous.get("update_history", [])
-    # Same-day code rebuilds must not erase the day's earlier changes.
-    payload["update_history"] = ([report] + history)[:30]
+    payload["update_history"] = history_reports([report] + history, payload["generated_at"])
+    payload["last_change_at"] = (payload["update_history"][0]["generated_at"] if payload["update_history"]
+                                  else previous.get("last_change_at"))
     return payload

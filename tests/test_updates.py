@@ -1,11 +1,12 @@
 from copy import deepcopy
+from datetime import datetime, timedelta, timezone
 
 import pytest
 
 from letdeals import render
 from letdeals.extract import extract_discount
 from letdeals.presentation import prepare
-from letdeals.updates import daily_report, display_time, reconcile
+from letdeals.updates import daily_report, display_time, history_reports, reconcile
 
 
 def record(identity="1", **extra):
@@ -45,7 +46,8 @@ def test_missing_is_not_reported_repeatedly():
     missing = reconcile(payload([record()], "2026-10-27T07:00:00+00:00"), old)
     again = reconcile(payload([record()], "2026-10-28T07:00:00+00:00"), missing)
     assert not again["updates"]["missing"]
-    assert len(again["update_history"]) == 3
+    assert len(again["update_history"]) == 1
+    assert again["last_change_at"] == "2026-10-27T07:00:00+00:00"
 
 
 def test_returned_record_restored_not_new():
@@ -75,7 +77,8 @@ def test_added_and_retention_expiry():
 
 def test_age_window_and_history_limit():
     before = payload([record(posted="Sun, 01 Jan 2023 00:00:00 +0000")])
-    before["update_history"] = [{}] * 40
+    before["update_history"] = [{"generated_at": (datetime(2026, 10, 25, tzinfo=timezone.utc) - timedelta(days=i)).isoformat(),
+                                 "added": [{"id": str(i), "provider": "Example"}]} for i in range(40)]
     result = reconcile(payload([record("2")]), before, 90)
     assert len(result["updates"]["expired"]) == 1
     assert len(result["update_history"]) == 30
@@ -106,10 +109,11 @@ def test_introductory_rule_cannot_be_permanent(text):
 
 
 def test_report_html_escapes_untrusted_titles():
-    result = reconcile(payload([record("2", title="<script>alert(1)</script>")]), payload([record()]))
+    result = reconcile(payload([record("2", title="<script>alert(1)</script>", provider="<script>alert(1)</script>")]), payload([record()]))
     markup = render._updates_html(result)
     assert "<script>" not in markup and "&lt;script&gt;" in markup
-    assert "data/updates.json" in markup
+    assert markup.count('<details ') == 2
+    assert 'data/updates.json' not in markup
 
 
 def test_daily_summary_uses_china_date_and_deduplicates():
@@ -155,3 +159,48 @@ def test_package_and_location_order_only_is_not_a_change():
     before = payload([record(plans=plans, locations=["Paris", "London"])])
     report = reconcile(payload([record(plans=list(reversed(plans)), locations=["London", "Paris"])]), before)["updates"]
     assert not report["changed"]
+
+
+def test_many_runs_keep_one_daily_history_with_earliest_and_latest_values():
+    state = reconcile(payload([record()]), {})
+    for minute in range(1, 41):
+        state = reconcile(payload([record(display_price=f"${minute}/月")], f"2026-10-26T08:{minute:02d}:00+00:00"), state)
+    assert len(state["update_history"]) == 1
+    pair = state["update_history"][0]["changed"][0]["changes"]["报价"]
+    assert pair == {"before": "$5/月", "after": "$40/月"}
+
+
+def test_today_does_not_reuse_yesterdays_changes():
+    reports = [{"generated_at": "2026-10-25T07:00:00Z", "added": [{"id": "x"}]}]
+    assert not daily_report(reports, "2026-10-26T07:00:00Z")["added"]
+
+
+def test_history_window_uses_china_calendar_and_excludes_empty_days():
+    reports = [{"generated_at": "2026-09-26T15:59:59Z", "added": [{"id": "old"}]},
+               {"generated_at": "2026-09-26T16:00:00Z", "added": [{"id": "within"}]},
+               {"generated_at": "2026-10-26T00:00:00Z", "added": []}]
+    history = history_reports(reports, "2026-10-26T07:00:00Z")
+    assert len(history) == 1 and history[0]["added"][0]["id"] == "within"
+
+
+def test_home_has_only_two_closed_disclosures_above_intro(tmp_path):
+    state = reconcile(payload([record("2")]), payload([record()]))
+    for i in range(25):
+        state["update_history"].insert(0, {"generated_at": f"2026-10-26T08:{i:02d}:00Z", "added": []})
+    render.build_site(state, tmp_path, verbose=False)
+    page = (tmp_path / "index.html").read_text()
+    start = page.index('<section class="card updates"')
+    end = page.index('</section>', start)
+    card = page[start:end]
+    assert card.count('<details ') == 2 and '<details open' not in card
+    assert card.count('<ul>') == 2
+    assert '最近 30 天' in card and '最近检查' in card and '最近发现变化' in card
+    assert '更新明细</summary>' not in card
+    assert start < page.index('<h2>少翻帖子')
+
+
+def test_empty_today_has_no_empty_list_or_zero_counters():
+    report = {"generated_at": "2026-10-26T07:00:00Z", "added": []}
+    markup = render._updates_html({"generated_at": report["generated_at"], "updates": report})
+    assert '<ul>' not in markup and '新增 0 条' not in markup
+    assert markup.count('<details ') == 2
