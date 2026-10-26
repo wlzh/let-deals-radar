@@ -2,13 +2,15 @@
 from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
+import json
 
-from .extract import age_status
+from .extract import AVAIL_CN, age_status
 
 
 FIELDS = {
     "display_price": "报价", "display_spec": "配置", "availability": "库存",
     "discount": "优惠规则", "price_bound": "价格绑定",
+    "plans": "套餐表", "prices": "帖文报价列表", "locations": "机房地区",
 }
 
 
@@ -30,6 +32,40 @@ def daily_report(reports):
                     unique.setdefault(item["id"], item)
         result[category] = list(unique.values())
     return result
+
+
+def describe_changes(changes):
+    def value(label, item):
+        if label == "机房地区":
+            return " / ".join(item or []) or "未知"
+        if label in {"套餐表", "帖文报价列表"} and isinstance(item, list):
+            def price(p):
+                cycles = {"month": "/月", "year": "/年", "quarter": "/季"}
+                return f"{p.get('currency', '')}{p.get('amount', '?')}{cycles.get(p.get('cycle'), '（周期待核对）')}"
+            if label == "帖文报价列表":
+                return " / ".join(price(p) for p in item) or "未提取到报价"
+            return " / ".join(f"{p.get('name', '未命名套餐')} {price(p.get('price') or {})}" for p in item) or "未提取到套餐"
+        if label == "库存":
+            return AVAIL_CN.get(item, item or "未知")
+        if label == "价格绑定":
+            return "已绑定具体套餐" if item else "未绑定具体套餐"
+        if label == "优惠规则" and isinstance(item, dict):
+            parts = []
+            if item.get("recurring"):
+                parts.append("循环优惠")
+            if item.get("introductory"):
+                parts.append("首期优惠，续费待核对")
+            if item.get("rule_conflict"):
+                parts.append("首期与循环描述冲突")
+            if item.get("percent_max"):
+                parts.append(f"最高 {item['percent_max']}% off")
+            if item.get("codes"):
+                parts.append("码 " + "/".join(item["codes"]))
+            parts.extend(item.get("extras", []))
+            return " / ".join(parts) or "未明确优惠规则"
+        return str(item) if item is not None else "未知"
+    return "；".join(f"{label}：{value(label, pair.get('before'))} → {value(label, pair.get('after'))}"
+                    for label, pair in changes.items())
 
 
 def _date(value):
@@ -61,6 +97,17 @@ def _discount(value):
             "rule_conflict": bool(value.get("rule_conflict")),
             "percent_max": value.get("percent_max"),
             "codes": sorted(value.get("codes", [])), "extras": sorted(value.get("extras", []))}
+
+
+def comparable(field, value):
+    if field == "discount":
+        return _discount(value)
+    if field == "plans":
+        value = [{key: plan.get(key) for key in ("name", "vcpu", "ram_gb", "storage_gb", "bandwidth_tb", "price")}
+                 for plan in value or []]
+    if field in {"plans", "prices", "locations"}:
+        return sorted(value or [], key=lambda item: json.dumps(item, sort_keys=True))
+    return value
 
 
 def reconcile(payload, previous, recent_days=90):
@@ -97,8 +144,7 @@ def reconcile(payload, previous, recent_days=90):
             # reappearance a stock change unless a new observation differs.
             old_value = before.get("last_observed_availability") if field == "availability" and tracking.get("state") == "missing" else before.get(field)
             new_value = record.get(field)
-            if field == "discount":
-                old_value, new_value = _discount(old_value), _discount(new_value)
+            old_value, new_value = comparable(field, old_value), comparable(field, new_value)
             if old_value != new_value:
                 changes[label] = {"before": old_value, "after": new_value}
         if changes:

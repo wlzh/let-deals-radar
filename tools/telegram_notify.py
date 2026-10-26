@@ -15,7 +15,7 @@ class TelegramError(RuntimeError):
 def api(token, method, payload):
     if not re.fullmatch(r"\d+:[A-Za-z0-9_-]{20,}", token):
         raise TelegramError("Invalid bot token format")
-    if method not in {"getMe", "getChat", "getUpdates", "sendMessage"}:
+    if method not in {"getMe", "getChat", "getUpdates", "getChatAdministrators", "sendMessage"}:
         raise TelegramError("Unsupported bot method")
     request = Request(f"https://api.telegram.org/bot{token}/{method}",
                       data=json.dumps(payload).encode(),
@@ -29,9 +29,13 @@ def api(token, method, payload):
             return result["result"]
         except HTTPError as exc:
             code = exc.code
+            try:
+                error_data = json.load(exc)
+            except (ValueError, TypeError):
+                error_data = {}
             if code == 429 and attempt < 2:
                 try:
-                    delay = int(json.load(exc).get("parameters", {}).get("retry_after", 5))
+                    delay = int(error_data.get("parameters", {}).get("retry_after", 5))
                 except (ValueError, TypeError):
                     delay = 5
                 if delay > 30:
@@ -39,7 +43,18 @@ def api(token, method, payload):
                 time.sleep(max(1, delay))
                 continue
             if code < 500 or attempt == 2:
-                raise TelegramError(f"Telegram HTTP {code}") from None
+                # Only fixed allowlisted explanations, never raw API descriptions
+                # or transport exception strings that may embed the token URL.
+                description = str(error_data.get("description", "")).lower()
+                reasons = (("bots", "cannot message another bot; use YOUR personal user ID"),
+                           ("blocked", "bot is blocked by the private recipient"),
+                           ("initiate", "recipient must start a private conversation with this bot"),
+                           ("deactivated", "private recipient account is deactivated"),
+                           ("not a member", "bot is not a member of the destination"),
+                           ("not enough rights", "bot lacks destination posting permission"),
+                           ("thread not found", "topic ID is invalid or unavailable"))
+                reason = next((label for pattern, label in reasons if pattern in description), "request rejected; check destination and permissions")
+                raise TelegramError(f"Telegram HTTP {code}: {reason}") from None
         except (URLError, TimeoutError, OSError, ValueError, KeyError):
             if attempt == 2:
                 raise TelegramError("Telegram transport or response failed; credentials redacted") from None
@@ -56,7 +71,7 @@ def message(status, payload, site_url, run_url, stage=""):
     if status != "success":
         return f"VPS 更新异常\n阶段：{clean(stage or status)}\n本轮未确认发布成功，请检查运行记录；网页可能仍是上次成功版本。\n{run_url}"
     report = payload.get("updates") or {}
-    from letdeals.updates import display_time
+    from letdeals.updates import describe_changes, display_time
     lines = ["VPS 优惠信息更新", f"更新时间：{display_time(payload.get('generated_at'))}",
              f"共 {payload.get('count', 0)} 条，本轮检出 {payload.get('observed_count', payload.get('count', 0))} 条"]
     labels = {"added": "新增", "changed": "信息变化", "missing": "未检出（非停售）", "restored": "重新检出", "expired": "移出保留窗口"}
@@ -65,7 +80,7 @@ def message(status, payload, site_url, run_url, stage=""):
         lines.append("本轮建立变化基线，不把全部记录当新增。")
     for key, label in labels.items():
         for record in report.get(key, [])[:4]:
-            fields = ' / ' + '、'.join(record["changes"]) if record.get("changes") else ''
+            fields = ' / ' + clean(describe_changes(record["changes"]), 400) if record.get("changes") else ''
             lines.append(f"{label}：{clean(record.get('provider'))} · {clean(record.get('title'))}{fields}")
     footer = "\n报价/库存以商家结算页为准；变化可能来自原帖或解析调整。\n" + site_url + "\n" + run_url
     return "\n".join(lines)[:max(0, 3900 - len(footer))] + footer
@@ -111,6 +126,9 @@ def private_alert(token, chat, text):
     # users; also verify chat type with Telegram before sending any diagnostics.
     if not re.fullmatch(r"[1-9]\d*", chat):
         raise TelegramError("Private alert chat must be a positive numeric user ID")
+    bot = api(token, "getMe", {})
+    if str(bot.get("id")) == chat:
+        raise TelegramError("Alert ID is the BOT itself; enter YOUR personal Telegram user ID")
     info = api(token, "getChat", {"chat_id": chat})
     if info.get("type") != "private":
         raise TelegramError("Refusing to send diagnostics outside a private chat")
@@ -135,6 +153,9 @@ def main():
     if status == "success" and not testing:
         try:
             payload = json.loads(Path("site/data/deals.json").read_text())
+            if os.environ.get("PUBLICATION_SCOPE") == "today":
+                from letdeals.updates import daily_report
+                payload["updates"] = daily_report(payload.get("update_history", []))
         except (ValueError, OSError):
             outcome("failed")
             print("::error::Cannot read verified report for Telegram.")
@@ -148,6 +169,8 @@ def main():
     run_url = f"https://github.com/{repo}/actions/runs/{run}"
     text = message(status, payload, os.environ.get("LDR_SITE_URL", "https://vps.869hr.uk"),
                    "" if status == "success" else run_url, os.environ.get("FAILURE_STAGE", ""))
+    if status == "success" and os.environ.get("PUBLICATION_SCOPE") == "today":
+        text = text.replace("VPS 优惠信息更新", "VPS 优惠今日变化汇总（补发）", 1)
     if testing:
         text = f"VPS radar Telegram 连接测试：通知路径可用。本消息不代表执行了数据更新。\nhttps://github.com/{repo}/actions/runs/{run}"
     alert_sent = False

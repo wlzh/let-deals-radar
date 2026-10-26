@@ -1,0 +1,42 @@
+name: Publish verified daily changes to Telegram
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram-manual-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Verify the report is actually deployed
+        id: live
+        run: python3 -m tools.verify_live --url https://vps.869hr.uk --attempts 10 --delay 15
+      - name: Publish real changes or alert privately
+        if: ${{ always() }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_TARGETS: ${{ secrets.TELEGRAM_TARGETS }}
+          TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
+          REFRESH_STATUS: ${{ steps.live.outcome == 'success' && 'success' || 'failure' }}
+          FAILURE_STAGE: manual-publication-live-verification=${{ steps.live.outcome }}
+          PUBLICATION_SCOPE: today
+        run: python3 -m tools.telegram_notify
+      - name: Save delivery receipt
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: telegram-manual-delivery-${{ github.run_id }}
+          path: telegram-delivery.json
+          if-no-files-found: ignore
+          retention-days: 7

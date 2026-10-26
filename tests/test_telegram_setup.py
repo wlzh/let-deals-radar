@@ -24,3 +24,10 @@ def test_unknown_destinations_are_rejected(url):
 def test_setup_refuses_non_interactive_secret_input(monkeypatch):
     monkeypatch.setattr(setup.sys.stdin, "isatty", lambda: False)
     assert setup.main() == 1
+
+
+def test_setup_rejects_bot_id_as_private_recipient(monkeypatch):
+    monkeypatch.setattr(setup, "api", lambda *a: [])
+    monkeypatch.setattr("builtins.input", lambda *a: "7719493731")
+    with pytest.raises(TelegramError, match="BOT ID"):
+        setup.choose_private_chat("unused", 7719493731, [])

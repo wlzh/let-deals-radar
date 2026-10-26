@@ -259,7 +259,7 @@ def _initial_rows(records):
 
 
 def _updates_html(payload):
-    from .updates import daily_report, display_time
+    from .updates import daily_report, describe_changes, display_time
     reports = payload.get("update_history") or ([payload["updates"]] if payload.get("updates") else [])
     if not reports:
         return ""
@@ -274,7 +274,7 @@ def _updates_html(payload):
         parts.append('<details><summary>' + html.escape(display_time(item.get("generated_at"))) + ' 更新明细</summary><ul>')
         for key, label in labels.items():
             for record in item.get(key, [])[:20]:
-                detail = '；变化字段：' + '、'.join(record["changes"]) if record.get("changes") else ''
+                detail = '；' + describe_changes(record["changes"]) if record.get("changes") else ''
                 parts.append('<li>' + html.escape(f'{label}：{record.get("provider", "")} / {record.get("title", "")}{detail}') + '</li>')
         parts.append('</ul></details>')
     parts.append('<p>未检出不等于停售；保留旧记录最多 30 天，并遵循活动时间窗口。报价变化也可能是原帖或解析结果变化，不代表商家已确认调价。</p><a href="data/updates.json">完整变化记录（最近 30 次）</a></section>')

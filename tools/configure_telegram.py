@@ -26,11 +26,11 @@ def resolve_target(token, url):
     elif reference and info.get("type") != "channel":
         raise TelegramError("URL has a topic reference but Telegram does not confirm a forum; verify destination")
     # For channels /123 identifies an old post, not a writable topic.
-    print(f"Validated @{username}: {info['type']}, " + (f"topic {reference}" if result.get("message_thread_id") else "new channel message"))
+    print(f"Validated @{username}: {info['type']}, " + (f"topic {reference}" if result.get("message_thread_id") else "new group/channel message"))
     return result
 
 
-def choose_private_chat(token):
+def choose_private_chat(token, bot_id, targets):
     try:
         updates = api(token, "getUpdates", {"limit": 100, "timeout": 0})
     except TelegramError:
@@ -40,13 +40,26 @@ def choose_private_chat(token):
     for update in updates:
         msg = update.get("message", {})
         chat = msg.get("chat", {})
-        if chat.get("type") == "private" and msg.get("from", {}).get("id") == chat.get("id"):
+        if chat.get("type") == "private" and not msg.get("from", {}).get("is_bot") and msg.get("from", {}).get("id") == chat.get("id"):
             contacts[str(chat["id"])] = chat
+    if not contacts:
+        print("No recent private update available; listing human administrators of the configured destinations for you to identify YOUR account.")
+        for target in targets:
+            try:
+                members = api(token, "getChatAdministrators", {"chat_id": target["chat_id"]})
+                for member in members:
+                    user = member.get("user", {})
+                    if user.get("id") and not user.get("is_bot"):
+                        contacts[str(user["id"])] = user
+            except TelegramError:
+                continue
     for identity, chat in contacts.items():
-        print(f"Private conversation: {identity}, @{chat.get('username', '')} {chat.get('first_name', '')}")
-    value = input("Confirm YOUR private numeric chat ID above (or enter known private ID): ").strip()
+        print(f"Human account candidate: {identity}, @{chat.get('username', '')} {chat.get('first_name', '')}")
+    value = input("Confirm YOUR OWN personal numeric user ID (not the bot, not another administrator): ").strip()
     if not re.fullmatch(r"[1-9]\d*", value):
         raise TelegramError("Private alert destination must be a positive numeric user ID")
+    if value == str(bot_id):
+        raise TelegramError("This is the BOT ID, not your personal user ID. No secrets saved.")
     info = api(token, "getChat", {"chat_id": value})
     if info.get("type") != "private":
         raise TelegramError("Alert destination is not a private conversation")
@@ -68,9 +81,9 @@ def main():
         bot = api(token, "getMe", {})
         if bot.get("username", "").lower() != "mswnlz_github_resource_sync_bot":
             raise TelegramError("Unexpected bot; this setup expects @mswnlz_github_resource_sync_bot")
-        alert = choose_private_chat(token)
         urls = json.loads((Path(__file__).resolve().parents[1] / "deploy/telegram-targets.json").read_text())
         targets = [resolve_target(token, url) for url in urls]
+        alert = choose_private_chat(token, bot.get("id"), targets)
         if input("Save these publication targets and your PRIVATE alert chat? Type yes: ").strip() != "yes":
             print("Cancelled; nothing saved.")
             return 1

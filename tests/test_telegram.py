@@ -75,6 +75,8 @@ def test_test_message_does_not_pretend_to_publish(monkeypatch):
     monkeypatch.setenv("TELEGRAM_ALERT_CHAT_ID", "1")
     monkeypatch.setenv("NOTIFICATION_TEST", "true")
     def respond(token, method, body):
+        if method == "getMe":
+            return {"id": 999}
         if method == "getChat":
             return {"type": "private"}
         sent.append(body)
@@ -101,6 +103,8 @@ def test_failure_only_goes_to_private_never_loads_public_targets(monkeypatch):
     monkeypatch.setenv("REFRESH_STATUS", "failure")
     monkeypatch.delenv("NOTIFICATION_TEST", raising=False)
     def respond(token, method, body):
+        if method == "getMe":
+            return {"id": 999}
         if method == "getChat":
             return {"type": "private"}
         sent.append(body)
@@ -153,6 +157,8 @@ def test_partial_public_failure_reports_only_to_private(monkeypatch, tmp_path):
     setup_public(monkeypatch, tmp_path, {"changed": [{"provider": "X", "title": "price"}]})
     sent = []
     def respond(token, method, body):
+        if method == "getMe":
+            return {"id": 999}
         if method == "getChat":
             return {"type": "private"}
         if body["chat_id"] == "-1001":
@@ -164,3 +170,25 @@ def test_partial_public_failure_reports_only_to_private(monkeypatch, tmp_path):
     diagnostics = [body for body in sent if "发送失败" in body["text"]]
     assert len(diagnostics) == 1 and diagnostics[0]["chat_id"] == "123"
     assert len([body for body in sent if body["chat_id"] != "123"]) == 5
+
+
+def test_alert_rejects_own_bot_id_before_sending(monkeypatch):
+    calls = []
+    def respond(token, method, body):
+        calls.append(method)
+        return {"id": 123}
+    monkeypatch.setattr(tg, "api", respond)
+    with pytest.raises(tg.TelegramError, match="BOT itself"):
+        tg.private_alert(TOKEN, "123", "error")
+    assert calls == ["getMe"]
+
+
+def test_403_reason_is_useful_but_redacted(monkeypatch):
+    body = json.dumps({"description": "Forbidden: bot cannot send messages to bots " + TOKEN}).encode()
+    def fetch(*args, **kwargs):
+        raise HTTPError("secret" + TOKEN, 403, "Forbidden", {}, BytesIO(body))
+    monkeypatch.setattr(tg, "urlopen", fetch)
+    with pytest.raises(tg.TelegramError) as result:
+        tg.api(TOKEN, "sendMessage", {})
+    assert "personal user ID" in str(result.value)
+    assert TOKEN not in str(result.value)

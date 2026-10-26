@@ -138,3 +138,20 @@ def test_cli_drop_guard_preserves_all_artifacts(tmp_path, monkeypatch):
     monkeypatch.setattr(cli.pipeline, "save", unexpected)
     assert cli.main(["--json-out", str(path), "--quiet"]) == 1
     assert json.loads(path.read_text()) == previous
+
+
+def test_non_flagship_plan_price_change_is_reported():
+    plans = [{"name": "Small", "price": {"amount": 5, "currency": "$", "cycle": "month"}},
+             {"name": "Large", "price": {"amount": 20, "currency": "$", "cycle": "month"}}]
+    before = payload([record(plans=plans)])
+    new_plans = deepcopy(plans)
+    new_plans[0]["price"]["amount"] = 4
+    report = reconcile(payload([record(plans=new_plans)]), before)["updates"]
+    assert "套餐表" in report["changed"][0]["changes"]
+
+
+def test_package_and_location_order_only_is_not_a_change():
+    plans = [{"name": "S"}, {"name": "L"}]
+    before = payload([record(plans=plans, locations=["Paris", "London"])])
+    report = reconcile(payload([record(plans=list(reversed(plans)), locations=["London", "Paris"])]), before)["updates"]
+    assert not report["changed"]
