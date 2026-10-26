@@ -1,10 +1,10 @@
 {
   "source": "LowEndTalk Offers + LowEndBox",
-  "generated_at": "2026-10-26T07:23:39+00:00",
+  "generated_at": "2026-10-26T08:33:17+00:00",
   "count": 81,
   "by_source": {
-    "let": 73,
-    "leb": 8
+    "leb": 8,
+    "let": 73
   },
   "deduped": 0,
   "source_failures": [],
@@ -23,19 +23,21 @@
       "age_status": "NEW",
       "availability": "UNVERIFIED",
       "replies": {
-        "reply_count": 60,
+        "reply_count": 46,
         "vendor_reply_count": 0,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:22+00:00"
+        "fetched_at": "2026-10-26T08:31:49+00:00"
       },
       "event_type": "anniversary",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -72,7 +74,220 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 60,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222474",
+      "source": "let",
+      "provider": "Caliber Node",
+      "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
+      "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
+      "vendor_url": "https://calibernode.com/cloud-apps#catalog",
+      "order_url": null,
+      "author": "CaliberNode",
+      "posted": "Sat, 24 Oct 2026 23:06:37 +0000",
+      "age_days": 1,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 48,
+        "vendor_reply_count": 2,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-10-26T08:31:50+00:00"
+      },
+      "event_type": "holiday",
+      "discount": {
+        "strength": "码 TREAT26",
+        "percent_max": null,
+        "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "TREAT26"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": 2,
+        "ram_gb": 2.0,
+        "storage_gb": 30.0,
+        "storage_type": "unspecified",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [
+          2
+        ],
+        "ram_gb": [
+          2.0
+        ],
+        "storage_gb": [
+          30.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 8.0,
+          "currency": "$",
+          "cycle": "year"
+        }
+      ],
+      "locations": [
+        "Dallas",
+        "Los Angeles",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "stock_hints": [],
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2 核 / 2 GB 内存 / 30 GB 存储",
+      "display_price": "$8/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 8.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 28,
+      "annual_eur": 7.36,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222164",
+      "source": "let",
+      "provider": "HostDZire",
+      "title": "[Early Black Friday Sale] VPS & Dedicated Server Deals | Starting at Just €18/Year!",
+      "url": "https://lowendtalk.com/discussion/222164/early-black-friday-sale-vps-dedicated-server-deals-starting-at-just-18-year",
+      "vendor_url": "https://hostdzire.com/billing/cart.php?a=add&pid=1261&currency=1&billingcycle=annually",
+      "order_url": null,
+      "author": "HostDZire",
+      "posted": "Fri, 16 Oct 2026 18:31:59 +0000",
+      "age_days": 9,
+      "age_status": "ACTIVE",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 42,
+        "vendor_reply_count": 1,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-10-26T08:31:53+00:00"
+      },
+      "event_type": "black_friday",
+      "discount": {
+        "strength": "",
+        "percent_max": null,
+        "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": 12,
+        "ram_gb": 128.0,
+        "storage_gb": 8192.0,
+        "storage_type": "SATA",
+        "bandwidth_tb": 16.0
+      },
+      "specs_all": {
+        "vcpu": [
+          12,
+          8,
+          6,
+          4,
+          2,
+          1
+        ],
+        "ram_gb": [
+          128.0,
+          32.0,
+          24.0,
+          12.0,
+          8.0,
+          6.0,
+          4.0,
+          3.0
+        ],
+        "storage_gb": [
+          8192.0,
+          8192.0,
+          8192.0,
+          6144.0,
+          4096.0,
+          4096.0,
+          4096.0,
+          2048.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 18.0,
+          "currency": "€",
+          "cycle": "year"
+        },
+        {
+          "amount": 21.0,
+          "currency": "€",
+          "cycle": "year"
+        },
+        {
+          "amount": 29.0,
+          "currency": "€",
+          "cycle": "year"
+        },
+        {
+          "amount": 30.0,
+          "currency": "€",
+          "cycle": "year"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1–12 核 / 3–128 GB 内存 / 2048–8192 GB 存储",
+      "display_price": "€18/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 18.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 32,
+      "annual_eur": 18.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221713",
@@ -134,13 +349,15 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-10-26T07:22:24+00:00"
+        "fetched_at": "2026-10-26T08:31:54+00:00"
       },
       "event_type": "anniversary",
       "discount": {
-        "strength": "循环/永久 · 最高 10% off · 码 LET10",
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 10% off · 码 LET10",
         "percent_max": 10,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [
           "LET10"
         ],
@@ -427,92 +644,13 @@
         "cycle": "year"
       },
       "purchase_label": "查看活动与下单",
-      "score": 78,
-      "annual_eur": 129.0
-    },
-    {
-      "thread_id": "222474",
-      "source": "let",
-      "provider": "Caliber Node",
-      "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
-      "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
-      "vendor_url": "https://calibernode.com/cloud-apps#catalog",
-      "order_url": null,
-      "author": "CaliberNode",
-      "posted": "Sat, 24 Oct 2026 23:06:37 +0000",
-      "age_days": 1,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 44,
-        "vendor_reply_count": 1,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:25+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "码 TREAT26",
-        "percent_max": null,
-        "recurring": false,
-        "codes": [
-          "TREAT26"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": 2,
-        "ram_gb": 2.0,
-        "storage_gb": 30.0,
-        "storage_type": "unspecified",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [
-          2
-        ],
-        "ram_gb": [
-          2.0
-        ],
-        "storage_gb": [
-          30.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 8.0,
-          "currency": "$",
-          "cycle": "year"
-        }
-      ],
-      "locations": [
-        "Dallas",
-        "Los Angeles",
-        "Warsaw",
-        "Singapore",
-        "Tokyo"
-      ],
-      "stock_hints": [],
-      "confidence": 0.83,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：2 核 / 2 GB 内存 / 30 GB 存储",
-      "display_price": "$8/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 8.0,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 28,
-      "annual_eur": 7.36
+      "score": 48,
+      "annual_eur": 129.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222136",
@@ -534,13 +672,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:25+00:00"
+        "fetched_at": "2026-10-26T08:31:54+00:00"
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 最高 30% off · 12 months for the price of 10+2 months free",
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months for the price of 10+2 months free",
         "percent_max": 30,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [],
         "extras": [
           "12 months for the price of 10",
@@ -613,8 +753,13 @@
         "cycle": "year"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 77,
-      "annual_eur": 38.0
+      "score": 47,
+      "annual_eur": 38.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222157",
@@ -636,13 +781,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:25+00:00"
+        "fetched_at": "2026-10-26T08:31:54+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 最高 25% off · 码 LETB25/LETS2026",
         "percent_max": 25,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LETB25",
           "LETS2026"
@@ -733,7 +880,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 70,
-      "annual_eur": 12.99
+      "annual_eur": 12.99,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221564",
@@ -755,13 +907,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:26+00:00"
+        "fetched_at": "2026-10-26T08:31:55+00:00"
       },
       "event_type": "restock",
       "discount": {
         "strength": "最高 36% off · double bandwidth",
         "percent_max": 36,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "double bandwidth"
@@ -835,7 +989,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 54,
-      "annual_eur": 36.76
+      "annual_eur": 36.76,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222539",
@@ -857,13 +1016,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:26+00:00"
+        "fetched_at": "2026-10-26T08:31:56+00:00"
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 最高 10% off · 码 LET10",
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 10% off · 码 LET10",
         "percent_max": 10,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [
           "LET10"
         ],
@@ -937,118 +1098,13 @@
         "cycle": "month"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 56,
-      "annual_eur": 176.09
-    },
-    {
-      "thread_id": "222164",
-      "source": "let",
-      "provider": "HostDZire",
-      "title": "[Early Black Friday Sale] VPS & Dedicated Server Deals | Starting at Just €18/Year!",
-      "url": "https://lowendtalk.com/discussion/222164/early-black-friday-sale-vps-dedicated-server-deals-starting-at-just-18-year",
-      "vendor_url": "https://hostdzire.com/billing/cart.php?a=add&pid=1261&currency=1&billingcycle=annually",
-      "order_url": null,
-      "author": "HostDZire",
-      "posted": "Fri, 16 Oct 2026 18:31:59 +0000",
-      "age_days": 9,
-      "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 41,
-        "vendor_reply_count": 1,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:27+00:00"
-      },
-      "event_type": "black_friday",
-      "discount": {
-        "strength": "",
-        "percent_max": null,
-        "recurring": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": 12,
-        "ram_gb": 128.0,
-        "storage_gb": 8192.0,
-        "storage_type": "SATA",
-        "bandwidth_tb": 16.0
-      },
-      "specs_all": {
-        "vcpu": [
-          12,
-          8,
-          6,
-          4,
-          2,
-          1
-        ],
-        "ram_gb": [
-          128.0,
-          32.0,
-          24.0,
-          12.0,
-          8.0,
-          6.0,
-          4.0,
-          3.0
-        ],
-        "storage_gb": [
-          8192.0,
-          8192.0,
-          8192.0,
-          6144.0,
-          4096.0,
-          4096.0,
-          4096.0,
-          2048.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 18.0,
-          "currency": "€",
-          "cycle": "year"
-        },
-        {
-          "amount": 21.0,
-          "currency": "€",
-          "cycle": "year"
-        },
-        {
-          "amount": 29.0,
-          "currency": "€",
-          "cycle": "year"
-        },
-        {
-          "amount": 30.0,
-          "currency": "€",
-          "cycle": "year"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.67,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：1–12 核 / 3–128 GB 内存 / 2048–8192 GB 存储",
-      "display_price": "€18/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 18.0,
-        "currency": "€",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 32,
-      "annual_eur": 18.0
+      "score": 26,
+      "annual_eur": 176.09,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221473",
@@ -1070,13 +1126,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:28+00:00"
+        "fetched_at": "2026-10-26T08:31:57+00:00"
       },
       "event_type": "black_friday",
       "discount": {
-        "strength": "循环/永久 · 最高 30% off · 12 months free",
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months free",
         "percent_max": 30,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [],
         "extras": [
           "12 months free"
@@ -1137,8 +1195,13 @@
         "cycle": "year"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 99,
-      "annual_eur": 367.08
+      "score": 69,
+      "annual_eur": 367.08,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220354",
@@ -1169,13 +1232,15 @@
           "offset": 111
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:30+00:00"
+        "fetched_at": "2026-10-26T08:31:59+00:00"
       },
       "event_type": "holiday",
       "discount": {
         "strength": "最高 55% off · 1 month free+2 months free",
         "percent_max": 55,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "1 month free",
@@ -1254,7 +1319,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 79,
-      "annual_eur": 22.08
+      "annual_eur": 22.08,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222415",
@@ -1276,13 +1346,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:31+00:00"
+        "fetched_at": "2026-10-26T08:32:00+00:00"
       },
       "event_type": "holiday",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -1362,7 +1434,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 53,
-      "annual_eur": 31.0
+      "annual_eur": 31.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222462",
@@ -1384,13 +1461,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:33+00:00"
+        "fetched_at": "2026-10-26T08:32:03+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -1442,7 +1521,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 7,
-      "annual_eur": 6.62
+      "annual_eur": 6.62,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221797",
@@ -1464,13 +1548,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:37+00:00"
+        "fetched_at": "2026-10-26T08:32:08+00:00"
       },
       "event_type": "restock",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -1520,7 +1606,12 @@
       "sort_price": null,
       "purchase_label": "查看活动与下单",
       "score": 15,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222168",
@@ -1542,13 +1633,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:38+00:00"
+        "fetched_at": "2026-10-26T08:32:09+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 码 OCTRYZI92GB",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "OCTRYZI92GB"
         ],
@@ -1611,7 +1704,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 47,
-      "annual_eur": 21.15
+      "annual_eur": 21.15,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221896",
@@ -1642,13 +1740,15 @@
           "offset": 110
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:40+00:00"
+        "fetched_at": "2026-10-26T08:32:12+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 最高 30% off · 码 LETJHUWQ",
         "percent_max": 30,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LETJHUWQ"
         ],
@@ -1713,7 +1813,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 69,
-      "annual_eur": 1661.52
+      "annual_eur": 1661.52,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222400",
@@ -1735,13 +1840,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:40+00:00"
+        "fetched_at": "2026-10-26T08:32:12+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -1814,7 +1921,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 8,
-      "annual_eur": 12.0
+      "annual_eur": 12.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222117",
@@ -1836,13 +1948,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:42+00:00"
+        "fetched_at": "2026-10-26T08:32:13+00:00"
       },
       "event_type": "holiday",
       "discount": {
         "strength": "循环/永久 · double storage",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "double storage"
@@ -1903,7 +2017,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 60,
-      "annual_eur": 3.94
+      "annual_eur": 3.94,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221558",
@@ -1945,13 +2064,15 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-10-26T07:22:44+00:00"
+        "fetched_at": "2026-10-26T08:32:16+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -2014,7 +2135,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 8,
-      "annual_eur": 45.08
+      "annual_eur": 45.08,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221103",
@@ -2036,13 +2162,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:45+00:00"
+        "fetched_at": "2026-10-26T08:32:17+00:00"
       },
       "event_type": "holiday",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -2089,7 +2217,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 48,
-      "annual_eur": 8.27
+      "annual_eur": 8.27,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222143",
@@ -2111,13 +2244,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:47+00:00"
+        "fetched_at": "2026-10-26T08:32:19+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 最高 21% off · 码 WLXOCT88",
         "percent_max": 21,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "WLXOCT88"
         ],
@@ -2170,7 +2305,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 65,
-      "annual_eur": 2002.32
+      "annual_eur": 2002.32,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220866",
@@ -2192,13 +2332,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:48+00:00"
+        "fetched_at": "2026-10-26T08:32:20+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "码 BFJH1873LA",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "BFJH1873LA"
         ],
@@ -2266,7 +2408,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 20,
-      "annual_eur": 11.04
+      "annual_eur": 11.04,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220998",
@@ -2318,13 +2465,15 @@
             "offset": 11
           }
         ],
-        "fetched_at": "2026-10-26T07:22:49+00:00"
+        "fetched_at": "2026-10-26T08:32:21+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "循环/永久 · 最高 25% off · 码 LETB25/LETS2026",
         "percent_max": 25,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LETB25",
           "LETS2026"
@@ -2408,7 +2557,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 75,
-      "annual_eur": 12.99
+      "annual_eur": 12.99,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222165",
@@ -2430,13 +2584,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:49+00:00"
+        "fetched_at": "2026-10-26T08:32:21+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -2476,7 +2632,12 @@
       "sort_price": null,
       "purchase_label": "查看补货与替代套餐",
       "score": 2,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "219747",
@@ -2518,13 +2679,15 @@
             "offset": 57
           }
         ],
-        "fetched_at": "2026-10-26T07:22:50+00:00"
+        "fetched_at": "2026-10-26T08:32:23+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "free upgrade · 码 BEASTMODE7950XSLC/BEASTMODE9950X/BEASTMODE9950XNYC",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "BEASTMODE7950XSLC",
           "BEASTMODE9950X",
@@ -2616,7 +2779,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 35,
-      "annual_eur": 772.25
+      "annual_eur": 772.25,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221603",
@@ -2638,13 +2806,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:52+00:00"
+        "fetched_at": "2026-10-26T08:32:24+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -2707,7 +2877,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 8,
-      "annual_eur": 9.2
+      "annual_eur": 9.2,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222186",
@@ -2729,13 +2904,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:52+00:00"
+        "fetched_at": "2026-10-26T08:32:24+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 最高 30% off · 码 SEGSJ1ZL0Z",
         "percent_max": 30,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "SEGSJ1ZL0Z"
         ],
@@ -2805,7 +2982,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 74,
-      "annual_eur": 34.78
+      "annual_eur": 34.78,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221687",
@@ -2836,13 +3018,15 @@
           "offset": 44
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:53+00:00"
+        "fetched_at": "2026-10-26T08:32:25+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "最高 30% off",
         "percent_max": 30,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -2899,7 +3083,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 32,
-      "annual_eur": 18.55
+      "annual_eur": 18.55,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222403",
@@ -2921,13 +3110,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:54+00:00"
+        "fetched_at": "2026-10-26T08:32:27+00:00"
       },
       "event_type": "launch",
       "discount": {
-        "strength": "最高 15% off · 码 LOWENDTALK",
+        "strength": "首期优惠，续费待核对 · 最高 15% off · 码 LOWENDTALK",
         "percent_max": 15,
         "recurring": false,
+        "introductory": true,
+        "rule_conflict": false,
         "codes": [
           "LOWENDTALK"
         ],
@@ -2991,7 +3182,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 35,
-      "annual_eur": 102.67
+      "annual_eur": 102.67,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "219603",
@@ -3013,13 +3209,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:55+00:00"
+        "fetched_at": "2026-10-26T08:32:28+00:00"
       },
       "event_type": "anniversary",
       "discount": {
         "strength": "码 LET10",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LET10"
         ],
@@ -3097,7 +3295,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 40,
-      "annual_eur": 816.96
+      "annual_eur": 816.96,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222269",
@@ -3119,13 +3322,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:56+00:00"
+        "fetched_at": "2026-10-26T08:32:29+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 码 FIRSTORDER50",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "FIRSTORDER50"
         ],
@@ -3170,7 +3375,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 48,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221258",
@@ -3192,13 +3402,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:57+00:00"
+        "fetched_at": "2026-10-26T08:32:30+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "free upgrade",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "free upgrade"
@@ -3262,7 +3474,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 18,
-      "annual_eur": 24.84
+      "annual_eur": 24.84,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221311",
@@ -3304,13 +3521,15 @@
             "offset": 55
           }
         ],
-        "fetched_at": "2026-10-26T07:22:58+00:00"
+        "fetched_at": "2026-10-26T08:32:31+00:00"
       },
       "event_type": "restock",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -3446,7 +3665,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 15,
-      "annual_eur": 6.99
+      "annual_eur": 6.99,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222302",
@@ -3468,13 +3692,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:59+00:00"
+        "fetched_at": "2026-10-26T08:32:32+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -3512,7 +3738,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 3,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "219781",
@@ -3564,13 +3795,15 @@
             "offset": 39
           }
         ],
-        "fetched_at": "2026-10-26T07:23:01+00:00"
+        "fetched_at": "2026-10-26T08:32:34+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -3643,7 +3876,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 7,
-      "annual_eur": 331.09
+      "annual_eur": 331.09,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222201",
@@ -3665,13 +3903,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:01+00:00"
+        "fetched_at": "2026-10-26T08:32:34+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -3719,7 +3959,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 5,
-      "annual_eur": 110.29
+      "annual_eur": 110.29,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221961",
@@ -3741,13 +3986,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:01+00:00"
+        "fetched_at": "2026-10-26T08:32:34+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -3817,7 +4064,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 7,
-      "annual_eur": 84.24
+      "annual_eur": 84.24,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221777",
@@ -3839,13 +4091,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:01+00:00"
+        "fetched_at": "2026-10-26T08:32:34+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 最高 25% off · double bandwidth+double ram",
         "percent_max": 25,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "double bandwidth",
@@ -3914,7 +4168,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 73,
-      "annual_eur": 17.93
+      "annual_eur": 17.93,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221949",
@@ -3936,13 +4195,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:01+00:00"
+        "fetched_at": "2026-10-26T08:32:34+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "循环/永久 · 最高 10% off",
         "percent_max": 10,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -4006,7 +4267,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 46,
-      "annual_eur": 42.95
+      "annual_eur": 42.95,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "219837",
@@ -4048,13 +4314,15 @@
             "offset": 7
           }
         ],
-        "fetched_at": "2026-10-26T07:23:04+00:00"
+        "fetched_at": "2026-10-26T08:32:37+00:00"
       },
       "event_type": "restock",
       "discount": {
         "strength": "码 FLASH20OFF/FLASHLAE3/SUMMER20OFF",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "FLASH20OFF",
           "FLASHLAE3",
@@ -4137,7 +4405,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 21,
-      "annual_eur": 276.0
+      "annual_eur": 276.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221289",
@@ -4149,7 +4422,7 @@
       "order_url": null,
       "author": "kukara4",
       "posted": "Mon, 21 Sep 2026 07:56:12 +0000",
-      "age_days": 34,
+      "age_days": 35,
       "age_status": "STALE",
       "availability": "UNVERIFIED_STALE",
       "replies": {
@@ -4159,13 +4432,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:05+00:00"
+        "fetched_at": "2026-10-26T08:32:38+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -4203,7 +4478,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 3,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "219721",
@@ -4225,13 +4505,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:06+00:00"
+        "fetched_at": "2026-10-26T08:32:40+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "最高 20% off · free upgrade",
         "percent_max": 20,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "free upgrade"
@@ -4287,7 +4569,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 39,
-      "annual_eur": 13.62
+      "annual_eur": 13.62,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222121",
@@ -4309,13 +4596,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:06+00:00"
+        "fetched_at": "2026-10-26T08:32:40+00:00"
       },
       "event_type": "sale",
       "discount": {
-        "strength": "循环/永久 · 最高 20% off · 码 LOWENDTALKDEDI/LOWENDTALKVPS",
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 20% off · 码 LOWENDTALKDEDI/LOWENDTALKVPS",
         "percent_max": 20,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [
           "LOWENDTALKDEDI",
           "LOWENDTALKVPS"
@@ -4390,8 +4679,13 @@
         "cycle": "month"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 64,
-      "annual_eur": 22.52
+      "score": 34,
+      "annual_eur": 22.52,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221937",
@@ -4413,13 +4707,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:07+00:00"
+        "fetched_at": "2026-10-26T08:32:41+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -4480,7 +4776,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 45,
-      "annual_eur": 12.88
+      "annual_eur": 12.88,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220098",
@@ -4542,13 +4843,15 @@
             "offset": 28
           }
         ],
-        "fetched_at": "2026-10-26T07:23:08+00:00"
+        "fetched_at": "2026-10-26T08:32:41+00:00"
       },
       "event_type": "holiday",
       "discount": {
         "strength": "循环/永久 · 最高 60% off · double storage · 码 Promo25VPS",
         "percent_max": 60,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "Promo25VPS"
         ],
@@ -4631,7 +4934,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 116,
-      "annual_eur": 35.15
+      "annual_eur": 35.15,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220041",
@@ -4673,13 +4981,15 @@
             "offset": 27
           }
         ],
-        "fetched_at": "2026-10-26T07:23:09+00:00"
+        "fetched_at": "2026-10-26T08:32:43+00:00"
       },
       "event_type": "sale",
       "discount": {
-        "strength": "最高 25% off · 码 LET25",
+        "strength": "首期优惠，续费待核对 · 最高 25% off · 码 LET25",
         "percent_max": 25,
         "recurring": false,
+        "introductory": true,
+        "rule_conflict": false,
         "codes": [
           "LET25"
         ],
@@ -4746,7 +5056,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 35,
-      "annual_eur": 44.05
+      "annual_eur": 44.05,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221060",
@@ -4768,13 +5083,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:10+00:00"
+        "fetched_at": "2026-10-26T08:32:44+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -4845,7 +5162,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 15,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221167",
@@ -4867,13 +5189,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:11+00:00"
+        "fetched_at": "2026-10-26T08:32:46+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "最高 15% off · 码 AVAAPPS",
         "percent_max": 15,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "AVAAPPS"
         ],
@@ -4917,7 +5241,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 25,
-      "annual_eur": 12.0
+      "annual_eur": 12.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220060",
@@ -4929,7 +5258,7 @@
       "order_url": "https://royal-server.ro/en/vps-servers.php",
       "author": "nadir20016",
       "posted": "Tue, 11 Aug 2026 07:41:27 +0000",
-      "age_days": 75,
+      "age_days": 76,
       "age_status": "STALE",
       "availability": "ON_SALE",
       "replies": {
@@ -4959,13 +5288,15 @@
             "offset": 803
           }
         ],
-        "fetched_at": "2026-10-26T07:23:13+00:00"
+        "fetched_at": "2026-10-26T08:32:47+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -5041,7 +5372,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 8,
-      "annual_eur": 60.0
+      "annual_eur": 60.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221991",
@@ -5083,13 +5419,15 @@
             "offset": 222
           }
         ],
-        "fetched_at": "2026-10-26T07:23:15+00:00"
+        "fetched_at": "2026-10-26T08:32:49+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -5170,7 +5508,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 7,
-      "annual_eur": 5.06
+      "annual_eur": 5.06,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221924",
@@ -5192,13 +5535,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:15+00:00"
+        "fetched_at": "2026-10-26T08:32:49+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · free upgrade",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "free upgrade"
@@ -5268,7 +5613,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 53,
-      "annual_eur": 110.4
+      "annual_eur": 110.4,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222107",
@@ -5290,13 +5640,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:15+00:00"
+        "fetched_at": "2026-10-26T08:32:49+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -5377,7 +5729,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 40,
-      "annual_eur": 1140.0
+      "annual_eur": 1140.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221711",
@@ -5419,13 +5776,15 @@
             "offset": 52
           }
         ],
-        "fetched_at": "2026-10-26T07:23:16+00:00"
+        "fetched_at": "2026-10-26T08:32:51+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -5489,7 +5848,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 43,
-      "annual_eur": 47.88
+      "annual_eur": 47.88,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221980",
@@ -5511,13 +5875,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:17+00:00"
+        "fetched_at": "2026-10-26T08:32:52+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -5557,7 +5923,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 5,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220831",
@@ -5599,13 +5970,15 @@
             "offset": 31
           }
         ],
-        "fetched_at": "2026-10-26T07:23:21+00:00"
+        "fetched_at": "2026-10-26T08:32:56+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久 · 最高 50% off · 码 Promo50VPS/STORVPS1",
         "percent_max": 50,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "Promo50VPS",
           "STORVPS1"
@@ -5682,7 +6055,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 88,
-      "annual_eur": 33.07
+      "annual_eur": 33.07,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220717",
@@ -5704,13 +6082,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:22+00:00"
+        "fetched_at": "2026-10-26T08:32:57+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -5775,7 +6155,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 10,
-      "annual_eur": 20.87
+      "annual_eur": 20.87,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221826",
@@ -5797,13 +6182,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:22+00:00"
+        "fetched_at": "2026-10-26T08:32:58+00:00"
       },
       "event_type": "sale",
       "discount": {
-        "strength": "最高 25% off · 码 LET25",
+        "strength": "首期优惠，续费待核对 · 最高 25% off · 码 LET25",
         "percent_max": 25,
         "recurring": false,
+        "introductory": true,
+        "rule_conflict": false,
         "codes": [
           "LET25"
         ],
@@ -5868,7 +6255,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 35,
-      "annual_eur": 66.13
+      "annual_eur": 66.13,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220957",
@@ -5899,13 +6291,15 @@
           "offset": 43
         },
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:22+00:00"
+        "fetched_at": "2026-10-26T08:32:58+00:00"
       },
       "event_type": "sale",
       "discount": {
-        "strength": "triple the",
+        "strength": "首期优惠，续费待核对 · triple the",
         "percent_max": null,
         "recurring": false,
+        "introductory": true,
+        "rule_conflict": false,
         "codes": [],
         "extras": [
           "triple the"
@@ -5973,7 +6367,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 20,
-      "annual_eur": 496.8
+      "annual_eur": 496.8,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221735",
@@ -5995,13 +6394,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:23+00:00"
+        "fetched_at": "2026-10-26T08:32:59+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "循环/永久 · 最高 10% off · 码 LET10OFFCH",
         "percent_max": 10,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LET10OFFCH"
         ],
@@ -6061,7 +6462,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 60,
-      "annual_eur": 1975.32
+      "annual_eur": 1975.32,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220764",
@@ -6083,13 +6489,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:26+00:00"
+        "fetched_at": "2026-10-26T08:33:02+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "码 LET16GBSEPT26/LET2GBSEPT26/LET32GBSEPT26",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LET16GBSEPT26",
           "LET2GBSEPT26",
@@ -6165,7 +6573,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 22,
-      "annual_eur": 15.63
+      "annual_eur": 15.63,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222110",
@@ -6187,13 +6600,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:26+00:00"
+        "fetched_at": "2026-10-26T08:33:02+00:00"
       },
       "event_type": "restock",
       "discount": {
         "strength": "循环/永久 · 码 DED7QE7M",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "DED7QE7M"
         ],
@@ -6252,7 +6667,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 50,
-      "annual_eur": 828.0
+      "annual_eur": 828.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221165",
@@ -6274,13 +6694,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:26+00:00"
+        "fetched_at": "2026-10-26T08:33:03+00:00"
       },
       "event_type": "regular",
       "discount": {
-        "strength": "循环/永久 · double bandwidth",
+        "strength": "含首期与循环描述，适用规则待核对 · double bandwidth",
         "percent_max": null,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [],
         "extras": [
           "double bandwidth"
@@ -6359,8 +6781,13 @@
         "cycle": "year"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 48,
-      "annual_eur": 9.15
+      "score": 18,
+      "annual_eur": 9.15,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221641",
@@ -6382,13 +6809,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:27+00:00"
+        "fetched_at": "2026-10-26T08:33:04+00:00"
       },
       "event_type": "anniversary",
       "discount": {
         "strength": "码 LET10",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LET10"
         ],
@@ -6464,7 +6893,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 37,
-      "annual_eur": 1092.96
+      "annual_eur": 1092.96,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221186",
@@ -6486,13 +6920,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:29+00:00"
+        "fetched_at": "2026-10-26T08:33:05+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "码 EYG37EFYG",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "EYG37EFYG"
         ],
@@ -6566,7 +7002,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 13,
-      "annual_eur": 61.38
+      "annual_eur": 61.38,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221894",
@@ -6588,13 +7029,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:30+00:00"
+        "fetched_at": "2026-10-26T08:33:07+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -6639,7 +7082,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 10,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222078",
@@ -6661,13 +7109,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:31+00:00"
+        "fetched_at": "2026-10-26T08:33:08+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -6733,7 +7183,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 7,
-      "annual_eur": 44.16
+      "annual_eur": 44.16,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "222052",
@@ -6755,13 +7210,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:31+00:00"
+        "fetched_at": "2026-10-26T08:33:09+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "循环/永久 · 最高 25% off",
         "percent_max": 25,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -6840,7 +7297,12 @@
       },
       "purchase_label": "查看补货与替代套餐",
       "score": 58,
-      "annual_eur": 540.96
+      "annual_eur": 540.96,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221159",
@@ -6862,13 +7324,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:33+00:00"
+        "fetched_at": "2026-10-26T08:33:10+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -6907,7 +7371,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 13,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221321",
@@ -6959,13 +7428,15 @@
             "offset": 31
           }
         ],
-        "fetched_at": "2026-10-26T07:23:33+00:00"
+        "fetched_at": "2026-10-26T08:33:10+00:00"
       },
       "event_type": "sale",
       "discount": {
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -7030,7 +7501,12 @@
       },
       "purchase_label": "查看活动与下单",
       "score": 43,
-      "annual_eur": 1644.96
+      "annual_eur": 1644.96,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220847",
@@ -7042,7 +7518,7 @@
       "order_url": null,
       "author": "servury",
       "posted": "Sun, 06 Sep 2026 07:24:32 +0000",
-      "age_days": 49,
+      "age_days": 50,
       "age_status": "STALE",
       "availability": "UNVERIFIED_STALE",
       "replies": {
@@ -7052,13 +7528,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:33+00:00"
+        "fetched_at": "2026-10-26T08:33:11+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -7117,7 +7595,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 18,
-      "annual_eur": 110.29
+      "annual_eur": 110.29,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "220775",
@@ -7129,7 +7612,7 @@
       "order_url": null,
       "author": "antonpa",
       "posted": "Fri, 04 Sep 2026 07:35:02 +0000",
-      "age_days": 51,
+      "age_days": 52,
       "age_status": "STALE",
       "availability": "UNVERIFIED_STALE",
       "replies": {
@@ -7139,13 +7622,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:37+00:00"
+        "fetched_at": "2026-10-26T08:33:15+00:00"
       },
       "event_type": "launch",
       "discount": {
-        "strength": "循环/永久 · 最高 40% off · 码 CLASSIC/CLASSIC35/JUSTVIBE",
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 40% off · 码 CLASSIC/CLASSIC35/JUSTVIBE",
         "percent_max": 40,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [
           "CLASSIC",
           "CLASSIC35",
@@ -7217,8 +7702,13 @@
         "cycle": "month"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 84,
-      "annual_eur": 36.43
+      "score": 54,
+      "annual_eur": 36.43,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221747",
@@ -7240,13 +7730,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:37+00:00"
+        "fetched_at": "2026-10-26T08:33:15+00:00"
       },
       "event_type": "regular",
       "discount": {
-        "strength": "最高 50% off · 码 LEB50",
+        "strength": "首期优惠，续费待核对 · 最高 50% off · 码 LEB50",
         "percent_max": 50,
         "recurring": false,
+        "introductory": true,
+        "rule_conflict": false,
         "codes": [
           "LEB50"
         ],
@@ -7320,7 +7812,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 55,
-      "annual_eur": 44.16
+      "annual_eur": 44.16,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "221418",
@@ -7342,13 +7839,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:23:38+00:00"
+        "fetched_at": "2026-10-26T08:33:16+00:00"
       },
       "event_type": "launch",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -7410,7 +7909,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 17,
-      "annual_eur": 276.0
+      "annual_eur": 276.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-get-cheap-hosting-in-la-ny-or-atlanta-from-flipperhost-only-29-99-year-for-a-2gb-vps",
@@ -7431,6 +7935,8 @@
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -7514,7 +8020,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 8,
-      "annual_eur": 27.59
+      "annual_eur": 27.59,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium",
@@ -7535,6 +8046,8 @@
         "strength": "码 Earlybird1U/Earlybird2U/Earlybird4U",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "Earlybird1U",
           "Earlybird2U",
@@ -7598,7 +8111,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 18,
-      "annual_eur": 320.16
+      "annual_eur": 320.16,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only",
@@ -7619,6 +8137,8 @@
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -7710,7 +8230,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 8,
-      "annual_eur": 47.88
+      "annual_eur": 47.88,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-more-of-racknerd-adminbolt-heres-50-more-free-vps-10-lifetime-licenses",
@@ -7731,6 +8256,8 @@
         "strength": "循环/永久",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -7768,7 +8295,12 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 37,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
@@ -7789,6 +8321,8 @@
         "strength": "最高 35% off · 码 LEB35",
         "percent_max": 35,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [
           "LEB35"
         ],
@@ -7866,7 +8400,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 53,
-      "annual_eur": 31.2
+      "annual_eur": 31.2,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
@@ -7884,9 +8423,11 @@
       "replies": null,
       "event_type": "launch",
       "discount": {
-        "strength": "码 LEB50",
+        "strength": "首期优惠，续费待核对 · 码 LEB50",
         "percent_max": null,
         "recurring": false,
+        "introductory": true,
+        "rule_conflict": false,
         "codes": [
           "LEB50"
         ],
@@ -7958,7 +8499,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 25,
-      "annual_eur": 20.2
+      "annual_eur": 20.2,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
@@ -7976,9 +8522,11 @@
       "replies": null,
       "event_type": "regular",
       "discount": {
-        "strength": "循环/永久",
+        "strength": "含首期与循环描述，适用规则待核对",
         "percent_max": null,
-        "recurring": true,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
         "codes": [],
         "extras": []
       },
@@ -8015,8 +8563,13 @@
       "display_price_note": "价格周期待核对",
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
-      "score": 37,
-      "annual_eur": null
+      "score": 7,
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "leb-high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month",
@@ -8037,6 +8590,8 @@
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -8106,7 +8661,12 @@
       },
       "purchase_label": "到商家核对价格与库存",
       "score": 5,
-      "annual_eur": 41.88
+      "annual_eur": 41.88,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
     },
     {
       "thread_id": "219671",
@@ -8128,13 +8688,15 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-10-26T07:22:46+00:00"
+        "fetched_at": "2026-10-26T08:32:19+00:00"
       },
       "event_type": "regular",
       "discount": {
         "strength": "",
         "percent_max": null,
         "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
         "codes": [],
         "extras": []
       },
@@ -8166,7 +8728,895 @@
       "sort_price": null,
       "purchase_label": "到商家核对价格与库存",
       "score": 0,
-      "annual_eur": null
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-10-26T08:33:17+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    }
+  ],
+  "observed_count": 81,
+  "observed_by_source": {
+    "let": 73,
+    "leb": 8
+  },
+  "updates": {
+    "generated_at": "2026-10-26T08:33:17+00:00",
+    "baseline": false,
+    "added": [],
+    "changed": [
+      {
+        "id": "let:221713",
+        "provider": "bero-host.de",
+        "title": "BERO HOST 10th Anniversary Deals – EPYC Turin / Ryzen 9950X / IPv6-only VPS",
+        "url": "https://lowendtalk.com/discussion/221713/bero-host-10th-anniversary-deals-epyc-turin-ryzen-9950x-ipv6-only-vps",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 10,
+              "codes": [
+                "LET10"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": 10,
+              "codes": [
+                "LET10"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:222136",
+        "provider": "servers_guru",
+        "title": "[SERVERS.GURU] Netherlands 10Gbps : 30% off recurring! VPS from 3.84€ !",
+        "url": "https://lowendtalk.com/discussion/222136/servers-guru-netherlands-10gbps-30-off-recurring-vps-from-3-84",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 30,
+              "codes": [],
+              "extras": [
+                "12 months for the price of 10",
+                "2 months free"
+              ]
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": 30,
+              "codes": [],
+              "extras": [
+                "12 months for the price of 10",
+                "2 months free"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "let:222539",
+        "provider": "HostNoc",
+        "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $15.95/mo",
+        "url": "https://lowendtalk.com/discussion/222539/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-15-95-mo",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 10,
+              "codes": [
+                "LET10"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": 10,
+              "codes": [
+                "LET10"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:221473",
+        "provider": "DartNode",
+        "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
+        "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 30,
+              "codes": [],
+              "extras": [
+                "12 months free"
+              ]
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": 30,
+              "codes": [],
+              "extras": [
+                "12 months free"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "let:222403",
+        "provider": "Infrawire",
+        "title": "Infrawire - VPS now in Turkey | 10 Gbps | Linux & Windows | Starting at $9.30/mo",
+        "url": "https://lowendtalk.com/discussion/222403/infrawire-vps-now-in-turkey-10-gbps-linux-windows-starting-at-9-30-mo",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": false,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 15,
+              "codes": [
+                "LOWENDTALK"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": false,
+              "percent_max": 15,
+              "codes": [
+                "LOWENDTALK"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:222121",
+        "provider": "centrixnodes.net",
+        "title": "[US] Dedicated Servers from $93.50/mo | VPS from $2.04/mo | 10Gbps | Recurring Discounts | Buffalo,",
+        "url": "https://lowendtalk.com/discussion/222121/us-dedicated-servers-from-93-50-mo-vps-from-2-04-mo-10gbps-recurring-discounts-buffalo",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 20,
+              "codes": [
+                "LOWENDTALKDEDI",
+                "LOWENDTALKVPS"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": 20,
+              "codes": [
+                "LOWENDTALKDEDI",
+                "LOWENDTALKVPS"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:220041",
+        "provider": "HostAddon VPS",
+        "title": "HostAddon VPS - 1/2/10Gbps | NVMe | From $3.99/mo | 25% Off | 30 Locales | Storage | Streaming | VPN",
+        "url": "https://lowendtalk.com/discussion/220041/hostaddon-vps-1-2-10gbps-nvme-from-3-99-mo-25-off-30-locales-storage-streaming-vpn",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": false,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 25,
+              "codes": [
+                "LET25"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": false,
+              "percent_max": 25,
+              "codes": [
+                "LET25"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:221826",
+        "provider": "PrivateByte",
+        "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
+        "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": false,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 25,
+              "codes": [
+                "LET25"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": false,
+              "percent_max": 25,
+              "codes": [
+                "LET25"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:220957",
+        "provider": "TierNet",
+        "title": "Tier.Net Dedis Starting $45/mo - No Bait-and-Switch, Multiple US Locations",
+        "url": "https://lowendtalk.com/discussion/220957/tier-net-dedis-starting-45-mo-no-bait-and-switch-multiple-us-locations",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": false,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": null,
+              "codes": [],
+              "extras": [
+                "triple the"
+              ]
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": false,
+              "percent_max": null,
+              "codes": [],
+              "extras": [
+                "triple the"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "let:221165",
+        "provider": "SoftShellWeb",
+        "title": "[SoftShellWeb] From $9.95/yr - NVMe · 10 Gbps · DDoS Protection · 2× bandwidth",
+        "url": "https://lowendtalk.com/discussion/221165/softshellweb-from-9-95-yr-nvme-10-gbps-ddos-protection-2-bandwidth",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": null,
+              "codes": [],
+              "extras": [
+                "double bandwidth"
+              ]
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": null,
+              "codes": [],
+              "extras": [
+                "double bandwidth"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "let:220775",
+        "provider": "just.hosting",
+        "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
+        "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 40,
+              "codes": [
+                "CLASSIC",
+                "CLASSIC35",
+                "JUSTVIBE",
+                "PERSONAL",
+                "PRIVATE"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": 40,
+              "codes": [
+                "CLASSIC",
+                "CLASSIC35",
+                "JUSTVIBE",
+                "PERSONAL",
+                "PRIVATE"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "let:221747",
+        "provider": "godlike.host",
+        "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+        "url": "https://lowendtalk.com/discussion/221747/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": false,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": 50,
+              "codes": [
+                "LEB50"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": false,
+              "percent_max": 50,
+              "codes": [
+                "LEB50"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "leb:leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
+        "provider": "godlike.host",
+        "title": "Exclusive LowEndBox Pricing: 2GB KVM VPS for $1.83/Month First Year! Godlike.Host is Back!",
+        "url": "https://lowendbox.com/blog/exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back/",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": false,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": null,
+              "codes": [
+                "LEB50"
+              ],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": false,
+              "percent_max": null,
+              "codes": [
+                "LEB50"
+              ],
+              "extras": []
+            }
+          }
+        }
+      },
+      {
+        "id": "leb:leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
+        "provider": "RackNerd & AdminBolt Are Giving Away 100",
+        "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
+        "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
+        "changes": {
+          "优惠规则": {
+            "before": {
+              "recurring": true,
+              "introductory": false,
+              "rule_conflict": false,
+              "percent_max": null,
+              "codes": [],
+              "extras": []
+            },
+            "after": {
+              "recurring": false,
+              "introductory": true,
+              "rule_conflict": true,
+              "percent_max": null,
+              "codes": [],
+              "extras": []
+            }
+          }
+        }
+      }
+    ],
+    "missing": [],
+    "restored": [],
+    "expired": []
+  },
+  "update_history": [
+    {
+      "generated_at": "2026-10-26T08:33:17+00:00",
+      "baseline": false,
+      "added": [],
+      "changed": [
+        {
+          "id": "let:221713",
+          "provider": "bero-host.de",
+          "title": "BERO HOST 10th Anniversary Deals – EPYC Turin / Ryzen 9950X / IPv6-only VPS",
+          "url": "https://lowendtalk.com/discussion/221713/bero-host-10th-anniversary-deals-epyc-turin-ryzen-9950x-ipv6-only-vps",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 10,
+                "codes": [
+                  "LET10"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": 10,
+                "codes": [
+                  "LET10"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:222136",
+          "provider": "servers_guru",
+          "title": "[SERVERS.GURU] Netherlands 10Gbps : 30% off recurring! VPS from 3.84€ !",
+          "url": "https://lowendtalk.com/discussion/222136/servers-guru-netherlands-10gbps-30-off-recurring-vps-from-3-84",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 30,
+                "codes": [],
+                "extras": [
+                  "12 months for the price of 10",
+                  "2 months free"
+                ]
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": 30,
+                "codes": [],
+                "extras": [
+                  "12 months for the price of 10",
+                  "2 months free"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "let:222539",
+          "provider": "HostNoc",
+          "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $15.95/mo",
+          "url": "https://lowendtalk.com/discussion/222539/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-15-95-mo",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 10,
+                "codes": [
+                  "LET10"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": 10,
+                "codes": [
+                  "LET10"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:221473",
+          "provider": "DartNode",
+          "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
+          "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 30,
+                "codes": [],
+                "extras": [
+                  "12 months free"
+                ]
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": 30,
+                "codes": [],
+                "extras": [
+                  "12 months free"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "let:222403",
+          "provider": "Infrawire",
+          "title": "Infrawire - VPS now in Turkey | 10 Gbps | Linux & Windows | Starting at $9.30/mo",
+          "url": "https://lowendtalk.com/discussion/222403/infrawire-vps-now-in-turkey-10-gbps-linux-windows-starting-at-9-30-mo",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": false,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 15,
+                "codes": [
+                  "LOWENDTALK"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": false,
+                "percent_max": 15,
+                "codes": [
+                  "LOWENDTALK"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:222121",
+          "provider": "centrixnodes.net",
+          "title": "[US] Dedicated Servers from $93.50/mo | VPS from $2.04/mo | 10Gbps | Recurring Discounts | Buffalo,",
+          "url": "https://lowendtalk.com/discussion/222121/us-dedicated-servers-from-93-50-mo-vps-from-2-04-mo-10gbps-recurring-discounts-buffalo",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 20,
+                "codes": [
+                  "LOWENDTALKDEDI",
+                  "LOWENDTALKVPS"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": 20,
+                "codes": [
+                  "LOWENDTALKDEDI",
+                  "LOWENDTALKVPS"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:220041",
+          "provider": "HostAddon VPS",
+          "title": "HostAddon VPS - 1/2/10Gbps | NVMe | From $3.99/mo | 25% Off | 30 Locales | Storage | Streaming | VPN",
+          "url": "https://lowendtalk.com/discussion/220041/hostaddon-vps-1-2-10gbps-nvme-from-3-99-mo-25-off-30-locales-storage-streaming-vpn",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": false,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 25,
+                "codes": [
+                  "LET25"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": false,
+                "percent_max": 25,
+                "codes": [
+                  "LET25"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:221826",
+          "provider": "PrivateByte",
+          "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
+          "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": false,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 25,
+                "codes": [
+                  "LET25"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": false,
+                "percent_max": 25,
+                "codes": [
+                  "LET25"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:220957",
+          "provider": "TierNet",
+          "title": "Tier.Net Dedis Starting $45/mo - No Bait-and-Switch, Multiple US Locations",
+          "url": "https://lowendtalk.com/discussion/220957/tier-net-dedis-starting-45-mo-no-bait-and-switch-multiple-us-locations",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": false,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": null,
+                "codes": [],
+                "extras": [
+                  "triple the"
+                ]
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": false,
+                "percent_max": null,
+                "codes": [],
+                "extras": [
+                  "triple the"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "let:221165",
+          "provider": "SoftShellWeb",
+          "title": "[SoftShellWeb] From $9.95/yr - NVMe · 10 Gbps · DDoS Protection · 2× bandwidth",
+          "url": "https://lowendtalk.com/discussion/221165/softshellweb-from-9-95-yr-nvme-10-gbps-ddos-protection-2-bandwidth",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": null,
+                "codes": [],
+                "extras": [
+                  "double bandwidth"
+                ]
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": null,
+                "codes": [],
+                "extras": [
+                  "double bandwidth"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "let:220775",
+          "provider": "just.hosting",
+          "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
+          "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 40,
+                "codes": [
+                  "CLASSIC",
+                  "CLASSIC35",
+                  "JUSTVIBE",
+                  "PERSONAL",
+                  "PRIVATE"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": 40,
+                "codes": [
+                  "CLASSIC",
+                  "CLASSIC35",
+                  "JUSTVIBE",
+                  "PERSONAL",
+                  "PRIVATE"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "let:221747",
+          "provider": "godlike.host",
+          "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+          "url": "https://lowendtalk.com/discussion/221747/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": false,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": 50,
+                "codes": [
+                  "LEB50"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": false,
+                "percent_max": 50,
+                "codes": [
+                  "LEB50"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "leb:leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
+          "provider": "godlike.host",
+          "title": "Exclusive LowEndBox Pricing: 2GB KVM VPS for $1.83/Month First Year! Godlike.Host is Back!",
+          "url": "https://lowendbox.com/blog/exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back/",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": false,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": null,
+                "codes": [
+                  "LEB50"
+                ],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": false,
+                "percent_max": null,
+                "codes": [
+                  "LEB50"
+                ],
+                "extras": []
+              }
+            }
+          }
+        },
+        {
+          "id": "leb:leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
+          "provider": "RackNerd & AdminBolt Are Giving Away 100",
+          "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
+          "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
+          "changes": {
+            "优惠规则": {
+              "before": {
+                "recurring": true,
+                "introductory": false,
+                "rule_conflict": false,
+                "percent_max": null,
+                "codes": [],
+                "extras": []
+              },
+              "after": {
+                "recurring": false,
+                "introductory": true,
+                "rule_conflict": true,
+                "percent_max": null,
+                "codes": [],
+                "extras": []
+              }
+            }
+          }
+        }
+      ],
+      "missing": [],
+      "restored": [],
+      "expired": []
     }
   ]
 }
