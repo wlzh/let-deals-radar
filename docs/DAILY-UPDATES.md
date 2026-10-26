@@ -83,3 +83,13 @@ gh workflow run telegram-test.yml -R wlzh/let-deals-radar
 
 参考：[Telegram Bot API](https://core.telegram.org/bots/api#sendmessage)、
 [GitHub Actions Secrets](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)。
+
+## 2026-10-26 生产验收
+
+- [最新完整更新 40294803713](https://github.com/wlzh/let-deals-radar/actions/runs/40294803713)：306 项测试通过，81 条记录，网页四文件比对通过；无新变化时 TG 状态为 `no-changes`，未重复广播。
+- [中文私聊测试 40294828713](https://github.com/wlzh/let-deals-radar/actions/runs/40294828713)：成功，只向本人私聊发送，包含本站链接。
+- [真实变化补发 40294830720](https://github.com/wlzh/let-deals-radar/actions/runs/40294830720)：先核验线上产物，六个目标均返回消息 ID，回执为 6/6 `delivered`；摘要为中文且带本站链接，不发布报错。
+- [新版链探针 40292914853](https://github.com/wlzh/let-deals-radar-scheduler/actions/runs/40292914853)：完成环境等待、真实更新与自动接续。
+- Telegram 保存成功后取消了旧等待条目，建立[新日更等待 40294433398](https://github.com/wlzh/let-deals-radar-scheduler/actions/runs/40294433398)：1440 分钟，从北京时间 2026-10-26 16:45:05 开始。
+  仓库 Secrets 在工作流排队时读取，因此配置/轮换凭据后应替换旧等待条目，而不是假设它会自动读到新值。
+  参考 [GitHub Secrets 读取时机](https://docs.github.com/en/actions/reference/security/secrets#when-github-actions-reads-secrets)。
