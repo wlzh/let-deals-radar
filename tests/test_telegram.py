@@ -198,3 +198,18 @@ def test_403_reason_is_useful_but_redacted(monkeypatch):
 def test_private_statuses_and_error_hints_are_chinese():
     assert tg.stage_text("timer=success;refresh=failure;continuation=skipped") == "等待计时：成功；优惠更新：失败；每日接续：未执行"
     assert "私聊" in tg.error_hint(tg.TelegramError("recipient must start a private conversation"))
+
+
+@pytest.mark.parametrize("text", ["VPS 优惠更新", "更新失败，请检查", "私聊连接测试"])
+def test_every_outbound_message_has_canonical_site(monkeypatch, text):
+    sent = []
+    monkeypatch.setattr(tg, "api", lambda token, method, body: sent.append(body) or {})
+    tg.send(TOKEN, {"chat_id": "1"}, text)
+    assert "https://vps.869hr.uk" in sent[0]["text"]
+
+
+def test_site_link_is_not_duplicated(monkeypatch):
+    sent = []
+    monkeypatch.setattr(tg, "api", lambda token, method, body: sent.append(body) or {})
+    tg.send(TOKEN, {"chat_id": "1"}, "更新\nhttps://vps.869hr.uk")
+    assert sent[0]["text"].count(tg.SITE_LINK) == 1

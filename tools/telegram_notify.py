@@ -8,6 +8,9 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
+SITE_LINK = "https://vps.869hr.uk"
+
+
 class TelegramError(RuntimeError):
     pass
 
@@ -144,6 +147,8 @@ def destinations(raw):
 
 
 def send(token, target, text):
+    if not any(line.strip().rstrip("/") in {SITE_LINK, "网站：" + SITE_LINK} for line in text.splitlines()):
+        text = text[:3900] + "\n网站：" + SITE_LINK
     body = {"chat_id": target["chat_id"], "text": text, "link_preview_options": {"is_disabled": True}}
     if target.get("message_thread_id"):
         body["message_thread_id"] = target["message_thread_id"]
