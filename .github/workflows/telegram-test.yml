@@ -17,11 +17,11 @@ jobs:
       - name: Verify secrets exist without printing them
         env:
           BOT: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CHAT: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
         run: test -n "$BOT" && test -n "$CHAT"
       - name: Send explicit connection test
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           NOTIFICATION_TEST: 'true'
         run: python3 -m tools.telegram_notify

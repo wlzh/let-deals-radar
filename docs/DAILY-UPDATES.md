@@ -28,11 +28,27 @@ cd /Users/m/document/QNSZ/project/let-deals-radar
 python3 -m tools.configure_telegram
 ```
 
-脚本隐藏输入 Token 和 Chat ID，先验证机器人身份及消息权限，再通过 stdin 调用 GitHub CLI，
+脚本隐藏输入 Token，核对机器人为 `@mswnlz_github_resource_sync_bot`，
+列出最近主动联系过机器人的私聊，让你明确确认自己的数字 ID；无法读取更新时允许填写已知私聊 ID，不修改现有 webhook。
+脚本验证私聊类型，并从 Telegram 解析 6 个目标，最后确认后只在私聊发送配置测试。
+再通过 stdin 调用 GitHub CLI，
 分别写入 `wlzh/let-deals-radar` 和 `wlzh/let-deals-radar-scheduler` 的：
 
 - `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
+- `TELEGRAM_TARGETS`：发布目标 JSON，不用于报错
+- `TELEGRAM_ALERT_CHAT_ID`：你本人的正数私聊 ID，仅用于告警和连接测试
+
+目标列表位于 `deploy/telegram-targets.json`。带数字后缀的链接：若 Telegram 确认为论坛群，则按 topic ID 发布；
+若为频道，则数字代表旧帖，发布为新频道消息，不修改旧帖。
+若链接带数字但 Telegram 不确认论坛/频道类型，配置中止，不能猜测目标。
+配置过程不向 6 个目标发布测试内容。当前目标为：
+
+1. `tgmShareAI` / 864
+2. `tgmShare` / 3385
+3. `xrippleapp` / 540
+4. `tgmkno`
+5. `xripplechannel`
+6. `dabaziyuan`
 
 不会生成本地凭据文件，也不会把 Token 放进进程参数或输出。设置中断时可能只写入部分 Secret，重新执行即可。
 Secrets 仅授权 Actions 运行时读取；不要给不可信协作者修改工作流的权限。GitHub 的遮罩不是绝对防泄漏机制。
@@ -48,11 +64,13 @@ gh workflow run telegram-test.yml -R wlzh/let-deals-radar
 
 ## 通知内容与边界
 
-- 每轮经过线上验收后发送变化数量和代表性活动，并附网页与 Actions 链接；没有变化也报告成功。
-- 测试、抓取、审计、提交或网页校验失败时，发送异常阶段与运行链接，不把旧数据说成新发布。
+- 每轮经过线上验收且确有新增/信息变化/恢复等事件时，只向 6 个目标发布优惠更新和网页链接；无变化不打扰。
+- 测试、抓取、审计、提交或网页校验失败时，只向本人私聊发送异常阶段与 Actions 链接，不接触发布目标。
+- 运行时再次确认告警目的地为 Telegram 私聊，不允许群、频道或用户名作为报错收件人；不回退到公开目标。
+- 个别发布目标失败时继续处理其他目标，只向私聊报告失败序号；Actions 保存不含 Token/Chat ID 的序号级投递回执 7 天。
 - Telegram 调用有限重试，消息长度受控；网络超时后重试极少数情况下可能重复，不保证 exactly-once。
 - Telegram 故障不回滚已上线网页，工作流会出现独立 Warning 和明确的通知状态。
-- 未配置时明确显示 `not-configured`，不会把未发送说成已送达；只配置一个 Secret 会报告错误。
+- 未配置时明确显示 `not-configured`，不会把未发送说成已送达；配置不完整会报错，不公开广播报错。
 - 调度等待期间的工作流定义固定。修改 Secrets 转发/接续告警逻辑后，需取消旧等待链并从最新定义重新启动一次探针。
 - GitHub 整体不可用、工作流被禁用、主动取消或通知平台同时故障时，同一系统无法保证告警送达。
   建议同时开启 GitHub Actions 邮件通知；本方案不伪称具备独立于 GitHub 的故障监控。

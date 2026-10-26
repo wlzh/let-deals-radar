@@ -14,7 +14,7 @@ def test_success_message_is_bounded_and_has_changes():
     data = {"count": 82, "updates": {"added": [{"provider": "X", "title": "new\nactivity"}]}}
     text = tg.message("success", data, "https://example.invalid", "https://github.com/run")
     assert "新增 1" in text and "new activity" in text
-    assert "线上校验通过" in text
+    assert "优惠信息更新" in text
     assert len(text) <= 3900
 
 
@@ -47,7 +47,8 @@ def test_transport_errors_never_expose_credentials(monkeypatch, error):
 
 def test_missing_secrets_are_explicit_and_safe(monkeypatch, capsys):
     monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
-    monkeypatch.delenv("TELEGRAM_CHAT_ID", raising=False)
+    monkeypatch.delenv("TELEGRAM_ALERT_CHAT_ID", raising=False)
+    monkeypatch.delenv("TELEGRAM_TARGETS", raising=False)
     assert tg.main() == 0
     assert "not configured" in capsys.readouterr().out
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", TOKEN)
@@ -71,9 +72,14 @@ def test_429_has_bounded_retry(monkeypatch):
 def test_test_message_does_not_pretend_to_publish(monkeypatch):
     sent = []
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", TOKEN)
-    monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
+    monkeypatch.setenv("TELEGRAM_ALERT_CHAT_ID", "1")
     monkeypatch.setenv("NOTIFICATION_TEST", "true")
-    monkeypatch.setattr(tg, "api", lambda *args: sent.append(args[-1]))
+    def respond(token, method, body):
+        if method == "getChat":
+            return {"type": "private"}
+        sent.append(body)
+        return {}
+    monkeypatch.setattr(tg, "api", respond)
     assert tg.main() == 0
     assert "连接测试" in sent[0]["text"]
     assert "更新完成" not in sent[0]["text"]
@@ -85,3 +91,76 @@ def test_long_report_preserves_run_link():
                       "https://example.invalid", "https://github.com/repo/actions/runs/1")
     assert len(text) <= 3900
     assert text.endswith("https://github.com/repo/actions/runs/1")
+
+
+def test_failure_only_goes_to_private_never_loads_public_targets(monkeypatch):
+    sent = []
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", TOKEN)
+    monkeypatch.setenv("TELEGRAM_ALERT_CHAT_ID", "123")
+    monkeypatch.setenv("TELEGRAM_TARGETS", "malformed but must not be touched on failure")
+    monkeypatch.setenv("REFRESH_STATUS", "failure")
+    monkeypatch.delenv("NOTIFICATION_TEST", raising=False)
+    def respond(token, method, body):
+        if method == "getChat":
+            return {"type": "private"}
+        sent.append(body)
+        return {}
+    monkeypatch.setattr(tg, "api", respond)
+    assert tg.main() == 0
+    assert len(sent) == 1 and sent[0]["chat_id"] == "123"
+    assert "异常" in sent[0]["text"]
+
+
+def test_private_alert_rejects_groups_and_channels(monkeypatch):
+    monkeypatch.setattr(tg, "api", lambda *a: {"type": "supergroup"})
+    for chat in ("-100123", "@publicchannel", "123"):
+        with pytest.raises(tg.TelegramError):
+            tg.private_alert(TOKEN, chat, "error")
+
+
+def setup_public(monkeypatch, tmp_path, report):
+    monkeypatch.chdir(tmp_path)
+    path = tmp_path / "site/data"
+    path.mkdir(parents=True)
+    (path / "deals.json").write_text(json.dumps({"updates": report}))
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", TOKEN)
+    monkeypatch.setenv("TELEGRAM_ALERT_CHAT_ID", "123")
+    monkeypatch.setenv("TELEGRAM_TARGETS", json.dumps([{"chat_id": str(-1000-i), "message_thread_id": 10+i} for i in range(6)]))
+    monkeypatch.setenv("REFRESH_STATUS", "success")
+    monkeypatch.delenv("NOTIFICATION_TEST", raising=False)
+
+
+def test_changes_send_to_all_six_topics_without_error_diagnostics(monkeypatch, tmp_path):
+    setup_public(monkeypatch, tmp_path, {"added": [{"provider": "X", "title": "sale"}]})
+    sent = []
+    monkeypatch.setattr(tg, "api", lambda token, method, body: sent.append(body) or {})
+    assert tg.main() == 0
+    assert len(sent) == 6
+    assert all("message_thread_id" in body and "异常" not in body["text"] for body in sent)
+    assert all(body["chat_id"] != "123" for body in sent)
+    assert len(json.loads((tmp_path / "telegram-delivery.json").read_text())["destinations"]) == 6
+
+
+def test_no_changes_do_not_spam_public_targets(monkeypatch, tmp_path):
+    setup_public(monkeypatch, tmp_path, {})
+    def unexpected(*args):
+        raise AssertionError("No messages should be sent")
+    monkeypatch.setattr(tg, "api", unexpected)
+    assert tg.main() == 0
+
+
+def test_partial_public_failure_reports_only_to_private(monkeypatch, tmp_path):
+    setup_public(monkeypatch, tmp_path, {"changed": [{"provider": "X", "title": "price"}]})
+    sent = []
+    def respond(token, method, body):
+        if method == "getChat":
+            return {"type": "private"}
+        if body["chat_id"] == "-1001":
+            raise tg.TelegramError("Telegram HTTP 403")
+        sent.append(body)
+        return {}
+    monkeypatch.setattr(tg, "api", respond)
+    assert tg.main() == 1
+    diagnostics = [body for body in sent if "发送失败" in body["text"]]
+    assert len(diagnostics) == 1 and diagnostics[0]["chat_id"] == "123"
+    assert len([body for body in sent if body["chat_id"] != "123"]) == 5

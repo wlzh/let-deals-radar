@@ -38,8 +38,11 @@ on:
       TELEGRAM_BOT_TOKEN:
         description: 'Optional Telegram bot credential, never stored in source'
         required: false
-      TELEGRAM_CHAT_ID:
-        description: 'Private chat or channel destination'
+      TELEGRAM_TARGETS:
+        description: 'JSON publication targets; success changes only'
+        required: false
+      TELEGRAM_ALERT_CHAT_ID:
+        description: 'Private user chat for errors only'
         required: false
     outputs:
       refreshed_sha:
@@ -175,7 +178,8 @@ jobs:
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TARGETS: ${{ secrets.TELEGRAM_TARGETS }}
+          TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           REFRESH_STATUS: ${{ job.status == 'success' && steps.live.outcome == 'success' && 'success' || 'failure' }}
           FAILURE_STAGE: tests=${{ steps.tests.outcome }}; build=${{ steps.build.outcome }}; commit=${{ steps.publish.outcome }}; live=${{ steps.live.outcome }}
           LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
@@ -184,6 +188,16 @@ jobs:
       - name: Report notification failure separately
         if: ${{ always() && steps.telegram.outcome == 'failure' }}
         run: echo '::warning::Telegram delivery failed. Check bot permissions/secrets; public deployment status is reported separately.'
+
+      - name: Upload Telegram delivery receipt
+        if: ${{ always() }}
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: telegram-delivery-${{ github.run_number }}
+          path: telegram-delivery.json
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Publish refresh summary
         if: ${{ always() }}

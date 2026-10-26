@@ -249,7 +249,11 @@ def test_bero_golden_sample_from_fixture(let_feed):
     names = [p["name"] for p in r["plans"]]
     assert "Anniversary XXL" in names
     # 折扣识别
-    assert r["discount"]["recurring"] is True
+    # The table contains recurring base prices AND a first-year coupon.
+    # That does not prove the coupon itself is recurring.
+    assert r["discount"]["recurring"] is False
+    assert r["discount"]["introductory"] is True
+    assert r["discount"]["rule_conflict"] is True
 
 
 def test_leb_fixture_excludes_news(leb_feed):

@@ -28,6 +28,7 @@ data/*.new.*
 .env.*
 !.env.example
 telegram-secrets*
+telegram-delivery.json
 *.key
 deploy_key
 
