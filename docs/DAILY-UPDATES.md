@@ -94,7 +94,7 @@ gh workflow run telegram-test.yml -R wlzh/let-deals-radar
 
 ## 2026-10-26 生产验收
 
-- [最新完整更新 40296011594](https://github.com/wlzh/let-deals-radar/actions/runs/40296011594)：310 项测试通过，网页四文件比对通过；无新变化时 TG 状态为 `no-changes`，未重复广播。
+- [最新完整更新 40297292715](https://github.com/wlzh/let-deals-radar/actions/runs/40297292715)：315 项测试通过，网页四文件比对通过；浏览器确认两个默认收起入口位于介绍区上方，同日合并、最近 30 天归档。无新变化时 TG 状态为 `no-changes`，未重复广播。
 - [新版排版预览 40296048306](https://github.com/wlzh/let-deals-radar/actions/runs/40296048306)：Telegram 接受真实数据的 HTML 分区与加粗格式，仅发本人私聊，未联系六个公开目标。
 - [中文私聊测试 40294828713](https://github.com/wlzh/let-deals-radar/actions/runs/40294828713)：成功，只向本人私聊发送，包含本站链接。
 - [真实变化补发 40294830720](https://github.com/wlzh/let-deals-radar/actions/runs/40294830720)：先核验线上产物，六个目标均返回消息 ID，回执为 6/6 `delivered`；摘要为中文且带本站链接，不发布报错。
