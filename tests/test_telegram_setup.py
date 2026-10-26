@@ -28,6 +28,6 @@ def test_setup_refuses_non_interactive_secret_input(monkeypatch):
 
 def test_setup_rejects_bot_id_as_private_recipient(monkeypatch):
     monkeypatch.setattr(setup, "api", lambda *a: [])
-    monkeypatch.setattr("builtins.input", lambda *a: "7719493731")
+    monkeypatch.setattr("builtins.input", lambda *a: "999999")
     with pytest.raises(TelegramError, match="BOT ID"):
-        setup.choose_private_chat("unused", 7719493731, [])
+        setup.choose_private_chat("unused", 999999, [])

@@ -67,9 +67,34 @@ def clean(value, limit=180):
     return re.sub(r"[\x00-\x1f\x7f]", " ", str(value))[:limit]
 
 
+def stage_text(value):
+    labels = {"tests": "自动测试", "build": "抓取构建", "commit": "数据提交", "live": "网页验收",
+              "timer": "等待计时", "refresh": "优惠更新", "continuation": "每日接续",
+              "manual-publication-live-verification": "补发前网页验收"}
+    states = {"success": "成功", "failure": "失败", "skipped": "未执行", "cancelled": "已取消", "": "未执行"}
+    return "；".join(labels.get(part.partition("=")[0].strip(), "更新流程") + "：" +
+                    states.get(part.partition("=")[2].strip(), "异常，请查看运行记录")
+                    for part in value.split(";") if part.strip()) or "更新流程异常"
+
+
+def error_hint(error):
+    text = str(error).lower()
+    reasons = (("bot itself", "告警收件人填成了机器人自身，请改为你本人的账号"),
+               ("another bot", "不能给机器人发送私聊，请使用你本人的账号"),
+               ("blocked", "机器人被收件人屏蔽，请解除屏蔽后重新私聊"),
+               ("start a private", "请先向机器人发送 /start 建立私聊"),
+               ("posting permission", "机器人没有目标会话的发帖权限"),
+               ("topic id", "话题编号不存在或暂不可用"),
+               ("transport", "通知网络连接异常，重试后仍未成功"),
+               ("destinations", "发布目标配置无效，请重新配置"),
+               ("http 401", "机器人凭据无效，请更新安全配置"),
+               ("http 403", "目标会话拒绝接收，请检查成员身份、私聊状态和发送权限"))
+    return next((hint for pattern, hint in reasons if pattern in text), "通知配置或发送失败，请检查运行记录")
+
+
 def message(status, payload, site_url, run_url, stage=""):
     if status != "success":
-        return f"VPS 更新异常\n阶段：{clean(stage or status)}\n本轮未确认发布成功，请检查运行记录；网页可能仍是上次成功版本。\n{run_url}"
+        return f"VPS 优惠更新异常\n阶段：{stage_text(stage or status)}\n本轮未确认发布成功，请检查运行记录；网页可能仍是上次成功版本。\n{run_url}"
     report = payload.get("updates") or {}
     from letdeals.updates import describe_changes, display_time
     lines = ["VPS 优惠信息更新", f"更新时间：{display_time(payload.get('generated_at'))}",
@@ -81,7 +106,11 @@ def message(status, payload, site_url, run_url, stage=""):
     for key, label in labels.items():
         for record in report.get(key, [])[:4]:
             fields = ' / ' + clean(describe_changes(record["changes"]), 400) if record.get("changes") else ''
-            lines.append(f"{label}：{clean(record.get('provider'))} · {clean(record.get('title'))}{fields}")
+            if record.get("changes"):
+                lines.append(f"{label}：{clean(record.get('provider'))}{fields}")
+            else:
+                summary = record.get("summary") or "活动详情、价格及库存请到网页核实"
+                lines.append(f"{label}：{clean(record.get('provider'))} · {clean(summary, 300)}")
     footer = "\n报价/库存以商家结算页为准；变化可能来自原帖或解析调整。\n" + site_url + "\n" + run_url
     return "\n".join(lines)[:max(0, 3900 - len(footer))] + footer
 
@@ -160,7 +189,7 @@ def main():
             outcome("failed")
             print("::error::Cannot read verified report for Telegram.")
             try:
-                private_alert(token, alert, "VPS radar：已验证更新报告无法读取，未向发布目标发送消息。请检查 Actions。")
+                private_alert(token, alert, "VPS 优惠雷达：已验证更新报告无法读取，未向发布目标发送消息。请检查运行记录。")
             except TelegramError:
                 print("::warning::Private Telegram alert also failed.")
             return 1
@@ -172,7 +201,7 @@ def main():
     if status == "success" and os.environ.get("PUBLICATION_SCOPE") == "today":
         text = text.replace("VPS 优惠信息更新", "VPS 优惠今日变化汇总（补发）", 1)
     if testing:
-        text = f"VPS radar Telegram 连接测试：通知路径可用。本消息不代表执行了数据更新。\nhttps://github.com/{repo}/actions/runs/{run}"
+        text = f"VPS 优惠雷达：Telegram 私聊连接测试成功。本消息不代表执行了数据更新。\nhttps://github.com/{repo}/actions/runs/{run}"
     alert_sent = False
     try:
         if testing or status != "success":
@@ -197,13 +226,13 @@ def main():
                 receipts.append({"target_index": index, "status": "failed", "reason": str(exc)})
         Path("telegram-delivery.json").write_text(json.dumps({"run_id": run, "destinations": receipts}, indent=2) + "\n")
         if failures:
-            private_alert(token, alert, f"VPS radar：发布目标序号 {','.join(map(str, failures))} 发送失败；其余目标已尝试发送。请按投递回执只补发失败目标，避免重复。\n{run_url}")
+            private_alert(token, alert, f"VPS 优惠雷达：发布目标序号 {','.join(map(str, failures))} 发送失败；其余目标已尝试发送。请按投递回执只补发失败目标，避免重复。\n{run_url}")
             alert_sent = True
             raise TelegramError(f"Publication delivery failed for {len(failures)} destination(s); diagnostics stayed private")
     except TelegramError as exc:
         if status == "success" and not testing and not alert_sent:
             try:
-                private_alert(token, alert, f"VPS radar：通知配置或发送异常（{exc}），网页状态请查看运行记录。\n{run_url}")
+                private_alert(token, alert, f"VPS 优惠雷达：通知异常。{error_hint(exc)}。网页状态请查看运行记录。\n{run_url}")
             except TelegramError:
                 print("::warning::Private Telegram alert also failed; no diagnostic sent to publication targets.")
         outcome("failed")

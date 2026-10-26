@@ -13,14 +13,15 @@ TOKEN = "123456:" + "x" * 32
 def test_success_message_is_bounded_and_has_changes():
     data = {"count": 82, "updates": {"added": [{"provider": "X", "title": "new\nactivity"}]}}
     text = tg.message("success", data, "https://example.invalid", "https://github.com/run")
-    assert "新增 1" in text and "new activity" in text
+    assert "新增 1" in text and "活动详情" in text
+    assert "new activity" not in text
     assert "优惠信息更新" in text
     assert len(text) <= 3900
 
 
 def test_failure_never_announces_success():
     text = tg.message("failure", {}, "site", "run", "live=failure")
-    assert "异常" in text and "live=failure" in text and "完成" not in text
+    assert "异常" in text and "网页验收：失败" in text and "完成" not in text
 
 
 def test_api_uses_post_plain_json(monkeypatch):
@@ -192,3 +193,8 @@ def test_403_reason_is_useful_but_redacted(monkeypatch):
         tg.api(TOKEN, "sendMessage", {})
     assert "personal user ID" in str(result.value)
     assert TOKEN not in str(result.value)
+
+
+def test_private_statuses_and_error_hints_are_chinese():
+    assert tg.stage_text("timer=success;refresh=failure;continuation=skipped") == "等待计时：成功；优惠更新：失败；每日接续：未执行"
+    assert "私聊" in tg.error_hint(tg.TelegramError("recipient must start a private conversation"))

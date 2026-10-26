@@ -87,7 +87,7 @@ def main():
         if input("Save these publication targets and your PRIVATE alert chat? Type yes: ").strip() != "yes":
             print("Cancelled; nothing saved.")
             return 1
-        private_alert(token, alert, "VPS radar: PRIVATE alert destination verified. No test messages sent to the six publication targets. Saving GitHub Actions secrets now.")
+        private_alert(token, alert, "VPS 优惠雷达：私聊告警连接验证通过。没有向六个发布目标发送测试消息，现在开始安全保存配置。")
     except TelegramError as exc:
         print(str(exc))
         return 1

@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import json
 
-from .extract import AVAIL_CN, age_status
+from .extract import AVAIL_CN, EVENT_CN, age_status
 
 
 FIELDS = {
@@ -58,10 +58,11 @@ def describe_changes(changes):
             if item.get("rule_conflict"):
                 parts.append("首期与循环描述冲突")
             if item.get("percent_max"):
-                parts.append(f"最高 {item['percent_max']}% off")
+                parts.append(f"最高优惠 {item['percent_max']}%")
             if item.get("codes"):
                 parts.append("码 " + "/".join(item["codes"]))
-            parts.extend(item.get("extras", []))
+            if item.get("extras"):
+                parts.append("含赠送条款，详见网页")
             return " / ".join(parts) or "未明确优惠规则"
         return str(item) if item is not None else "未知"
     return "；".join(f"{label}：{value(label, pair.get('before'))} → {value(label, pair.get('after'))}"
@@ -87,7 +88,11 @@ def key(record):
 
 def entry(record, **extra):
     return {"id": key(record), "provider": record.get("provider", ""),
-            "title": record.get("title", ""), "url": record.get("url", ""), **extra}
+            "title": record.get("title", ""), "url": record.get("url", ""),
+            "summary": " · ".join((EVENT_CN.get(record.get("event_type"), "优惠活动"),
+                                     record.get("display_price") or "到商家查价",
+                                     record.get("display_price_note") or "价格与库存待核对",
+                                     AVAIL_CN.get(record.get("availability"), "待确认"))), **extra}
 
 
 def _discount(value):
