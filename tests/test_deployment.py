@@ -105,8 +105,8 @@ def test_live_check_compares_all_artifacts(tmp_path, monkeypatch, mode):
 
     monkeypatch.setattr(verify_live, "urlopen", fetch)
     errors = verify_live.verify_once("https://example.invalid/", tmp_path)
-    assert len(calls) == 3
-    assert len(errors) == (0 if mode == "match" else 3)
+    assert len(calls) == len(verify_live.FILES)
+    assert len(errors) == (0 if mode == "match" else len(verify_live.FILES))
 
 
 def test_live_check_ignores_only_known_cloudflare_beacon():

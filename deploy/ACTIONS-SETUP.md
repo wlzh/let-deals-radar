@@ -4,6 +4,9 @@
 
 ## 当前生产调度
 
+每日变化、旧记录保护与 Telegram 安全配置见 [每日更新说明](../docs/DAILY-UPDATES.md)。
+当前生产验收新增变化 JSON，比对共四项文件；下文早期三文件实测为历史记录。
+
 独立的非 fork 仓库 [wlzh/let-deals-radar-scheduler](https://github.com/wlzh/let-deals-radar-scheduler)
 负责云端等待计时后调用本仓库 `.github/workflows/update.yml` 的 `workflow_call` 入口。
 本仓库仍是代码、AFF 配置、数据和 `site/` 的唯一来源，fork 关系与 Cloudflare Pages 项目不变。

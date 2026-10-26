@@ -12,6 +12,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 
@@ -141,10 +142,21 @@ def main(argv: list[str] | None = None) -> int:
         print("   提示：可用 --offline-let data/feed_let.xml 复用缓存重跑。")
         return 1
 
-    # 输出：JSON + Markdown
-    render.enrich(payload["records"])
     json_out = args.json_out or str(config.DEALS_JSON)
     md_out = args.md_out or str(config.DEALS_MD)
+    # Only online full runs track production history; fixtures must stay isolated.
+    render.enrich(payload["records"])
+    if not offline and not args.limit:
+        from pathlib import Path
+        from .updates import reconcile
+        try:
+            previous = json.loads(Path(json_out).read_text()) if Path(json_out).exists() else {}
+            reconcile(payload, previous, args.recent_days)
+        except (ValueError, OSError) as exc:
+            print(f"!! 更新保护拒绝发布：{exc}")
+            return 1
+        render.enrich(payload["records"])
+    # 输出：JSON + Markdown
     pipeline.save(payload, json_out, md_out)
 
     if verbose:

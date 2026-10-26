@@ -35,6 +35,12 @@ on:
       LDR_DEPLOY_SSH_KEY:
         description: 'Optional existing own-server deployment key'
         required: false
+      TELEGRAM_BOT_TOKEN:
+        description: 'Optional Telegram bot credential, never stored in source'
+        required: false
+      TELEGRAM_CHAT_ID:
+        description: 'Private chat or channel destination'
+        required: false
     outputs:
       refreshed_sha:
         description: 'Original repository revision after refreshing generated files'
@@ -85,6 +91,7 @@ jobs:
         run: python -m pip install --upgrade pip pytest
 
       - name: Run tests
+        id: tests
         run: python -m pytest tests -q
 
       - name: Fetch, extract and build site
@@ -162,12 +169,29 @@ jobs:
           LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
         run: python -m tools.verify_live --url "$LDR_SITE_URL" --attempts 40 --delay 15
 
+      - name: Send Telegram result
+        id: telegram
+        if: ${{ always() }}
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REFRESH_STATUS: ${{ job.status == 'success' && steps.live.outcome == 'success' && 'success' || 'failure' }}
+          FAILURE_STAGE: tests=${{ steps.tests.outcome }}; build=${{ steps.build.outcome }}; commit=${{ steps.publish.outcome }}; live=${{ steps.live.outcome }}
+          LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
+        run: python -m tools.telegram_notify
+
+      - name: Report notification failure separately
+        if: ${{ always() && steps.telegram.outcome == 'failure' }}
+        run: echo '::warning::Telegram delivery failed. Check bot permissions/secrets; public deployment status is reported separately.'
+
       - name: Publish refresh summary
         if: ${{ always() }}
         env:
           BUILD_RESULT: ${{ steps.build.outcome }}
           COMMIT_RESULT: ${{ steps.publish.outcome }}
           LIVE_RESULT: ${{ steps.live.outcome }}
+          TELEGRAM_RESULT: ${{ steps.telegram.outputs.delivery || steps.telegram.outcome }}
           REFRESHED_SHA: ${{ steps.publish.outputs.sha }}
           SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
           TARGET_REPO: ${{ inputs.target_repository || github.repository }}
@@ -178,7 +202,8 @@ jobs:
             printf '\n| Gate | Result |\n| --- | --- |\n'
             printf '| Fetch and build | %s |\n' "$BUILD_RESULT"
             printf '| Commit generated files | %s |\n' "$COMMIT_RESULT"
-            printf '| Public HTML, deals JSON and sitemap | %s |\n' "$LIVE_RESULT"
+            printf '| Public HTML, deals JSON, changes JSON and sitemap | %s |\n' "$LIVE_RESULT"
+            printf '| Telegram delivery step (see logs for configuration) | %s |\n' "$TELEGRAM_RESULT"
             printf '\nPublished revision: `%s`\n' "$REFRESHED_SHA"
             printf '\nWebsite: %s\n' "$SITE_URL"
             echo 'A successful commit alone is not proof of a successful public deployment.'

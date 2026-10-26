@@ -11,7 +11,7 @@ from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
 
-FILES = ("index.html", "data/deals.json", "sitemap.xml")
+FILES = ("index.html", "data/deals.json", "data/updates.json", "sitemap.xml")
 _CF_BEACON = re.compile(
     rb'\n?<script\b(?=[^>]*\bdata-cf-beacon=)[^>]*\bsrc=["\x27]'
     rb'https://static\.cloudflareinsights\.com/beacon\.min\.js(?:/[^"\x27]*)?'

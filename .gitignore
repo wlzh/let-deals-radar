@@ -25,6 +25,9 @@ data/*.new.*
 
 # 密钥与环境
 .env
+.env.*
+!.env.example
+telegram-secrets*
 *.key
 deploy_key
 

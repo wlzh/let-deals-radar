@@ -79,4 +79,9 @@ def prepare(r):
     # order_url 只允许安全的 http(s) 链接透传到页面。
     if r.get("order_url") and not safe_url(r.get("order_url")):
         r["order_url"] = None
+    if (r.get("tracking") or {}).get("state") == "missing":
+        r["availability"] = "NOT_OBSERVED"
+        r["purchase_label"] = "本轮未检出，请到商家核实"
+        r["order_url"] = None
+        r["display_price_note"] += "；本轮未检出，上次检出 " + str(r["tracking"].get("last_seen") or "未知")
     return r

@@ -144,6 +144,7 @@ EVENT_CN = {
 }
 
 AVAIL_CN = {
+    "NOT_OBSERVED": "本轮未检出（非确认停售）",
     "ON_SALE": "在售", "SOLD_OUT": "售罄", "ENDED": "活动结束",
     "RESTOCKING": "补货中", "PARTIAL": "部分售罄",
     "LIKELY_SOLD_OUT": "疑似售罄",
@@ -568,6 +569,10 @@ def extract_discount(text: str) -> dict:
         if v and 0 < int(v) <= 95:
             pcts.append(int(v))
     recurring = bool(RE_RECURRING.search(text))
+    introductory = bool(re.search(r"\bfirst[ -]+(?:month|year|billing|payment|invoice|term)\b|\binitial[ -]+(?:term|payment)\b|首[月年期]", text, re.I))
+    rule_conflict = introductory and recurring
+    if introductory:
+        recurring = False
 
     codes = set()
     for m in RE_CODE.findall(text):
@@ -583,6 +588,8 @@ def extract_discount(text: str) -> dict:
                      for m in RE_EXTRAS.finditer(text)})
 
     parts = []
+    if introductory:
+        parts.append("首期优惠，续费待核对" if not rule_conflict else "含首期与循环描述，适用规则待核对")
     if recurring:
         parts.append("循环/永久")
     if pcts:
@@ -596,6 +603,8 @@ def extract_discount(text: str) -> dict:
         "strength": " · ".join(parts) if parts else "",
         "percent_max": max(pcts) if pcts else None,
         "recurring": recurring,
+        "introductory": introductory,
+        "rule_conflict": rule_conflict,
         "codes": sorted(codes)[:6],
         "extras": extras[:5],
     }

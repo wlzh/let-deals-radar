@@ -31,6 +31,8 @@ EVENT_WEIGHT = {
 
 def deal_score(rec: dict) -> int:
     """活动力度综合评分（0-120）。分越高越「值得看」。"""
+    if (rec.get("tracking") or {}).get("state") == "missing":
+        return 0
     s = 0.0
     d = rec.get("discount") or {}
     if d.get("recurring"):
@@ -254,6 +256,29 @@ def _initial_rows(records):
                  ("发布", esc(r.get("posted") or "待确认"))]
         rows.append('<tr class="row">' + ''.join('<td data-label="%s">%s</td>' % c for c in cells) + '</tr>')
     return "\n".join(rows)
+
+
+def _updates_html(payload):
+    from .updates import daily_report, display_time
+    reports = payload.get("update_history") or ([payload["updates"]] if payload.get("updates") else [])
+    if not reports:
+        return ""
+    labels = {"added": "新增", "changed": "信息变化", "missing": "本轮未检出", "restored": "重新检出", "expired": "移出保留窗口"}
+    report = daily_report(reports)
+    parts = ['<section class="card intro" aria-label="每日更新"><h2>今日更新与核实记录</h2>',
+             '<p>最近成功更新：' + html.escape(display_time(report.get("generated_at"))) + '</p>',
+             '<p>' + ' · '.join(f'{label} {len(report.get(key, []))} 条' for key, label in labels.items()) + '</p>']
+    if report.get("baseline"):
+        parts.append('<p>首次建立变化基线，本轮不把全部记录误报为新增。</p>')
+    for item in reports[:5]:
+        parts.append('<details><summary>' + html.escape(display_time(item.get("generated_at"))) + ' 更新明细</summary><ul>')
+        for key, label in labels.items():
+            for record in item.get(key, [])[:20]:
+                detail = '；变化字段：' + '、'.join(record["changes"]) if record.get("changes") else ''
+                parts.append('<li>' + html.escape(f'{label}：{record.get("provider", "")} / {record.get("title", "")}{detail}') + '</li>')
+        parts.append('</ul></details>')
+    parts.append('<p>未检出不等于停售；保留旧记录最多 30 天，并遵循活动时间窗口。报价变化也可能是原帖或解析结果变化，不代表商家已确认调价。</p><a href="data/updates.json">完整变化记录（最近 30 次）</a></section>')
+    return '\n'.join(parts)
 
 
 def _affiliate_shortcuts_html():
@@ -490,6 +515,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
 </section>
 
+@@UPDATES@@
+
 <div class="card">
   <div class="controls">
     <input type="search" id="q" aria-label="搜索优惠" placeholder="搜商家、地区、CPU 或优惠码">
@@ -505,6 +532,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
       <option value="RESTOCKING">补货中</option>
       <option value="PARTIAL">部分售罄</option>
       <option value="UNVERIFIED">待确认</option>
+      <option value="NOT_OBSERVED">本轮未检出</option>
     </select>
     <select id="sort" aria-label="排序方式">
       <option value="score">优先看近期可选优惠</option>
@@ -652,7 +680,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
       case 'age': return (a.age_days==null?1e9:a.age_days)-(b.age_days==null?1e9:b.age_days);
       default: {
         function rank(r){
-          if(['SOLD_OUT','ENDED','RESTOCKING','LIKELY_SOLD_OUT'].indexOf(r.availability)>=0) return 3;
+          if(['SOLD_OUT','ENDED','RESTOCKING','LIKELY_SOLD_OUT','NOT_OBSERVED'].indexOf(r.availability)>=0) return 3;
           if(r.age_days==null || r.age_days>30) return 2;
           return r.availability==='ON_SALE'?0:1;
         }
@@ -905,6 +933,8 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     api_path = os.path.join(out_dir, "data", "deals.json")
     with open(api_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(out_dir, "data", "updates.json"), "w", encoding="utf-8") as f:
+        json.dump({"latest": payload.get("updates"), "history": payload.get("update_history", [])}, f, ensure_ascii=False, indent=2)
 
     generated = str(payload.get("generated_at") or "未知，请到商家复核")
     canonical = ""
@@ -936,6 +966,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
                 .replace("@@MERCHANTS@@", _merchant_links_html())
                 .replace("@@AFF_SHORTCUTS@@", _affiliate_shortcuts_html())
                 .replace("@@ROWS@@", _initial_rows(payload.get("records", [])))
+                .replace("@@UPDATES@@", _updates_html(payload))
                 .replace("@@OGTAGS@@", ogtags)
                 .replace("@@DATA@@", _json_for_script(payload))
                 .replace("@@COUNT@@", str(payload.get("count", 0)))
