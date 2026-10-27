@@ -69,9 +69,9 @@ SITE_FOOTER = (
 # 例：LDR_HEADER_LINKS="GitHub|https://github.com/x/y, Telegram|https://t.me/z"
 # 留空则不显示 —— 不影响现有布局。
 HEADER_LINKS_RAW = (
-    "📖 博客|https://869hr.uk/,"
-    " 📚 资源站|https://doc.869hr.uk/,"
-    " 📢 TG|https://t.me/tgmShareAI"
+    "📢 TG频道|https://t.me/tgmShareAI,"
+    " 📖 博客|https://869hr.uk/,"
+    " 📚 资源站|https://doc.869hr.uk/"
 )  # 站点矩阵固定入口，不受部署环境变量覆盖
 
 

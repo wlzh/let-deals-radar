@@ -320,6 +320,14 @@ def test_header_links_rendered(tmp_path):
     assert 'rel="noopener"' in html
 
 
+def test_header_telegram_channel_precedes_blog():
+    links = render.config.HEADER_LINKS
+    assert links[0] == ("📢 TG频道", "https://t.me/tgmShareAI")
+    assert links[1] == ("📖 博客", "https://869hr.uk/")
+    output = render._header_links_html()
+    assert output.index("TG频道") < output.index("博客")
+
+
 def test_header_links_empty_is_safe(tmp_path):
     """未配置页头链接时不报错、不留占位符。"""
     import pytest as _pytest
