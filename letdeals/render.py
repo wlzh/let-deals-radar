@@ -306,9 +306,9 @@ def _updates_html(payload):
 
 def _affiliate_shortcuts_html():
     links = []
-    for name, url in (("RackNerd 活动", "https://racknerd.com/"),
+    for name, url in (("丽萨主机", "https://lisahost.com/"),
                       ("DMIT 套餐", "https://www.dmit.io/"),
-                      ("DeluxHost 活动", "https://deluxhost.net/")):
+                      ("VIRCS 落地机", "https://www.vircs.com/welcome")):
         target = safe_url(affiliate.rewrite(url))
         if target:
             links.append('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %

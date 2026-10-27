@@ -155,6 +155,24 @@ def test_to_markdown_has_header_and_rows():
 # 静态站
 # --------------------------------------------------------------------------
 
+def test_affiliate_shortcuts_use_selected_merchants_in_order(monkeypatch):
+    monkeypatch.delenv("LDR_AFFILIATES", raising=False)
+    output = render._affiliate_shortcuts_html()
+    expected = [
+        ("丽萨主机", "https://lisahost.com/aff.php?aff=9424"),
+        ("DMIT 套餐", "https://www.dmit.io/aff.php?aff=21728"),
+        ("VIRCS 落地机", "https://www.vircs.com/welcome?vcd=61a4aae4"),
+    ]
+    assert output.count('<a class="purchase"') == 3
+    positions = []
+    for name, url in expected:
+        assert f'href="{url}"' in output
+        positions.append(output.index(f'>{name}</a>'))
+    assert positions == sorted(positions)
+    assert "RackNerd" not in output
+    assert "DeluxHost" not in output
+
+
 def test_build_site_creates_files(tmp_path):
     out = render.build_site(_sample_payload(), str(tmp_path), verbose=False)
     for name in ("index.html", "robots.txt", ".nojekyll", "sitemap.xml",
