@@ -1,14 +1,167 @@
 {
   "latest": {
-    "generated_at": "2026-10-26T09:10:28+00:00",
+    "generated_at": "2026-10-27T08:09:24+00:00",
     "baseline": false,
-    "added": [],
-    "changed": [],
-    "missing": [],
+    "added": [
+      {
+        "id": "let:221552",
+        "provider": "svr4u.com",
+        "title": "[MY] SVR4U $15.88/Yr KVM | FREE 1Gbps + 1 TB BW Upgrade | Ryzen 5700G | P100 16GB GPU",
+        "url": "https://lowendtalk.com/discussion/221552/my-svr4u-15-88-yr-kvm-free-1gbps-1-tb-bw-upgrade-ryzen-5700g-p100-16gb-gpu",
+        "summary": "常规帖 · $15.88/年 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:222571",
+        "provider": "reliablesite.net",
+        "title": "Our Hardware. Our Network. Our Platform. | Dedicated Servers from $49/mo.",
+        "url": "https://lowendtalk.com/discussion/222571/our-hardware-our-network-our-platform-dedicated-servers-from-49-mo",
+        "summary": "上新/回归 · $49/月 · 帖文报价，未与配置绑定 · 售罄"
+      },
+      {
+        "id": "let:222569",
+        "provider": "INET.WS",
+        "title": "INET.WS – KVM VPS | 14 locations USA/CA/EU | from $3/mo | 25% off 3 months | Paris NEW",
+        "url": "https://lowendtalk.com/discussion/222569/inet-ws-kvm-vps-14-locations-usa-ca-eu-from-3-mo-25-off-3-months-paris-new",
+        "summary": "常规促销 · $3/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "leb:leb-dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords",
+        "provider": "DreamHost Urges Affected Customers to Re",
+        "title": "DreamHost Urges Affected Customers to Reset All Email and FTP Passwords",
+        "url": "https://lowendbox.com/blog/dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords/",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认"
+      }
+    ],
+    "changed": [
+      {
+        "id": "let:221473",
+        "provider": "DartNode",
+        "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
+        "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
+        "summary": "黑五 · $399/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "UNVERIFIED_STALE"
+          }
+        }
+      }
+    ],
+    "missing": [
+      {
+        "id": "let:222052",
+        "provider": "reliablesite.net",
+        "title": "Dedicated Performance | Fast Deployment | Servers starting at $49/mo.",
+        "url": "https://lowendtalk.com/discussion/222052/dedicated-performance-fast-deployment-servers-starting-at-49-mo",
+        "summary": "常规帖 · $49/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:220775",
+        "provider": "just.hosting",
+        "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
+        "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
+        "summary": "上新/回归 · $3.3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:221747",
+        "provider": "godlike.host",
+        "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+        "url": "https://lowendtalk.com/discussion/221747/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+        "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:221418",
+        "provider": "solidvps.com",
+        "title": "AI-Ready VPS + Cloud Resources | 28 AI Templates, Cross-Region vRack, Floating IPs & Solid AI",
+        "url": "https://lowendtalk.com/discussion/221418/ai-ready-vps-cloud-resources-28-ai-templates-cross-region-vrack-floating-ips-solid-ai",
+        "summary": "上新/回归 · $25/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-10-27T08:09:24+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:221552",
+          "provider": "svr4u.com",
+          "title": "[MY] SVR4U $15.88/Yr KVM | FREE 1Gbps + 1 TB BW Upgrade | Ryzen 5700G | P100 16GB GPU",
+          "url": "https://lowendtalk.com/discussion/221552/my-svr4u-15-88-yr-kvm-free-1gbps-1-tb-bw-upgrade-ryzen-5700g-p100-16gb-gpu",
+          "summary": "常规帖 · $15.88/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222571",
+          "provider": "reliablesite.net",
+          "title": "Our Hardware. Our Network. Our Platform. | Dedicated Servers from $49/mo.",
+          "url": "https://lowendtalk.com/discussion/222571/our-hardware-our-network-our-platform-dedicated-servers-from-49-mo",
+          "summary": "上新/回归 · $49/月 · 帖文报价，未与配置绑定 · 售罄"
+        },
+        {
+          "id": "let:222569",
+          "provider": "INET.WS",
+          "title": "INET.WS – KVM VPS | 14 locations USA/CA/EU | from $3/mo | 25% off 3 months | Paris NEW",
+          "url": "https://lowendtalk.com/discussion/222569/inet-ws-kvm-vps-14-locations-usa-ca-eu-from-3-mo-25-off-3-months-paris-new",
+          "summary": "常规促销 · $3/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "leb:leb-dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords",
+          "provider": "DreamHost Urges Affected Customers to Re",
+          "title": "DreamHost Urges Affected Customers to Reset All Email and FTP Passwords",
+          "url": "https://lowendbox.com/blog/dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords/",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:221473",
+          "provider": "DartNode",
+          "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
+          "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
+          "summary": "黑五 · $399/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:222052",
+          "provider": "reliablesite.net",
+          "title": "Dedicated Performance | Fast Deployment | Servers starting at $49/mo.",
+          "url": "https://lowendtalk.com/discussion/222052/dedicated-performance-fast-deployment-servers-starting-at-49-mo",
+          "summary": "常规帖 · $49/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:220775",
+          "provider": "just.hosting",
+          "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
+          "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
+          "summary": "上新/回归 · $3.3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221747",
+          "provider": "godlike.host",
+          "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+          "url": "https://lowendtalk.com/discussion/221747/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+          "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221418",
+          "provider": "solidvps.com",
+          "title": "AI-Ready VPS + Cloud Resources | 28 AI Templates, Cross-Region vRack, Floating IPs & Solid AI",
+          "url": "https://lowendtalk.com/discussion/221418/ai-ready-vps-cloud-resources-28-ai-templates-cross-region-vrack-floating-ips-solid-ai",
+          "summary": "上新/回归 · $25/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-10-26T08:33:17+00:00",
       "baseline": false,
