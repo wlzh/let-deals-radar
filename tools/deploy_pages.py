@@ -37,6 +37,8 @@ def deploy(binary, source=Path("site")):
     if any(p.is_symlink() for p in source.rglob("*")):
         raise RuntimeError("Symlinks are not allowed in site artifacts")
     for path in source.rglob("*"):
+        if path.relative_to(source).as_posix() == ".nojekyll" and path.is_file() and path.stat().st_size == 0:
+            continue
         if path.is_file() and (any(part.startswith(".") for part in path.relative_to(source).parts)
                                or token.encode() in path.read_bytes()):
             raise RuntimeError("Sensitive or hidden content detected in site; upload refused")

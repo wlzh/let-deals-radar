@@ -30,6 +30,7 @@ def upload(tmp_path, monkeypatch):
 
 def test_success_after_network_failure(upload, monkeypatch, capsys):
     site, delays = upload
+    (site / ".nojekyll").touch()
     calls = []
     def run(command, **kwargs):
         calls.append(command)
@@ -84,7 +85,7 @@ def test_reject_symlinks(upload):
         pages.deploy("/bin/false", site)
 
 
-@pytest.mark.parametrize("filename,content", [("index.html", "secret-test-token"), (".env", "private")])
+@pytest.mark.parametrize("filename,content", [("index.html", "secret-test-token"), (".env", "private"), (".nojekyll", "unexpected")])
 def test_reject_sensitive_artifacts(upload, filename, content):
     site, _ = upload
     (site / filename).write_text(content)
