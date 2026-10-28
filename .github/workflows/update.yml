@@ -146,6 +146,9 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       # 可选：推送到自有服务器（配置 LDR_DEPLOY_HOST 后自动启用）
+      - name: Persist pending publication before deployment
+        run: python -m tools.telegram_outbox
+
       - name: Deploy to own server
         if: ${{ vars.LDR_DEPLOY_HOST != '' }}
         env:
@@ -197,6 +200,7 @@ jobs:
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_DURABLE_OUTBOX: 'true'
           TELEGRAM_TARGETS: ${{ secrets.TELEGRAM_TARGETS }}
           TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           REFRESH_STATUS: ${{ job.status == 'success' && steps.live.outcome == 'success' && 'success' || 'failure' }}

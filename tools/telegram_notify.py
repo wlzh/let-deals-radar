@@ -16,6 +16,10 @@ class TelegramError(RuntimeError):
     pass
 
 
+class AmbiguousTelegramError(TelegramError):
+    pass
+
+
 def api(token, method, payload):
     if not re.fullmatch(r"\d+:[A-Za-z0-9_-]{20,}", token):
         raise TelegramError("Invalid bot token format")
@@ -33,6 +37,8 @@ def api(token, method, payload):
             return result["result"]
         except HTTPError as exc:
             code = exc.code
+            if method == "sendMessage" and code >= 500:
+                raise AmbiguousTelegramError("Telegram send outcome uncertain; do not blindly retry") from None
             try:
                 error_data = json.load(exc)
             except (ValueError, TypeError):
@@ -60,6 +66,8 @@ def api(token, method, payload):
                 reason = next((label for pattern, label in reasons if pattern in description), "request rejected; check destination and permissions")
                 raise TelegramError(f"Telegram HTTP {code}: {reason}") from None
         except (URLError, TimeoutError, OSError, ValueError, KeyError):
+            if method == "sendMessage":
+                raise AmbiguousTelegramError("Telegram send outcome uncertain; credentials redacted") from None
             if attempt == 2:
                 raise TelegramError("Telegram transport or response failed; credentials redacted") from None
         if attempt < 2:
@@ -277,12 +285,47 @@ def main():
     alert_sent = False
     try:
         if testing or preview or status != "success":
+            if status != "success" and not testing and not preview and os.environ.get("TELEGRAM_DURABLE_OUTBOX") == "true":
+                from tools.telegram_outbox import Store
+                try:
+                    store = Store()
+                    state = store.load()
+                    state["recovery_needed"] = True
+                    store.save(state)
+                except Exception:
+                    raise TelegramError("Cannot persist recovery state; inspect ledger") from None
             private_alert(token, alert, text, formatted=preview)
             print("Telegram private message delivered; no publication targets contacted.")
             outcome("private-delivered")
             return 0
         report = payload.get("updates") or {}
         publication_targets = destinations(targets)
+        if os.environ.get("TELEGRAM_DURABLE_OUTBOX") == "true":
+            from tools.telegram_outbox import Store, deliver
+            try:
+                store = Store()
+                state = store.load()
+                recovered = state.get("recovery_needed", False) or any(
+                    "failed" in ledger.values() for ledger in state["targets"].values())
+                receipts = deliver(store, state, payload, publication_targets, token, send,
+                                   lambda data: message("success", data, SITE_LINK, ""),
+                                   AmbiguousTelegramError, TelegramError)
+            except Exception:
+                raise TelegramError("Durable publication state failed; inspect pending claims before retrying") from None
+            Path("telegram-delivery.json").write_text(json.dumps({"run_id": run, "destinations": receipts}, indent=2) + "\n")
+            pending = [r for r in receipts if r["status"] in {"failed", "uncertain"}]
+            if pending:
+                private_alert(token, alert, "VPS 优惠发布尚未全部完成：明确失败的目标将在下次验收成功后自动补发；结果不确定的目标暂停重发，请核对群消息与投递记录。\n" + run_url)
+                alert_sent = True
+                raise TelegramError("Publication has pending or uncertain destinations")
+            delivered = sum(r["status"] == "delivered" for r in receipts)
+            if recovered:
+                private_alert(token, alert, "VPS 优惠发布已恢复：线上验收通过，待发内容已处理，已成功目标未重复发送。\n" + run_url)
+                state["recovery_needed"] = False
+                store.save(state)
+            print(f"Durable Telegram publication: delivered={delivered}, skipped={len(receipts) - delivered}")
+            outcome("delivered" if delivered else "already-delivered")
+            return 0
         if not any(report.get(key) for key in ("added", "changed", "missing", "restored", "expired")):
             print("No meaningful changes; no public Telegram message sent.")
             outcome("no-changes")

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: telegram-manual-publication
@@ -12,13 +12,14 @@ concurrency:
 
 jobs:
   publish:
+    if: ${{ github.repository == 'wlzh/let-deals-radar' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-          persist-credentials: false
+          persist-credentials: true
       - name: Verify the report is actually deployed
         id: live
         run: python3 -m tools.verify_live --url https://vps.869hr.uk --attempts 10 --delay 15
@@ -26,6 +27,7 @@ jobs:
         if: ${{ always() }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_DURABLE_OUTBOX: 'true'
           TELEGRAM_TARGETS: ${{ secrets.TELEGRAM_TARGETS }}
           TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           REFRESH_STATUS: ${{ steps.live.outcome == 'success' && 'success' || 'failure' }}
