@@ -1,51 +1,12 @@
 {
   "latest": {
-    "generated_at": "2026-10-28T08:50:00+00:00",
+    "generated_at": "2026-10-28T10:32:14+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222634",
-        "provider": "🪔 [Diwali 2026 Early-Bird Special] HostNamaste",
-        "title": "🪔 [Diwali 2026 Early-Bird Special] HostNamaste — Los Angeles KVM VPS from $17.99/Year!",
-        "url": "https://lowendtalk.com/discussion/222634/diwali-2026-early-bird-special-hostnamaste-los-angeles-kvm-vps-from-17-99-year",
-        "summary": "常规促销 · $17.99/年 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222614",
-        "provider": "Ava.hosting",
-        "title": "Ava.hosting - Boooh! Halloween Discount 15% OFF!!",
-        "url": "https://lowendtalk.com/discussion/222614/ava-hosting-boooh-halloween-discount-15-off",
-        "summary": "黑五 · €1.99/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222597",
-        "provider": "rafftechnologies.com",
-        "title": "Raff Technologies: KVM VPS from $4.99/mo · Managed Databases · AMD EPYC · NVMe · Unmetered",
-        "url": "https://lowendtalk.com/discussion/222597/raff-technologies-kvm-vps-from-4-99-mo-managed-databases-amd-epyc-nvme-unmetered",
-        "summary": "黑五 · $4.99/月 · 帖文报价，未与配置绑定 · 疑似售罄"
-      }
-    ],
+    "added": [],
     "changed": [],
-    "missing": [
-      {
-        "id": "let:220847",
-        "provider": "servury.com",
-        "title": "Blackbox : 2 vCPU / 4 GB / 50 GB NVMe, Encrypted RAM & Disk, 100% Anonymous - $9.99/mo",
-        "url": "https://lowendtalk.com/discussion/220847/blackbox-2-vcpu-4-gb-50-gb-nvme-encrypted-ram-disk-100-anonymous-9-99-mo",
-        "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      }
-    ],
+    "missing": [],
     "restored": [],
-    "expired": [
-      {
-        "id": "let:219603",
-        "provider": "budgetvm.com",
-        "title": "Ryzen 9900X Giveaway | EPYC Instant Deploy | Ryzen 10G Unmetered | Scalable Bare Metal",
-        "url": "https://lowendtalk.com/discussion/219603/ryzen-9900x-giveaway-epyc-instant-deploy-ryzen-10g-unmetered-scalable-bare-metal",
-        "summary": "周年庆 · $74/月 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "reason": "超出保留窗口；不代表确认停售"
-      }
-    ]
+    "expired": []
   },
   "history": [
     {
