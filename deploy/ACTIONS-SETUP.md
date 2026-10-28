@@ -79,7 +79,7 @@ gh run list -R wlzh/let-deals-radar --event schedule --limit 10
 临时高频测试结束后应恢复正式频率，不把几分钟未运行直接判为永久故障。
 GitHub 的调度可能延迟或丢弃，公共仓库长期无活动也可能被禁用。
 
-当前 `vps.869hr.uk` 由 Cloudflare Pages 跟随主仓库 `main` 部署。
+当前 `vps.869hr.uk` 由 Actions 将主仓库 `main` 的已审计产物直传 Cloudflare Pages，见 [安全直传说明](PAGES-DIRECT.md)。切换验收后关闭 Pages 的 Git 自动部署，避免重复发布。
 `Deploy to own server` 未配置时跳过正常，不代表没有 Pages 部署。
 生产仓库强制执行发布等待与验收；其他副本可用 Variable `LDR_VERIFY_LIVE=true` 开启。
 `LDR_SITE_URL` 必须指向该仓库的站点。

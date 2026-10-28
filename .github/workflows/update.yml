@@ -29,6 +29,9 @@ on:
         type: string
         default: '90'
     secrets:
+      CLOUDFLARE_API_TOKEN:
+        description: 'Account-scoped Pages edit token; deployment step only'
+        required: true
       REPO_PUSH_KEY:
         description: 'Write-enabled deploy key limited to target_repository'
         required: true
@@ -69,8 +72,9 @@ concurrency:
 
 jobs:
   update:
+    if: ${{ (github.repository == 'wlzh/let-deals-radar' || github.repository == 'wlzh/let-deals-radar-scheduler') && github.ref == 'refs/heads/main' && (inputs.target_repository == '' || inputs.target_repository == 'wlzh/let-deals-radar') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 55
     outputs:
       refreshed_sha: ${{ steps.publish.outputs.sha }}
 
@@ -164,6 +168,21 @@ jobs:
             site/ "$USER@$HOST:$TARGET/"
           echo "已推送到 $USER@$HOST:$TARGET/"
 
+      - name: Setup Node for Pages upload
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+
+      - name: Install pinned Cloudflare CLI without deployment credentials
+        run: npm install --prefix "$RUNNER_TEMP/ldr-wrangler" --no-audit --no-fund wrangler@4.154.0
+
+      - name: Upload audited site directly to Pages
+        id: pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          WRANGLER_BIN: ${{ runner.temp }}/ldr-wrangler/node_modules/.bin/wrangler
+        run: python -m tools.deploy_pages
+
       - name: Verify public deployment
         id: live
         # Production cannot report success without checking the actual website.
@@ -181,7 +200,7 @@ jobs:
           TELEGRAM_TARGETS: ${{ secrets.TELEGRAM_TARGETS }}
           TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           REFRESH_STATUS: ${{ job.status == 'success' && steps.live.outcome == 'success' && 'success' || 'failure' }}
-          FAILURE_STAGE: tests=${{ steps.tests.outcome }}; build=${{ steps.build.outcome }}; commit=${{ steps.publish.outcome }}; live=${{ steps.live.outcome }}
+          FAILURE_STAGE: tests=${{ steps.tests.outcome }}; build=${{ steps.build.outcome }}; commit=${{ steps.publish.outcome }}; pages=${{ steps.pages.outcome }}; live=${{ steps.live.outcome }}
           LDR_SITE_URL: ${{ vars.LDR_SITE_URL || 'https://vps.869hr.uk' }}
         run: python -m tools.telegram_notify
 

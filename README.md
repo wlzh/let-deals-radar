@@ -208,6 +208,8 @@ LEB 是编辑博客，会混入大量非优惠内容（如「微软砍存储」�
 
 ## 部署
 
+生产站点采用 [Pages 安全直传](deploy/PAGES-DIRECT.md)：在 Actions 中审计后上传静态产物，保留线上四文件验收和有限网络重试，不再依赖 Pages 拉取仓库。
+
 完整指南见 **[deploy/DEPLOY.md](deploy/DEPLOY.md)**。
 
 当前云端定时入口是独立的 [let-deals-radar-scheduler](https://github.com/wlzh/let-deals-radar-scheduler)，

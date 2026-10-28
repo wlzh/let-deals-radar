@@ -72,7 +72,7 @@ def clean(value, limit=180):
 
 
 def stage_text(value):
-    labels = {"tests": "自动测试", "build": "抓取构建", "commit": "数据提交", "live": "网页验收",
+    labels = {"tests": "自动测试", "build": "抓取构建", "commit": "数据提交", "pages": "站点直传", "live": "网页验收",
               "timer": "等待计时", "refresh": "优惠更新", "continuation": "每日接续",
               "manual-publication-live-verification": "补发前网页验收"}
     states = {"success": "成功", "failure": "失败", "skipped": "未执行", "cancelled": "已取消", "": "未执行"}
