@@ -15,7 +15,8 @@ able to change main workflows could misuse repository secrets.
 
 Only the two named repositories on main may run the deployment job. The uploader
 uses fixed account/project identifiers, an isolated temporary upload directory,
-rejects symlinks, and checks remote main before every attempt. Raw CLI output is
+rejects symlinks and hidden files (except an empty `.nojekyll` marker), scans for
+the deployment token in upload content, and checks remote main before every attempt. Raw CLI output is
 withheld. Recognized transient network failures retry after 60, 180 and 300
 seconds, at most three retries. Authentication/config errors and ambiguous
 process timeouts stop immediately; no unlimited retry or success-on-upload-only.
@@ -28,3 +29,18 @@ the secret. A failed upload retains the previous live deployment; a successful
 upload with failed verification requires inspection rather than blind rollback.
 
 Reference: https://developers.cloudflare.com/pages/configuration/git-integration/
+
+## Migration acceptance (2026-10-28)
+
+- Main repository run `40673159092`: 334 tests passed; direct upload accepted on
+  its first attempt; all four public artifacts verified for revision `a7dd985`.
+- Cloudflare production and preview Git automatic deployments disabled after
+  the successful upload. Existing project, custom domain and AFF rules retained.
+- Scheduler probe `40673182991` passed after Git deployments were disabled,
+  including direct upload, public verification and continuation. Its one next
+  daily run is `40674196112`; the old queued pipeline `40661029842` was cancelled.
+- Secrets stored in both repositories using GitHub encrypted Actions Secrets;
+  the temporary local credential file was removed. No credential is committed.
+- The account-wide Pages edit scope cannot be narrowed to one project in this
+  token configuration. The uploader is project-pinned, but protect main write
+  access and rotate/revoke the token if a repository maintainer is compromised.
