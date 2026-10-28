@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import uuid
 
 CATEGORIES = ("added", "changed", "missing", "restored", "expired")
 REF = "refs/heads/telegram-outbox"
@@ -54,7 +55,7 @@ class Store:
         blob = self.git("hash-object", "-w", "--stdin", data=encode(state))
         tree = self.git("mktree", data=f"100644 blob {blob}\tstate.json\n")
         args = ["-c", "user.name=github-actions[bot]", "-c", "user.email=github-actions[bot]@users.noreply.github.com",
-                "commit-tree", tree, "-m", "Update publication delivery state"]
+                "commit-tree", tree, "-m", "Update publication delivery state " + uuid.uuid4().hex]
         if self.parent:
             args += ["-p", self.parent]
         commit = self.git(*args)

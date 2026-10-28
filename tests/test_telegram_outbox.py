@@ -127,7 +127,8 @@ def test_telegram_network_ambiguity_is_not_retried(monkeypatch):
     assert len(calls) == 1
 
 
-def test_git_store_cas_rejects_concurrent_writer(tmp_path, monkeypatch):
+@pytest.mark.parametrize("same_content", [False, True])
+def test_git_store_cas_rejects_concurrent_writer(tmp_path, monkeypatch, same_content):
     remote, work = tmp_path / "remote.git", tmp_path / "work"
     subprocess.run(["git", "init", "--bare", str(remote)], check=True, capture_output=True)
     subprocess.run(["git", "clone", str(remote), str(work)], check=True, capture_output=True)
@@ -138,7 +139,7 @@ def test_git_store_cas_rejects_concurrent_writer(tmp_path, monkeypatch):
     first, second = outbox.Store(), outbox.Store()
     a, b = first.load(), second.load()
     a["events"]["one"] = {}
-    b["events"]["two"] = {}
+    b["events"]["one" if same_content else "two"] = {}
     first.save(a)
     with pytest.raises(RuntimeError):
         second.save(b)
