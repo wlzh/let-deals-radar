@@ -39,3 +39,16 @@ events are retained in the ledger until delivered, independent of the site's
 One-time creation uses `TELEGRAM_OUTBOX_BOOTSTRAP=true python -m
 tools.telegram_outbox` from the trusted checkout. Production never enables this
 flag. If ledger persistence fails, publication stops before further sends.
+
+## Acceptance (2026-10-28)
+
+- Manual run `40675860551`: all six destinations returned `already-delivered`;
+  no duplicate publication was sent.
+- Automatic run `40675809825`: 345 tests passed, queue persisted, public files
+  verified and six destinations skipped.
+- Scheduler run `40675846226`: tests, queue persistence, deployment, verification,
+  notification and continuation all passed. Next daily run: `40676900965`.
+- Simulated failures cover partial delivery, next-run recovery with empty new
+  changes, ambiguous responses, state-write failure, concurrent identical claims,
+  missing/changed credentials and migration baseline. No failure injection was
+  performed against the real Telegram groups.
