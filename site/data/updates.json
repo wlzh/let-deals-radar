@@ -1,37 +1,123 @@
 {
   "latest": {
-    "generated_at": "2026-10-29T09:02:03+00:00",
+    "generated_at": "2026-10-29T21:02:09+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:222665",
-        "provider": "Alexhost.com",
-        "title": "Alexhost.com - Happy Halloween! 15% OFF",
-        "url": "https://lowendtalk.com/discussion/222665/alexhost-com-happy-halloween-15-off",
-        "summary": "节日促销 · 到商家查价 · 价格周期待核对 · 待确认"
+        "id": "let:222724",
+        "provider": "centrixnodes.net",
+        "title": "[US] Halloween 🎃 | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
+        "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
+        "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
-    "changed": [],
-    "missing": [
+    "changed": [
       {
-        "id": "let:221321",
-        "provider": "Hong Kong Dedicated",
-        "title": "[WLX] Hong Kong Dedicated – Ryzen 9 9955HX (9950X-class) from $149/mo | Price Locked on Renewal",
-        "url": "https://lowendtalk.com/discussion/221321/wlx-hong-kong-dedicated-ryzen-9-9955hx-9950x-class-from-149-mo-price-locked-on-renewal",
-        "summary": "常规促销 · $149/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:220831",
+        "provider": "SmokyHosts",
+        "title": "SmokyHosts - 3 Days Only | Summer Storage VPS Sale | 50% off | 20GB SSD OR 50% addon HDD | Unmetered",
+        "url": "https://lowendtalk.com/discussion/220831/smokyhosts-3-days-only-summer-storage-vps-sale-50-off-20gb-ssd-or-50-addon-hdd-unmetered",
+        "summary": "常规促销 · $35.95/年 · 帖文报价，未与配置绑定 · 在售",
+        "changes": {
+          "库存": {
+            "before": "SOLD_OUT",
+            "after": "ON_SALE"
+          }
+        }
       },
       {
-        "id": "leb:leb-high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month",
-        "provider": "affordablebytes.com",
-        "title": "High Ram, Low Prices? Must be an AffordableBytes Offer! Get a 6GB VPS for Only €3.49 / Month!",
-        "url": "https://lowendbox.com/blog/high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month/",
-        "summary": "常规帖 · €3.49/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:221552",
+        "provider": "svr4u.com",
+        "title": "[MY] SVR4U $15.88/Yr KVM | FREE 1Gbps + 1 TB BW Upgrade | Ryzen 5700G | P100 16GB GPU",
+        "url": "https://lowendtalk.com/discussion/221552/my-svr4u-15-88-yr-kvm-free-1gbps-1-tb-bw-upgrade-ryzen-5700g-p100-16gb-gpu",
+        "summary": "常规帖 · $15.88/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "UNVERIFIED_STALE"
+          }
+        }
+      }
+    ],
+    "missing": [
+      {
+        "id": "let:221159",
+        "provider": "cloudblast.io",
+        "title": "CloudBlast WORKERS ARE LIVE! App Platform, Per Minute Billing + GIVEAWAY [USA/HK]",
+        "url": "https://lowendtalk.com/discussion/221159/cloudblast-workers-are-live-app-platform-per-minute-billing-giveaway-usa-hk",
+        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "leb:leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
+        "provider": "RackNerd & AdminBolt Are Giving Away 100",
+        "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
+        "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-10-29T21:02:09+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:222724",
+          "provider": "centrixnodes.net",
+          "title": "[US] Halloween 🎃 | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
+          "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
+          "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:220831",
+          "provider": "SmokyHosts",
+          "title": "SmokyHosts - 3 Days Only | Summer Storage VPS Sale | 50% off | 20GB SSD OR 50% addon HDD | Unmetered",
+          "url": "https://lowendtalk.com/discussion/220831/smokyhosts-3-days-only-summer-storage-vps-sale-50-off-20gb-ssd-or-50-addon-hdd-unmetered",
+          "summary": "常规促销 · $35.95/年 · 帖文报价，未与配置绑定 · 在售",
+          "changes": {
+            "库存": {
+              "before": "SOLD_OUT",
+              "after": "ON_SALE"
+            }
+          }
+        },
+        {
+          "id": "let:221552",
+          "provider": "svr4u.com",
+          "title": "[MY] SVR4U $15.88/Yr KVM | FREE 1Gbps + 1 TB BW Upgrade | Ryzen 5700G | P100 16GB GPU",
+          "url": "https://lowendtalk.com/discussion/221552/my-svr4u-15-88-yr-kvm-free-1gbps-1-tb-bw-upgrade-ryzen-5700g-p100-16gb-gpu",
+          "summary": "常规帖 · $15.88/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:221159",
+          "provider": "cloudblast.io",
+          "title": "CloudBlast WORKERS ARE LIVE! App Platform, Per Minute Billing + GIVEAWAY [USA/HK]",
+          "url": "https://lowendtalk.com/discussion/221159/cloudblast-workers-are-live-app-platform-per-minute-billing-giveaway-usa-hk",
+          "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
+          "provider": "RackNerd & AdminBolt Are Giving Away 100",
+          "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
+          "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-10-29T09:02:03+00:00",
       "baseline": false,
