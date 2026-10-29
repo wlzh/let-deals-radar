@@ -1,14 +1,69 @@
 {
   "latest": {
-    "generated_at": "2026-10-28T11:02:03+00:00",
+    "generated_at": "2026-10-29T09:02:03+00:00",
     "baseline": false,
-    "added": [],
+    "added": [
+      {
+        "id": "let:222665",
+        "provider": "Alexhost.com",
+        "title": "Alexhost.com - Happy Halloween! 15% OFF",
+        "url": "https://lowendtalk.com/discussion/222665/alexhost-com-happy-halloween-15-off",
+        "summary": "节日促销 · 到商家查价 · 价格周期待核对 · 待确认"
+      }
+    ],
     "changed": [],
-    "missing": [],
+    "missing": [
+      {
+        "id": "let:221321",
+        "provider": "Hong Kong Dedicated",
+        "title": "[WLX] Hong Kong Dedicated – Ryzen 9 9955HX (9950X-class) from $149/mo | Price Locked on Renewal",
+        "url": "https://lowendtalk.com/discussion/221321/wlx-hong-kong-dedicated-ryzen-9-9955hx-9950x-class-from-149-mo-price-locked-on-renewal",
+        "summary": "常规促销 · $149/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "leb:leb-high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month",
+        "provider": "affordablebytes.com",
+        "title": "High Ram, Low Prices? Must be an AffordableBytes Offer! Get a 6GB VPS for Only €3.49 / Month!",
+        "url": "https://lowendbox.com/blog/high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month/",
+        "summary": "常规帖 · €3.49/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-10-29T09:02:03+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:222665",
+          "provider": "Alexhost.com",
+          "title": "Alexhost.com - Happy Halloween! 15% OFF",
+          "url": "https://lowendtalk.com/discussion/222665/alexhost-com-happy-halloween-15-off",
+          "summary": "节日促销 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "changed": [],
+      "missing": [
+        {
+          "id": "let:221321",
+          "provider": "Hong Kong Dedicated",
+          "title": "[WLX] Hong Kong Dedicated – Ryzen 9 9955HX (9950X-class) from $149/mo | Price Locked on Renewal",
+          "url": "https://lowendtalk.com/discussion/221321/wlx-hong-kong-dedicated-ryzen-9-9955hx-9950x-class-from-149-mo-price-locked-on-renewal",
+          "summary": "常规促销 · $149/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month",
+          "provider": "affordablebytes.com",
+          "title": "High Ram, Low Prices? Must be an AffordableBytes Offer! Get a 6GB VPS for Only €3.49 / Month!",
+          "url": "https://lowendbox.com/blog/high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month/",
+          "summary": "常规帖 · €3.49/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-10-28T08:50:00+00:00",
       "baseline": false,
