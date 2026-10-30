@@ -1,31 +1,9 @@
 {
   "latest": {
-    "generated_at": "2026-10-30T06:01:56+00:00",
+    "generated_at": "2026-10-30T06:08:48+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222735",
-        "provider": "mailbig.net",
-        "title": "[GIVEAWAY] MailBig & HostDzire Special: 25x Mail + 10x VPS (LAX/SFO/SG) – Black-Friday Page Live",
-        "url": "https://lowendtalk.com/discussion/222735/giveaway-mailbig-hostdzire-special-25x-mail-10x-vps-lax-sfo-sg-black-friday-page-live",
-        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:220354",
-        "provider": "aspirehosting.net",
-        "title": "End of Summer Sale | Free Bonus + Giveaway Inside | Up to 55% Off | Aspire Hosting",
-        "url": "https://lowendtalk.com/discussion/220354/end-of-summer-sale-free-bonus-giveaway-inside-up-to-55-off-aspire-hosting",
-        "summary": "节日促销 · $2/月 · 帖文报价，未与配置绑定 · 在售",
-        "changes": {
-          "库存": {
-            "before": "LIKELY_SOLD_OUT",
-            "after": "ON_SALE"
-          }
-        }
-      }
-    ],
+    "added": [],
+    "changed": [],
     "missing": [],
     "restored": [],
     "expired": []
