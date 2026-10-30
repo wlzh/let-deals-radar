@@ -1,58 +1,16 @@
 {
   "latest": {
-    "generated_at": "2026-10-29T21:02:09+00:00",
+    "generated_at": "2026-10-30T01:57:53+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222724",
-        "provider": "centrixnodes.net",
-        "title": "[US] Halloween 🎃 | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
-        "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
-        "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 待确认"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:220831",
-        "provider": "SmokyHosts",
-        "title": "SmokyHosts - 3 Days Only | Summer Storage VPS Sale | 50% off | 20GB SSD OR 50% addon HDD | Unmetered",
-        "url": "https://lowendtalk.com/discussion/220831/smokyhosts-3-days-only-summer-storage-vps-sale-50-off-20gb-ssd-or-50-addon-hdd-unmetered",
-        "summary": "常规促销 · $35.95/年 · 帖文报价，未与配置绑定 · 在售",
-        "changes": {
-          "库存": {
-            "before": "SOLD_OUT",
-            "after": "ON_SALE"
-          }
-        }
-      },
-      {
-        "id": "let:221552",
-        "provider": "svr4u.com",
-        "title": "[MY] SVR4U $15.88/Yr KVM | FREE 1Gbps + 1 TB BW Upgrade | Ryzen 5700G | P100 16GB GPU",
-        "url": "https://lowendtalk.com/discussion/221552/my-svr4u-15-88-yr-kvm-free-1gbps-1-tb-bw-upgrade-ryzen-5700g-p100-16gb-gpu",
-        "summary": "常规帖 · $15.88/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "UNVERIFIED_STALE"
-          }
-        }
-      }
-    ],
+    "added": [],
+    "changed": [],
     "missing": [
       {
-        "id": "let:221159",
-        "provider": "cloudblast.io",
-        "title": "CloudBlast WORKERS ARE LIVE! App Platform, Per Minute Billing + GIVEAWAY [USA/HK]",
-        "url": "https://lowendtalk.com/discussion/221159/cloudblast-workers-are-live-app-platform-per-minute-billing-giveaway-usa-hk",
-        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "leb:leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
-        "provider": "RackNerd & AdminBolt Are Giving Away 100",
-        "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
-        "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
-        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        "id": "leb:leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
+        "provider": "godlike.host",
+        "title": "Exclusive LowEndBox Pricing: 2GB KVM VPS for $1.83/Month First Year! Godlike.Host is Back!",
+        "url": "https://lowendbox.com/blog/exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back/",
+        "summary": "上新/回归 · $1.83/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
@@ -60,7 +18,7 @@
   },
   "history": [
     {
-      "generated_at": "2026-10-29T21:02:09+00:00",
+      "generated_at": "2026-10-30T01:57:53+00:00",
       "baseline": false,
       "added": [
         {
@@ -113,6 +71,13 @@
           "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
           "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
           "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
+          "provider": "godlike.host",
+          "title": "Exclusive LowEndBox Pricing: 2GB KVM VPS for $1.83/Month First Year! Godlike.Host is Back!",
+          "url": "https://lowendbox.com/blog/exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back/",
+          "summary": "上新/回归 · $1.83/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
       "restored": [],
