@@ -173,6 +173,16 @@ def test_affiliate_shortcuts_use_selected_merchants_in_order(monkeypatch):
     assert "DeluxHost" not in output
 
 
+def test_header_update_time_is_beijing_time(tmp_path):
+    payload = _sample_payload()
+    payload["generated_at"] = "2026-10-29T21:00:00Z"
+    render.build_site(payload, str(tmp_path), verbose=False)
+    output = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "数据更新 <b>2026-10-30 05:00:00 北京时间</b>" in output
+    assert "每日北京时间 05:00 自动检查" in output
+    assert payload["generated_at"] == "2026-10-29T21:00:00Z"
+
+
 def test_build_site_creates_files(tmp_path):
     out = render.build_site(_sample_payload(), str(tmp_path), verbose=False)
     for name in ("index.html", "robots.txt", ".nojekyll", "sitemap.xml",

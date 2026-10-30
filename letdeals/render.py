@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 from . import config, affiliate
 from .presentation import prepare, safe_url
 from .extract import AVAIL_CN, EVENT_CN
+from .updates import display_time
 
 # 活动性质的「力度权重」，用于综合评分
 EVENT_WEIGHT = {
@@ -533,6 +534,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
     <span>数据来源 · 公开优惠信息</span>
     <span>共 <b id="m-total">@@COUNT@@</b> 条</span>
     <span>数据更新 <b>@@GENERATED@@</b></span>
+    <span>每日北京时间 05:00 自动检查</span>
     @@HEADER_LINKS@@
   </div>
 </header>
@@ -968,7 +970,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     with open(os.path.join(out_dir, "data", "updates.json"), "w", encoding="utf-8") as f:
         json.dump({"latest": payload.get("updates"), "history": payload.get("update_history", [])}, f, ensure_ascii=False, indent=2)
 
-    generated = str(payload.get("generated_at") or "未知，请到商家复核")
+    generated = display_time(payload.get("generated_at"))
     canonical = ""
     ogtags = ""
     if config.SITE_URL:
