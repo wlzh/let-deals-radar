@@ -52,3 +52,19 @@ flag. If ledger persistence fails, publication stops before further sends.
   changes, ambiguous responses, state-write failure, concurrent identical claims,
   missing/changed credentials and migration baseline. No failure injection was
   performed against the real Telegram groups.
+
+## Recovery (2026-10-30)
+
+Run `41011490811` passed 353 tests, Pages upload and four-file live verification,
+but stopped during durable publication state processing. The old error handler
+discarded the underlying operation, so its exact Git failure cannot be recovered
+from that log. The ledger confirmed one target delivered and five still pending,
+with no uncertain claims. Manual recovery `41012071924` completed successfully;
+all six target ledgers now mark all eleven events delivered, without resetting
+the ledger or replaying the successful target.
+
+State diagnostics now include only allowlisted Git operation/reason labels, never
+raw command output. Remote reads get bounded retries. After a failed push response,
+the controller accepts only observation of its exact intended remote commit;
+it never blindly retries a write or overwrites a concurrent writer. Private alerts
+distinguish ledger failure from bad credentials and report verified web success.

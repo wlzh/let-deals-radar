@@ -239,6 +239,11 @@ def test_publication_text_keeps_only_merchant_prefix(value, expected):
     assert tg.publication_text(value) == expected
 
 
+def test_ledger_error_is_not_described_as_bad_credentials():
+    hint = tg.error_hint("Publication state git push: remote-operation-failed")
+    assert "投递账本" in hint and "不代表机器人凭据无效" in hint
+
+
 def test_public_digest_has_only_our_site_as_clickable_domain():
     payload = {"updates": {"added": [{"provider": "godlike.host",
                 "summary": "https://www.godlike.host/cart?id=1 · 优惠码 LET10"}]}}

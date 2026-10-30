@@ -92,6 +92,7 @@ def stage_text(value):
 def error_hint(error):
     text = str(error).lower()
     reasons = (("bot itself", "告警收件人填成了机器人自身，请改为你本人的账号"),
+               ("publication state", "TG 投递账本读写失败，已暂停补发以避免重复；这不代表机器人凭据无效"),
                ("another bot", "不能给机器人发送私聊，请使用你本人的账号"),
                ("blocked", "机器人被收件人屏蔽，请解除屏蔽后重新私聊"),
                ("start a private", "请先向机器人发送 /start 建立私聊"),
@@ -311,7 +312,7 @@ def main():
         report = payload.get("updates") or {}
         publication_targets = destinations(targets)
         if os.environ.get("TELEGRAM_DURABLE_OUTBOX") == "true":
-            from tools.telegram_outbox import Store, deliver
+            from tools.telegram_outbox import Store, deliver, PublicationStateError
             try:
                 store = Store()
                 state = store.load()
@@ -320,6 +321,8 @@ def main():
                 receipts = deliver(store, state, payload, publication_targets, token, send,
                                    lambda data: message("success", data, SITE_LINK, ""),
                                    AmbiguousTelegramError, TelegramError)
+            except PublicationStateError as exc:
+                raise TelegramError(str(exc)) from None
             except Exception:
                 raise TelegramError("Durable publication state failed; inspect pending claims before retrying") from None
             Path("telegram-delivery.json").write_text(json.dumps({"run_id": run, "destinations": receipts}, indent=2) + "\n")
@@ -357,7 +360,8 @@ def main():
     except TelegramError as exc:
         if status == "success" and not testing and not alert_sent:
             try:
-                private_alert(token, alert, f"VPS 优惠雷达：通知异常。{error_hint(exc)}。网页状态请查看运行记录。\n{run_url}")
+                web_status = "网页已更新并通过线上验收。" if status == "success" else "网页状态请查看运行记录。"
+                private_alert(token, alert, f"VPS 优惠雷达：通知异常。{error_hint(exc)}。{web_status}\n{run_url}")
             except TelegramError:
                 print("::warning::Private Telegram alert also failed; no diagnostic sent to publication targets.")
         outcome("failed")

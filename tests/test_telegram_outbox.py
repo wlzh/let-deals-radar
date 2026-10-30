@@ -101,6 +101,34 @@ def test_credential_rotation_fails_closed():
         deliver(MemoryStore(), ledger, payload(), lambda *a: None)
 
 
+def test_lost_push_response_accepts_only_exact_remote_commit():
+    store = outbox.Store()
+    store.parent = "old"
+    def git(*args, **kwargs):
+        if args[0] == "push":
+            raise outbox.PublicationStateError("Publication state push: timeout")
+        if args[0] == "ls-remote":
+            return "new\t" + outbox.REF
+        return "new"
+    store.git = git
+    store.save(state())
+    assert store.parent == "new"
+
+
+def test_git_read_retries_but_diagnostics_never_include_raw_output(monkeypatch):
+    calls = []
+    def execute(*args, **kwargs):
+        calls.append(1)
+        return subprocess.CompletedProcess(args, 1, stdout="", stderr="secret-token https://private.invalid denied")
+    monkeypatch.setattr(outbox.subprocess, "run", execute)
+    monkeypatch.setattr(outbox.time, "sleep", lambda _: None)
+    with pytest.raises(outbox.PublicationStateError) as error:
+        outbox.Store().git("ls-remote", "origin", outbox.REF)
+    assert len(calls) == 3
+    assert "ls-remote" in str(error.value)
+    assert "secret-token" not in str(error.value) and "private.invalid" not in str(error.value)
+
+
 def test_timestamp_only_change_does_not_republish():
     a, b = payload(), payload()
     b["updates"]["generated_at"] = "2026-10-28T11:00:00Z"

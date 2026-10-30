@@ -5,10 +5,15 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import time
 import uuid
 
 CATEGORIES = ("added", "changed", "missing", "restored", "expired")
 REF = "refs/heads/telegram-outbox"
+
+
+class PublicationStateError(RuntimeError):
+    """Fixed diagnostics only; never include git output or remote credentials."""
 
 
 def encode(value):
@@ -31,10 +36,22 @@ def events(payload):
 
 class Store:
     def git(self, *args, data=None):
-        result = subprocess.run(["git", *args], input=data, capture_output=True, text=True, timeout=60)
-        if result.returncode:
-            raise RuntimeError("Publication state operation failed; no unsafe resend attempted")
-        return result.stdout.strip()
+        operation = args[0] if args[0] in {"ls-remote", "fetch", "rev-parse", "show", "hash-object", "mktree", "push"} else "commit-tree"
+        attempts = 3 if operation in {"ls-remote", "fetch"} else 1
+        for attempt in range(attempts):
+            try:
+                result = subprocess.run(["git", *args], input=data, capture_output=True, text=True, timeout=60)
+                if result.returncode == 0:
+                    return result.stdout.strip()
+                stderr = result.stderr.lower()
+                reason = ("concurrent-update" if "non-fast-forward" in stderr or "fetch first" in stderr else
+                          "permission-denied" if "permission denied" in stderr or "403" in stderr else
+                          "remote-operation-failed")
+            except subprocess.TimeoutExpired:
+                reason = "timeout"
+            if attempt + 1 < attempts:
+                time.sleep(2)
+        raise PublicationStateError(f"Publication state git {operation}: {reason}; no unsafe resend attempted")
 
     def load(self):
         remote = self.git("ls-remote", "origin", REF)
@@ -60,7 +77,14 @@ class Store:
             args += ["-p", self.parent]
         commit = self.git(*args)
         # Non-fast-forward push is the lock: concurrent runners cannot both claim a send.
-        self.git("push", "--quiet", "origin", f"{commit}:{REF}")
+        try:
+            self.git("push", "--quiet", "origin", f"{commit}:{REF}")
+        except PublicationStateError:
+            # A lost push response may still have committed the claim/receipt.
+            # Observe the exact commit, never retry a write or overwrite a rival.
+            remote = self.git("ls-remote", "origin", REF)
+            if not remote or remote.split()[0] != commit:
+                raise
         self.parent = commit
 
 
