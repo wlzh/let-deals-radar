@@ -1,24 +1,38 @@
 {
   "latest": {
-    "generated_at": "2026-10-30T01:57:53+00:00",
+    "generated_at": "2026-10-30T06:01:56+00:00",
     "baseline": false,
-    "added": [],
-    "changed": [],
-    "missing": [
+    "added": [
       {
-        "id": "leb:leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
-        "provider": "godlike.host",
-        "title": "Exclusive LowEndBox Pricing: 2GB KVM VPS for $1.83/Month First Year! Godlike.Host is Back!",
-        "url": "https://lowendbox.com/blog/exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back/",
-        "summary": "上新/回归 · $1.83/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222735",
+        "provider": "mailbig.net",
+        "title": "[GIVEAWAY] MailBig & HostDzire Special: 25x Mail + 10x VPS (LAX/SFO/SG) – Black-Friday Page Live",
+        "url": "https://lowendtalk.com/discussion/222735/giveaway-mailbig-hostdzire-special-25x-mail-10x-vps-lax-sfo-sg-black-friday-page-live",
+        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
       }
     ],
+    "changed": [
+      {
+        "id": "let:220354",
+        "provider": "aspirehosting.net",
+        "title": "End of Summer Sale | Free Bonus + Giveaway Inside | Up to 55% Off | Aspire Hosting",
+        "url": "https://lowendtalk.com/discussion/220354/end-of-summer-sale-free-bonus-giveaway-inside-up-to-55-off-aspire-hosting",
+        "summary": "节日促销 · $2/月 · 帖文报价，未与配置绑定 · 在售",
+        "changes": {
+          "库存": {
+            "before": "LIKELY_SOLD_OUT",
+            "after": "ON_SALE"
+          }
+        }
+      }
+    ],
+    "missing": [],
     "restored": [],
     "expired": []
   },
   "history": [
     {
-      "generated_at": "2026-10-30T01:57:53+00:00",
+      "generated_at": "2026-10-30T06:01:56+00:00",
       "baseline": false,
       "added": [
         {
@@ -27,6 +41,13 @@
           "title": "[US] Halloween 🎃 | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
           "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
           "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222735",
+          "provider": "mailbig.net",
+          "title": "[GIVEAWAY] MailBig & HostDzire Special: 25x Mail + 10x VPS (LAX/SFO/SG) – Black-Friday Page Live",
+          "url": "https://lowendtalk.com/discussion/222735/giveaway-mailbig-hostdzire-special-25x-mail-10x-vps-lax-sfo-sg-black-friday-page-live",
+          "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
         }
       ],
       "changed": [
@@ -53,6 +74,19 @@
             "库存": {
               "before": "UNVERIFIED",
               "after": "UNVERIFIED_STALE"
+            }
+          }
+        },
+        {
+          "id": "let:220354",
+          "provider": "aspirehosting.net",
+          "title": "End of Summer Sale | Free Bonus + Giveaway Inside | Up to 55% Off | Aspire Hosting",
+          "url": "https://lowendtalk.com/discussion/220354/end-of-summer-sale-free-bonus-giveaway-inside-up-to-55-off-aspire-hosting",
+          "summary": "节日促销 · $2/月 · 帖文报价，未与配置绑定 · 在售",
+          "changes": {
+            "库存": {
+              "before": "LIKELY_SOLD_OUT",
+              "after": "ON_SALE"
             }
           }
         }
