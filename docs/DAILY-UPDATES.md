@@ -102,3 +102,13 @@ gh workflow run telegram-test.yml -R wlzh/let-deals-radar
 - Telegram 保存成功后取消了旧等待条目，建立[新日更等待 40294433398](https://github.com/wlzh/let-deals-radar-scheduler/actions/runs/40294433398)：1440 分钟，从北京时间 2026-10-26 16:45:05 开始。
   仓库 Secrets 在工作流排队时读取，因此配置/轮换凭据后应替换旧等待条目，而不是假设它会自动读到新值。
   参考 [GitHub Secrets 读取时机](https://docs.github.com/en/actions/reference/security/secrets#when-github-actions-reads-secrets)。
+
+## 公开通知的商家名称
+
+TG 六个公开目标只展示商家域名第一个点前的名称，例如 `godlike.host` 展示为
+`godlike`，`www.lisahost.com` 展示为 `lisahost`。正文中的商家网址同样移除
+域名后缀及路径，避免自动形成可点击的商家入口。公开通知仅保留本站入口
+`https://vps.869hr.uk`，具体套餐、原帖及购买链接请进站查看。
+GitHub 运行链接仅用于私聊排错，不出现在公开优惠摘要中。
+此规则仅影响通知展示，不修改站内商家、推广归属或 API 原始数据。
+推特发布不在本仓库内，本次未修改。

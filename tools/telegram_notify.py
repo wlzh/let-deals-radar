@@ -134,6 +134,17 @@ def escaped(value, limit=180):
     return html.escape(clean(value, limit), quote=True)
 
 
+def publication_text(value):
+    """Keep merchant labels, not auto-linked domains, in public deal content."""
+    return re.sub(
+        r"(?<![\w@])(?:https?://)?(?:www\.)?"
+        r"([a-z0-9](?:[a-z0-9-]*[a-z0-9])?)"
+        r"(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)*\.[a-z]{2,63}\b"
+        r"(?:[/?#][^\s<>\"'，。；、]*)?",
+        lambda match: match.group(1), str(value), flags=re.IGNORECASE,
+    )
+
+
 def message_size(text):
     # Count raw UTF-16 conservatively; Telegram limits text after entity parsing.
     return len(text.encode("utf-16-le", errors="replace")) // 2
@@ -156,8 +167,6 @@ def message(status, payload, site_url, run_url, stage=""):
         lines += ["", "本次主要核对优惠规则，不代表商家实际调价。"]
     footer = "\n\n<b>查看全部优惠与更新明细</b>\n" + escaped(site_url, 250)
     footer += "\n\n<i>报价、库存与续费以商家结算页为准。</i>"
-    if run_url:
-        footer += "\n" + escaped(run_url, 250)
     total = sum(len(report.get(key, [])) for key in labels)
     displayed = 0
     for key, label in labels.items():
@@ -166,14 +175,15 @@ def message(status, payload, site_url, run_url, stage=""):
             if displayed >= 6:
                 break
             provider = str(record.get("provider") or "商家待核实").replace("_", " ")
-            provider = {"bero-host.de": "BERO HOST", "servers guru": "Servers Guru"}.get(provider, provider)
+            provider = publication_text(provider)
+            provider = {"bero-host": "BERO HOST", "servers guru": "Servers Guru"}.get(provider, provider)
             block = [] if heading_added else ["", f"<b>{label}</b>"]
             block += ["", f"<b>{displayed + 1}. {escaped(provider, 80)}</b>"]
             if record.get("changes"):
-                block += [escaped(line, 180) for line in change_lines(record["changes"])[:5]]
+                block += [escaped(publication_text(line), 180) for line in change_lines(record["changes"])[:5]]
             else:
                 summary = record.get("summary") or "活动详情、价格及库存请到网页核实"
-                block += [escaped(part, 180) for part in str(summary).split(" · ")[:4]]
+                block += [escaped(publication_text(part), 180) for part in str(summary).split(" · ")[:4]]
             candidate = "\n".join(lines + block) + footer
             if message_size(candidate) > 3700:
                 break

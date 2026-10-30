@@ -88,12 +88,13 @@ def test_test_message_does_not_pretend_to_publish(monkeypatch):
     assert "更新完成" not in sent[0]["text"]
 
 
-def test_long_report_preserves_run_link():
+def test_long_public_report_preserves_site_not_run_link():
     changes = [{"provider": "x" * 180, "title": "y" * 180} for _ in range(30)]
     text = tg.message("success", {"updates": {key: changes for key in ("added", "changed", "missing", "restored", "expired")}},
                       "https://example.invalid", "https://github.com/repo/actions/runs/1")
     assert len(text) <= 3900
-    assert text.endswith("https://github.com/repo/actions/runs/1")
+    assert "https://example.invalid" in text
+    assert "github.com" not in text
 
 
 def test_failure_only_goes_to_private_never_loads_public_targets(monkeypatch):
@@ -225,6 +226,26 @@ def test_rule_update_is_readable_without_repeating_unchanged_values():
     assert "不代表商家实际调价" in text
     assert "新增优惠：0" not in text and "→" not in text
     assert "其余 10 条" in text
+
+
+@pytest.mark.parametrize("value, expected", [
+    ("godlike.host", "godlike"),
+    ("Ava.hosting", "Ava"),
+    ("https://www.lisahost.com/aff.php?aff=9424", "lisahost"),
+    ("www.vircs.com/welcome?vcd=abc", "vircs"),
+    ("DMIT / 优惠码 LET10 / $12.50", "DMIT / 优惠码 LET10 / $12.50"),
+])
+def test_publication_text_keeps_only_merchant_prefix(value, expected):
+    assert tg.publication_text(value) == expected
+
+
+def test_public_digest_has_only_our_site_as_clickable_domain():
+    payload = {"updates": {"added": [{"provider": "godlike.host",
+                "summary": "https://www.godlike.host/cart?id=1 · 优惠码 LET10"}]}}
+    text = tg.message("success", payload, tg.SITE_LINK, "https://github.com/wlzh/repo/actions/runs/1")
+    assert "<b>1. godlike</b>" in text
+    assert "godlike.host" not in text and "github.com" not in text
+    assert tg.SITE_LINK in text and "LET10" in text
 
 
 def test_html_content_is_escaped_and_not_cut_mid_tag():
