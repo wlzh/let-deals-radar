@@ -1,54 +1,10 @@
 {
   "latest": {
-    "generated_at": "2026-10-31T10:52:57+00:00",
+    "generated_at": "2026-10-31T10:57:18+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222778",
-        "provider": "hyperhostsolutions.com",
-        "title": "HyperHost Halloween | 50% OFF Recurring | UK VPS £1.50/mo · Web £1/mo · HA £2/mo",
-        "url": "https://lowendtalk.com/discussion/222778/hyperhost-halloween-50-off-recurring-uk-vps-1-50-mo-web-1-mo-ha-2-mo",
-        "summary": "节日促销 · £1/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222774",
-        "provider": "TNAHosting",
-        "title": "[HALLOWEEN] TNAHosting – Ryzen 5900X NVMe 50% OFF Recurring | Hybrid KVM from $2.70/mo | Chicago",
-        "url": "https://lowendtalk.com/discussion/222774/halloween-tnahosting-ryzen-5900x-nvme-50-off-recurring-hybrid-kvm-from-2-70-mo-chicago",
-        "summary": "节日促销 · $2.7/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222782",
-        "provider": "Servury Blackbox",
-        "title": "Servury Blackbox - Anonymous encrypted VPS from $8/mo - 20% off",
-        "url": "https://lowendtalk.com/discussion/222782/servury-blackbox-anonymous-encrypted-vps-from-8-mo-20-off",
-        "summary": "常规促销 · $8/月 · 帖文报价，未与配置绑定 · 待确认"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:222724",
-        "provider": "centrixnodes.net",
-        "title": "[US] Halloween | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
-        "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
-        "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 售罄",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "SOLD_OUT"
-          }
-        }
-      }
-    ],
-    "missing": [
-      {
-        "id": "let:221735",
-        "provider": "packetra.com",
-        "title": "[Switzerland] Dual Xeon E5 Dedicated | 56 Threads, 64GB | No KYC, BTC/XMR | €164.61/mo (~$187)",
-        "url": "https://lowendtalk.com/discussion/221735/switzerland-dual-xeon-e5-dedicated-56-threads-64gb-no-kyc-btc-xmr-164-61-mo-187",
-        "summary": "上新/回归 · €164.61/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      }
-    ],
+    "added": [],
+    "changed": [],
+    "missing": [],
     "restored": [],
     "expired": []
   },
