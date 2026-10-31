@@ -1,131 +1,60 @@
 {
   "latest": {
-    "generated_at": "2026-10-30T21:02:10+00:00",
+    "generated_at": "2026-10-31T10:52:57+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:222772",
-        "provider": "extravm.com",
-        "title": "$6.7/m 5GB RAM Dallas Ryzen VPS - PP/CC/Crypto",
-        "url": "https://lowendtalk.com/discussion/222772/6-7-m-5gb-ram-dallas-ryzen-vps-pp-cc-crypto",
-        "summary": "常规促销 · $6.7/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:222778",
+        "provider": "hyperhostsolutions.com",
+        "title": "HyperHost Halloween | 50% OFF Recurring | UK VPS £1.50/mo · Web £1/mo · HA £2/mo",
+        "url": "https://lowendtalk.com/discussion/222778/hyperhost-halloween-50-off-recurring-uk-vps-1-50-mo-web-1-mo-ha-2-mo",
+        "summary": "节日促销 · £1/月 · 帖文报价，未与配置绑定 · 待确认"
       },
       {
-        "id": "let:222765",
-        "provider": "BLACK FRIDAY",
-        "title": "BLACK FRIDAY | UK VPS | EPYC 7642 up to 60% OFF | Ryzen 9950X | Xeon Gold | + 9 EPYC VPS GIVEAWAYS!",
-        "url": "https://lowendtalk.com/discussion/222765/black-friday-uk-vps-epyc-7642-up-to-60-off-ryzen-9950x-xeon-gold-9-epyc-vps-giveaways",
-        "summary": "黑五 · £1.75/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:222774",
+        "provider": "TNAHosting",
+        "title": "[HALLOWEEN] TNAHosting – Ryzen 5900X NVMe 50% OFF Recurring | Hybrid KVM from $2.70/mo | Chicago",
+        "url": "https://lowendtalk.com/discussion/222774/halloween-tnahosting-ryzen-5900x-nvme-50-off-recurring-hybrid-kvm-from-2-70-mo-chicago",
+        "summary": "节日促销 · $2.7/月 · 帖文报价，未与配置绑定 · 待确认"
       },
       {
-        "id": "let:222764",
-        "provider": "Hostishere",
-        "title": "Hostishere | HALLOWEEN SPECIAL 🎃| Ryzen 7950X3D VPS from €3.49/mo | 10Gbps Frankfurt | GIVEAWAY",
-        "url": "https://lowendtalk.com/discussion/222764/hostishere-halloween-special-ryzen-7950x3d-vps-from-3-49-mo-10gbps-frankfurt-giveaway",
-        "summary": "节日促销 · €3.49/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222738",
-        "provider": "servitro.com",
-        "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
-        "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
-        "summary": "常规促销 · $12/年 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222752",
-        "provider": "leapswitch",
-        "title": "AMD Ryzen 9 Dedicated Servers for High Performance Workloads",
-        "url": "https://lowendtalk.com/discussion/222752/amd-ryzen-9-dedicated-servers-for-high-performance-workloads",
-        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认"
-      },
-      {
-        "id": "leb:leb-mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month",
-        "provider": "Mango Mail Halloween",
-        "title": "Mango Mail Halloween Sale: Up to 40% Perfect Off on High Quality Email Hosting! 100GB Plan Only $8.70/Month!",
-        "url": "https://lowendbox.com/blog/mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month/",
-        "summary": "节日促销 · $8.7/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:222782",
+        "provider": "Servury Blackbox",
+        "title": "Servury Blackbox - Anonymous encrypted VPS from $8/mo - 20% off",
+        "url": "https://lowendtalk.com/discussion/222782/servury-blackbox-anonymous-encrypted-vps-from-8-mo-20-off",
+        "summary": "常规促销 · $8/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
     "changed": [
       {
-        "id": "let:222415",
-        "provider": "Halloween VPS @ Frankfurt Equinix",
-        "title": "Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more",
-        "url": "https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more",
-        "summary": "节日促销 · €31/年 · 帖文报价，未与配置绑定 · 在售",
+        "id": "let:222724",
+        "provider": "centrixnodes.net",
+        "title": "[US] Halloween | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
+        "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
+        "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 售罄",
         "changes": {
           "库存": {
             "before": "UNVERIFIED",
-            "after": "ON_SALE"
-          }
-        }
-      },
-      {
-        "id": "let:221603",
-        "provider": "Caliber Node",
-        "title": "Caliber Node | $10/Year Cloud Apps — Dallas, Nuremberg & Singapore | NEW: Bring Your Own Server",
-        "url": "https://lowendtalk.com/discussion/221603/caliber-node-10-year-cloud-apps-dallas-nuremberg-singapore-new-bring-your-own-server",
-        "summary": "常规促销 · $10/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "UNVERIFIED_STALE"
+            "after": "SOLD_OUT"
           }
         }
       }
     ],
     "missing": [
       {
-        "id": "let:220866",
-        "provider": "servitro.com",
-        "title": "$12/Year VPS in Frankfurt + $50 Giveaway – Servitro’s Another LET Post!",
-        "url": "https://lowendtalk.com/discussion/220866/12-year-vps-in-frankfurt-50-giveaway-servitro-s-another-let-post",
-        "summary": "常规促销 · $12/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:222110",
-        "provider": "cloudnium.net",
-        "title": "Dallas Dedicated — Dual E5-2699v4 | 64GB | $75/mo Recurring",
-        "url": "https://lowendtalk.com/discussion/222110/dallas-dedicated-dual-e5-2699v4-64gb-75-mo-recurring",
-        "summary": "补货 · $75/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221641",
-        "provider": "TheRealBudgetVM",
-        "title": "[GIVEAWAY] Free Ryzen 5900XT Server | From $99/mo | 9950X, EPYC, Hong Kong, Storage, GPU",
-        "url": "https://lowendtalk.com/discussion/221641/giveaway-free-ryzen-5900xt-server-from-99-mo-9950x-epyc-hong-kong-storage-gpu",
-        "summary": "周年庆 · $99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221186",
-        "provider": "CubePath",
-        "title": "Looking for a Hetzner Alternative? Compare Our Cloud VPS",
-        "url": "https://lowendtalk.com/discussion/221186/looking-for-a-hetzner-alternative-compare-our-cloud-vps",
-        "summary": "常规帖 · $5.56/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221894",
-        "provider": "K.N Cloud",
-        "title": "[Update] K.N Cloud — LET Cloud VPS Offers in Miami, Frankfurt & Amsterdam | Hourly Billing",
-        "url": "https://lowendtalk.com/discussion/221894/update-k-n-cloud-let-cloud-vps-offers-in-miami-frankfurt-amsterdam-hourly-billing",
-        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        "id": "let:221735",
+        "provider": "packetra.com",
+        "title": "[Switzerland] Dual Xeon E5 Dedicated | 56 Threads, 64GB | No KYC, BTC/XMR | €164.61/mo (~$187)",
+        "url": "https://lowendtalk.com/discussion/221735/switzerland-dual-xeon-e5-dedicated-56-threads-64gb-no-kyc-btc-xmr-164-61-mo-187",
+        "summary": "上新/回归 · €164.61/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
-    "expired": [
-      {
-        "id": "let:219671",
-        "provider": "cloudblast",
-        "title": "Nobody needs another SSH client. We made one anyway.",
-        "url": "https://lowendtalk.com/discussion/219671/nobody-needs-another-ssh-client-we-made-one-anyway",
-        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
-        "reason": "超出保留窗口；不代表确认停售"
-      }
-    ]
+    "expired": []
   },
   "history": [
     {
-      "generated_at": "2026-10-30T21:02:10+00:00",
+      "generated_at": "2026-10-31T10:52:57+00:00",
       "baseline": false,
       "added": [
         {
@@ -169,6 +98,27 @@
           "title": "Mango Mail Halloween Sale: Up to 40% Perfect Off on High Quality Email Hosting! 100GB Plan Only $8.70/Month!",
           "url": "https://lowendbox.com/blog/mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month/",
           "summary": "节日促销 · $8.7/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222778",
+          "provider": "hyperhostsolutions.com",
+          "title": "HyperHost Halloween | 50% OFF Recurring | UK VPS £1.50/mo · Web £1/mo · HA £2/mo",
+          "url": "https://lowendtalk.com/discussion/222778/hyperhost-halloween-50-off-recurring-uk-vps-1-50-mo-web-1-mo-ha-2-mo",
+          "summary": "节日促销 · £1/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222774",
+          "provider": "TNAHosting",
+          "title": "[HALLOWEEN] TNAHosting – Ryzen 5900X NVMe 50% OFF Recurring | Hybrid KVM from $2.70/mo | Chicago",
+          "url": "https://lowendtalk.com/discussion/222774/halloween-tnahosting-ryzen-5900x-nvme-50-off-recurring-hybrid-kvm-from-2-70-mo-chicago",
+          "summary": "节日促销 · $2.7/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222782",
+          "provider": "Servury Blackbox",
+          "title": "Servury Blackbox - Anonymous encrypted VPS from $8/mo - 20% off",
+          "url": "https://lowendtalk.com/discussion/222782/servury-blackbox-anonymous-encrypted-vps-from-8-mo-20-off",
+          "summary": "常规促销 · $8/月 · 帖文报价，未与配置绑定 · 待确认"
         }
       ],
       "changed": [
@@ -195,6 +145,19 @@
             "库存": {
               "before": "UNVERIFIED",
               "after": "UNVERIFIED_STALE"
+            }
+          }
+        },
+        {
+          "id": "let:222724",
+          "provider": "centrixnodes.net",
+          "title": "[US] Halloween | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
+          "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
+          "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "SOLD_OUT"
             }
           }
         }
@@ -234,6 +197,13 @@
           "title": "[Update] K.N Cloud — LET Cloud VPS Offers in Miami, Frankfurt & Amsterdam | Hourly Billing",
           "url": "https://lowendtalk.com/discussion/221894/update-k-n-cloud-let-cloud-vps-offers-in-miami-frankfurt-amsterdam-hourly-billing",
           "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221735",
+          "provider": "packetra.com",
+          "title": "[Switzerland] Dual Xeon E5 Dedicated | 56 Threads, 64GB | No KYC, BTC/XMR | €164.61/mo (~$187)",
+          "url": "https://lowendtalk.com/discussion/221735/switzerland-dual-xeon-e5-dedicated-56-threads-64gb-no-kyc-btc-xmr-164-61-mo-187",
+          "summary": "上新/回归 · €164.61/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
       "restored": [],
