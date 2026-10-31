@@ -1,40 +1,10 @@
 {
   "latest": {
-    "generated_at": "2026-10-31T14:42:39+00:00",
+    "generated_at": "2026-10-31T15:07:41+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222790",
-        "provider": "Halloween Specials at ST-Hosting!",
-        "title": "Halloween Specials at ST-Hosting!",
-        "url": "https://lowendtalk.com/discussion/222790/halloween-specials-at-st-hosting",
-        "summary": "节日促销 · €4.44/月 · 帖文报价，未与配置绑定 · 待确认"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:222534",
-        "provider": "greencloudvps.com",
-        "title": "GreenCloud is Turning 13! | Exclusive Deals, Giveaways, Quizzes & Games!",
-        "url": "https://lowendtalk.com/discussion/222534/greencloud-is-turning-13-exclusive-deals-giveaways-quizzes-games",
-        "summary": "周年庆 · 到商家查价 · 价格周期待核对 · 在售",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "ON_SALE"
-          }
-        }
-      }
-    ],
-    "missing": [
-      {
-        "id": "let:220957",
-        "provider": "TierNet",
-        "title": "Tier.Net Dedis Starting $45/mo - No Bait-and-Switch, Multiple US Locations",
-        "url": "https://lowendtalk.com/discussion/220957/tier-net-dedis-starting-45-mo-no-bait-and-switch-multiple-us-locations",
-        "summary": "常规促销 · $45/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      }
-    ],
+    "added": [],
+    "changed": [],
+    "missing": [],
     "restored": [],
     "expired": []
   },
