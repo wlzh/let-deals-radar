@@ -183,7 +183,7 @@ def _merchant_links_html():
         ("DMIT", "https://www.dmit.io/", "关注线路与流量配额，先选机房再选套餐"),
         ("搬瓦工", "https://bandwagonhost.com/", "核对线路、机房和迁移规则"),
         ("ZgoVPS", "https://clients.zgovps.com/", "查看当前套餐、库存与续费条件"),
-        ("VIRCS", "https://www.vircs.com/welcome", "核对 IP 类型、地区与使用限制"),
+        ("Nodemach", "https://www.nodemach.com/welcome", "核对 IP 类型、地区与使用限制"),
         ("Geelinx", "https://www.geelinx.com/", "查看可选机房，延迟以实际测试为准"),
         ("GreenCloud", "https://greencloudvps.com/billing/aff.php", "比较机房与年付方案，确认活动库存"),
         ("丽萨主机", "https://lisahost.com/", "按地区与 IP 需求筛选套餐"),
@@ -309,7 +309,7 @@ def _affiliate_shortcuts_html():
     links = []
     for name, url in (("丽萨主机", "https://lisahost.com/"),
                       ("DMIT 套餐", "https://www.dmit.io/"),
-                      ("VIRCS 落地机", "https://www.vircs.com/welcome")):
+                      ("Nodemach 落地机", "https://www.nodemach.com/welcome")):
         target = safe_url(affiliate.rewrite(url))
         if target:
             links.append('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %

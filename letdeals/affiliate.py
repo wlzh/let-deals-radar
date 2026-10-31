@@ -62,7 +62,7 @@ DEFAULTS: dict[str, object] = {
     "dmit.io": "https://www.dmit.io/aff.php?aff=21728",
     "bandwagonhost.com": "https://bandwagonhost.com/aff.php?aff=84775",
     "zgovps.com": {"param": "affid", "value": "1207"},
-    "vircs.com": {"param": "vcd", "value": "61a4aae4"},
+    "nodemach.com": {"param": "vcd", "value": "61a4aae4"},
     "geelinx.com": "https://www.geelinx.com/aff/BLXJTGUH",
     "lisahost.com": "https://lisahost.com/aff.php?aff=9424",
     "voyracloud.com": {"param": "ref_code", "value": "GLGHABPA"},
