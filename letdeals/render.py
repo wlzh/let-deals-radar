@@ -619,7 +619,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   @@FOOTER@@
   <div><span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人</span> | <span id="busuanzi_container_site_pv">访问量 <span id="busuanzi_value_site_pv"></span> 次</span></div>
 </footer>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script defer src="https://events.vercount.one/js"></script>
 
 </div>
 
