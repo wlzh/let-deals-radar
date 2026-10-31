@@ -1,16 +1,46 @@
 {
   "latest": {
-    "generated_at": "2026-10-31T10:57:18+00:00",
+    "generated_at": "2026-10-31T14:42:39+00:00",
     "baseline": false,
-    "added": [],
-    "changed": [],
-    "missing": [],
+    "added": [
+      {
+        "id": "let:222790",
+        "provider": "Halloween Specials at ST-Hosting!",
+        "title": "Halloween Specials at ST-Hosting!",
+        "url": "https://lowendtalk.com/discussion/222790/halloween-specials-at-st-hosting",
+        "summary": "节日促销 · €4.44/月 · 帖文报价，未与配置绑定 · 待确认"
+      }
+    ],
+    "changed": [
+      {
+        "id": "let:222534",
+        "provider": "greencloudvps.com",
+        "title": "GreenCloud is Turning 13! | Exclusive Deals, Giveaways, Quizzes & Games!",
+        "url": "https://lowendtalk.com/discussion/222534/greencloud-is-turning-13-exclusive-deals-giveaways-quizzes-games",
+        "summary": "周年庆 · 到商家查价 · 价格周期待核对 · 在售",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "ON_SALE"
+          }
+        }
+      }
+    ],
+    "missing": [
+      {
+        "id": "let:220957",
+        "provider": "TierNet",
+        "title": "Tier.Net Dedis Starting $45/mo - No Bait-and-Switch, Multiple US Locations",
+        "url": "https://lowendtalk.com/discussion/220957/tier-net-dedis-starting-45-mo-no-bait-and-switch-multiple-us-locations",
+        "summary": "常规促销 · $45/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
     "expired": []
   },
   "history": [
     {
-      "generated_at": "2026-10-31T10:52:57+00:00",
+      "generated_at": "2026-10-31T14:42:39+00:00",
       "baseline": false,
       "added": [
         {
@@ -75,6 +105,13 @@
           "title": "Servury Blackbox - Anonymous encrypted VPS from $8/mo - 20% off",
           "url": "https://lowendtalk.com/discussion/222782/servury-blackbox-anonymous-encrypted-vps-from-8-mo-20-off",
           "summary": "常规促销 · $8/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222790",
+          "provider": "Halloween Specials at ST-Hosting!",
+          "title": "Halloween Specials at ST-Hosting!",
+          "url": "https://lowendtalk.com/discussion/222790/halloween-specials-at-st-hosting",
+          "summary": "节日促销 · €4.44/月 · 帖文报价，未与配置绑定 · 待确认"
         }
       ],
       "changed": [
@@ -114,6 +151,19 @@
             "库存": {
               "before": "UNVERIFIED",
               "after": "SOLD_OUT"
+            }
+          }
+        },
+        {
+          "id": "let:222534",
+          "provider": "greencloudvps.com",
+          "title": "GreenCloud is Turning 13! | Exclusive Deals, Giveaways, Quizzes & Games!",
+          "url": "https://lowendtalk.com/discussion/222534/greencloud-is-turning-13-exclusive-deals-giveaways-quizzes-games",
+          "summary": "周年庆 · 到商家查价 · 价格周期待核对 · 在售",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "ON_SALE"
             }
           }
         }
@@ -160,6 +210,13 @@
           "title": "[Switzerland] Dual Xeon E5 Dedicated | 56 Threads, 64GB | No KYC, BTC/XMR | €164.61/mo (~$187)",
           "url": "https://lowendtalk.com/discussion/221735/switzerland-dual-xeon-e5-dedicated-56-threads-64gb-no-kyc-btc-xmr-164-61-mo-187",
           "summary": "上新/回归 · €164.61/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:220957",
+          "provider": "TierNet",
+          "title": "Tier.Net Dedis Starting $45/mo - No Bait-and-Switch, Multiple US Locations",
+          "url": "https://lowendtalk.com/discussion/220957/tier-net-dedis-starting-45-mo-no-bait-and-switch-multiple-us-locations",
+          "summary": "常规促销 · $45/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
       "restored": [],
