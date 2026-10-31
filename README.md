@@ -180,7 +180,9 @@ Item ItemComment isOriginalPoster Role_PatronProvider
 
 ## 访客统计
 
-页脚的访客数/访问量由 [Vercount](https://vercount.one) 实时计数（不蒜子停服后的替代，兼容其 `busuanzi_value_*` 元素）。因历史累计随不蒜子停服丢失，显示层叠加历史基数：**访客数 = 10254 + 实时 UV，访问量 = 12578 + 实时 PV**（见 `letdeals/render.py` 中 Vercount script 后的内联脚本，`MutationObserver` 监听写入并加基数）。日后若迁移到 vercount.one 后台的自定义起始计数，删除该内联脚本即可恢复纯实时显示。
+页脚的访客数/访问量由 [Vercount](https://vercount.one) 实时计数（不蒜子停服后的替代，兼容其 `busuanzi_value_*` 元素）。因历史累计随不蒜子停服丢失，显示层叠加历史基数：**访客数 = 102540 + 实时 UV，访问量 = 125780 + 实时 PV**（见 `letdeals/render.py` 中 Vercount script 后的内联脚本，`MutationObserver` 监听写入并加基数）。日后若迁移到 vercount.one 后台的自定义起始计数，删除该内联脚本即可恢复纯实时显示。
+
+统计基数版本：v2（2026-10-31，UV 102540 / PV 125780；v1 10254/12578 同日已废弃）。
 
 ---
 

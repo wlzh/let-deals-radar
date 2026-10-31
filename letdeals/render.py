@@ -621,13 +621,13 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
 </footer>
 <script defer src="https://events.vercount.one/js"></script>
 <script>
-/* 访客计数历史基数（2026-10-31 起）
+/* 访客计数历史基数（2026-10-31 起，v2 定版，初版 10254/12578 已废弃）
    不蒜子(busuanzi)停服导致历史累计丢失，Vercount 从 0 重新起数。
-   显示层加回历史基数：访客数 = 10254 + Vercount UV；访问量 = 12578 + Vercount PV。
+   显示层加回历史基数：访客数 = 102540 + Vercount UV；访问量 = 125780 + Vercount PV。
    Vercount 仍负责真实计数并写入 busuanzi_value_site_uv/pv；本脚本监听其写入并叠加基数。
    若日后改用 vercount.one 后台自定义计数，删除本脚本即可恢复纯实时显示。 */
 (function () {
-  var SEEDS = { busuanzi_value_site_uv: 10254, busuanzi_value_site_pv: 12578 };
+  var SEEDS = { busuanzi_value_site_uv: 102540, busuanzi_value_site_pv: 125780 };
   function applySeed(id) {
     var el = document.getElementById(id);
     if (!el) return;
