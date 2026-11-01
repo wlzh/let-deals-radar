@@ -1,18 +1,10 @@
 {
   "latest": {
-    "generated_at": "2026-11-01T13:49:56+00:00",
+    "generated_at": "2026-11-01T21:02:05+00:00",
     "baseline": false,
     "added": [],
     "changed": [],
-    "missing": [
-      {
-        "id": "leb:leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
-        "provider": "Velohost",
-        "title": "Velohost Returns With Even Cheaper Prices! Get a 4GB VPS for Only 2.60€/month!",
-        "url": "https://lowendbox.com/blog/velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month/",
-        "summary": "上新/回归 · €2.6/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      }
-    ],
+    "missing": [],
     "restored": [],
     "expired": []
   },
