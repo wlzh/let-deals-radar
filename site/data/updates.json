@@ -1,87 +1,39 @@
 {
   "latest": {
-    "generated_at": "2026-10-31T21:01:57+00:00",
+    "generated_at": "2026-11-01T05:34:43+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222809",
-        "provider": "HostSailor Halloween Special",
-        "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
-        "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
-        "summary": "节日促销 · $29.94/年 · 帖文报价，未与配置绑定 · 待确认"
-      }
-    ],
+    "added": [],
     "changed": [
       {
         "id": "let:222474",
         "provider": "Caliber Node",
         "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
         "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
-        "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 疑似售罄",
+        "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 待确认",
         "changes": {
           "库存": {
-            "before": "UNVERIFIED",
-            "after": "LIKELY_SOLD_OUT"
-          }
-        }
-      },
-      {
-        "id": "let:222774",
-        "provider": "TNAHosting",
-        "title": "[HALLOWEEN] TNAHosting – Ryzen 5900X NVMe 50% OFF Recurring | Hybrid KVM from $2.70/mo | Chicago",
-        "url": "https://lowendtalk.com/discussion/222774/halloween-tnahosting-ryzen-5900x-nvme-50-off-recurring-hybrid-kvm-from-2-70-mo-chicago",
-        "summary": "节日促销 · $2.7/月 · 帖文报价，未与配置绑定 · 疑似售罄",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "LIKELY_SOLD_OUT"
-          }
-        }
-      },
-      {
-        "id": "let:222534",
-        "provider": "greencloudvps.com",
-        "title": "GreenCloud is Turning 13! | Exclusive Deals, Giveaways, Quizzes & Games!",
-        "url": "https://lowendtalk.com/discussion/222534/greencloud-is-turning-13-exclusive-deals-giveaways-quizzes-games",
-        "summary": "周年庆 · 到商家查价 · 价格周期待核对 · 待确认",
-        "changes": {
-          "库存": {
-            "before": "ON_SALE",
+            "before": "LIKELY_SOLD_OUT",
             "after": "UNVERIFIED"
           }
         }
       }
     ],
-    "missing": [
+    "missing": [],
+    "restored": [],
+    "expired": [
       {
-        "id": "let:220717",
-        "provider": "LayerOne",
-        "title": "[LayerOne] More Capacity + New Features - VPS from $1.89/mo | 1GB–8GB RAM",
-        "url": "https://lowendtalk.com/discussion/220717/layerone-more-capacity-new-features-vps-from-1-89-mo-1gb-8gb-ram",
-        "summary": "常规促销 · $1.89/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221826",
-        "provider": "PrivateByte",
-        "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
-        "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
-        "summary": "常规促销 · $5.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:219721",
+        "provider": "TrumVPS",
+        "title": "TrumVPS | Vietnam VPS | 20% OFF with LOWEND20 | Starting at $14.80/Year | Bonus for LET Members",
+        "url": "https://lowendtalk.com/discussion/219721/trumvps-vietnam-vps-20-off-with-lowend20-starting-at-14-80-year-bonus-for-let-members",
+        "summary": "常规促销 · $14.8/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+        "reason": "超出保留窗口；不代表确认停售"
       }
-    ],
-    "restored": [
-      {
-        "id": "let:220775",
-        "provider": "just.hosting",
-        "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
-        "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
-        "summary": "上新/回归 · $3.3/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
-      }
-    ],
-    "expired": []
+    ]
   },
   "history": [
     {
-      "generated_at": "2026-10-31T21:01:57+00:00",
+      "generated_at": "2026-11-01T05:34:43+00:00",
       "baseline": false,
       "added": [
         {
@@ -98,11 +50,11 @@
           "provider": "Caliber Node",
           "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
           "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
-          "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 疑似售罄",
+          "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 待确认",
           "changes": {
             "库存": {
               "before": "UNVERIFIED",
-              "after": "LIKELY_SOLD_OUT"
+              "after": "UNVERIFIED"
             }
           }
         },
@@ -158,7 +110,16 @@
           "summary": "上新/回归 · $3.3/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
         }
       ],
-      "expired": []
+      "expired": [
+        {
+          "id": "let:219721",
+          "provider": "TrumVPS",
+          "title": "TrumVPS | Vietnam VPS | 20% OFF with LOWEND20 | Starting at $14.80/Year | Bonus for LET Members",
+          "url": "https://lowendtalk.com/discussion/219721/trumvps-vietnam-vps-20-off-with-lowend20-starting-at-14-80-year-bonus-for-let-members",
+          "summary": "常规促销 · $14.8/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
     },
     {
       "generated_at": "2026-10-31T14:42:39+00:00",

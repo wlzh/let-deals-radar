@@ -1,28 +1,29 @@
 | 来源 | 厂商 | 活动性质 | 力度 | 配置范围/套餐 | 帖文报价 | 状态 | 信息完整度 |
 |---|---|---|---|---|---|---|---|
+| LET | DartNode | 黑五 | 含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months free | 帖文提及：1 核 / 2–32 GB 内存 / 25–1024 GB 存储 | $399/年（帖文报价，未与配置绑定） | 待确认(较旧) | 1.00 |
+| LET | Caliber Node | 节日促销 | 码 TREAT26 | 帖文提及：2 核 / 2 GB 内存 / 30 GB 存储 | $8/年（帖文报价，未与配置绑定） | 待确认 | 0.83 |
+| LET | BLACK FRIDAY | 黑五 | 首期优惠，续费待核对 · 最高 60% off · 码 BFVPS55/BFVPS60 | 帖文提及：2–6 核 / 2–512 GB 内存 / 50–240 GB 存储 | £1.75/月（帖文报价，未与配置绑定） | 待确认 | 1.00 |
+| LET | Hostishere | 节日促销 | 循环/永久 · 6 months free | 帖文提及：2 核 / 2–6 GB 内存 / 25–60 GB 存储 | €3.49/月（帖文报价，未与配置绑定） | 待确认 | 1.00 |
+| LET | DeluxHost.net | 补货 | — | 帖文提及：1 核 / 1 GB 内存 / 8–80 GB 存储 | 到商家查价（价格周期待核对） | 在售 | 0.67 |
+| LET | servitro.com | 常规促销 | 码 BFJH1873LA | 帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储 | $12/年（帖文报价，未与配置绑定） | 待确认 | 1.00 |
+| LET | HostDZire | 黑五 | — | 帖文提及：1–12 核 / 3–128 GB 内存 / 2048–8192 GB 存储 | €18/年（帖文报价，未与配置绑定） | 待确认 | 0.67 |
+| LET | Halloween VPS @ Frankfurt Equinix | 节日促销 | 循环/永久 | 帖文提及：2–3 核 / 3–10 GB 内存 / 50–100 GB 存储 | €31/年（帖文报价，未与配置绑定） | 在售 | 0.83 |
+| LET | serverpoint.com | 补货 | 最高 36% off · double bandwidth | 帖文提及：1–6 核 | $3.33/月（帖文报价，未与配置绑定） | 在售 | 0.67 |
+| LET | vpshostingservice.co | 常规促销 | 循环/永久 · 码 OCTRYZI92GB | 帖文提及：0.25 GB 内存 / 50 GB 存储 | $22.99/年（帖文报价，未与配置绑定） | 待确认 | 0.67 |
 | LET | HostSailor Halloween Special | 节日促销 | 循环/永久 · 最高 50% off · 码 HALLOWEEN50 | 帖文提及：9534 核 / 1–4 GB 内存 | $29.94/年（帖文报价，未与配置绑定） | 待确认 | 0.83 |
 | LET | Servury Blackbox | 常规促销 | 最高 20% off · 码 LET20 | 帖文提及：50 GB 存储 | $8/月（帖文报价，未与配置绑定） | 待确认 | 0.50 |
-| LET | just.hosting | 上新/回归 | 含首期与循环描述，适用规则待核对 · 最高 40% off · 码 CLASSIC/CLASSIC35/JUSTVIBE | 帖文提及：0.5–2 GB 内存 / 5–40 GB 存储 | $3.3/月（帖文报价，未与配置绑定） | 待确认(较旧) | 0.67 |
-| LET | Caliber Node | 节日促销 | 码 TREAT26 | 帖文提及：2 核 / 2 GB 内存 / 30 GB 存储 | $8/年（帖文报价，未与配置绑定） | 疑似售罄 | 0.83 |
-| LET | DeluxHost.net | 补货 | — | 帖文提及：1 核 / 1 GB 内存 / 8–80 GB 存储 | 到商家查价（价格周期待核对） | 在售 | 0.67 |
-| LET | servers_guru | 常规促销 | 含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months for the price of 10+2 months free | 帖文提及：16 核 / 2–4 GB 内存 / 20–40 GB 存储 | €38/年（帖文报价，未与配置绑定） | 待确认 | 0.83 |
-| LET | Hostishere | 节日促销 | 循环/永久 · 6 months free | 帖文提及：2 核 / 2–6 GB 内存 / 25–60 GB 存储 | €3.49/月（帖文报价，未与配置绑定） | 待确认 | 1.00 |
-| LET | BLACK FRIDAY | 黑五 | 首期优惠，续费待核对 · 最高 60% off · 码 BFVPS55/BFVPS60 | 帖文提及：2–6 核 / 2–512 GB 内存 / 50–240 GB 存储 | £1.75/月（帖文报价，未与配置绑定） | 待确认 | 1.00 |
-| LET | serverpoint.com | 补货 | 最高 36% off · double bandwidth | 帖文提及：1–6 核 | $3.33/月（帖文报价，未与配置绑定） | 在售 | 0.67 |
-| LET | TNAHosting | 节日促销 | 循环/永久 · 最高 50% off · 码 SPOOKYHYB10/SPOOKYRYZEN50 | 帖文提及：1–2 核 / 0.5–4 GB 内存 / 10–80 GB 存储 | $2.7/月（帖文报价，未与配置绑定） | 疑似售罄 | 1.00 |
 | LET | greencloudvps.com | 周年庆 | 循环/永久 | 帖文提及：13 GB 内存 / 13–113 GB 存储 | 到商家查价（价格周期待核对） | 待确认 | 0.50 |
-| LET | servitro.com | 常规促销 | 码 BFJH1873LA | 帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储 | $12/年（帖文报价，未与配置绑定） | 待确认 | 1.00 |
-| LET | vpshostingservice.co | 常规促销 | 循环/永久 · 码 OCTRYZI92GB | 帖文提及：0.25 GB 内存 / 50 GB 存储 | $22.99/年（帖文报价，未与配置绑定） | 待确认 | 0.67 |
-| LET | DartNode | 黑五 | 含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months free | 帖文提及：1 核 / 2–32 GB 内存 / 25–1024 GB 存储 | $399/年（帖文报价，未与配置绑定） | 待确认(较旧) | 1.00 |
+| LET | just.hosting | 上新/回归 | 含首期与循环描述，适用规则待核对 · 最高 40% off · 码 CLASSIC/CLASSIC35/JUSTVIBE | 帖文提及：0.5–2 GB 内存 / 5–40 GB 存储 | $3.3/月（帖文报价，未与配置绑定） | 待确认(较旧) | 0.67 |
+| LET | SystemFreaks S3 Object Storage | 常规促销 | — | 查看原帖核对配置 | $7.2/年（帖文报价，未与配置绑定） | 待确认 | 0.17 |
+| LET | servers_guru | 常规促销 | 含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months for the price of 10+2 months free | 帖文提及：16 核 / 2–4 GB 内存 / 20–40 GB 存储 | €38/年（帖文报价，未与配置绑定） | 待确认 | 0.83 |
+| LET | TNAHosting | 节日促销 | 循环/永久 · 最高 50% off · 码 SPOOKYHYB10/SPOOKYRYZEN50 | 帖文提及：1–2 核 / 0.5–4 GB 内存 / 10–80 GB 存储 | $2.7/月（帖文报价，未与配置绑定） | 疑似售罄 | 1.00 |
 | LET | nolimitcloud.eu | 常规促销 | 循环/永久 · 最高 25% off · 码 LETB25/LETS2026 | 帖文提及：1–5 核 / 1–16 GB 内存 / 10–500 GB 存储 | €12.99/年（帖文报价，未与配置绑定） | 待确认 | 1.00 |
-| LET | HostDZire | 黑五 | — | 帖文提及：1–12 核 / 3–128 GB 内存 / 2048–8192 GB 存储 | €18/年（帖文报价，未与配置绑定） | 待确认 | 0.67 |
 | LET | hyperhostsolutions.com | 节日促销 | 循环/永久 · 最高 50% off · 码 HALLOWEEN50 | 帖文提及：2–8 GB 内存 | £1/月（帖文报价，未与配置绑定） | 待确认 | 0.50 |
 | LET | extravm.com | 常规促销 | — | 帖文提及：2 核 / 5 GB 内存 / 75 GB 存储 | $6.7/月（帖文报价，未与配置绑定） | 待确认 | 0.67 |
 | LET | centrixnodes.net | 节日促销 | 循环/永久 · 最高 50% off · 码 LETYEARLY/LOWENDTALKVPS | 帖文提及：1–2 核 / 25–65 GB 存储 | $25.5/年（帖文报价，未与配置绑定） | 售罄 | 0.83 |
 | LET | HostNamaste | 常规促销 | — | 帖文提及：1–4 核 / 1–256 GB 内存 / 20–140 GB 存储 | $17.99/年（帖文报价，未与配置绑定） | 待确认 | 0.83 |
 | LET | Halloween Specials at ST-Hosting! | 节日促销 | 循环/永久 | 帖文提及：8 GB 内存 / 50 GB 存储 | €4.44/月（帖文报价，未与配置绑定） | 待确认 | 0.67 |
 | LET | aspirehosting.net | 节日促销 | 最高 55% off · 1 month free+2 months free | 帖文提及：4–8 核 / 8–32 GB 内存 / 50–300 GB 存储 | $2/月（帖文报价，未与配置绑定） | 在售 | 1.00 |
-| LET | Halloween VPS @ Frankfurt Equinix | 节日促销 | 循环/永久 | 帖文提及：2–3 核 / 3–10 GB 内存 / 50–100 GB 存储 | €31/年（帖文报价，未与配置绑定） | 在售 | 0.83 |
 | LET | ServersCamp: Database-Tuned Cloud | 常规帖 | — | 帖文提及：2 核 / 4 GB 内存 | 到商家查价（价格周期待核对） | 待确认(较旧) | 0.33 |
 | LET | EthernetServers | 常规促销 | free upgrade | 查看原帖核对配置 | $2.25/月（帖文报价，未与配置绑定） | 待确认(较旧) | 0.33 |
 | LET | leapswitch | 常规促销 | — | 帖文提及：32–192 GB 内存 / 960–1966.08 GB 存储 | 到商家查价（价格周期待核对） | 待确认 | 0.33 |
@@ -43,7 +44,6 @@
 | LET | fiberstate.com | 上新/回归 | free upgrade · 码 BEASTMODE7950XSLC/BEASTMODE9950X/BEASTMODE9950XNYC | 帖文提及：8–40 核 / 64–256 GB 内存 / 1024–4096 GB 存储 | $69.95/月（帖文报价，未与配置绑定） | 在售 | 1.00 |
 | LET | Linceris.com | 常规促销 | 循环/永久 · 码 FIRSTORDER50 | 帖文提及：2 核 / 4 GB 内存 / 50 GB 存储 | 到商家查价（价格周期待核对） | 待确认 | 0.83 |
 | LET | SoftShellWeb | 常规帖 | 含首期与循环描述，适用规则待核对 · double bandwidth | 帖文提及：1–4 核 / 1–8 GB 内存 / 4–100 GB 存储 | $9.95/年（帖文报价，未与配置绑定） | 待确认(较旧) | 0.83 |
-| LET | SystemFreaks S3 Object Storage | 常规促销 | — | 查看原帖核对配置 | $7.2/年（帖文报价，未与配置绑定） | 待确认 | 0.17 |
 | LET | wlx.hk | 常规促销 | 循环/永久 · 最高 21% off · 码 WLXOCT88 | 帖文提及：24 核 / 2048 GB 存储 | $181.37/月（帖文报价，未与配置绑定） | 待确认 | 0.83 |
 | LET | quickservers.net | 常规帖 | — | 帖文提及：256–512 GB 存储 | 到商家查价（价格周期待核对） | 售罄 | 0.17 |
 | LET | reliablesite.net | 上新/回归 | 循环/永久 · 最高 25% off | 帖文提及：6 核 / 1024–2048 GB 存储 | $49/月（帖文报价，未与配置绑定） | 售罄 | 0.83 |
@@ -63,7 +63,6 @@
 | LET | bgp.sa | 常规帖 | — | 帖文提及：1 核 / 2 GB 存储 | $9.99/月（帖文报价，未与配置绑定） | 待确认 | 0.50 |
 | LET | hostdare.com | 常规促销 | 循环/永久 · 最高 25% off · double bandwidth+double ram | 帖文提及：1–2 核 / 0.75–2 GB 内存 / 25–50 GB 存储 | $19.49/年（帖文报价，未与配置绑定） | 待确认 | 0.83 |
 | LET | Meet Arct Cloud | 常规帖 | 循环/永久 · 最高 10% off | 帖文提及：1–2 核 / 1–4 GB 内存 / 15–40 GB 存储 | $3.89/月（帖文报价，未与配置绑定） | 待确认 | 0.83 |
-| LET | TrumVPS | 常规促销 | 最高 20% off · free upgrade | 帖文提及：1 核 / 1 GB 内存 / 10–20 GB 存储 | $14.8/年（帖文报价，未与配置绑定） | 待确认(较旧) | 0.83 |
 | LET | centrixnodes.net | 常规促销 | 含首期与循环描述，适用规则待核对 · 最高 20% off · 码 LOWENDTALKDEDI/LOWENDTALKVPS | 帖文提及：1–2 核 / 10–4096 GB 存储 | $2.04/月（帖文报价，未与配置绑定） | 待确认 | 0.83 |
 | LET | SmokyHosts | 节日促销 | 循环/永久 · 最高 60% off · double storage · 码 Promo25VPS | 帖文提及：1–2 核 / 2–24 GB 内存 / 20–80 GB 存储 | $38.21/年（帖文报价，未与配置绑定） | 在售 | 0.83 |
 | LET | prohosting24.de | 上新/回归 | — | 帖文提及：4–6 核 / 8–12 GB 内存 / 100–200 GB 存储 | 到商家查价（价格周期待核对） | 待确认(较旧) | 0.50 |
