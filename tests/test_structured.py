@@ -61,7 +61,8 @@ def test_item_list_prefers_vendor_url():
     assert s["@type"] == "ItemList"
     li = s["itemListElement"][0]
     assert li["position"] == 1
-    assert li["url"] == "https://vendor.example.com/?aff=1"
+    # Carousel：ListItem 的 item 与 url 互斥，只留 item，url 在 Product 里。
+    assert "url" not in li
     assert li["name"] == "BERO HOST €39/年"
     assert li["item"]["@type"] == "Product"
     assert li["item"]["url"] == "https://vendor.example.com/?aff=1"
@@ -70,8 +71,21 @@ def test_item_list_prefers_vendor_url():
 def test_item_list_falls_back_to_thread_url():
     s = structured.item_list_schema([_rec(vendor_url=None)])
     li = s["itemListElement"][0]
-    assert li["url"] == "https://forum.example.com/t/1"
+    assert "url" not in li
     assert li["item"]["url"] == "https://forum.example.com/t/1"
+
+
+def test_item_list_product_image_uses_site_og_image(monkeypatch):
+    """Merchant listing 要求 Product 有 image：用站内 og-image.png。"""
+    monkeypatch.setattr(config, "SITE_URL", "https://vps.test")
+    product = structured.item_list_schema([_rec()])["itemListElement"][0]["item"]
+    assert product["image"] == "https://vps.test/og-image.png"
+
+
+def test_item_list_product_image_omitted_without_site_url(monkeypatch):
+    monkeypatch.setattr(config, "SITE_URL", "")
+    product = structured.item_list_schema([_rec()])["itemListElement"][0]["item"]
+    assert "image" not in product
 
 
 def test_item_list_offer_price_and_currency():
@@ -90,20 +104,31 @@ def test_item_list_offer_falls_back_to_flagship_price():
     assert offer["priceCurrency"] == "EUR"
 
 
-def test_item_list_skips_offer_without_price():
-    """没有数字价格就不输出 Offer —— 残缺的 Offer 会被判为无效结构。"""
+def test_item_list_skips_record_without_price():
+    """没有数字价格就不进结构化 ItemList —— 裸 Product 达不到
+    Product 富摘要门槛（offers / aggregateRating / review 三者缺一不可），
+    编造评分比缺字段更糟；页面上的行不受影响。"""
     rec = _rec(sort_price=None, flagship_price=None, display_price="到商家查价",
                discount={"strength": "", "percent_max": None,
                          "recurring": False, "codes": [], "extras": []})
-    product = structured.item_list_schema([rec])["itemListElement"][0]["item"]
-    assert "offers" not in product
-    assert product["description"].endswith("到商家查价")
+    assert structured.item_list_schema([rec])["itemListElement"] == []
 
 
-def test_item_list_skips_offer_for_unknown_currency():
+def test_item_list_skips_record_for_unknown_currency():
     rec = _rec(sort_price={"amount": 5, "currency": "¥", "cycle": "month"})
-    product = structured.item_list_schema([rec])["itemListElement"][0]["item"]
-    assert "offers" not in product
+    assert structured.item_list_schema([rec])["itemListElement"] == []
+
+
+def test_item_list_skips_unpriced_but_keeps_positions_continuous():
+    """无价格条目跳过后，有价格条目的 position 仍连续。"""
+    unpriced = _rec(provider="NOPRICE", sort_price=None, flagship_price=None,
+                    display_price="到商家查价",
+                    discount={"strength": "", "percent_max": None,
+                              "recurring": False, "codes": [], "extras": []})
+    s = structured.item_list_schema([unpriced, _rec(provider="P1"),
+                                     _rec(provider="P2")])
+    assert [e["position"] for e in s["itemListElement"]] == [1, 2]
+    assert s["itemListElement"][0]["item"]["name"].startswith("P1")
 
 
 def test_item_list_availability_unverified_omitted():

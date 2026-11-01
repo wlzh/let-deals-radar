@@ -78,10 +78,29 @@ def item_list_schema(records: list, limit: int = 60) -> dict:
 
     保持调用方给出的顺序 —— 排序策略属于展示层，这里不重排。
     落地链接优先用联盟链接（vendor_url）：那是我们希望用户到达的地址。
+
+    Google 富摘要门槛（Semrush 2026-11-01 结构化数据 53 项的修法）：
+    - Merchant listing 要求 Product 有 image：帖文没有单品图，
+      统一用站内 og-image.png（与 render/bfpage 的 og:image 同一文件），
+      未绑定 SITE_URL 时不输出空 image。
+    - Product 富摘要要求 offers / aggregateRating / review 三者至少其一：
+      拿不到数字价格的记录（到商家查价、未知币种）无法编造评分，
+      直接不进结构化 ItemList —— 页面上的行照常展示，
+      只是不再以 Product 形式向搜索引擎声称。
+    - Carousel 要求 ListItem 的 item 与 url 二选一：只留 item，
+      Product 里本来就有 url，不再在 ListItem 层重复写 url。
     """
     elements = []
-    for i, rec in enumerate(records[:limit], 1):
+    image_url = (f"{config.SITE_URL}/og-image.png"
+                 if config.SITE_URL else None)
+    for rec in records:
+        if len(elements) >= limit:
+            break
         url = rec.get("vendor_url") or rec.get("url") or ""
+        offer = _offer(rec, url)
+        if offer is None:
+            # 无有效 Offer 的 Product 达不到富摘要门槛，跳过结构化输出。
+            continue
         discount = rec.get("discount") or {}
         codes = [c for c in (discount.get("codes") or []) if c]
 
@@ -96,12 +115,10 @@ def item_list_schema(records: list, limit: int = 60) -> dict:
                    "name": ((rec.get("provider") or "") + " VPS 优惠").strip()}
         _put(product, "description", description)
         _put(product, "url", url)
-        offer = _offer(rec, url)
-        if offer:
-            product["offers"] = offer
+        _put(product, "image", image_url)
+        product["offers"] = offer
 
-        item = {"@type": "ListItem", "position": i}
-        _put(item, "url", url)
+        item = {"@type": "ListItem", "position": len(elements) + 1}
         _put(item, "name", " ".join(
             part for part in (rec.get("provider"), rec.get("display_price"))
             if part))
