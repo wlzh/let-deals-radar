@@ -1,7 +1,9 @@
 """Release gate: python -m tools.audit_site [site-directory]."""
 
 import json
+import re
 import sys
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -55,8 +57,46 @@ def audit(root):
     result = {"records": len(rows), "affiliate_merchants": len(affiliate.DEFAULTS), "affiliate_records": covered,
               "missing_vendor": sum(not r.get("vendor_url") for r in rows),
               "bound_prices": sum(r["price_bound"] for r in rows), "legacy_forum_links": 0}
+    seo_geo_audit(root, payload, page, result)
     print(json.dumps(result, ensure_ascii=False))
     return result
+
+
+def seo_geo_audit(root: Path, payload: dict, page: str, result: dict) -> None:
+    """SEO/GEO 附属产物的发布门禁：RSS、llms.txt、黑五页与结构化数据。"""
+    feed = (root / "feed.xml").read_text(encoding="utf-8")
+    channel = ET.fromstring(feed).find("channel")
+    assert channel is not None and channel.find("title") is not None, "RSS missing channel title"
+    assert channel.findtext("link") is not None, "RSS missing channel link"
+    result["rss_items"] = len(channel.findall("item"))
+
+    llms = (root / "llms.txt").read_text(encoding="utf-8")
+    for needle in ("data/deals.json", "feed.xml", "black-friday-2026"):
+        assert needle in llms, f"llms.txt missing {needle}"
+    result["llms_bytes"] = len(llms.encode("utf-8"))
+
+    bf = (root / "black-friday-2026/index.html").read_text(encoding="utf-8")
+    assert "@@" not in bf, "BF page has unrendered placeholders"
+    assert 'type="application/ld+json"' in bf, "BF page missing JSON-LD"
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', bf, re.S):
+        json.loads(block)
+
+    # 首页结构化数据：WebSite + ItemList + FAQPage，全部可解析且不逃逸
+    blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', page, re.S)
+    assert len(blocks) >= 3, "index missing JSON-LD blocks"
+    types = []
+    for block in blocks:
+        schema = json.loads(block)
+        types.append(schema.get("@type"))
+    for need in ("WebSite", "ItemList", "FAQPage"):
+        assert need in types, f"index JSON-LD missing {need}"
+    assert 'rel="alternate" type="application/rss+xml"' in page, "index missing RSS link"
+    # 生产 payload 必有 generated_at；极简 fixture（无时间字段）不强制 <time>
+    if payload.get("generated_at"):
+        assert "<time datetime=" in page, "index missing machine-readable timestamps"
+    assert "black-friday-2026/" in (root / "sitemap.xml").read_text(encoding="utf-8"), \
+        "sitemap missing BF page"
+    result["jsonld_types"] = types
 
 
 if __name__ == "__main__":

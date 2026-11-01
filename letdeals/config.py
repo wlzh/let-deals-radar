@@ -56,9 +56,14 @@ FEED_CACHE = DATA_DIR / "feed.xml"
 SITE_TITLE = _env("LDR_SITE_TITLE", "VPS 活动雷达")
 SITE_DESC = _env(
     "LDR_SITE_DESC",
-    "自动汇总公开渠道的 VPS 优惠活动，"
-    "标注折扣力度、循环折扣与库存状态。",
+    "自动汇总公开渠道的 VPS 优惠与黑五活动，"
+    "标注折扣力度、循环折扣、优惠码与库存状态。",
 )
+# 标题关键词后缀：品牌名本身不含检索词，<title> 靠这个后缀承接
+# 「VPS 优惠 / 低价年付 / 黑五」类查询。换季只需改这一个值
+# （或用环境变量 LDR_TITLE_KEYWORDS 覆盖），无需动模板。
+TITLE_KEYWORDS = _env(
+    "LDR_TITLE_KEYWORDS", "VPS 优惠 · 低价年付 · 黑五 2026 实时汇总")
 # 例：https://deals.example.com  （末尾不要带 /）
 SITE_URL = _env("LDR_SITE_URL", "").rstrip("/")
 SITE_FOOTER = (

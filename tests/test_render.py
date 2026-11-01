@@ -178,7 +178,9 @@ def test_header_update_time_is_beijing_time(tmp_path):
     payload["generated_at"] = "2026-10-29T21:00:00Z"
     render.build_site(payload, str(tmp_path), verbose=False)
     output = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "数据更新 <b>2026-10-30 05:00:00 北京时间</b>" in output
+    # 更新时间包一层 <time>（ISO 机器可读），文本仍是北京时间
+    assert ('数据更新 <b><time datetime="2026-10-29T21:00:00Z">'
+            '2026-10-30 05:00:00 北京时间</time></b>') in output
     assert "每日北京时间 05:00 自动检查" in output
     assert payload["generated_at"] == "2026-10-29T21:00:00Z"
 

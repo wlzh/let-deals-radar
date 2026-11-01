@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-01
+
+- 新增 2026 黑五专题页（`/black-friday-2026/`）：黑五倒计时、已公布活动列表、低价年付清单与黑五 FAQ，独立 title/OG/canonical 并列入 sitemap。
+- 首页新增 schema.org 结构化数据（WebSite + ItemList/Offer + FAQPage），FAQ 与页面可见文本同源生成，杜绝两处漂移。
+- 新增 RSS 2.0 订阅源（`feed.xml`）与 llms.txt（生成式引擎入口说明），头部声明 alternate 链接。
+- `<title>`/OG 标题带关键词后缀（VPS 优惠 · 低价年付 · 黑五 2026），后缀经 `LDR_TITLE_KEYWORDS` 可调；meta 描述补黑五关键词。
+- 数据更新时间与发布时间改为 `<time datetime>` ISO 标注，机器可读。
+- 支持 `?q=关键词` 深链直达筛选结果；首页新增黑五专题入口卡片与 RSS/deals.json 订阅链接。
+- 线上验收扩展为七文件比对（新增 feed.xml、llms.txt、黑五页），发布门禁同步校验结构化数据可解析、RSS 可解析、sitemap 含专题页。
+
 ## 2026-10-26
 
 - 首页更新区移到介绍区上方，仅保留今日与最近 30 天历史两个默认收起入口；同日合并、无变化不占历史行，展开区限高滚动。

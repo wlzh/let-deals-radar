@@ -11,7 +11,16 @@ from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
 
-FILES = ("index.html", "data/deals.json", "data/updates.json", "sitemap.xml")
+FILES = (
+    "index.html",
+    "data/deals.json",
+    "data/updates.json",
+    "sitemap.xml",
+    # SEO/GEO 附属产物同样要比对：漏发即视为部署不完整
+    "feed.xml",
+    "llms.txt",
+    "black-friday-2026/index.html",
+)
 _CF_BEACON = re.compile(
     rb'\n?<script\b(?=[^>]*\bdata-cf-beacon=)[^>]*\bsrc=["\x27]'
     rb'https://static\.cloudflareinsights\.com/beacon\.min\.js(?:/[^"\x27]*)?'
@@ -20,8 +29,8 @@ _CF_BEACON = re.compile(
 
 
 def content_digest(name: str, content: bytes) -> bytes:
-    # Pages injects this optional analytics tag for some user agents only.
-    if name == "index.html":
+    # Pages injects this optional analytics tag into any HTML page, for some user agents only.
+    if name.endswith(".html"):
         content = _CF_BEACON.sub(b"", content)
     return hashlib.sha256(content).digest()
 

@@ -216,7 +216,7 @@ LEB 是编辑博客，会混入大量非优惠内容（如「微软砍存储」�
 
 ## 部署
 
-生产站点采用 [Pages 安全直传](deploy/PAGES-DIRECT.md)：在 Actions 中审计后上传静态产物，保留线上四文件验收和有限网络重试，不再依赖 Pages 拉取仓库。
+生产站点采用 [Pages 安全直传](deploy/PAGES-DIRECT.md)：在 Actions 中审计后上传静态产物，保留线上七文件验收（含 RSS、llms.txt 与黑五专题页）和有限网络重试，不再依赖 Pages 拉取仓库。
 
 Telegram 发布采用[持久化补发账本](deploy/TELEGRAM-OUTBOX.md)：未送达内容跨运行保留，明确失败的目标在下次网页验收成功后补发，成功目标跳过；结果不确定时私聊告警并暂停重发。
 

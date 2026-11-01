@@ -1,0 +1,21 @@
+# 大坝的VPS优惠大超市
+
+> 自动汇总 LowEndTalk / LowEndBox 的 VPS 优惠与黑五活动：低价年付、折扣力度、循环折扣、优惠码与库存状态，每日更新。
+
+## 站点说明
+
+本站自动汇总 LowEndTalk / LowEndBox 公开渠道的 VPS 优惠，标注折扣力度、优惠码与库存状态。数据每日自动更新（北京时间 05:00 检查）。
+当前共 100 条优惠，其中 LET 90 条 / LEB 10 条。
+数据生成时间：2026-11-01 05:01:57 北京时间。
+
+## 数据
+
+- https://vps.869hr.uk/data/deals.json: 全部优惠的结构化数据（字段说明：records[].provider/title/url/display_price/availability/…）
+- https://vps.869hr.uk/data/updates.json: 每日变化记录
+- https://vps.869hr.uk/feed.xml: RSS 订阅
+- https://vps.869hr.uk/black-friday-2026/: 2026 黑五专题页（低价年付清单与常见问题）
+
+## 使用与免责
+
+- 信息来自公开帖子，库存与价格以商家为准；页面标注「待确认」表示未自动验证。
+- 本站仅聚合信息，不构成购买建议。部分出站链接为推广链接。

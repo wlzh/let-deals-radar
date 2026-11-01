@@ -13,6 +13,7 @@ import os
 import re
 import shutil
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 
 from . import config, affiliate
 from .presentation import prepare, safe_url
@@ -24,6 +25,52 @@ EVENT_WEIGHT = {
     "anniversary": 25, "black_friday": 25, "holiday": 15,
     "launch": 10, "restock": 8, "sale": 5, "regular": 0,
 }
+
+# 首页可见 FAQ：内容与 FAQPage 结构化数据共用同一份，
+# 保证「页面可见文本」与「机器可读答案」永不漂移（搜索引擎的硬要求）。
+INDEX_FAQ = [
+    ("数据多久更新一次？",
+     "每日北京时间 05:00 自动抓取 LowEndTalk Offers 与 LowEndBox 的公开帖子并重建页面，"
+     "页面顶部标注了最近一次数据更新时间，超过 48 小时会提示数据可能过期。"),
+    ("「库存状态」是怎么判定的？",
+     "优先采信商家本人在原帖回帖中的表态；没有商家表态时退回帖文关键词；"
+     "仍无法判定则标「待确认」。「待确认」不等于有货，下单前请到商家核实。"),
+    ("优惠码怎么用？",
+     "展开任意一条优惠即可复制优惠码，粘贴到商家结算页后务必确认折扣确实生效；"
+     "部分优惠码仅适用特定套餐或首期账单。"),
+    ("什么是循环折扣（recurring）？",
+     "指每次续费都生效的折扣，比仅首期生效的一次性折扣更值钱；"
+     "本站在「优惠」列标注了折扣力度与是否循环。"),
+    ("「帖文报价，未与配置绑定」是什么意思？",
+     "表示该价格来自帖子正文，无法确认对应哪个具体套餐，"
+     "不能与帖文里的最高配置组合理解；下单前请以商家结算页为准。"),
+    ("黑五什么时候开始？",
+     "2026 年黑色星期五是 11 月 27 日（星期五）；VPS 圈厂商通常 11 月上旬就陆续开跑，"
+     "黑五专题页每日更新已公布的活动。"),
+]
+
+
+def _page_title() -> str:
+    """品牌名 + 关键词后缀：品牌名不含检索词，靠后缀承接查询流量。"""
+    kw = (getattr(config, "TITLE_KEYWORDS", "") or "").strip()
+    return f"{config.SITE_TITLE}｜{kw}" if kw else config.SITE_TITLE
+
+
+def _iso_or_none(raw) -> str | None:
+    """RFC822 时间（如 posted 字段）→ ISO 8601；解析失败返回 None。"""
+    try:
+        return parsedate_to_datetime(raw).isoformat()
+    except (TypeError, ValueError, IndexError):
+        return None
+
+
+def _faq_html(faq: list) -> str:
+    """可见 FAQ（details 折叠但内容在 DOM 里，爬虫与 AI 引擎都能读到）。"""
+    parts = []
+    for q, a in faq:
+        parts.append("<details><summary>%s</summary><p>%s</p></details>" %
+                     (html.escape(q), html.escape(a)))
+    return "\n".join(parts)
 
 
 # --------------------------------------------------------------------------
@@ -247,6 +294,12 @@ def _initial_rows(records):
         link = r.get("vendor_url") or r.get("url")
         action = ('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %
                   (esc(link, quote=True), esc(r["purchase_label"] if r.get("vendor_url") else "查看原帖找购买入口"))) if link else ""
+        # 发布时间用 <time datetime> 标注 ISO 值，机器可读（SEO/GEO）；
+        # 展示文本截到日期部分，避免无 JS 时整串 RFC822 英文时间太长。
+        posted = r.get("posted") or ""
+        iso = _iso_or_none(posted)
+        posted_html = ('<time datetime="%s">%s</time>' %
+                       (esc(iso, quote=True), esc(posted[:16]))) if iso else esc(posted[:16] or "待确认")
         cells = [("商家", esc(r.get("provider") or "") + "<br>" + action),
                  ("活动", esc(EVENT_CN.get(r.get("event_type"), ""))),
                  ("优惠", esc((r.get("discount") or {}).get("strength") or "未提及")),
@@ -254,7 +307,7 @@ def _initial_rows(records):
                  ("报价", esc(price_text(r))),
                  ("库存", esc(AVAIL_CN.get(r.get("availability"), "待确认"))),
                  ("信息完整度", str(round((r.get("confidence") or 0) * 100)) + "%"),
-                 ("发布", esc(r.get("posted") or "待确认"))]
+                 ("发布", posted_html)]
         rows.append('<tr class="row">' + ''.join('<td data-label="%s">%s</td>' % c for c in cells) + '</tr>')
     return "\n".join(rows)
 
@@ -343,10 +396,12 @@ SITE_TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>@@TITLE@@</title>
+<title>@@PAGETITLE@@</title>
 <meta name="description" content="@@DESC@@">
 @@CANONICAL@@
 @@OGTAGS@@
+@@FEEDLINK@@
+@@JSONLD@@
 <!-- 站点图标：沿用论坛的 LS 品牌图标，保持视觉一致。
      ico 供浏览器标签页（多尺寸），PNG 供 Android/PWA 与 iOS 主屏。 -->
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -506,6 +561,14 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
 .row .actions{display:flex;flex-direction:column;gap:8px;margin-top:10px;min-width:145px}
 .row .actions button{font-size:12px;padding:6px 8px}
 .intro{border-top:3px solid var(--accent)}
+.bf-promo{display:block;margin-top:14px;padding:11px 14px;border:1px dashed var(--accent);
+  border-radius:10px;color:var(--accent);font-weight:600;text-decoration:none}
+.bf-promo:hover{text-decoration:none;background:var(--accent-soft)}
+.faq h2{font-size:18px;margin:0 0 6px}
+.faq-note{color:var(--muted);font-size:12px;margin:0 0 10px}
+.faq details{border-bottom:1px solid var(--line);padding:10px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:13.5px}
+.faq details p{margin:8px 0 2px;color:var(--muted);font-size:13px;line-height:1.8}
 .aff-quick{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
 .controls label{font-size:12px;color:var(--muted)}
 #feedback{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);border-radius:8px;padding:10px 16px;z-index:10}
@@ -547,6 +610,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <p>对比预算、机房与续费条件，复制优惠码，直达商家活动页。先选适合自己的，再看实际到手价。</p>
   <div class="aff-quick"><b>直达商家活动</b> @@AFF_SHORTCUTS@@</div>
   <div class="quick"><button type="button" data-preset="budget">找低预算年付</button><button type="button" data-preset="new">看最近发布</button><button type="button" data-preset="sale">看标注在售</button><button type="button" id="reset">重置筛选</button></div>
+  <a class="bf-promo" href="black-friday-2026/">🛒 黑五 2026 专题：倒计时 · 已公布活动 · 低价年付清单 · 常见问题</a>
   <details class="merchants"><summary class="merchants-title" style="cursor:pointer">已有心仪商家</summary><p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格。</p><div class="feat">@@MERCHANTS@@</div></details>
   <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
 </section>
@@ -610,12 +674,19 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="empty" id="empty" style="display:none">暂时没有匹配的优惠。试试放宽预算、切换地区，或点击上方“重置筛选”。</div>
 </div>
 
+<section class="card faq" aria-label="常见问题">
+  <h2>常见问题</h2>
+  <p class="faq-note">以下答案与本页结构化数据（FAQPage）保持一致。</p>
+  @@FAQDETAILS@@
+</section>
+
 <footer>
   <div><b>下单前核对：</b>首期总价、续费金额、税费、机房、IPv4、流量和退款条件。优惠码复制后请确认结算页确实生效。</div>
   <div>信息完整度只表示字段覆盖，不是质量评分。配置范围来自帖文，未绑定套餐的报价不能与最高配置组合理解。</div>
   <div>本站汇总公开渠道的优惠信息，仅作信息聚合，<b>不构成购买建议</b>。</div>
   <div>@@FXNOTE@@</div>
   <div>库存与价格以厂商官网为准；标注「待确认」表示未能自动验证。</div>
+  <div>订阅：<a href="feed.xml">RSS 源</a>（每日自动更新）· 机器可读数据：<a href="data/deals.json">deals.json</a></div>
   @@FOOTER@@
   <div><span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人</span> | <span id="busuanzi_container_site_pv">访问量 <span id="busuanzi_value_site_pv"></span> 次</span></div>
 </footer>
@@ -659,6 +730,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
 
   var st = { q:'', event:'all', src:'all', avail:'all', big:false,
              hideold:false, hideclosed:true, budget:0, location:'', sort:'score', open:{} };
+  /* 深链：?q=关键词 直达筛选结果（黑五专题页与外部分享链接使用）。 */
+  try{
+    var _q=new URLSearchParams(location.search).get('q');
+    if(_q){ st.q=_q.trim(); document.getElementById('q').value=_q; }
+  }catch(e){}
 
   function esc(s){
     return String(s==null?'':s).replace(/[&<>"']/g, function(c){
@@ -994,29 +1070,49 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
         json.dump({"latest": payload.get("updates"), "history": payload.get("update_history", [])}, f, ensure_ascii=False, indent=2)
 
     generated = display_time(payload.get("generated_at"))
+    # 数据更新时间同样用 <time> 标注 ISO 值，供爬虫读取真实新鲜度。
+    gen_iso = payload.get("generated_at") or ""
+    generated_html = ('<time datetime="%s">%s</time>' %
+                      (html.escape(gen_iso, quote=True), html.escape(generated))) if gen_iso \
+        else html.escape(generated)
+
+    # ---- SEO/GEO 附属模块（在函数内导入：这些模块较新且独立，避免顶部
+    #      导入在单测环境里形成强耦合）----
+    from . import bfpage, feed as feedgen, structured
+
+    # 结构化数据：WebSite 实体 + ItemList(Offer) + 与页面可见 FAQ 同源的 FAQPage
+    jsonld = "".join([
+        structured.script_html(structured.website_schema(payload)),
+        structured.script_html(structured.item_list_schema(payload.get("records", []))),
+        structured.script_html(structured.faq_schema(INDEX_FAQ)),
+    ])
+    feedlink = ('<link rel="alternate" type="application/rss+xml" title="%s" href="feed.xml">'
+                % html.escape(_page_title()))
+
     canonical = ""
     ogtags = ""
+    page_title = html.escape(_page_title())
     if config.SITE_URL:
         canonical = f'<link rel="canonical" href="{config.SITE_URL}/">'
-        _t = html.escape(config.SITE_TITLE)
         _d = html.escape(config.SITE_DESC)
         _img = f"{config.SITE_URL}/og-image.png"
         ogtags = "\n".join([
             '<meta property="og:type" content="website">',
-            f'<meta property="og:site_name" content="{_t}">',
-            f'<meta property="og:title" content="{_t}">',
+            f'<meta property="og:site_name" content="{html.escape(config.SITE_TITLE)}">',
+            f'<meta property="og:title" content="{page_title}">',
             f'<meta property="og:description" content="{_d}">',
             f'<meta property="og:url" content="{config.SITE_URL}/">',
             f'<meta property="og:image" content="{_img}">',
             '<meta property="og:image:width" content="1200">',
             '<meta property="og:image:height" content="630">',
             '<meta name="twitter:card" content="summary_large_image">',
-            f'<meta name="twitter:title" content="{_t}">',
+            f'<meta name="twitter:title" content="{page_title}">',
             f'<meta name="twitter:description" content="{_d}">',
             f'<meta name="twitter:image" content="{_img}">',
         ])
 
     html_out = (SITE_TEMPLATE
+                .replace("@@PAGETITLE@@", page_title)
                 .replace("@@TITLE@@", html.escape(config.SITE_TITLE))
                 .replace("@@DESC@@", html.escape(config.SITE_DESC, quote=True))
                 .replace("@@CANONICAL@@", canonical)
@@ -1025,9 +1121,12 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
                 .replace("@@ROWS@@", _initial_rows(payload.get("records", [])))
                 .replace("@@UPDATES@@", _updates_html(payload))
                 .replace("@@OGTAGS@@", ogtags)
+                .replace("@@FEEDLINK@@", feedlink)
+                .replace("@@JSONLD@@", jsonld)
+                .replace("@@FAQDETAILS@@", _faq_html(INDEX_FAQ))
                 .replace("@@DATA@@", _json_for_script(payload))
                 .replace("@@COUNT@@", str(payload.get("count", 0)))
-                .replace("@@GENERATED@@", generated)
+                .replace("@@GENERATED@@", generated_html)
                 .replace("@@EVENT_CN@@", json.dumps(EVENT_CN, ensure_ascii=False))
                 .replace("@@AVAIL_CN@@", json.dumps(AVAIL_CN, ensure_ascii=False))
                 .replace("@@FXNOTE@@", html.escape(config.FX_NOTE))
@@ -1037,6 +1136,23 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     index_path = os.path.join(out_dir, "index.html")
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(html_out)
+
+    # ---- RSS 订阅源（feed.xml）与 llms.txt（生成式引擎入口说明）----
+    feed_path = os.path.join(out_dir, "feed.xml")
+    with open(feed_path, "w", encoding="utf-8") as f:
+        f.write(feedgen.rss_feed(payload))
+    llms_path = os.path.join(out_dir, "llms.txt")
+    with open(llms_path, "w", encoding="utf-8") as f:
+        f.write(feedgen.llms_txt(payload))
+
+    # ---- 黑五专题页：SEO 长尾着陆面（结构化数据里补面包屑与 FAQ）----
+    bf_jsonld = [structured.script_html(structured.faq_schema(bfpage.BF_FAQ))]
+    if config.SITE_URL:
+        bf_jsonld.insert(0, structured.script_html(structured.breadcrumb_schema([
+            ("首页", f"{config.SITE_URL}/"),
+            ("黑五 2026 专题", f"{config.SITE_URL}/{bfpage.BF_PATH}/"),
+        ])))
+    bf_path = bfpage.write_bf_page(payload, out_dir, jsonld_html="".join(bf_jsonld))
 
     # 部署辅助文件
     with open(os.path.join(out_dir, ".nojekyll"), "w", encoding="utf-8") as f:
@@ -1050,12 +1166,15 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     # 未配置域名时用相对路径，避免生成无效的绝对地址
-    loc = f"{config.SITE_URL}/" if config.SITE_URL else "/"
+    base = f"{config.SITE_URL}" if config.SITE_URL else ""
+    # 黑五专题页是独立 URL，单独列入 sitemap 才能被收录
+    locs = [f"{base}/", f"{base}/{bfpage.BF_PATH}/"]
     with open(os.path.join(out_dir, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                f'  <url><loc>{loc}</loc><lastmod>{today}</lastmod></url>\n'
-                '</urlset>\n')
+                + "".join(f'  <url><loc>{loc}</loc><lastmod>{today}</lastmod></url>\n'
+                          for loc in locs)
+                + '</urlset>\n')
 
     # 站点图标：从 assets/ 复制到输出目录。
     # 图标是二进制资源，不适合内联进模板；放 assets/ 便于替换品牌素材。
@@ -1065,6 +1184,9 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
         print(f"站点已生成 -> {os.path.abspath(out_dir)}")
         print("  index.html      %8.1f KB" % (os.path.getsize(index_path) / 1024))
         print("  data/deals.json %8.1f KB" % (os.path.getsize(api_path) / 1024))
+        print("  feed.xml        %8.1f KB" % (os.path.getsize(feed_path) / 1024))
+        print("  llms.txt        %8.1f KB" % (os.path.getsize(llms_path) / 1024))
+        print("  黑五专题页       %8.1f KB" % (os.path.getsize(bf_path) / 1024))
     return out_dir
 
 
