@@ -1,16 +1,24 @@
 {
   "latest": {
-    "generated_at": "2026-11-01T06:43:47+00:00",
+    "generated_at": "2026-11-01T13:49:56+00:00",
     "baseline": false,
     "added": [],
     "changed": [],
-    "missing": [],
+    "missing": [
+      {
+        "id": "leb:leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
+        "provider": "Velohost",
+        "title": "Velohost Returns With Even Cheaper Prices! Get a 4GB VPS for Only 2.60€/month!",
+        "url": "https://lowendbox.com/blog/velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month/",
+        "summary": "上新/回归 · €2.6/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
     "expired": []
   },
   "history": [
     {
-      "generated_at": "2026-11-01T05:34:43+00:00",
+      "generated_at": "2026-11-01T13:49:56+00:00",
       "baseline": false,
       "added": [
         {
@@ -76,6 +84,13 @@
           "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
           "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
           "summary": "常规促销 · $5.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
+          "provider": "Velohost",
+          "title": "Velohost Returns With Even Cheaper Prices! Get a 4GB VPS for Only 2.60€/month!",
+          "url": "https://lowendbox.com/blog/velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month/",
+          "summary": "上新/回归 · €2.6/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
       "restored": [

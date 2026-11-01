@@ -1,6 +1,6 @@
 {
   "source": "LowEndTalk Offers + LowEndBox",
-  "generated_at": "2026-11-01T06:43:47+00:00",
+  "generated_at": "2026-11-01T13:49:56+00:00",
   "count": 99,
   "by_source": {
     "leb": 10,
@@ -23,13 +23,13 @@
       "age_status": "NEW",
       "availability": "UNVERIFIED",
       "replies": {
-        "reply_count": 57,
+        "reply_count": 47,
         "vendor_reply_count": 1,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:33+00:00"
+        "fetched_at": "2026-11-01T13:48:31+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -119,196 +119,8 @@
       "annual_eur": 24.57,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
-    },
-    {
-      "thread_id": "222474",
-      "source": "let",
-      "provider": "Caliber Node",
-      "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
-      "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
-      "vendor_url": "https://calibernode.com/cloud-apps#catalog",
-      "order_url": null,
-      "author": "CaliberNode",
-      "posted": "Sat, 24 Oct 2026 23:06:37 +0000",
-      "age_days": 7,
-      "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 47,
-        "vendor_reply_count": 2,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:35+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "码 TREAT26",
-        "percent_max": null,
-        "recurring": false,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [
-          "TREAT26"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": 2,
-        "ram_gb": 2.0,
-        "storage_gb": 30.0,
-        "storage_type": "unspecified",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [
-          2
-        ],
-        "ram_gb": [
-          2.0
-        ],
-        "storage_gb": [
-          30.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 8.0,
-          "currency": "$",
-          "cycle": "year"
-        }
-      ],
-      "locations": [
-        "Dallas",
-        "Los Angeles",
-        "Warsaw",
-        "Singapore",
-        "Tokyo"
-      ],
-      "stock_hints": [],
-      "confidence": 0.83,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：2 核 / 2 GB 内存 / 30 GB 存储",
-      "display_price": "$8/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 8.0,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 28,
-      "annual_eur": 7.36,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "221473",
-      "source": "let",
-      "provider": "DartNode",
-      "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
-      "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
-      "vendor_url": "https://dartnode.com/warehouse-deals?aff=LazyMonkey767",
-      "order_url": null,
-      "author": "DartNode",
-      "posted": "Fri, 25 Sep 2026 18:01:14 +0000",
-      "age_days": 36,
-      "age_status": "STALE",
-      "availability": "UNVERIFIED_STALE",
-      "replies": {
-        "reply_count": 34,
-        "vendor_reply_count": 1,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:36+00:00"
-      },
-      "event_type": "black_friday",
-      "discount": {
-        "strength": "含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months free",
-        "percent_max": 30,
-        "recurring": false,
-        "introductory": true,
-        "rule_conflict": true,
-        "codes": [],
-        "extras": [
-          "12 months free"
-        ]
-      },
-      "specs": {
-        "vcpu": 1,
-        "ram_gb": 32.0,
-        "storage_gb": 1024.0,
-        "storage_type": "NVMe",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [
-          1
-        ],
-        "ram_gb": [
-          32.0,
-          16.0,
-          2.0
-        ],
-        "storage_gb": [
-          1024.0,
-          512.0,
-          25.0,
-          25.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [
-        "Xeon E5-2650"
-      ],
-      "prices": [
-        {
-          "amount": 399.0,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 499.0,
-          "currency": "$",
-          "cycle": "year"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 1.0,
-      "affiliate": true,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：1 核 / 2–32 GB 内存 / 25–1024 GB 存储",
-      "display_price": "$399/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 399.0,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 69,
-      "annual_eur": 367.08,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
     {
@@ -325,13 +137,13 @@
       "age_status": "NEW",
       "availability": "UNVERIFIED",
       "replies": {
-        "reply_count": 57,
+        "reply_count": 38,
         "vendor_reply_count": 7,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:38+00:00"
+        "fetched_at": "2026-11-01T13:48:32+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -411,8 +223,385 @@
       "annual_eur": 41.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
+      }
+    },
+    {
+      "thread_id": "222534",
+      "source": "let",
+      "provider": "greencloudvps.com",
+      "title": "GreenCloud is Turning 13! | Exclusive Deals, Giveaways, Quizzes & Games!",
+      "url": "https://lowendtalk.com/discussion/222534/greencloud-is-turning-13-exclusive-deals-giveaways-quizzes-games",
+      "vendor_url": "https://greencloudvps.com/billing/store/13th-birthday-sale?aff=10419",
+      "order_url": null,
+      "author": "NDTN",
+      "posted": "Mon, 26 Oct 2026 04:11:23 +0000",
+      "age_days": 6,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 32,
+        "vendor_reply_count": 0,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:33+00:00"
+      },
+      "event_type": "anniversary",
+      "discount": {
+        "strength": "循环/永久",
+        "percent_max": null,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": 13.0,
+        "storage_gb": 113.0,
+        "storage_type": "NVMe",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [
+          13.0
+        ],
+        "storage_gb": [
+          113.0,
+          13.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.5,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：13 GB 内存 / 13–113 GB 存储",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 60,
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222790",
+      "source": "let",
+      "provider": "Halloween Specials at ST-Hosting!",
+      "title": "Halloween Specials at ST-Hosting!",
+      "url": "https://lowendtalk.com/discussion/222790/halloween-specials-at-st-hosting",
+      "vendor_url": "https://st-hosting.com/en/halloween",
+      "order_url": null,
+      "author": "sthosting",
+      "posted": "Sat, 31 Oct 2026 11:28:13 +0000",
+      "age_days": 1,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 13,
+        "vendor_reply_count": 3,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:33+00:00"
+      },
+      "event_type": "holiday",
+      "discount": {
+        "strength": "循环/永久",
+        "percent_max": null,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": 8.0,
+        "storage_gb": 50.0,
+        "storage_type": "NVMe",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [
+          8.0
+        ],
+        "storage_gb": [
+          50.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 4.44,
+          "currency": "€",
+          "cycle": "month"
+        }
+      ],
+      "locations": [
+        "Frankfurt"
+      ],
+      "stock_hints": [],
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：8 GB 内存 / 50 GB 存储",
+      "display_price": "€4.44/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 4.44,
+        "currency": "€",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 52,
+      "annual_eur": 53.28,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-31T14:42:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222415",
+      "source": "let",
+      "provider": "Halloween VPS @ Frankfurt Equinix",
+      "title": "Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more",
+      "url": "https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more",
+      "vendor_url": null,
+      "order_url": null,
+      "author": "PacketsDecreaser",
+      "posted": "Fri, 23 Oct 2026 00:32:57 +0000",
+      "age_days": 9,
+      "age_status": "ACTIVE",
+      "availability": "ON_SALE",
+      "replies": {
+        "reply_count": 19,
+        "vendor_reply_count": 7,
+        "status": "ON_SALE",
+        "source": "vendor",
+        "evidence": {
+          "status": "ON_SALE",
+          "author": "PacketsDecreaser",
+          "is_vendor": true,
+          "datetime": "2026-10-30T13:57:18+00:00",
+          "match": "back in stock",
+          "snippet": "Epyc-S Server are back in stock Thanked by 1lovelyserver",
+          "comment_id": "4905124",
+          "offset": 18
+        },
+        "vendor_signals": [
+          {
+            "status": "ON_SALE",
+            "author": "PacketsDecreaser",
+            "is_vendor": true,
+            "datetime": "2026-10-30T13:57:18+00:00",
+            "match": "back in stock",
+            "snippet": "Epyc-S Server are back in stock Thanked by 1lovelyserver",
+            "comment_id": "4905124",
+            "offset": 18
+          }
+        ],
+        "fetched_at": "2026-11-01T13:48:33+00:00"
+      },
+      "event_type": "holiday",
+      "discount": {
+        "strength": "循环/永久",
+        "percent_max": null,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": 3,
+        "ram_gb": 10.0,
+        "storage_gb": 100.0,
+        "storage_type": "unspecified",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [
+          3,
+          2
+        ],
+        "ram_gb": [
+          10.0,
+          3.0
+        ],
+        "storage_gb": [
+          100.0,
+          50.0
+        ]
+      },
+      "plans": [
+        {
+          "name": "Epyc Small",
+          "vcpu": 3,
+          "ram_gb": 10.0,
+          "storage_gb": 100.0,
+          "storage_type": "unspecified",
+          "bandwidth_tb": null,
+          "price": null
+        },
+        {
+          "name": "IPv6 Epyc",
+          "vcpu": 2,
+          "ram_gb": 3.0,
+          "storage_gb": 50.0,
+          "storage_type": "unspecified",
+          "bandwidth_tb": null,
+          "price": null
+        }
+      ],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 31.0,
+          "currency": "€",
+          "cycle": "year"
+        },
+        {
+          "amount": 7.26,
+          "currency": "€",
+          "cycle": "month"
+        }
+      ],
+      "locations": [
+        "Frankfurt",
+        "Germany"
+      ],
+      "stock_hints": [
+        "limited stock"
+      ],
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2–3 核 / 3–10 GB 内存 / 50–100 GB 存储",
+      "display_price": "€31/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 31.0,
+        "currency": "€",
+        "cycle": "year"
+      },
+      "purchase_label": "查看活动与下单",
+      "score": 53,
+      "annual_eur": 31.0,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222462",
+      "source": "let",
+      "provider": "SystemFreaks S3 Object Storage",
+      "title": "SystemFreaks S3 Object Storage | 100 GB from $7.20/year | 1 TB from $6/month | Free Unmetered Egress",
+      "url": "https://lowendtalk.com/discussion/222462/systemfreaks-s3-object-storage-100-gb-from-7-20-year-1-tb-from-6-month-free-unmetered-egress",
+      "vendor_url": "https://manager.systemfreaks.com/order/config/index/S3-Compatible-Object-storage/?group_id=38&pricing_id=3752&a=MTAwMg%3D%3D",
+      "order_url": null,
+      "author": "systemfreaks",
+      "posted": "Sat, 24 Oct 2026 12:21:40 +0000",
+      "age_days": 8,
+      "age_status": "ACTIVE",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 37,
+        "vendor_reply_count": 12,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:36+00:00"
+      },
+      "event_type": "sale",
+      "discount": {
+        "strength": "",
+        "percent_max": null,
+        "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": null,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 7.2,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 9.6,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 6.0,
+          "currency": "$",
+          "cycle": "month"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.17,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "$7.2/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 7.2,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 7,
+      "annual_eur": 6.62,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
     {
@@ -429,13 +618,13 @@
       "age_status": "ACTIVE",
       "availability": "ON_SALE",
       "replies": {
-        "reply_count": 54,
+        "reply_count": 60,
         "vendor_reply_count": 13,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:39+00:00"
+        "fetched_at": "2026-11-01T13:48:38+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -496,111 +685,99 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
     {
-      "thread_id": "222738",
+      "thread_id": "222474",
       "source": "let",
-      "provider": "servitro.com",
-      "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
-      "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
-      "vendor_url": "https://my.servitro.com/aff.php?aff=235",
-      "order_url": "https://my.servitro.com/store/virtual-servers/usd1-server",
-      "author": "Servitro",
-      "posted": "Fri, 30 Oct 2026 06:45:44 +0000",
-      "age_days": 1,
-      "age_status": "NEW",
+      "provider": "Caliber Node",
+      "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
+      "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
+      "vendor_url": "https://calibernode.com/cloud-apps#catalog",
+      "order_url": null,
+      "author": "CaliberNode",
+      "posted": "Sat, 24 Oct 2026 23:06:37 +0000",
+      "age_days": 7,
+      "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
-        "reply_count": 41,
-        "vendor_reply_count": 1,
+        "reply_count": 35,
+        "vendor_reply_count": 3,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:40+00:00"
+        "fetched_at": "2026-11-01T13:48:40+00:00"
       },
-      "event_type": "sale",
+      "event_type": "holiday",
       "discount": {
-        "strength": "码 BFJH1873LA",
+        "strength": "码 TREAT26",
         "percent_max": null,
         "recurring": false,
         "introductory": false,
         "rule_conflict": false,
         "codes": [
-          "BFJH1873LA"
+          "TREAT26"
         ],
         "extras": []
       },
       "specs": {
-        "vcpu": 1,
-        "ram_gb": 4.0,
-        "storage_gb": 25.0,
-        "storage_type": "SSD",
-        "bandwidth_tb": 1.0
+        "vcpu": 2,
+        "ram_gb": 2.0,
+        "storage_gb": 30.0,
+        "storage_type": "unspecified",
+        "bandwidth_tb": null
       },
       "specs_all": {
         "vcpu": [
-          1
+          2
         ],
         "ram_gb": [
-          4.0,
-          1.0
+          2.0
         ],
         "storage_gb": [
-          25.0,
-          25.0,
-          10.0
+          30.0
         ]
       },
       "plans": [],
       "flagship_price": null,
-      "cpu_models": [
-        "EPYC 7443P",
-        "Ryzen 9 9950X"
-      ],
+      "cpu_models": [],
       "prices": [
         {
-          "amount": 12.0,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 20.0,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 35.2,
+          "amount": 8.0,
           "currency": "$",
           "cycle": "year"
         }
       ],
       "locations": [
-        "Frankfurt"
+        "Dallas",
+        "Los Angeles",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
       ],
       "stock_hints": [],
-      "confidence": 1.0,
-      "affiliate": true,
+      "confidence": 0.83,
+      "affiliate": false,
       "forum_url": null,
       "price_bound": false,
-      "display_spec": "帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储",
-      "display_price": "$12/年",
+      "display_spec": "帖文提及：2 核 / 2 GB 内存 / 30 GB 存储",
+      "display_price": "$8/年",
       "display_price_note": "帖文报价，未与配置绑定",
       "sort_price": {
-        "amount": 12.0,
+        "amount": 8.0,
         "currency": "$",
         "cycle": "year"
       },
       "purchase_label": "到商家核对价格与库存",
-      "score": 20,
-      "annual_eur": 11.04,
+      "score": 28,
+      "annual_eur": 7.36,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-30T21:02:10+00:00"
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
     {
@@ -617,13 +794,13 @@
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
-        "reply_count": 37,
+        "reply_count": 40,
         "vendor_reply_count": 1,
         "status": null,
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:41+00:00"
+        "fetched_at": "2026-11-01T13:48:41+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -716,142 +893,809 @@
       "annual_eur": 18.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
     {
-      "thread_id": "222415",
+      "thread_id": "222117",
       "source": "let",
-      "provider": "Halloween VPS @ Frankfurt Equinix",
-      "title": "Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more",
-      "url": "https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more",
-      "vendor_url": null,
+      "provider": "mailbig.net",
+      "title": "MailBig Halloween Sale - Email Hosting From £3.37/yr - 25% Recurring OFF | LET Exclusive",
+      "url": "https://lowendtalk.com/discussion/222117/mailbig-halloween-sale-email-hosting-from-3-37-yr-25-recurring-off-let-exclusive",
+      "vendor_url": "https://mailbig.net/client/order.php?step=2&product=10&paymentTerm=12&currency=gbp",
       "order_url": null,
-      "author": "PacketsDecreaser",
-      "posted": "Fri, 23 Oct 2026 00:32:57 +0000",
-      "age_days": 9,
+      "author": "NameBig",
+      "posted": "Thu, 15 Oct 2026 14:25:24 +0000",
+      "age_days": 16,
       "age_status": "ACTIVE",
-      "availability": "ON_SALE",
+      "availability": "UNVERIFIED",
       "replies": {
-        "reply_count": 18,
-        "vendor_reply_count": 6,
-        "status": "ON_SALE",
-        "source": "vendor",
-        "evidence": {
-          "status": "ON_SALE",
-          "author": "PacketsDecreaser",
-          "is_vendor": true,
-          "datetime": "2026-10-30T13:57:18+00:00",
-          "match": "back in stock",
-          "snippet": "Epyc-S Server are back in stock Thanked by 1lovelyserver",
-          "comment_id": "4905124",
-          "offset": 18
-        },
-        "vendor_signals": [
-          {
-            "status": "ON_SALE",
-            "author": "PacketsDecreaser",
-            "is_vendor": true,
-            "datetime": "2026-10-30T13:57:18+00:00",
-            "match": "back in stock",
-            "snippet": "Epyc-S Server are back in stock Thanked by 1lovelyserver",
-            "comment_id": "4905124",
-            "offset": 18
-          }
-        ],
-        "fetched_at": "2026-11-01T06:42:42+00:00"
+        "reply_count": 60,
+        "vendor_reply_count": 26,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:42+00:00"
       },
       "event_type": "holiday",
       "discount": {
-        "strength": "循环/永久",
+        "strength": "循环/永久 · double storage",
         "percent_max": null,
         "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": [
+          "double storage"
+        ]
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": null,
+        "storage_gb": 15.0,
+        "storage_type": "unspecified",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [],
+        "storage_gb": [
+          15.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 3.37,
+          "currency": "£",
+          "cycle": "year"
+        },
+        {
+          "amount": 4.49,
+          "currency": "£",
+          "cycle": "year"
+        },
+        {
+          "amount": 4.49,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 5.02,
+          "currency": "£",
+          "cycle": "year"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：15 GB 存储",
+      "display_price": "£3.37/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.37,
+        "currency": "£",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 60,
+      "annual_eur": 3.94,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222738",
+      "source": "let",
+      "provider": "servitro.com",
+      "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
+      "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
+      "vendor_url": "https://my.servitro.com/aff.php?aff=235",
+      "order_url": "https://my.servitro.com/store/virtual-servers/usd1-server",
+      "author": "Servitro",
+      "posted": "Fri, 30 Oct 2026 06:45:44 +0000",
+      "age_days": 2,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 48,
+        "vendor_reply_count": 1,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:43+00:00"
+      },
+      "event_type": "sale",
+      "discount": {
+        "strength": "码 BFJH1873LA",
+        "percent_max": null,
+        "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "BFJH1873LA"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": 1,
+        "ram_gb": 4.0,
+        "storage_gb": 25.0,
+        "storage_type": "SSD",
+        "bandwidth_tb": 1.0
+      },
+      "specs_all": {
+        "vcpu": [
+          1
+        ],
+        "ram_gb": [
+          4.0,
+          1.0
+        ],
+        "storage_gb": [
+          25.0,
+          25.0,
+          10.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [
+        "EPYC 7443P",
+        "Ryzen 9 9950X"
+      ],
+      "prices": [
+        {
+          "amount": 12.0,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 20.0,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 35.2,
+          "currency": "$",
+          "cycle": "year"
+        }
+      ],
+      "locations": [
+        "Frankfurt"
+      ],
+      "stock_hints": [],
+      "confidence": 1.0,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储",
+      "display_price": "$12/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 12.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 20,
+      "annual_eur": 11.04,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-30T21:02:10+00:00"
+      }
+    },
+    {
+      "thread_id": "220775",
+      "source": "let",
+      "provider": "just.hosting",
+      "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
+      "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
+      "vendor_url": "https://just.hosting/services/vps/tariffs/justvibe_start?software=dockerhost&plan=justvibe_start&location=sof2&ipv4_count=1&ipv6_count=1&svc_count=1&payment_months=1&promocode=JUSTVIBE&ref=382103",
+      "order_url": null,
+      "author": "antonpa",
+      "posted": "Fri, 04 Sep 2026 07:35:02 +0000",
+      "age_days": 58,
+      "age_status": "STALE",
+      "availability": "UNVERIFIED_STALE",
+      "replies": {
+        "reply_count": 58,
+        "vendor_reply_count": 15,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:46+00:00"
+      },
+      "event_type": "launch",
+      "discount": {
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 40% off · 码 CLASSIC/CLASSIC35/JUSTVIBE",
+        "percent_max": 40,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
+        "codes": [
+          "CLASSIC",
+          "CLASSIC35",
+          "JUSTVIBE",
+          "PERSONAL",
+          "PRIVATE"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": 2.0,
+        "storage_gb": 40.0,
+        "storage_type": "NVMe",
+        "bandwidth_tb": 124.0
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [
+          2.0,
+          1.0,
+          0.5
+        ],
+        "storage_gb": [
+          40.0,
+          30.0,
+          25.0,
+          20.0,
+          5.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 3.3,
+          "currency": "$",
+          "cycle": "month"
+        },
+        {
+          "amount": 5.26,
+          "currency": "$",
+          "cycle": "month"
+        },
+        {
+          "amount": 5.5,
+          "currency": "$",
+          "cycle": "month"
+        },
+        {
+          "amount": 7.5,
+          "currency": "$",
+          "cycle": "month"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.67,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：0.5–2 GB 内存 / 5–40 GB 存储",
+      "display_price": "$3.3/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 3.3,
+        "currency": "$",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 54,
+      "annual_eur": 36.43,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222400",
+      "source": "let",
+      "provider": "serverscamp.com",
+      "title": "ServersCamp: new Simple VPS, starting €1/month",
+      "url": "https://lowendtalk.com/discussion/222400/serverscamp-new-simple-vps-starting-1-month",
+      "vendor_url": "https://console.serverscamp.com/vps/new?plan=vps2-075",
+      "order_url": null,
+      "author": "kukara4",
+      "posted": "Thu, 22 Oct 2026 14:00:53 +0000",
+      "age_days": 9,
+      "age_status": "ACTIVE",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 29,
+        "vendor_reply_count": 6,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:46+00:00"
+      },
+      "event_type": "regular",
+      "discount": {
+        "strength": "",
+        "percent_max": null,
+        "recurring": false,
         "introductory": false,
         "rule_conflict": false,
         "codes": [],
         "extras": []
       },
       "specs": {
-        "vcpu": 3,
-        "ram_gb": 10.0,
-        "storage_gb": 100.0,
+        "vcpu": 5,
+        "ram_gb": 4.0,
+        "storage_gb": 80.0,
         "storage_type": "unspecified",
-        "bandwidth_tb": null
+        "bandwidth_tb": 3.0
       },
       "specs_all": {
         "vcpu": [
-          3,
-          2
+          5,
+          2,
+          1
         ],
         "ram_gb": [
-          10.0,
-          3.0
+          4.0,
+          2.0,
+          1.0,
+          0.75
         ],
         "storage_gb": [
-          100.0,
-          50.0
+          80.0,
+          40.0,
+          20.0,
+          10.0
         ]
       },
-      "plans": [
-        {
-          "name": "Epyc Small",
-          "vcpu": 3,
-          "ram_gb": 10.0,
-          "storage_gb": 100.0,
-          "storage_type": "unspecified",
-          "bandwidth_tb": null,
-          "price": null
-        },
-        {
-          "name": "IPv6 Epyc",
-          "vcpu": 2,
-          "ram_gb": 3.0,
-          "storage_gb": 50.0,
-          "storage_type": "unspecified",
-          "bandwidth_tb": null,
-          "price": null
-        }
-      ],
+      "plans": [],
       "flagship_price": null,
-      "cpu_models": [],
+      "cpu_models": [
+        "EPYC 7543"
+      ],
       "prices": [
         {
-          "amount": 31.0,
+          "amount": 1.0,
           "currency": "€",
-          "cycle": "year"
+          "cycle": "month"
         },
         {
-          "amount": 7.26,
+          "amount": 1.5,
+          "currency": "€",
+          "cycle": "month"
+        },
+        {
+          "amount": 3.0,
+          "currency": "€",
+          "cycle": "month"
+        },
+        {
+          "amount": 6.0,
           "currency": "€",
           "cycle": "month"
         }
       ],
-      "locations": [
-        "Frankfurt",
-        "Germany"
-      ],
-      "stock_hints": [
-        "limited stock"
-      ],
+      "locations": [],
+      "stock_hints": [],
       "confidence": 0.83,
       "affiliate": false,
       "forum_url": null,
       "price_bound": false,
-      "display_spec": "帖文提及：2–3 核 / 3–10 GB 内存 / 50–100 GB 存储",
-      "display_price": "€31/年",
+      "display_spec": "帖文提及：1–5 核 / 0.75–4 GB 内存 / 10–80 GB 存储",
+      "display_price": "€1/月",
       "display_price_note": "帖文报价，未与配置绑定",
       "sort_price": {
-        "amount": 31.0,
+        "amount": 1.0,
         "currency": "€",
-        "cycle": "year"
+        "cycle": "month"
       },
-      "purchase_label": "查看活动与下单",
-      "score": 53,
-      "annual_eur": 31.0,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 8,
+      "annual_eur": 12.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222168",
+      "source": "let",
+      "provider": "vpshostingservice.co",
+      "title": "ServerHost Ryzen/i9 VPS from $22.99/year - October Haunt",
+      "url": "https://lowendtalk.com/discussion/222168/serverhost-ryzen-i9-vps-from-22-99-year-october-haunt",
+      "vendor_url": "https://vpshostingservice.co/order/ryzen-i9-linux/2-gb?billingcycle=annually&promocode=OCTRYZI92GB",
+      "order_url": null,
+      "author": "tpoll",
+      "posted": "Fri, 16 Oct 2026 20:29:59 +0000",
+      "age_days": 15,
+      "age_status": "ACTIVE",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 35,
+        "vendor_reply_count": 1,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:48+00:00"
+      },
+      "event_type": "sale",
+      "discount": {
+        "strength": "循环/永久 · 码 OCTRYZI92GB",
+        "percent_max": null,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "OCTRYZI92GB"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": 0.25,
+        "storage_gb": 50.0,
+        "storage_type": "NVME",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [
+          0.25
+        ],
+        "storage_gb": [
+          50.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 16.99,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 22.99,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 27.99,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 55.0,
+          "currency": "$",
+          "cycle": "year"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.67,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：0.25 GB 内存 / 50 GB 存储",
+      "display_price": "$22.99/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 22.99,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 47,
+      "annual_eur": 21.15,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222778",
+      "source": "let",
+      "provider": "hyperhostsolutions.com",
+      "title": "HyperHost Halloween | 50% OFF Recurring | UK VPS £1.50/mo · Web £1/mo · HA £2/mo",
+      "url": "https://lowendtalk.com/discussion/222778/hyperhost-halloween-50-off-recurring-uk-vps-1-50-mo-web-1-mo-ha-2-mo",
+      "vendor_url": "https://clients.hyperhostsolutions.com/campaign/halloween-2026/L5EAbvY5o4soqYADbW6qDqNrLI2Ll8j4nrx9scIx/order/1?utm_source=lowendtalk&utm_medium=forum&utm_campaign=halloween2026",
+      "order_url": null,
+      "author": "hyperhostsolutions",
+      "posted": "Sat, 31 Oct 2026 01:53:28 +0000",
+      "age_days": 1,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 13,
+        "vendor_reply_count": 3,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:48+00:00"
+      },
+      "event_type": "holiday",
+      "discount": {
+        "strength": "循环/永久 · 最高 50% off · 码 HALLOWEEN50",
+        "percent_max": 50,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "HALLOWEEN50"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": 8.0,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [
+          8.0,
+          4.0,
+          2.0
+        ],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [
+        {
+          "amount": 9.0,
+          "currency": "£",
+          "cycle": "year"
+        },
+        {
+          "amount": 1.0,
+          "currency": "£",
+          "cycle": "month"
+        },
+        {
+          "amount": 16.15,
+          "currency": "£",
+          "cycle": "year"
+        },
+        {
+          "amount": 17.96,
+          "currency": "£",
+          "cycle": "year"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.5,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：2–8 GB 内存",
+      "display_price": "£1/月",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 1.0,
+        "currency": "£",
+        "cycle": "month"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 95,
+      "annual_eur": 14.04,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-31T10:52:57+00:00"
+      }
+    },
+    {
+      "thread_id": "222809",
+      "source": "let",
+      "provider": "HostSailor Halloween Special",
+      "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
+      "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
+      "vendor_url": "https://clients.hostsailor.com/modules/addons/promo_and_url_tracking/redirect.php",
+      "order_url": null,
+      "author": "HostSailor",
+      "posted": "Sat, 31 Oct 2026 20:52:07 +0000",
+      "age_days": 0,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 9,
+        "vendor_reply_count": 0,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:50+00:00"
+      },
+      "event_type": "holiday",
+      "discount": {
+        "strength": "循环/永久 · 最高 50% off · 码 HALLOWEEN50",
+        "percent_max": 50,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "HALLOWEEN50"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": 9534,
+        "ram_gb": 4.0,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [
+          9534
+        ],
+        "ram_gb": [
+          4.0,
+          2.0,
+          1.0
+        ],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [
+        "EPYC 9534"
+      ],
+      "prices": [
+        {
+          "amount": 29.94,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 53.94,
+          "currency": "$",
+          "cycle": "year"
+        }
+      ],
+      "locations": [
+        "Netherlands"
+      ],
+      "stock_hints": [],
+      "confidence": 0.83,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：9534 核 / 1–4 GB 内存",
+      "display_price": "$29.94/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 29.94,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 98,
+      "annual_eur": 27.54,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-31T21:01:57+00:00"
+      }
+    },
+    {
+      "thread_id": "221473",
+      "source": "let",
+      "provider": "DartNode",
+      "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
+      "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
+      "vendor_url": "https://dartnode.com/warehouse-deals?aff=LazyMonkey767",
+      "order_url": null,
+      "author": "DartNode",
+      "posted": "Fri, 25 Sep 2026 18:01:14 +0000",
+      "age_days": 36,
+      "age_status": "STALE",
+      "availability": "UNVERIFIED_STALE",
+      "replies": {
+        "reply_count": 34,
+        "vendor_reply_count": 1,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:51+00:00"
+      },
+      "event_type": "black_friday",
+      "discount": {
+        "strength": "含首期与循环描述，适用规则待核对 · 最高 30% off · 12 months free",
+        "percent_max": 30,
+        "recurring": false,
+        "introductory": true,
+        "rule_conflict": true,
+        "codes": [],
+        "extras": [
+          "12 months free"
+        ]
+      },
+      "specs": {
+        "vcpu": 1,
+        "ram_gb": 32.0,
+        "storage_gb": 1024.0,
+        "storage_type": "NVMe",
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [
+          1
+        ],
+        "ram_gb": [
+          32.0,
+          16.0,
+          2.0
+        ],
+        "storage_gb": [
+          1024.0,
+          512.0,
+          25.0,
+          25.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [
+        "Xeon E5-2650"
+      ],
+      "prices": [
+        {
+          "amount": 399.0,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 499.0,
+          "currency": "$",
+          "cycle": "year"
+        }
+      ],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 1.0,
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 2–32 GB 内存 / 25–1024 GB 存储",
+      "display_price": "$399/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 399.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 69,
+      "annual_eur": 367.08,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -875,7 +1719,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:43+00:00"
+        "fetched_at": "2026-11-01T13:48:53+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -960,200 +1804,8 @@
       "annual_eur": 36.76,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222168",
-      "source": "let",
-      "provider": "vpshostingservice.co",
-      "title": "ServerHost Ryzen/i9 VPS from $22.99/year - October Haunt",
-      "url": "https://lowendtalk.com/discussion/222168/serverhost-ryzen-i9-vps-from-22-99-year-october-haunt",
-      "vendor_url": "https://vpshostingservice.co/order/ryzen-i9-linux/2-gb?billingcycle=annually&promocode=OCTRYZI92GB",
-      "order_url": null,
-      "author": "tpoll",
-      "posted": "Fri, 16 Oct 2026 20:29:59 +0000",
-      "age_days": 15,
-      "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 32,
-        "vendor_reply_count": 1,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:44+00:00"
-      },
-      "event_type": "sale",
-      "discount": {
-        "strength": "循环/永久 · 码 OCTRYZI92GB",
-        "percent_max": null,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [
-          "OCTRYZI92GB"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": 0.25,
-        "storage_gb": 50.0,
-        "storage_type": "NVME",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [
-          0.25
-        ],
-        "storage_gb": [
-          50.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 16.99,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 22.99,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 27.99,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 55.0,
-          "currency": "$",
-          "cycle": "year"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.67,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：0.25 GB 内存 / 50 GB 存储",
-      "display_price": "$22.99/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 22.99,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 47,
-      "annual_eur": 21.15,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222809",
-      "source": "let",
-      "provider": "HostSailor Halloween Special",
-      "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
-      "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
-      "vendor_url": "https://clients.hostsailor.com/modules/addons/promo_and_url_tracking/redirect.php",
-      "order_url": null,
-      "author": "HostSailor",
-      "posted": "Sat, 31 Oct 2026 20:52:07 +0000",
-      "age_days": 0,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 8,
-        "vendor_reply_count": 0,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:44+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "循环/永久 · 最高 50% off · 码 HALLOWEEN50",
-        "percent_max": 50,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [
-          "HALLOWEEN50"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": 9534,
-        "ram_gb": 4.0,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [
-          9534
-        ],
-        "ram_gb": [
-          4.0,
-          2.0,
-          1.0
-        ],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [
-        "EPYC 9534"
-      ],
-      "prices": [
-        {
-          "amount": 29.94,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 53.94,
-          "currency": "$",
-          "cycle": "year"
-        }
-      ],
-      "locations": [
-        "Netherlands"
-      ],
-      "stock_hints": [],
-      "confidence": 0.83,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：9534 核 / 1–4 GB 内存",
-      "display_price": "$29.94/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 29.94,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 98,
-      "annual_eur": 27.54,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-31T21:01:57+00:00"
       }
     },
     {
@@ -1176,7 +1828,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:44+00:00"
+        "fetched_at": "2026-11-01T13:48:53+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1233,275 +1885,8 @@
       "annual_eur": 88.32,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
-      }
-    },
-    {
-      "thread_id": "222534",
-      "source": "let",
-      "provider": "greencloudvps.com",
-      "title": "GreenCloud is Turning 13! | Exclusive Deals, Giveaways, Quizzes & Games!",
-      "url": "https://lowendtalk.com/discussion/222534/greencloud-is-turning-13-exclusive-deals-giveaways-quizzes-games",
-      "vendor_url": "https://greencloudvps.com/billing/store/13th-birthday-sale?aff=10419",
-      "order_url": null,
-      "author": "NDTN",
-      "posted": "Mon, 26 Oct 2026 04:11:23 +0000",
-      "age_days": 6,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 55,
-        "vendor_reply_count": 0,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:45+00:00"
-      },
-      "event_type": "anniversary",
-      "discount": {
-        "strength": "循环/永久",
-        "percent_max": null,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": 13.0,
-        "storage_gb": 113.0,
-        "storage_type": "NVMe",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [
-          13.0
-        ],
-        "storage_gb": [
-          113.0,
-          13.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.5,
-      "affiliate": true,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：13 GB 内存 / 13–113 GB 存储",
-      "display_price": "到商家查价",
-      "display_price_note": "价格周期待核对",
-      "sort_price": null,
-      "purchase_label": "到商家核对价格与库存",
-      "score": 60,
-      "annual_eur": null,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "220775",
-      "source": "let",
-      "provider": "just.hosting",
-      "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
-      "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
-      "vendor_url": "https://just.hosting/services/vps/tariffs/justvibe_start?software=dockerhost&plan=justvibe_start&location=sof2&ipv4_count=1&ipv6_count=1&svc_count=1&payment_months=1&promocode=JUSTVIBE&ref=382103",
-      "order_url": null,
-      "author": "antonpa",
-      "posted": "Fri, 04 Sep 2026 07:35:02 +0000",
-      "age_days": 57,
-      "age_status": "STALE",
-      "availability": "UNVERIFIED_STALE",
-      "replies": {
-        "reply_count": 57,
-        "vendor_reply_count": 15,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:46+00:00"
-      },
-      "event_type": "launch",
-      "discount": {
-        "strength": "含首期与循环描述，适用规则待核对 · 最高 40% off · 码 CLASSIC/CLASSIC35/JUSTVIBE",
-        "percent_max": 40,
-        "recurring": false,
-        "introductory": true,
-        "rule_conflict": true,
-        "codes": [
-          "CLASSIC",
-          "CLASSIC35",
-          "JUSTVIBE",
-          "PERSONAL",
-          "PRIVATE"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": 2.0,
-        "storage_gb": 40.0,
-        "storage_type": "NVMe",
-        "bandwidth_tb": 124.0
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [
-          2.0,
-          1.0,
-          0.5
-        ],
-        "storage_gb": [
-          40.0,
-          30.0,
-          25.0,
-          20.0,
-          5.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 3.3,
-          "currency": "$",
-          "cycle": "month"
-        },
-        {
-          "amount": 5.26,
-          "currency": "$",
-          "cycle": "month"
-        },
-        {
-          "amount": 5.5,
-          "currency": "$",
-          "cycle": "month"
-        },
-        {
-          "amount": 7.5,
-          "currency": "$",
-          "cycle": "month"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.67,
-      "affiliate": true,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：0.5–2 GB 内存 / 5–40 GB 存储",
-      "display_price": "$3.3/月",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 3.3,
-        "currency": "$",
-        "cycle": "month"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 54,
-      "annual_eur": 36.43,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222462",
-      "source": "let",
-      "provider": "SystemFreaks S3 Object Storage",
-      "title": "SystemFreaks S3 Object Storage | 100 GB from $7.20/year | 1 TB from $6/month | Free Unmetered Egress",
-      "url": "https://lowendtalk.com/discussion/222462/systemfreaks-s3-object-storage-100-gb-from-7-20-year-1-tb-from-6-month-free-unmetered-egress",
-      "vendor_url": "https://manager.systemfreaks.com/order/config/index/S3-Compatible-Object-storage/?group_id=38&pricing_id=3752&a=MTAwMg%3D%3D",
-      "order_url": null,
-      "author": "systemfreaks",
-      "posted": "Sat, 24 Oct 2026 12:21:40 +0000",
-      "age_days": 7,
-      "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 34,
-        "vendor_reply_count": 11,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:47+00:00"
-      },
-      "event_type": "sale",
-      "discount": {
-        "strength": "",
-        "percent_max": null,
-        "recurring": false,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": null,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 7.2,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 9.6,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 6.0,
-          "currency": "$",
-          "cycle": "month"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.17,
-      "affiliate": true,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "查看原帖核对配置",
-      "display_price": "$7.2/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 7.2,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 7,
-      "annual_eur": 6.62,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
     {
@@ -1524,7 +1909,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:49+00:00"
+        "fetched_at": "2026-11-01T13:48:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1609,7 +1994,7 @@
       "annual_eur": 38.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -1642,7 +2027,7 @@
           "offset": 25
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:49+00:00"
+        "fetched_at": "2026-11-01T13:48:55+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -1730,7 +2115,7 @@
       "annual_eur": 29.81,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
       }
     },
@@ -1754,7 +2139,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:49+00:00"
+        "fetched_at": "2026-11-01T13:48:55+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1856,106 +2241,8 @@
       "annual_eur": 12.99,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222778",
-      "source": "let",
-      "provider": "hyperhostsolutions.com",
-      "title": "HyperHost Halloween | 50% OFF Recurring | UK VPS £1.50/mo · Web £1/mo · HA £2/mo",
-      "url": "https://lowendtalk.com/discussion/222778/hyperhost-halloween-50-off-recurring-uk-vps-1-50-mo-web-1-mo-ha-2-mo",
-      "vendor_url": "https://clients.hyperhostsolutions.com/campaign/halloween-2026/L5EAbvY5o4soqYADbW6qDqNrLI2Ll8j4nrx9scIx/order/1?utm_source=lowendtalk&utm_medium=forum&utm_campaign=halloween2026",
-      "order_url": null,
-      "author": "hyperhostsolutions",
-      "posted": "Sat, 31 Oct 2026 01:53:28 +0000",
-      "age_days": 1,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 12,
-        "vendor_reply_count": 3,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:49+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "循环/永久 · 最高 50% off · 码 HALLOWEEN50",
-        "percent_max": 50,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [
-          "HALLOWEEN50"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": 8.0,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [
-          8.0,
-          4.0,
-          2.0
-        ],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 9.0,
-          "currency": "£",
-          "cycle": "year"
-        },
-        {
-          "amount": 1.0,
-          "currency": "£",
-          "cycle": "month"
-        },
-        {
-          "amount": 16.15,
-          "currency": "£",
-          "cycle": "year"
-        },
-        {
-          "amount": 17.96,
-          "currency": "£",
-          "cycle": "year"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.5,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：2–8 GB 内存",
-      "display_price": "£1/月",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 1.0,
-        "currency": "£",
-        "cycle": "month"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 95,
-      "annual_eur": 14.04,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-31T10:52:57+00:00"
       }
     },
     {
@@ -1987,7 +2274,7 @@
           "offset": 14
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:49+00:00"
+        "fetched_at": "2026-11-01T13:48:56+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2056,7 +2343,7 @@
       "annual_eur": 73.97,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -2100,7 +2387,7 @@
             "offset": 48
           }
         ],
-        "fetched_at": "2026-11-01T06:42:50+00:00"
+        "fetched_at": "2026-11-01T13:48:56+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -2182,7 +2469,7 @@
       "annual_eur": 23.46,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-29T21:02:09+00:00"
       }
     },
@@ -2206,7 +2493,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:51+00:00"
+        "fetched_at": "2026-11-01T13:48:57+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2298,91 +2585,8 @@
       "annual_eur": 16.55,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
-      }
-    },
-    {
-      "thread_id": "222790",
-      "source": "let",
-      "provider": "Halloween Specials at ST-Hosting!",
-      "title": "Halloween Specials at ST-Hosting!",
-      "url": "https://lowendtalk.com/discussion/222790/halloween-specials-at-st-hosting",
-      "vendor_url": "https://st-hosting.com/en/halloween",
-      "order_url": null,
-      "author": "sthosting",
-      "posted": "Sat, 31 Oct 2026 11:28:13 +0000",
-      "age_days": 0,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 11,
-        "vendor_reply_count": 3,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:51+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "循环/永久",
-        "percent_max": null,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": 8.0,
-        "storage_gb": 50.0,
-        "storage_type": "NVMe",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [
-          8.0
-        ],
-        "storage_gb": [
-          50.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 4.44,
-          "currency": "€",
-          "cycle": "month"
-        }
-      ],
-      "locations": [
-        "Frankfurt"
-      ],
-      "stock_hints": [],
-      "confidence": 0.67,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：8 GB 内存 / 50 GB 存储",
-      "display_price": "€4.44/月",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 4.44,
-        "currency": "€",
-        "cycle": "month"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 52,
-      "annual_eur": 53.28,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-31T14:42:39+00:00"
       }
     },
     {
@@ -2425,7 +2629,7 @@
             "offset": 12
           }
         ],
-        "fetched_at": "2026-11-01T06:42:52+00:00"
+        "fetched_at": "2026-11-01T13:48:58+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -2515,7 +2719,7 @@
       "annual_eur": 22.08,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2529,7 +2733,7 @@
       "order_url": null,
       "author": "kukara4",
       "posted": "Mon, 21 Sep 2026 07:56:12 +0000",
-      "age_days": 40,
+      "age_days": 41,
       "age_status": "STALE",
       "availability": "UNVERIFIED_STALE",
       "replies": {
@@ -2539,7 +2743,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:55+00:00"
+        "fetched_at": "2026-11-01T13:49:01+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -2588,7 +2792,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2612,7 +2816,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:58+00:00"
+        "fetched_at": "2026-11-01T13:49:04+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2687,7 +2891,7 @@
       "annual_eur": 24.84,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2701,7 +2905,7 @@
       "order_url": null,
       "author": "leapswitch",
       "posted": "Fri, 30 Oct 2026 13:05:39 +0000",
-      "age_days": 1,
+      "age_days": 2,
       "age_status": "NEW",
       "availability": "UNVERIFIED",
       "replies": {
@@ -2711,7 +2915,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:58+00:00"
+        "fetched_at": "2026-11-01T13:49:04+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2762,7 +2966,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -2786,7 +2990,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:58+00:00"
+        "fetched_at": "2026-11-01T13:49:04+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2872,7 +3076,7 @@
       "annual_eur": 176.09,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2896,7 +3100,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:00+00:00"
+        "fetched_at": "2026-11-01T13:49:06+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -2983,7 +3187,7 @@
       "annual_eur": 15.63,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3007,7 +3211,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:01+00:00"
+        "fetched_at": "2026-11-01T13:49:07+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3079,7 +3283,7 @@
       "annual_eur": 12.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3103,7 +3307,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:02+00:00"
+        "fetched_at": "2026-11-01T13:49:08+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3177,103 +3381,7 @@
       "annual_eur": 9.2,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222117",
-      "source": "let",
-      "provider": "mailbig.net",
-      "title": "MailBig Halloween Sale - Email Hosting From £3.37/yr - 25% Recurring OFF | LET Exclusive",
-      "url": "https://lowendtalk.com/discussion/222117/mailbig-halloween-sale-email-hosting-from-3-37-yr-25-recurring-off-let-exclusive",
-      "vendor_url": "https://mailbig.net/client/order.php?step=2&product=10&paymentTerm=12&currency=gbp",
-      "order_url": null,
-      "author": "NameBig",
-      "posted": "Thu, 15 Oct 2026 14:25:24 +0000",
-      "age_days": 16,
-      "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 57,
-        "vendor_reply_count": 24,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:03+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "循环/永久 · double storage",
-        "percent_max": null,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": [
-          "double storage"
-        ]
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": null,
-        "storage_gb": 15.0,
-        "storage_type": "unspecified",
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [],
-        "storage_gb": [
-          15.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [
-        {
-          "amount": 3.37,
-          "currency": "£",
-          "cycle": "year"
-        },
-        {
-          "amount": 4.49,
-          "currency": "£",
-          "cycle": "year"
-        },
-        {
-          "amount": 4.49,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 5.02,
-          "currency": "£",
-          "cycle": "year"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.5,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：15 GB 存储",
-      "display_price": "£3.37/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 3.37,
-        "currency": "£",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 60,
-      "annual_eur": 3.94,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3327,7 +3435,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-11-01T06:43:03+00:00"
+        "fetched_at": "2026-11-01T13:49:08+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3415,7 +3523,7 @@
       "annual_eur": 33.07,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3448,7 +3556,7 @@
           "offset": 44
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:04+00:00"
+        "fetched_at": "2026-11-01T13:49:10+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3516,7 +3624,7 @@
       "annual_eur": 18.55,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3560,7 +3668,7 @@
             "offset": 7
           }
         ],
-        "fetched_at": "2026-11-01T06:43:05+00:00"
+        "fetched_at": "2026-11-01T13:49:11+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -3654,7 +3762,7 @@
       "annual_eur": 276.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3698,7 +3806,7 @@
             "offset": 27
           }
         ],
-        "fetched_at": "2026-11-01T06:43:08+00:00"
+        "fetched_at": "2026-11-01T13:49:14+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3776,7 +3884,7 @@
       "annual_eur": 44.05,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3790,7 +3898,7 @@
       "order_url": "https://billing.svr4u.com/cart.php?a=add&pid=140&billingcycle=annually&currency=4",
       "author": "bbmmsvr4u",
       "posted": "Mon, 28 Sep 2026 13:32:51 +0000",
-      "age_days": 33,
+      "age_days": 34,
       "age_status": "STALE",
       "availability": "UNVERIFIED_STALE",
       "replies": {
@@ -3800,7 +3908,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:09+00:00"
+        "fetched_at": "2026-11-01T13:49:15+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3880,7 +3988,7 @@
       "annual_eur": 14.61,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -3894,7 +4002,7 @@
       "order_url": null,
       "author": "NighttWatch",
       "posted": "Tue, 27 Oct 2026 11:58:44 +0000",
-      "age_days": 4,
+      "age_days": 5,
       "age_status": "NEW",
       "availability": "LIKELY_SOLD_OUT",
       "replies": {
@@ -3913,7 +4021,7 @@
           "offset": 205
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:09+00:00"
+        "fetched_at": "2026-11-01T13:49:15+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -3992,7 +4100,7 @@
       "annual_eur": 55.09,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
       }
     },
@@ -4006,7 +4114,7 @@
       "order_url": "https://www.hostnamaste.com/kvm-vps.php",
       "author": "hostnamaste",
       "posted": "Wed, 14 Oct 2026 12:33:00 +0000",
-      "age_days": 17,
+      "age_days": 18,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -4016,7 +4124,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:09+00:00"
+        "fetched_at": "2026-11-01T13:49:15+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4093,7 +4201,7 @@
       "annual_eur": 44.16,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4107,7 +4215,7 @@
       "order_url": "https://bero-host.de/kvm-rootserver",
       "author": "berohost",
       "posted": "Sat, 03 Oct 2026 12:19:24 +0000",
-      "age_days": 28,
+      "age_days": 29,
       "age_status": "ACTIVE",
       "availability": "ON_SALE",
       "replies": {
@@ -4157,7 +4265,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-11-01T06:43:10+00:00"
+        "fetched_at": "2026-11-01T13:49:17+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -4456,7 +4564,7 @@
       "annual_eur": 129.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4480,7 +4588,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:10+00:00"
+        "fetched_at": "2026-11-01T13:49:17+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -4535,7 +4643,7 @@
       "annual_eur": 23.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
       }
     },
@@ -4579,7 +4687,7 @@
             "offset": 57
           }
         ],
-        "fetched_at": "2026-11-01T06:43:11+00:00"
+        "fetched_at": "2026-11-01T13:49:18+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -4682,7 +4790,7 @@
       "annual_eur": 772.25,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4706,7 +4814,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:12+00:00"
+        "fetched_at": "2026-11-01T13:49:19+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4762,7 +4870,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4786,7 +4894,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:14+00:00"
+        "fetched_at": "2026-11-01T13:49:21+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4877,7 +4985,7 @@
       "annual_eur": 9.15,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4891,7 +4999,7 @@
       "order_url": null,
       "author": "wlx",
       "posted": "Fri, 16 Oct 2026 08:53:06 +0000",
-      "age_days": 15,
+      "age_days": 16,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -4901,7 +5009,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:16+00:00"
+        "fetched_at": "2026-11-01T13:49:22+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4965,7 +5073,7 @@
       "annual_eur": 2002.32,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4989,7 +5097,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:16+00:00"
+        "fetched_at": "2026-11-01T13:49:23+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5040,7 +5148,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5064,7 +5172,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:16+00:00"
+        "fetched_at": "2026-11-01T13:49:23+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -5153,7 +5261,7 @@
       "annual_eur": 540.96,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -5167,7 +5275,7 @@
       "order_url": null,
       "author": "VM6",
       "posted": "Sun, 11 Oct 2026 08:46:01 +0000",
-      "age_days": 20,
+      "age_days": 21,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -5177,7 +5285,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:16+00:00"
+        "fetched_at": "2026-11-01T13:49:23+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5258,7 +5366,7 @@
       "annual_eur": 84.24,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5282,7 +5390,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:17+00:00"
+        "fetched_at": "2026-11-01T13:49:23+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5362,7 +5470,7 @@
       "annual_eur": 33.12,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -5386,7 +5494,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:19+00:00"
+        "fetched_at": "2026-11-01T13:49:26+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5437,7 +5545,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5470,7 +5578,7 @@
           "offset": 110
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:26+00:00"
+        "fetched_at": "2026-11-01T13:49:34+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5546,115 +5654,7 @@
       "annual_eur": 1661.52,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222400",
-      "source": "let",
-      "provider": "serverscamp.com",
-      "title": "ServersCamp: new Simple VPS, starting €1/month",
-      "url": "https://lowendtalk.com/discussion/222400/serverscamp-new-simple-vps-starting-1-month",
-      "vendor_url": "https://console.serverscamp.com/vps/new?plan=vps2-075",
-      "order_url": null,
-      "author": "kukara4",
-      "posted": "Thu, 22 Oct 2026 14:00:53 +0000",
-      "age_days": 9,
-      "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 28,
-        "vendor_reply_count": 5,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:26+00:00"
-      },
-      "event_type": "regular",
-      "discount": {
-        "strength": "",
-        "percent_max": null,
-        "recurring": false,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": 5,
-        "ram_gb": 4.0,
-        "storage_gb": 80.0,
-        "storage_type": "unspecified",
-        "bandwidth_tb": 3.0
-      },
-      "specs_all": {
-        "vcpu": [
-          5,
-          2,
-          1
-        ],
-        "ram_gb": [
-          4.0,
-          2.0,
-          1.0,
-          0.75
-        ],
-        "storage_gb": [
-          80.0,
-          40.0,
-          20.0,
-          10.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [
-        "EPYC 7543"
-      ],
-      "prices": [
-        {
-          "amount": 1.0,
-          "currency": "€",
-          "cycle": "month"
-        },
-        {
-          "amount": 1.5,
-          "currency": "€",
-          "cycle": "month"
-        },
-        {
-          "amount": 3.0,
-          "currency": "€",
-          "cycle": "month"
-        },
-        {
-          "amount": 6.0,
-          "currency": "€",
-          "cycle": "month"
-        }
-      ],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.83,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：1–5 核 / 0.75–4 GB 内存 / 10–80 GB 存储",
-      "display_price": "€1/月",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 1.0,
-        "currency": "€",
-        "cycle": "month"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 8,
-      "annual_eur": 12.0,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5698,7 +5698,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-11-01T06:43:27+00:00"
+        "fetched_at": "2026-11-01T13:49:35+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5772,7 +5772,7 @@
       "annual_eur": 45.08,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5786,7 +5786,7 @@
       "order_url": null,
       "author": "NameBig",
       "posted": "Mon, 14 Sep 2026 13:38:19 +0000",
-      "age_days": 47,
+      "age_days": 48,
       "age_status": "STALE",
       "availability": "UNVERIFIED_STALE",
       "replies": {
@@ -5796,7 +5796,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:28+00:00"
+        "fetched_at": "2026-11-01T13:49:36+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -5854,7 +5854,7 @@
       "annual_eur": 8.27,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5868,7 +5868,7 @@
       "order_url": "https://nolimitcloud.eu/pages/storage-vps",
       "author": "NolimitHost",
       "posted": "Thu, 10 Sep 2026 11:45:59 +0000",
-      "age_days": 51,
+      "age_days": 52,
       "age_status": "STALE",
       "availability": "ON_SALE",
       "replies": {
@@ -5908,7 +5908,7 @@
             "offset": 11
           }
         ],
-        "fetched_at": "2026-11-01T06:43:29+00:00"
+        "fetched_at": "2026-11-01T13:49:37+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6003,7 +6003,7 @@
       "annual_eur": 12.99,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6017,7 +6017,7 @@
       "order_url": "https://billing.svr4u.com/cart.php?a=add&pid=165&billingcycle=monthly&currency=4&promocode=SEGSJ1ZL0Z",
       "author": "bbmmsvr4u",
       "posted": "Sat, 17 Oct 2026 06:57:08 +0000",
-      "age_days": 14,
+      "age_days": 15,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -6027,7 +6027,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:29+00:00"
+        "fetched_at": "2026-11-01T13:49:38+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6108,7 +6108,7 @@
       "annual_eur": 34.78,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6132,7 +6132,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:31+00:00"
+        "fetched_at": "2026-11-01T13:49:39+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6207,7 +6207,7 @@
       "annual_eur": 102.67,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6251,7 +6251,7 @@
             "offset": 55
           }
         ],
-        "fetched_at": "2026-11-01T06:43:33+00:00"
+        "fetched_at": "2026-11-01T13:49:40+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -6398,7 +6398,7 @@
       "annual_eur": 6.99,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6412,7 +6412,7 @@
       "order_url": null,
       "author": "Shakib",
       "posted": "Tue, 20 Oct 2026 07:07:12 +0000",
-      "age_days": 11,
+      "age_days": 12,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -6422,7 +6422,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:34+00:00"
+        "fetched_at": "2026-11-01T13:49:42+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6471,7 +6471,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6485,7 +6485,7 @@
       "order_url": null,
       "author": "quickservers",
       "posted": "Tue, 04 Aug 2026 09:34:48 +0000",
-      "age_days": 88,
+      "age_days": 89,
       "age_status": "STALE",
       "availability": "SOLD_OUT",
       "replies": {
@@ -6525,7 +6525,7 @@
             "offset": 39
           }
         ],
-        "fetched_at": "2026-11-01T06:43:35+00:00"
+        "fetched_at": "2026-11-01T13:49:43+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6609,7 +6609,7 @@
       "annual_eur": 331.09,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6633,7 +6633,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:35+00:00"
+        "fetched_at": "2026-11-01T13:49:43+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6692,7 +6692,7 @@
       "annual_eur": 110.29,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6706,7 +6706,7 @@
       "order_url": "https://bill.hostdare.com/store/premium-japan-kvm-vps",
       "author": "hostdare",
       "posted": "Tue, 06 Oct 2026 07:13:49 +0000",
-      "age_days": 25,
+      "age_days": 26,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -6716,7 +6716,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:35+00:00"
+        "fetched_at": "2026-11-01T13:49:43+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6796,7 +6796,7 @@
       "annual_eur": 17.93,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6820,7 +6820,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:36+00:00"
+        "fetched_at": "2026-11-01T13:49:44+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6895,7 +6895,7 @@
       "annual_eur": 42.95,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6919,7 +6919,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:38+00:00"
+        "fetched_at": "2026-11-01T13:49:47+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7006,7 +7006,7 @@
       "annual_eur": 22.52,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7070,7 +7070,7 @@
             "offset": 28
           }
         ],
-        "fetched_at": "2026-11-01T06:43:38+00:00"
+        "fetched_at": "2026-11-01T13:49:47+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -7164,7 +7164,7 @@
       "annual_eur": 35.15,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7188,7 +7188,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:39+00:00"
+        "fetched_at": "2026-11-01T13:49:48+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -7270,7 +7270,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7294,7 +7294,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:40+00:00"
+        "fetched_at": "2026-11-01T13:49:48+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7349,7 +7349,7 @@
       "annual_eur": 12.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7363,7 +7363,7 @@
       "order_url": "https://royal-server.ro/en/vps-servers.php",
       "author": "nadir20016",
       "posted": "Tue, 11 Aug 2026 07:41:27 +0000",
-      "age_days": 81,
+      "age_days": 82,
       "age_status": "STALE",
       "availability": "ON_SALE",
       "replies": {
@@ -7393,7 +7393,7 @@
             "offset": 803
           }
         ],
-        "fetched_at": "2026-11-01T06:43:42+00:00"
+        "fetched_at": "2026-11-01T13:49:50+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7480,7 +7480,7 @@
       "annual_eur": 60.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7494,7 +7494,7 @@
       "order_url": "https://khanwebhost.com/store/canada-kvm-vps/vps-kvm2gb-promo",
       "author": "AK_KWH",
       "posted": "Mon, 12 Oct 2026 07:15:19 +0000",
-      "age_days": 19,
+      "age_days": 20,
       "age_status": "ACTIVE",
       "availability": "ON_SALE",
       "replies": {
@@ -7524,7 +7524,7 @@
             "offset": 222
           }
         ],
-        "fetched_at": "2026-11-01T06:43:43+00:00"
+        "fetched_at": "2026-11-01T13:49:52+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7616,7 +7616,7 @@
       "annual_eur": 5.06,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7630,7 +7630,7 @@
       "order_url": "https://members.smokyhosts.com/cart.php?a=add&pid=173",
       "author": "SmokyHosts",
       "posted": "Sat, 10 Oct 2026 11:12:47 +0000",
-      "age_days": 21,
+      "age_days": 22,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -7640,7 +7640,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:43+00:00"
+        "fetched_at": "2026-11-01T13:49:52+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7721,7 +7721,7 @@
       "annual_eur": 110.4,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7735,7 +7735,7 @@
       "order_url": null,
       "author": "NUXOA",
       "posted": "Thu, 15 Oct 2026 11:11:31 +0000",
-      "age_days": 16,
+      "age_days": 17,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": {
@@ -7745,7 +7745,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:43+00:00"
+        "fetched_at": "2026-11-01T13:49:52+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7837,7 +7837,7 @@
       "annual_eur": 1140.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7851,7 +7851,7 @@
       "order_url": "https://linceris.com/deals",
       "author": "YassineB",
       "posted": "Sat, 03 Oct 2026 10:41:24 +0000",
-      "age_days": 28,
+      "age_days": 29,
       "age_status": "ACTIVE",
       "availability": "ON_SALE",
       "replies": {
@@ -7881,7 +7881,7 @@
             "offset": 52
           }
         ],
-        "fetched_at": "2026-11-01T06:43:45+00:00"
+        "fetched_at": "2026-11-01T13:49:53+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7956,7 +7956,7 @@
       "annual_eur": 47.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7970,7 +7970,7 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Fri, 30 Oct 2026 11:00:17 +0000",
-      "age_days": 1,
+      "age_days": 2,
       "age_status": "NEW",
       "availability": "UNVERIFIED",
       "replies": null,
@@ -8030,7 +8030,7 @@
       "annual_eur": 96.05,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -8044,7 +8044,7 @@
       "order_url": "https://www.flipperhost.com/billing/store/vps-promotions/flipper-kvm2gb",
       "author": "raindog308",
       "posted": "Mon, 19 Oct 2026 11:00:42 +0000",
-      "age_days": 12,
+      "age_days": 13,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": null,
@@ -8141,7 +8141,7 @@
       "annual_eur": 27.59,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8155,7 +8155,7 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Sat, 17 Oct 2026 11:00:05 +0000",
-      "age_days": 14,
+      "age_days": 15,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": null,
@@ -8232,7 +8232,7 @@
       "annual_eur": 320.16,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8246,7 +8246,7 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Fri, 16 Oct 2026 11:00:48 +0000",
-      "age_days": 15,
+      "age_days": 16,
       "age_status": "ACTIVE",
       "availability": "UNVERIFIED",
       "replies": null,
@@ -8351,7 +8351,7 @@
       "annual_eur": 47.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8416,8 +8416,206 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
+        "last_seen": "2026-11-01T13:49:56+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
+      }
+    },
+    {
+      "thread_id": "222735",
+      "source": "let",
+      "provider": "mailbig.net",
+      "title": "[GIVEAWAY] MailBig & HostDzire Special: 25x Mail + 10x VPS (LAX/SFO/SG) – Black-Friday Page Live",
+      "url": "https://lowendtalk.com/discussion/222735/giveaway-mailbig-hostdzire-special-25x-mail-10x-vps-lax-sfo-sg-black-friday-page-live",
+      "vendor_url": "https://mailbig.net/blackfriday",
+      "order_url": null,
+      "author": "NameBig",
+      "posted": "Fri, 30 Oct 2026 05:48:10 +0000",
+      "age_days": 2,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 32,
+        "vendor_reply_count": 0,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:48:34+00:00"
+      },
+      "event_type": "black_friday",
+      "discount": {
+        "strength": "循环/永久",
+        "percent_max": null,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": null,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [],
+      "locations": [
+        "Los Angeles",
+        "Singapore"
+      ],
+      "stock_hints": [],
+      "confidence": 0.17,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 57,
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-30T06:01:56+00:00"
+      }
+    },
+    {
+      "thread_id": "222665",
+      "source": "let",
+      "provider": "Alexhost.com",
+      "title": "Alexhost.com - Happy Halloween! 15% OFF",
+      "url": "https://lowendtalk.com/discussion/222665/alexhost-com-happy-halloween-15-off",
+      "vendor_url": "https://alexhost.com/dedicated-servers/",
+      "order_url": null,
+      "author": "alexhost",
+      "posted": "Wed, 28 Oct 2026 18:50:29 +0000",
+      "age_days": 3,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 3,
+        "vendor_reply_count": 1,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-01T13:49:12+00:00"
+      },
+      "event_type": "holiday",
+      "discount": {
+        "strength": "循环/永久 · 最高 20% off · 码 GHOSTHOST15",
+        "percent_max": 20,
+        "recurring": true,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "GHOSTHOST15"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": null,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.17,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 68,
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-29T09:02:03+00:00"
+      }
+    },
+    {
+      "thread_id": "leb-dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords",
+      "source": "leb",
+      "provider": "DreamHost Urges Affected Customers to Re",
+      "title": "DreamHost Urges Affected Customers to Reset All Email and FTP Passwords",
+      "url": "https://lowendbox.com/blog/dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords/",
+      "vendor_url": "https://www.dreamhost.com/",
+      "order_url": null,
+      "author": "News Team",
+      "posted": "Mon, 26 Oct 2026 11:00:49 +0000",
+      "age_days": 6,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": null,
+      "event_type": "regular",
+      "discount": {
+        "strength": "",
+        "percent_max": null,
+        "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": null,
+        "ram_gb": null,
+        "storage_gb": null,
+        "storage_type": null,
+        "bandwidth_tb": null
+      },
+      "specs_all": {
+        "vcpu": [],
+        "ram_gb": [],
+        "storage_gb": []
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [],
+      "prices": [],
+      "locations": [],
+      "stock_hints": [],
+      "confidence": 0.0,
+      "affiliate": false,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "查看原帖核对配置",
+      "display_price": "到商家查价",
+      "display_price_note": "价格周期待核对",
+      "sort_price": null,
+      "purchase_label": "到商家核对价格与库存",
+      "score": 0,
+      "annual_eur": null,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-01T13:49:56+00:00",
+        "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
     {
@@ -8430,9 +8628,9 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Tue, 13 Oct 2026 11:00:04 +0000",
-      "age_days": 18,
+      "age_days": 19,
       "age_status": "ACTIVE",
-      "availability": "UNVERIFIED",
+      "availability": "NOT_OBSERVED",
       "replies": null,
       "event_type": "launch",
       "discount": {
@@ -8510,218 +8708,22 @@
       "price_bound": false,
       "display_spec": "帖文提及：1–10 核 / 4–512 GB 内存 / 4096 GB 存储",
       "display_price": "€2.6/月",
-      "display_price_note": "帖文报价，未与配置绑定",
+      "display_price_note": "帖文报价，未与配置绑定；本轮未检出，上次检出 2026-11-01T06:43:47+00:00",
       "sort_price": {
         "amount": 2.6,
         "currency": "€",
         "cycle": "month"
       },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 53,
+      "purchase_label": "本轮未检出，请到商家核实",
+      "score": 0,
       "annual_eur": 31.2,
       "tracking": {
-        "state": "observed",
+        "state": "missing",
         "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222735",
-      "source": "let",
-      "provider": "mailbig.net",
-      "title": "[GIVEAWAY] MailBig & HostDzire Special: 25x Mail + 10x VPS (LAX/SFO/SG) – Black-Friday Page Live",
-      "url": "https://lowendtalk.com/discussion/222735/giveaway-mailbig-hostdzire-special-25x-mail-10x-vps-lax-sfo-sg-black-friday-page-live",
-      "vendor_url": "https://mailbig.net/blackfriday",
-      "order_url": null,
-      "author": "NameBig",
-      "posted": "Fri, 30 Oct 2026 05:48:10 +0000",
-      "age_days": 2,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 48,
-        "vendor_reply_count": 1,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:42:34+00:00"
+        "first_seen": "2026-10-26T07:23:39+00:00",
+        "missing_since": "2026-11-01T13:49:56+00:00"
       },
-      "event_type": "black_friday",
-      "discount": {
-        "strength": "循环/永久",
-        "percent_max": null,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": null,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [],
-      "locations": [
-        "Los Angeles",
-        "Singapore"
-      ],
-      "stock_hints": [],
-      "confidence": 0.17,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "查看原帖核对配置",
-      "display_price": "到商家查价",
-      "display_price_note": "价格周期待核对",
-      "sort_price": null,
-      "purchase_label": "到商家核对价格与库存",
-      "score": 57,
-      "annual_eur": null,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-30T06:01:56+00:00"
-      }
-    },
-    {
-      "thread_id": "222665",
-      "source": "let",
-      "provider": "Alexhost.com",
-      "title": "Alexhost.com - Happy Halloween! 15% OFF",
-      "url": "https://lowendtalk.com/discussion/222665/alexhost-com-happy-halloween-15-off",
-      "vendor_url": "https://alexhost.com/dedicated-servers/",
-      "order_url": null,
-      "author": "alexhost",
-      "posted": "Wed, 28 Oct 2026 18:50:29 +0000",
-      "age_days": 3,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 3,
-        "vendor_reply_count": 1,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-01T06:43:07+00:00"
-      },
-      "event_type": "holiday",
-      "discount": {
-        "strength": "循环/永久 · 最高 20% off · 码 GHOSTHOST15",
-        "percent_max": 20,
-        "recurring": true,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [
-          "GHOSTHOST15"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": null,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.17,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "查看原帖核对配置",
-      "display_price": "到商家查价",
-      "display_price_note": "价格周期待核对",
-      "sort_price": null,
-      "purchase_label": "到商家核对价格与库存",
-      "score": 68,
-      "annual_eur": null,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-29T09:02:03+00:00"
-      }
-    },
-    {
-      "thread_id": "leb-dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords",
-      "source": "leb",
-      "provider": "DreamHost Urges Affected Customers to Re",
-      "title": "DreamHost Urges Affected Customers to Reset All Email and FTP Passwords",
-      "url": "https://lowendbox.com/blog/dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords/",
-      "vendor_url": "https://www.dreamhost.com/",
-      "order_url": null,
-      "author": "News Team",
-      "posted": "Mon, 26 Oct 2026 11:00:49 +0000",
-      "age_days": 5,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": null,
-      "event_type": "regular",
-      "discount": {
-        "strength": "",
-        "percent_max": null,
-        "recurring": false,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": null,
-        "ram_gb": null,
-        "storage_gb": null,
-        "storage_type": null,
-        "bandwidth_tb": null
-      },
-      "specs_all": {
-        "vcpu": [],
-        "ram_gb": [],
-        "storage_gb": []
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [],
-      "prices": [],
-      "locations": [],
-      "stock_hints": [],
-      "confidence": 0.0,
-      "affiliate": false,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "查看原帖核对配置",
-      "display_price": "到商家查价",
-      "display_price_note": "价格周期待核对",
-      "sort_price": null,
-      "purchase_label": "到商家核对价格与库存",
-      "score": 0,
-      "annual_eur": null,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-01T06:43:47+00:00",
-        "first_seen": "2026-10-27T08:09:24+00:00"
-      }
+      "last_observed_availability": "UNVERIFIED"
     },
     {
       "thread_id": "220717",
@@ -8937,7 +8939,7 @@
       "order_url": null,
       "author": "TierNet",
       "posted": "Wed, 09 Sep 2026 08:57:26 +0000",
-      "age_days": 52,
+      "age_days": 53,
       "age_status": "STALE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -9253,7 +9255,7 @@
       "order_url": null,
       "author": "Tang_Lichun",
       "posted": "Thu, 15 Oct 2026 11:30:07 +0000",
-      "age_days": 16,
+      "age_days": 17,
       "age_status": "ACTIVE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -9349,8 +9351,8 @@
       "order_url": null,
       "author": "TheRealBudgetVM",
       "posted": "Thu, 01 Oct 2026 09:18:28 +0000",
-      "age_days": 30,
-      "age_status": "ACTIVE",
+      "age_days": 31,
+      "age_status": "STALE",
       "availability": "NOT_OBSERVED",
       "replies": {
         "reply_count": 41,
@@ -9462,7 +9464,7 @@
       "order_url": null,
       "author": "CubePath",
       "posted": "Thu, 17 Sep 2026 13:27:34 +0000",
-      "age_days": 44,
+      "age_days": 45,
       "age_status": "STALE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -9573,7 +9575,7 @@
       "order_url": null,
       "author": "koanode",
       "posted": "Fri, 09 Oct 2026 11:39:56 +0000",
-      "age_days": 22,
+      "age_days": 23,
       "age_status": "ACTIVE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -9655,7 +9657,7 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Sat, 10 Oct 2026 11:00:40 +0000",
-      "age_days": 21,
+      "age_days": 22,
       "age_status": "ACTIVE",
       "availability": "NOT_OBSERVED",
       "replies": null,
@@ -9832,7 +9834,7 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Fri, 09 Oct 2026 10:00:29 +0000",
-      "age_days": 22,
+      "age_days": 23,
       "age_status": "ACTIVE",
       "availability": "NOT_OBSERVED",
       "replies": null,
@@ -9899,7 +9901,7 @@
       "order_url": null,
       "author": "wlx",
       "posted": "Tue, 22 Sep 2026 07:13:07 +0000",
-      "age_days": 39,
+      "age_days": 40,
       "age_status": "STALE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -10031,7 +10033,7 @@
       "order_url": null,
       "author": "raindog308",
       "posted": "Thu, 08 Oct 2026 11:00:18 +0000",
-      "age_days": 23,
+      "age_days": 24,
       "age_status": "ACTIVE",
       "availability": "NOT_OBSERVED",
       "replies": null,
@@ -10130,7 +10132,7 @@
       "order_url": null,
       "author": "servury",
       "posted": "Sun, 06 Sep 2026 07:24:32 +0000",
-      "age_days": 55,
+      "age_days": 56,
       "age_status": "STALE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -10342,7 +10344,7 @@
       "order_url": null,
       "author": "ThrowRaPest",
       "posted": "Mon, 05 Oct 2026 07:12:11 +0000",
-      "age_days": 26,
+      "age_days": 27,
       "age_status": "ACTIVE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -10453,7 +10455,7 @@
       "order_url": null,
       "author": "SolidVPS",
       "posted": "Thu, 24 Sep 2026 12:28:57 +0000",
-      "age_days": 37,
+      "age_days": 38,
       "age_status": "STALE",
       "availability": "NOT_OBSERVED",
       "replies": {
@@ -10543,23 +10545,31 @@
       "last_observed_availability": "UNVERIFIED_STALE"
     }
   ],
-  "observed_count": 81,
+  "observed_count": 80,
   "observed_by_source": {
     "let": 74,
-    "leb": 7
+    "leb": 6
   },
   "updates": {
-    "generated_at": "2026-11-01T06:43:47+00:00",
+    "generated_at": "2026-11-01T13:49:56+00:00",
     "baseline": false,
     "added": [],
     "changed": [],
-    "missing": [],
+    "missing": [
+      {
+        "id": "leb:leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
+        "provider": "Velohost",
+        "title": "Velohost Returns With Even Cheaper Prices! Get a 4GB VPS for Only 2.60€/month!",
+        "url": "https://lowendbox.com/blog/velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month/",
+        "summary": "上新/回归 · €2.6/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
     "expired": []
   },
   "update_history": [
     {
-      "generated_at": "2026-11-01T05:34:43+00:00",
+      "generated_at": "2026-11-01T13:49:56+00:00",
       "baseline": false,
       "added": [
         {
@@ -10625,6 +10635,13 @@
           "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
           "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
           "summary": "常规促销 · $5.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
+          "provider": "Velohost",
+          "title": "Velohost Returns With Even Cheaper Prices! Get a 4GB VPS for Only 2.60€/month!",
+          "url": "https://lowendbox.com/blog/velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month/",
+          "summary": "上新/回归 · €2.6/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
       "restored": [
@@ -11525,5 +11542,5 @@
       "expired": []
     }
   ],
-  "last_change_at": "2026-11-01T05:34:43+00:00"
+  "last_change_at": "2026-11-01T13:49:56+00:00"
 }
