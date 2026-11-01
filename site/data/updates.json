@@ -1,35 +1,12 @@
 {
   "latest": {
-    "generated_at": "2026-11-01T05:34:43+00:00",
+    "generated_at": "2026-11-01T06:43:47+00:00",
     "baseline": false,
     "added": [],
-    "changed": [
-      {
-        "id": "let:222474",
-        "provider": "Caliber Node",
-        "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
-        "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
-        "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 待确认",
-        "changes": {
-          "库存": {
-            "before": "LIKELY_SOLD_OUT",
-            "after": "UNVERIFIED"
-          }
-        }
-      }
-    ],
+    "changed": [],
     "missing": [],
     "restored": [],
-    "expired": [
-      {
-        "id": "let:219721",
-        "provider": "TrumVPS",
-        "title": "TrumVPS | Vietnam VPS | 20% OFF with LOWEND20 | Starting at $14.80/Year | Bonus for LET Members",
-        "url": "https://lowendtalk.com/discussion/219721/trumvps-vietnam-vps-20-off-with-lowend20-starting-at-14-80-year-bonus-for-let-members",
-        "summary": "常规促销 · $14.8/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "reason": "超出保留窗口；不代表确认停售"
-      }
-    ]
+    "expired": []
   },
   "history": [
     {
