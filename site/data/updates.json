@@ -1,31 +1,9 @@
 {
   "latest": {
-    "generated_at": "2026-11-03T01:56:07+00:00",
+    "generated_at": "2026-11-03T02:01:27+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:221411",
-        "provider": "MEJIRO NETWORK",
-        "title": "MEJIRO NETWORK | Singapore VPS @3USD/mo, Hong Kong Dedicated Server @55USD/mo",
-        "url": "https://lowendtalk.com/discussion/221411/mejiro-network-singapore-vps-3usd-mo-hong-kong-dedicated-server-55usd-mo",
-        "summary": "常规帖 · $3/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:222724",
-        "provider": "centrixnodes.net",
-        "title": "[US] Halloween | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
-        "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
-        "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 部分售罄",
-        "changes": {
-          "库存": {
-            "before": "SOLD_OUT",
-            "after": "PARTIAL"
-          }
-        }
-      }
-    ],
+    "added": [],
+    "changed": [],
     "missing": [],
     "restored": [],
     "expired": []

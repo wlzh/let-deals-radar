@@ -1,6 +1,6 @@
 {
   "source": "LowEndTalk Offers + LowEndBox",
-  "generated_at": "2026-11-03T01:56:07+00:00",
+  "generated_at": "2026-11-03T02:01:27+00:00",
   "count": 106,
   "by_source": {
     "leb": 12,
@@ -9,6 +9,111 @@
   "deduped": 1,
   "source_failures": [],
   "records": [
+    {
+      "thread_id": "222738",
+      "source": "let",
+      "provider": "servitro.com",
+      "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
+      "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
+      "vendor_url": "https://my.servitro.com/aff.php?aff=235",
+      "order_url": "https://my.servitro.com/store/virtual-servers/usd1-server",
+      "author": "Servitro",
+      "posted": "Fri, 30 Oct 2026 06:45:44 +0000",
+      "age_days": 3,
+      "age_status": "NEW",
+      "availability": "UNVERIFIED",
+      "replies": {
+        "reply_count": 48,
+        "vendor_reply_count": 3,
+        "status": null,
+        "source": null,
+        "evidence": null,
+        "vendor_signals": [],
+        "fetched_at": "2026-11-03T01:59:59+00:00"
+      },
+      "event_type": "sale",
+      "discount": {
+        "strength": "码 BFJH1873LA",
+        "percent_max": null,
+        "recurring": false,
+        "introductory": false,
+        "rule_conflict": false,
+        "codes": [
+          "BFJH1873LA"
+        ],
+        "extras": []
+      },
+      "specs": {
+        "vcpu": 1,
+        "ram_gb": 4.0,
+        "storage_gb": 25.0,
+        "storage_type": "SSD",
+        "bandwidth_tb": 1.0
+      },
+      "specs_all": {
+        "vcpu": [
+          1
+        ],
+        "ram_gb": [
+          4.0,
+          1.0
+        ],
+        "storage_gb": [
+          25.0,
+          25.0,
+          10.0
+        ]
+      },
+      "plans": [],
+      "flagship_price": null,
+      "cpu_models": [
+        "EPYC 7443P",
+        "Ryzen 9 9950X"
+      ],
+      "prices": [
+        {
+          "amount": 12.0,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 20.0,
+          "currency": "$",
+          "cycle": "year"
+        },
+        {
+          "amount": 35.2,
+          "currency": "$",
+          "cycle": "year"
+        }
+      ],
+      "locations": [
+        "Frankfurt"
+      ],
+      "stock_hints": [],
+      "confidence": 1.0,
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "affiliate": true,
+      "forum_url": null,
+      "price_bound": false,
+      "display_spec": "帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储",
+      "display_price": "$12/年",
+      "display_price_note": "帖文报价，未与配置绑定",
+      "sort_price": {
+        "amount": 12.0,
+        "currency": "$",
+        "cycle": "year"
+      },
+      "purchase_label": "到商家核对价格与库存",
+      "score": 20,
+      "annual_eur": 11.04,
+      "tracking": {
+        "state": "observed",
+        "last_seen": "2026-11-03T02:01:27+00:00",
+        "first_seen": "2026-10-30T21:02:10+00:00"
+      }
+    },
     {
       "thread_id": "221564",
       "source": "let",
@@ -29,7 +134,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:34+00:00"
+        "fetched_at": "2026-11-03T02:00:00+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -116,7 +221,7 @@
       "annual_eur": 36.76,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -140,7 +245,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:35+00:00"
+        "fetched_at": "2026-11-03T02:00:01+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -222,7 +327,7 @@
       "annual_eur": 41.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -246,7 +351,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:36+00:00"
+        "fetched_at": "2026-11-03T02:00:02+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -323,7 +428,7 @@
       "annual_eur": 662.4,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -387,7 +492,7 @@
             "offset": 33
           }
         ],
-        "fetched_at": "2026-11-03T01:54:36+00:00"
+        "fetched_at": "2026-11-03T02:00:03+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -471,7 +576,7 @@
       "annual_eur": 23.46,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-29T21:02:09+00:00"
       }
     },
@@ -495,7 +600,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:39+00:00"
+        "fetched_at": "2026-11-03T02:00:05+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -564,7 +669,7 @@
       "annual_eur": 7.36,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -588,7 +693,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:40+00:00"
+        "fetched_at": "2026-11-03T02:00:06+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -680,7 +785,7 @@
       "annual_eur": 24.57,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -704,7 +809,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:41+00:00"
+        "fetched_at": "2026-11-03T02:00:07+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -780,7 +885,7 @@
       "annual_eur": 6.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -804,7 +909,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:41+00:00"
+        "fetched_at": "2026-11-03T02:00:07+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -878,7 +983,7 @@
       "annual_eur": 33.12,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-03T01:56:07+00:00"
       }
     },
@@ -902,7 +1007,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:42+00:00"
+        "fetched_at": "2026-11-03T02:00:07+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -980,7 +1085,7 @@
       "annual_eur": 66.13,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -1004,7 +1109,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:43+00:00"
+        "fetched_at": "2026-11-03T02:00:08+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -1054,7 +1159,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -1078,7 +1183,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:45+00:00"
+        "fetched_at": "2026-11-03T02:00:11+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -1139,7 +1244,7 @@
       "annual_eur": 53.28,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-31T14:42:39+00:00"
       }
     },
@@ -1163,7 +1268,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:47+00:00"
+        "fetched_at": "2026-11-03T02:00:13+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1239,7 +1344,7 @@
       "annual_eur": 21.15,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -1263,7 +1368,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:48+00:00"
+        "fetched_at": "2026-11-03T02:00:14+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -1358,7 +1463,7 @@
       "annual_eur": 18.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -1391,7 +1496,7 @@
           "offset": 14
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:48+00:00"
+        "fetched_at": "2026-11-03T02:00:14+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1462,7 +1567,7 @@
       "annual_eur": 73.97,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -1486,7 +1591,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:50+00:00"
+        "fetched_at": "2026-11-03T02:00:15+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1551,113 +1656,8 @@
       "annual_eur": 6.62,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
-    },
-    {
-      "thread_id": "222738",
-      "source": "let",
-      "provider": "servitro.com",
-      "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
-      "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
-      "vendor_url": "https://my.servitro.com/aff.php?aff=235",
-      "order_url": "https://my.servitro.com/store/virtual-servers/usd1-server",
-      "author": "Servitro",
-      "posted": "Fri, 30 Oct 2026 06:45:44 +0000",
-      "age_days": 3,
-      "age_status": "NEW",
-      "availability": "UNVERIFIED",
-      "replies": {
-        "reply_count": 48,
-        "vendor_reply_count": 3,
-        "status": null,
-        "source": null,
-        "evidence": null,
-        "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:51+00:00"
-      },
-      "event_type": "sale",
-      "discount": {
-        "strength": "码 BFJH1873LA",
-        "percent_max": null,
-        "recurring": false,
-        "introductory": false,
-        "rule_conflict": false,
-        "codes": [
-          "BFJH1873LA"
-        ],
-        "extras": []
-      },
-      "specs": {
-        "vcpu": 1,
-        "ram_gb": 4.0,
-        "storage_gb": 25.0,
-        "storage_type": "SSD",
-        "bandwidth_tb": 1.0
-      },
-      "specs_all": {
-        "vcpu": [
-          1
-        ],
-        "ram_gb": [
-          4.0,
-          1.0
-        ],
-        "storage_gb": [
-          25.0,
-          25.0,
-          10.0
-        ]
-      },
-      "plans": [],
-      "flagship_price": null,
-      "cpu_models": [
-        "EPYC 7443P",
-        "Ryzen 9 9950X"
-      ],
-      "prices": [
-        {
-          "amount": 12.0,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 20.0,
-          "currency": "$",
-          "cycle": "year"
-        },
-        {
-          "amount": 35.2,
-          "currency": "$",
-          "cycle": "year"
-        }
-      ],
-      "locations": [
-        "Frankfurt"
-      ],
-      "stock_hints": [],
-      "confidence": 1.0,
-      "service_kind": "vps",
-      "service_label": "VPS / 综合优惠",
-      "affiliate": true,
-      "forum_url": null,
-      "price_bound": false,
-      "display_spec": "帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储",
-      "display_price": "$12/年",
-      "display_price_note": "帖文报价，未与配置绑定",
-      "sort_price": {
-        "amount": 12.0,
-        "currency": "$",
-        "cycle": "year"
-      },
-      "purchase_label": "到商家核对价格与库存",
-      "score": 20,
-      "annual_eur": 11.04,
-      "tracking": {
-        "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
-        "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
     {
@@ -1680,7 +1680,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:54+00:00"
+        "fetched_at": "2026-11-03T02:00:18+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -1739,7 +1739,7 @@
       "annual_eur": 88.32,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
       }
     },
@@ -1763,7 +1763,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:54+00:00"
+        "fetched_at": "2026-11-03T02:00:18+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -1850,7 +1850,7 @@
       "annual_eur": 44.16,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -1883,7 +1883,7 @@
           "offset": 0
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:57+00:00"
+        "fetched_at": "2026-11-03T02:00:21+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -1973,7 +1973,7 @@
       "annual_eur": 29.81,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
       }
     },
@@ -1997,7 +1997,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:58+00:00"
+        "fetched_at": "2026-11-03T02:00:22+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -2060,7 +2060,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2084,7 +2084,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:00+00:00"
+        "fetched_at": "2026-11-03T02:00:23+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2178,7 +2178,7 @@
       "annual_eur": 16.55,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
       }
     },
@@ -2202,7 +2202,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:01+00:00"
+        "fetched_at": "2026-11-03T02:00:25+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -2279,7 +2279,7 @@
       "annual_eur": 24.84,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2303,7 +2303,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:01+00:00"
+        "fetched_at": "2026-11-03T02:00:25+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -2379,7 +2379,7 @@
       "annual_eur": 14.04,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
       }
     },
@@ -2403,7 +2403,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:02+00:00"
+        "fetched_at": "2026-11-03T02:00:25+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -2475,7 +2475,7 @@
       "annual_eur": 27.54,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-31T21:01:57+00:00"
       }
     },
@@ -2519,7 +2519,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-11-03T01:55:03+00:00"
+        "fetched_at": "2026-11-03T02:00:26+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -2595,7 +2595,7 @@
       "annual_eur": 45.08,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2659,7 +2659,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-11-03T01:55:04+00:00"
+        "fetched_at": "2026-11-03T02:00:27+00:00"
       },
       "event_type": "anniversary",
       "discount": {
@@ -2960,7 +2960,7 @@
       "annual_eur": 129.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -2984,7 +2984,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:06+00:00"
+        "fetched_at": "2026-11-03T02:00:29+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3050,7 +3050,7 @@
       "annual_eur": 2002.32,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3074,7 +3074,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:06+00:00"
+        "fetched_at": "2026-11-03T02:00:29+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3127,7 +3127,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -3151,7 +3151,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:08+00:00"
+        "fetched_at": "2026-11-03T02:00:30+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -3226,7 +3226,7 @@
       "annual_eur": 367.08,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3280,7 +3280,7 @@
             "offset": 11
           }
         ],
-        "fetched_at": "2026-11-03T01:55:09+00:00"
+        "fetched_at": "2026-11-03T02:00:31+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3377,7 +3377,7 @@
       "annual_eur": 12.99,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3401,7 +3401,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:10+00:00"
+        "fetched_at": "2026-11-03T02:00:33+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -3505,7 +3505,7 @@
       "annual_eur": 12.99,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3549,7 +3549,7 @@
             "offset": 18
           }
         ],
-        "fetched_at": "2026-11-03T01:55:10+00:00"
+        "fetched_at": "2026-11-03T02:00:33+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -3642,7 +3642,7 @@
       "annual_eur": 31.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3666,7 +3666,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:13+00:00"
+        "fetched_at": "2026-11-03T02:00:35+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -3740,7 +3740,7 @@
       "annual_eur": 3.94,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3764,7 +3764,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:15+00:00"
+        "fetched_at": "2026-11-03T02:00:37+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -3850,7 +3850,7 @@
       "annual_eur": 36.43,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3874,7 +3874,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:15+00:00"
+        "fetched_at": "2026-11-03T02:00:37+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -3960,7 +3960,7 @@
       "annual_eur": 12.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -3984,7 +3984,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:18+00:00"
+        "fetched_at": "2026-11-03T02:00:40+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4071,7 +4071,7 @@
       "annual_eur": 38.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4115,7 +4115,7 @@
             "offset": 12
           }
         ],
-        "fetched_at": "2026-11-03T01:55:19+00:00"
+        "fetched_at": "2026-11-03T02:00:41+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -4207,7 +4207,7 @@
       "annual_eur": 22.08,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4231,7 +4231,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:22+00:00"
+        "fetched_at": "2026-11-03T02:00:44+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -4282,7 +4282,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4306,7 +4306,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:24+00:00"
+        "fetched_at": "2026-11-03T02:00:45+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4359,7 +4359,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -4383,7 +4383,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:24+00:00"
+        "fetched_at": "2026-11-03T02:00:46+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4471,7 +4471,7 @@
       "annual_eur": 176.09,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4495,7 +4495,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:25+00:00"
+        "fetched_at": "2026-11-03T02:00:47+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -4584,7 +4584,7 @@
       "annual_eur": 15.63,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4608,7 +4608,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:27+00:00"
+        "fetched_at": "2026-11-03T02:00:48+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -4682,7 +4682,7 @@
       "annual_eur": 12.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4706,7 +4706,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:28+00:00"
+        "fetched_at": "2026-11-03T02:00:50+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4782,7 +4782,7 @@
       "annual_eur": 9.2,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4836,7 +4836,7 @@
             "offset": 0
           }
         ],
-        "fetched_at": "2026-11-03T01:55:28+00:00"
+        "fetched_at": "2026-11-03T02:00:50+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -4926,7 +4926,7 @@
       "annual_eur": 33.07,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -4959,7 +4959,7 @@
           "offset": 44
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:30+00:00"
+        "fetched_at": "2026-11-03T02:00:51+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5029,7 +5029,7 @@
       "annual_eur": 18.55,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5073,7 +5073,7 @@
             "offset": 7
           }
         ],
-        "fetched_at": "2026-11-03T01:55:31+00:00"
+        "fetched_at": "2026-11-03T02:00:53+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -5169,7 +5169,7 @@
       "annual_eur": 276.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5213,7 +5213,7 @@
             "offset": 27
           }
         ],
-        "fetched_at": "2026-11-03T01:55:33+00:00"
+        "fetched_at": "2026-11-03T02:00:54+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5293,7 +5293,7 @@
       "annual_eur": 44.05,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5317,7 +5317,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:34+00:00"
+        "fetched_at": "2026-11-03T02:00:55+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5399,7 +5399,7 @@
       "annual_eur": 14.61,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -5432,7 +5432,7 @@
           "offset": 205
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:34+00:00"
+        "fetched_at": "2026-11-03T02:00:56+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -5513,7 +5513,7 @@
       "annual_eur": 55.09,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
       }
     },
@@ -5537,7 +5537,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:35+00:00"
+        "fetched_at": "2026-11-03T02:00:56+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5616,7 +5616,7 @@
       "annual_eur": 44.16,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5640,7 +5640,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:35+00:00"
+        "fetched_at": "2026-11-03T02:00:56+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -5697,7 +5697,7 @@
       "annual_eur": 23.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
       }
     },
@@ -5721,7 +5721,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:38+00:00"
+        "fetched_at": "2026-11-03T02:00:59+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -5779,7 +5779,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5803,7 +5803,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:39+00:00"
+        "fetched_at": "2026-11-03T02:01:00+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5896,7 +5896,7 @@
       "annual_eur": 9.15,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5920,7 +5920,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:41+00:00"
+        "fetched_at": "2026-11-03T02:01:02+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -5973,7 +5973,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -5997,7 +5997,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:41+00:00"
+        "fetched_at": "2026-11-03T02:01:02+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6088,7 +6088,7 @@
       "annual_eur": 540.96,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -6112,7 +6112,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:41+00:00"
+        "fetched_at": "2026-11-03T02:01:02+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6195,7 +6195,7 @@
       "annual_eur": 84.24,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6219,7 +6219,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:41+00:00"
+        "fetched_at": "2026-11-03T02:01:02+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6301,7 +6301,7 @@
       "annual_eur": 33.12,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -6325,7 +6325,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:44+00:00"
+        "fetched_at": "2026-11-03T02:01:05+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -6378,7 +6378,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6411,7 +6411,7 @@
           "offset": 110
         },
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:52+00:00"
+        "fetched_at": "2026-11-03T02:01:13+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6489,7 +6489,7 @@
       "annual_eur": 1661.52,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6513,7 +6513,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:53+00:00"
+        "fetched_at": "2026-11-03T02:01:14+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -6573,7 +6573,7 @@
       "annual_eur": 8.27,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6597,7 +6597,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:54+00:00"
+        "fetched_at": "2026-11-03T02:01:15+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -6680,7 +6680,7 @@
       "annual_eur": 34.78,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6704,7 +6704,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:55+00:00"
+        "fetched_at": "2026-11-03T02:01:16+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -6781,7 +6781,7 @@
       "annual_eur": 102.67,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6825,7 +6825,7 @@
             "offset": 55
           }
         ],
-        "fetched_at": "2026-11-03T01:55:56+00:00"
+        "fetched_at": "2026-11-03T02:01:17+00:00"
       },
       "event_type": "restock",
       "discount": {
@@ -6974,7 +6974,7 @@
       "annual_eur": 6.99,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -6998,7 +6998,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:58+00:00"
+        "fetched_at": "2026-11-03T02:01:19+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7049,7 +7049,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7103,7 +7103,7 @@
             "offset": 39
           }
         ],
-        "fetched_at": "2026-11-03T01:55:59+00:00"
+        "fetched_at": "2026-11-03T02:01:20+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7189,7 +7189,7 @@
       "annual_eur": 331.09,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7213,7 +7213,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:56:00+00:00"
+        "fetched_at": "2026-11-03T02:01:20+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7274,7 +7274,7 @@
       "annual_eur": 110.29,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7298,7 +7298,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:56:00+00:00"
+        "fetched_at": "2026-11-03T02:01:20+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7380,7 +7380,7 @@
       "annual_eur": 17.93,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7404,7 +7404,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:56:00+00:00"
+        "fetched_at": "2026-11-03T02:01:21+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -7481,7 +7481,7 @@
       "annual_eur": 42.95,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7505,7 +7505,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:56:03+00:00"
+        "fetched_at": "2026-11-03T02:01:24+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7594,7 +7594,7 @@
       "annual_eur": 22.52,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7658,7 +7658,7 @@
             "offset": 28
           }
         ],
-        "fetched_at": "2026-11-03T01:56:04+00:00"
+        "fetched_at": "2026-11-03T02:01:24+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -7754,7 +7754,7 @@
       "annual_eur": 35.15,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7778,7 +7778,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:56:05+00:00"
+        "fetched_at": "2026-11-03T02:01:25+00:00"
       },
       "event_type": "launch",
       "discount": {
@@ -7862,7 +7862,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7886,7 +7886,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:56:05+00:00"
+        "fetched_at": "2026-11-03T02:01:25+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -7943,7 +7943,7 @@
       "annual_eur": 12.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -7987,7 +7987,7 @@
             "offset": 803
           }
         ],
-        "fetched_at": "2026-11-03T01:56:07+00:00"
+        "fetched_at": "2026-11-03T02:01:27+00:00"
       },
       "event_type": "regular",
       "discount": {
@@ -8076,7 +8076,7 @@
       "annual_eur": 60.0,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8168,7 +8168,7 @@
       "annual_eur": 16.55,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -8265,7 +8265,7 @@
       "annual_eur": 42.39,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -8341,7 +8341,7 @@
       "annual_eur": 96.05,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
       }
     },
@@ -8454,7 +8454,7 @@
       "annual_eur": 27.59,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8547,7 +8547,7 @@
       "annual_eur": 320.16,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8668,7 +8668,7 @@
       "annual_eur": 47.88,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
       }
     },
@@ -8692,7 +8692,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:38+00:00"
+        "fetched_at": "2026-11-03T02:00:04+00:00"
       },
       "event_type": "black_friday",
       "discount": {
@@ -8740,7 +8740,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-30T06:01:56+00:00"
       }
     },
@@ -8764,7 +8764,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:54:54+00:00"
+        "fetched_at": "2026-11-03T02:00:18+00:00"
       },
       "event_type": "sale",
       "discount": {
@@ -8813,7 +8813,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
       }
     },
@@ -8837,7 +8837,7 @@
         "source": null,
         "evidence": null,
         "vendor_signals": [],
-        "fetched_at": "2026-11-03T01:55:32+00:00"
+        "fetched_at": "2026-11-03T02:00:53+00:00"
       },
       "event_type": "holiday",
       "discount": {
@@ -8884,7 +8884,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-29T09:02:03+00:00"
       }
     },
@@ -8945,7 +8945,7 @@
       "annual_eur": null,
       "tracking": {
         "state": "observed",
-        "last_seen": "2026-11-03T01:56:07+00:00",
+        "last_seen": "2026-11-03T02:01:27+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
       }
     },
@@ -11377,32 +11377,10 @@
     "leb": 7
   },
   "updates": {
-    "generated_at": "2026-11-03T01:56:07+00:00",
+    "generated_at": "2026-11-03T02:01:27+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:221411",
-        "provider": "MEJIRO NETWORK",
-        "title": "MEJIRO NETWORK | Singapore VPS @3USD/mo, Hong Kong Dedicated Server @55USD/mo",
-        "url": "https://lowendtalk.com/discussion/221411/mejiro-network-singapore-vps-3usd-mo-hong-kong-dedicated-server-55usd-mo",
-        "summary": "常规帖 · $3/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:222724",
-        "provider": "centrixnodes.net",
-        "title": "[US] Halloween | 50% OFF Yearly 20% OFF Monthly | Intel/Ryzen VPS from $25.50/yr | 10Gbps",
-        "url": "https://lowendtalk.com/discussion/222724/us-halloween-50-off-yearly-20-off-monthly-intel-ryzen-vps-from-25-50-yr-10gbps",
-        "summary": "节日促销 · $25.5/年 · 帖文报价，未与配置绑定 · 部分售罄",
-        "changes": {
-          "库存": {
-            "before": "SOLD_OUT",
-            "after": "PARTIAL"
-          }
-        }
-      }
-    ],
+    "added": [],
+    "changed": [],
     "missing": [],
     "restored": [],
     "expired": []
