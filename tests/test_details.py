@@ -65,3 +65,13 @@ def test_untrusted_detail_path_is_not_used(tmp_path):
     r = record(url="javascript:alert(1)", detail_path="../../secret")
     assert details.write_details({"records": [r]}, tmp_path, "") == []
     assert "detail_path" not in r
+
+
+def test_cloudflare_injection_preserves_detail_digest(tmp_path):
+    from tools.verify_live import content_digest
+    r = presentation.prepare(record())
+    details.write_details({"records": [r]}, tmp_path, "")
+    name = details.detail_path(r).strip("/") + "/index.html"
+    original = (tmp_path / name).read_bytes()
+    injected = original.replace(b"</body>", b'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{}"></script>\n</body>')
+    assert content_digest(name, original) == content_digest(name, injected)

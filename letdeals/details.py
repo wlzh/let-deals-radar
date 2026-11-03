@@ -78,7 +78,8 @@ def write_details(payload, out_dir, style):
 <nav><a href="/">全部优惠</a> · <a href="/black-friday-2026/">黑五专题</a></nav>
 <h1>{esc(title)}</h1><p>数据整理时间：<time datetime="{esc(generated, quote=True)}">{esc(display_time(generated))}</time></p>
 <table>{rows}</table>{actions}{POLICY}<p>程序版本 {__version__}</p>
-</main></body></html>'''
+</main>
+</body></html>'''
         target = root / path.strip("/") / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document, encoding="utf-8")

@@ -7,7 +7,7 @@
 
 **零运行时依赖**（仅 Python 标准库）· 产物是纯静态文件
 
-当前版本：**0.4.0**。本轮升级说明与验收方法见 [SEO/GEO 与佣金入口说明](docs/SEO-GEO.md)。
+当前版本：**0.4.1**。本轮升级说明与验收方法见 [SEO/GEO 与佣金入口说明](docs/SEO-GEO.md)。
 
 [![在线体验](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E4%BD%93%E9%AA%8C-vps.869hr.uk-2563eb?style=for-the-badge)](https://vps.869hr.uk)
 [![博客](https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-869hr.uk-16a34a?style=for-the-badge)](https://869hr.uk)
