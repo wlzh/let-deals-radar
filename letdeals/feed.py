@@ -92,11 +92,13 @@ def _description(rec: dict) -> str:
 
 def _item_xml(rec: dict, url: str) -> str:
     """一条 <item>。posted 无法解析时省略 pubDate，宁缺勿错。"""
+    from .details import detail_path
+    landing = config.SITE_URL.rstrip("/") + detail_path(rec) if config.SITE_URL else url
     lines = [
         "    <item>",
         "      <title>%s</title>"
         % _xml_escape("%s：%s" % (rec.get("provider") or "", rec.get("title") or "")),
-        f"      <link>{_xml_escape(url)}</link>",
+        f"      <link>{_xml_escape(landing)}</link>",
         f'      <guid isPermaLink="true">{_xml_escape(url)}</guid>',
     ]
     dt = _parse_posted(rec.get("posted"))
@@ -170,11 +172,13 @@ def llms_txt(payload: dict) -> str:
         f"- {path('data/updates.json')}: 每日变化记录",
         f"- {path('feed.xml')}: RSS 订阅",
         f"- {path('black-friday-2026/')}: 2026 黑五专题页（低价年付清单与常见问题）",
+        f"- {path('sitemap.xml')}: 站点页面与稳定优惠详情地址；详情链接也见 records[].detail_path",
         "",
         "## 使用与免责",
         "",
         "- 信息来自公开帖子，库存与价格以商家为准；页面标注「待确认」表示未自动验证。",
         "- 本站仅聚合信息，不构成购买建议。部分出站链接为推广链接。",
+        "- price_bound=false 的报价未与配置绑定；generated_at 是数据整理时间，不是商家确认时间。",
         "",
     ]
     return "\n".join(lines)

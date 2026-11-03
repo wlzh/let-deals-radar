@@ -18,6 +18,10 @@ def safe_url(url):
 def prepare(r):
     """Never imply that independent maxima and a low price form one plan."""
     title = r.get("title", "")
+    from .forum import detect_kind, SERVICE_CN
+    kind = "hardware" if re.search(r"\bhardware sale\b", title, re.I) else detect_kind(r)
+    r["service_kind"] = kind
+    r["service_label"] = {"vps": "VPS / 综合优惠", "hardware": "实体硬件出售（非 VPS）"}.get(kind, SERVICE_CN.get(kind, kind))
     places = {p.lower(): p for p in LOCATIONS}
     r["locations"] = list(dict.fromkeys(places.get(p.lower(), p) for p in r.get("locations", []) if isinstance(p, str)))
     for name, domain in (("SVR4U", "svr4u.com"), ("LayerOne", "layeronecloud.com")):
@@ -28,6 +32,8 @@ def prepare(r):
                 r["vendor_url"] = "https://" + domain + "/"
     url = safe_url(r.get("vendor_url"))
     r["vendor_url"] = affiliate.rewrite(url) if url else None
+    if (r.get("provider") or "").strip().upper() in {"BLACK FRIDAY", "INTEL", "KVM VPS"}:
+        r["provider"] = urlsplit(url).hostname if url else "商家待核实"
     r["affiliate"] = bool(affiliate._match(r.get("vendor_url") or "", affiliate._load())[0])
     r["url"] = safe_url(r.get("url")) or ""
     r["forum_url"] = None

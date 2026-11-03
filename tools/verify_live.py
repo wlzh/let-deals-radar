@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 from pathlib import Path
 import re
@@ -36,8 +37,9 @@ def content_digest(name: str, content: bytes) -> bytes:
 
 
 def verify_once(url: str, site: Path) -> list[str]:
-    mismatches = []
-    for name in FILES:
+    names = list(FILES) + [str(p.relative_to(site)) for p in sorted((site / "deals").glob("*/index.html"))]
+
+    def check(name):
         expected = (site / name).read_bytes()
         request = Request(
             f"{url.rstrip('/')}/{name}",
@@ -47,10 +49,13 @@ def verify_once(url: str, site: Path) -> list[str]:
             with urlopen(request, timeout=20) as response:
                 actual = response.read()
             if content_digest(name, expected) != content_digest(name, actual):
-                mismatches.append(f"{name}: content differs")
+                return f"{name}: content differs"
         except (URLError, TimeoutError, OSError) as exc:
-            mismatches.append(f"{name}: {exc}")
-    return mismatches
+            return f"{name}: {exc}"
+        return None
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        return [error for error in pool.map(check, names) if error]
 
 
 def main() -> int:
@@ -67,7 +72,7 @@ def main() -> int:
     for attempt in range(args.attempts):
         errors = verify_once(args.url, args.site)
         if not errors:
-            print(f"Public deployment verified: {', '.join(FILES)}", flush=True)
+            print(f"Public deployment verified: {', '.join(FILES)} and all generated deal detail pages", flush=True)
             return 0
         print(f"Attempt {attempt + 1}/{args.attempts}: {'; '.join(errors)}", flush=True)
         if attempt + 1 < args.attempts:

@@ -23,7 +23,7 @@ def _rec(**over):
         "display_price": "€39/年",
         "display_price_note": "Anniversary S · 自动解析，需核对",
         "sort_price": {"amount": 39, "currency": "€", "cycle": "year"},
-        "flagship_price": None, "confidence": 1.0,
+        "flagship_price": None, "confidence": 1.0, "price_bound": True,
     }
     rec.update(over)
     return rec
@@ -75,11 +75,15 @@ def test_item_list_falls_back_to_thread_url():
     assert li["item"]["url"] == "https://forum.example.com/t/1"
 
 
-def test_item_list_product_image_uses_site_og_image(monkeypatch):
-    """Merchant listing 要求 Product 有 image：用站内 og-image.png。"""
+def test_item_list_does_not_invent_product_image(monkeypatch):
+    """A site sharing image is not a product image."""
     monkeypatch.setattr(config, "SITE_URL", "https://vps.test")
     product = structured.item_list_schema([_rec()])["itemListElement"][0]["item"]
-    assert product["image"] == "https://vps.test/og-image.png"
+    assert "image" not in product
+
+
+def test_unbound_quote_is_not_an_offer():
+    assert structured.item_list_schema([_rec(price_bound=False)])["itemListElement"] == []
 
 
 def test_item_list_product_image_omitted_without_site_url(monkeypatch):

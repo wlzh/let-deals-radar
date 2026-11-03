@@ -294,6 +294,9 @@ def _initial_rows(records):
         link = r.get("vendor_url") or r.get("url")
         action = ('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %
                   (esc(link, quote=True), esc(r["purchase_label"] if r.get("vendor_url") else "查看原帖找购买入口"))) if link else ""
+        if r.get("detail_path"):
+            action += '<br><a href="%s">优惠详情与核验说明</a>' % esc(r["detail_path"], quote=True)
+        action += '<br>' + esc(r.get("service_label") or "")
         # 发布时间用 <time datetime> 标注 ISO 值，机器可读（SEO/GEO）；
         # 展示文本截到日期部分，避免无 JS 时整串 RFC822 英文时间太长。
         posted = r.get("posted") or ""
@@ -907,6 +910,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
       }
     }
     h+='<div class="links">';
+    if(r.detail_path) h+='<a class="lk lk-sub" href="'+esc(r.detail_path)+'">优惠详情与核验说明</a>';
+    if(r.service_label) h+='<span class="tag">'+esc(r.service_label)+'</span>';
     if(r.vendor_url){
       if(r.order_url){
         h+='<a class="lk lk-main purchase" href="'+esc(r.order_url)+'" target="_blank" rel="noopener nofollow sponsored">下单</a>';
@@ -936,7 +941,9 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
              '" target="_blank" rel="noopener nofollow sponsored" '+
              'title="访问官网 '+esc(r.vendor_url)+'">'+pv+'</a>';
       }
-      out+='<td><div class="pv">'+pv+'</div><div class="actions">';
+      out+='<td><div class="pv">'+pv+'</div>';
+      if(r.service_kind && r.service_kind!=='vps') out+='<small>'+esc(r.service_label)+'</small>';
+      out+='<div class="actions">';
       if(r.vendor_url){
         if(r.order_url) out+='<a class="purchase" href="'+esc(r.order_url)+'" target="_blank" rel="noopener nofollow sponsored">下单</a> <a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">注册</a>';
         else out+='<a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
@@ -1061,6 +1068,8 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     os.makedirs(os.path.join(out_dir, "data"), exist_ok=True)
 
     enrich(payload.get("records", []))
+    from .details import write_details
+    detail_paths = write_details(payload, out_dir, SITE_TEMPLATE.split("<style>", 1)[1].split("</style>", 1)[0])
 
     # API 端点
     api_path = os.path.join(out_dir, "data", "deals.json")
@@ -1083,7 +1092,10 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     # 结构化数据：WebSite 实体 + ItemList(Offer) + 与页面可见 FAQ 同源的 FAQPage
     jsonld = "".join([
         structured.script_html(structured.website_schema(payload)),
-        structured.script_html(structured.item_list_schema(payload.get("records", []))),
+        structured.script_html({"@context": "https://schema.org", "@type": "ItemList",
+            "itemListElement": [{"@type": "ListItem", "position": i + 1,
+                "url": config.SITE_URL.rstrip("/") + r["detail_path"], "name": r.get("title", "")}
+                for i, r in enumerate(payload.get("records", [])) if r.get("detail_path")]}),
         structured.script_html(structured.faq_schema(INDEX_FAQ)),
     ])
     feedlink = ('<link rel="alternate" type="application/rss+xml" title="%s" href="feed.xml">'
@@ -1168,12 +1180,12 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     # 未配置域名时用相对路径，避免生成无效的绝对地址
     base = f"{config.SITE_URL}" if config.SITE_URL else ""
     # 黑五专题页是独立 URL，单独列入 sitemap 才能被收录
-    locs = [f"{base}/", f"{base}/{bfpage.BF_PATH}/"]
+    locs = [f"{base}/", f"{base}/{bfpage.BF_PATH}/"] + [base + p for p in detail_paths]
     with open(os.path.join(out_dir, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                 + "".join(f'  <url><loc>{loc}</loc><lastmod>{today}</lastmod></url>\n'
-                          for loc in locs)
+                          for loc in map(lambda value: html.escape(value, quote=True), locs))
                 + '</urlset>\n')
 
     # 站点图标：从 assets/ 复制到输出目录。

@@ -1,6 +1,7 @@
 """Release gate: python -m tools.audit_site [site-directory]."""
 
 import json
+import html
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -69,6 +70,28 @@ def seo_geo_audit(root: Path, payload: dict, page: str, result: dict) -> None:
     assert channel is not None and channel.find("title") is not None, "RSS missing channel title"
     assert channel.findtext("link") is not None, "RSS missing channel link"
     result["rss_items"] = len(channel.findall("item"))
+    from letdeals.details import detail_path
+    by_source = {r.get("url"): r for r in payload["records"]}
+    for item in channel.findall("item"):
+        rec = by_source[item.findtext("guid")]
+        assert item.findtext("link").endswith(detail_path(rec)), "RSS bypasses site detail"
+    detail_count = 0
+    for rec in payload["records"]:
+        path = detail_path(rec)
+        if not path:
+            continue
+        assert rec.get("detail_path") == path, "Unstable detail URL"
+        document = (root / path.strip("/") / "index.html").read_text()
+        if rec.get("vendor_url"):
+            assert 'href="' + html.escape(rec["vendor_url"], quote=True) + '"' in document, "Detail lost affiliate destination"
+        links = re.findall(r'<script type="application/ld\+json">(.*?)</script>', document, re.S)
+        for block in links:
+            schema = json.loads(block)
+            if schema.get("@type") == "Product":
+                assert rec.get("price_bound"), "Unbound Product quote"
+                assert "image" not in schema, "Unverified product image"
+        detail_count += 1
+    result["detail_pages"] = detail_count
 
     llms = (root / "llms.txt").read_text(encoding="utf-8")
     for needle in ("data/deals.json", "feed.xml", "black-friday-2026"):

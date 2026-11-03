@@ -109,7 +109,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/fa4bde850a81b544429c4772/"
     },
     {
       "thread_id": "222883",
@@ -207,7 +210,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "storage",
+      "service_label": "存储型",
+      "detail_path": "/deals/f69619cff3da794a17ccdce7/"
     },
     {
       "thread_id": "221826",
@@ -307,7 +313,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/88f5864e19e8f8ab1997b5ed/"
     },
     {
       "thread_id": "222534",
@@ -379,7 +388,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/0a8bd52f326917a448f5a27e/"
     },
     {
       "thread_id": "222462",
@@ -466,7 +478,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "storage",
+      "service_label": "存储型",
+      "detail_path": "/deals/cb42c997f6756c29330e9260/"
     },
     {
       "thread_id": "222738",
@@ -569,7 +584,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/c6220e50c8ebf9cd0d2029a3/"
     },
     {
       "thread_id": "222865",
@@ -668,12 +686,15 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/5009ce99e34502900afb8bd7/"
     },
     {
       "thread_id": "222765",
       "source": "let",
-      "provider": "BLACK FRIDAY",
+      "provider": "商家待核实",
       "title": "BLACK FRIDAY | UK VPS | EPYC 7642 up to 60% OFF | Ryzen 9950X | Xeon Gold | + 9 EPYC VPS GIVEAWAYS!",
       "url": "https://lowendtalk.com/discussion/222765/black-friday-uk-vps-epyc-7642-up-to-60-off-ryzen-9950x-xeon-gold-9-epyc-vps-giveaways",
       "vendor_url": null,
@@ -782,7 +803,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/f3d1b42e394e44a134b0efce/"
     },
     {
       "thread_id": "222764",
@@ -886,7 +910,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/443fc558ef79e852b6cecdf1/"
     },
     {
       "thread_id": "222474",
@@ -977,7 +1004,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/c83e859ce3865ed27806da25/"
     },
     {
       "thread_id": "221564",
@@ -1086,7 +1116,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/4f825fa68712a49cc327251e/"
     },
     {
       "thread_id": "222164",
@@ -1203,7 +1236,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/50ab29ed139f9815fa7ce007/"
     },
     {
       "thread_id": "222782",
@@ -1284,7 +1320,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/6571b9e9ad7b077e968d308e/"
     },
     {
       "thread_id": "222871",
@@ -1393,7 +1432,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/cb0d55a4327616aa3b7aa655/"
     },
     {
       "thread_id": "222774",
@@ -1514,7 +1556,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/020f945214c4741179a67c58/"
     },
     {
       "thread_id": "221797",
@@ -1599,7 +1644,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "storage",
+      "service_label": "存储型",
+      "detail_path": "/deals/e11ba8532cb51c1ed17b2075/"
     },
     {
       "thread_id": "222634",
@@ -1715,7 +1763,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/4790fbfb15654866ee13ebf7/"
     },
     {
       "thread_id": "221258",
@@ -1814,7 +1865,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/7262c43a258948826dd21e73/"
     },
     {
       "thread_id": "222778",
@@ -1912,7 +1966,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-31T10:52:57+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/f3944643c8effbf3e4b17f88/"
     },
     {
       "thread_id": "222809",
@@ -2006,7 +2063,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-31T21:01:57+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/2c4e45e796a408c02d880e4c/"
     },
     {
       "thread_id": "221558",
@@ -2124,7 +2184,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/44b68884212c001c7a86675d/"
     },
     {
       "thread_id": "221713",
@@ -2487,7 +2550,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/bb540d8fd914ea473d87882a/"
     },
     {
       "thread_id": "222168",
@@ -2585,7 +2651,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/a477bc9c342f90c55e78216f/"
     },
     {
       "thread_id": "222143",
@@ -2673,7 +2742,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/3e346481396eeca29ccbddaf/"
     },
     {
       "thread_id": "222859",
@@ -2748,7 +2820,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/cbdf8c3f418ff2ba24c7b680/"
     },
     {
       "thread_id": "221473",
@@ -2845,7 +2920,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/75c2e7eebc6aff162568be23/"
     },
     {
       "thread_id": "222724",
@@ -2971,7 +3049,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-29T21:02:09+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/df6416f35b6c36a689d4b559/"
     },
     {
       "thread_id": "220998",
@@ -3120,7 +3201,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "storage",
+      "service_label": "存储型",
+      "detail_path": "/deals/daafdc7bb0bb99123102ca1d/"
     },
     {
       "thread_id": "222157",
@@ -3246,7 +3330,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/d456db36e0758ff9c9f8bc75/"
     },
     {
       "thread_id": "222790",
@@ -3329,7 +3416,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-31T14:42:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/dedbd3419f2478121bca6f20/"
     },
     {
       "thread_id": "222415",
@@ -3464,7 +3554,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/0de28e8bf67554a4d06080b3/"
     },
     {
       "thread_id": "222117",
@@ -3560,7 +3653,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "email",
+      "service_label": "邮箱托管",
+      "detail_path": "/deals/6e0f945f3aeabd0b3835046d/"
     },
     {
       "thread_id": "220775",
@@ -3668,7 +3764,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/aaa8024d87ca62fb7d6c1b82/"
     },
     {
       "thread_id": "222400",
@@ -3776,7 +3875,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/a3dc03c49ac9dbc9593eaa3e/"
     },
     {
       "thread_id": "222136",
@@ -3885,7 +3987,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/6eb65e57e1556ef75bd78d81/"
     },
     {
       "thread_id": "220354",
@@ -4019,7 +4124,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/27c123683ed9751c27c08cf5/"
     },
     {
       "thread_id": "221289",
@@ -4092,7 +4200,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/cd8176bb5904eea6c2d6772f/"
     },
     {
       "thread_id": "222752",
@@ -4167,7 +4278,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/0954d64478a61bb174acd34a/"
     },
     {
       "thread_id": "222539",
@@ -4277,7 +4391,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/da1a04bba2015b8718541119/"
     },
     {
       "thread_id": "220764",
@@ -4388,7 +4505,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/ba40ac9a9d962fdb0164a11b/"
     },
     {
       "thread_id": "221937",
@@ -4484,7 +4604,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/e4e6b311d3f7baa84ed679d7/"
     },
     {
       "thread_id": "221603",
@@ -4582,7 +4705,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/d2c1b4f6572dd45786c6e230/"
     },
     {
       "thread_id": "220831",
@@ -4724,7 +4850,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "storage",
+      "service_label": "存储型",
+      "detail_path": "/deals/48f0b5cbaeb56d140f64599f/"
     },
     {
       "thread_id": "221687",
@@ -4825,7 +4954,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/3ff85d4217d8bd702ab774ca/"
     },
     {
       "thread_id": "219837",
@@ -4963,7 +5095,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/831cf7efeb6ddb85aea0ff29/"
     },
     {
       "thread_id": "220041",
@@ -5085,7 +5220,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/8d233abce4d4c649fe0584db/"
     },
     {
       "thread_id": "221552",
@@ -5189,7 +5327,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/2d64a6983e763d5465915eed/"
     },
     {
       "thread_id": "222597",
@@ -5301,7 +5442,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/e0cba63c0044e9859e376df0/"
     },
     {
       "thread_id": "222078",
@@ -5402,7 +5546,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/7a81c0573f57be2762a1cd47/"
     },
     {
       "thread_id": "222614",
@@ -5481,7 +5628,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-28T08:50:00+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/65d4c03bc24c628e93dc159f/"
     },
     {
       "thread_id": "222269",
@@ -5561,7 +5711,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/e999cc2fd05c6fddecd6dccc/"
     },
     {
       "thread_id": "221165",
@@ -5676,7 +5829,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/4cdefef8cda07f182035b2ad/"
     },
     {
       "thread_id": "222165",
@@ -5751,7 +5907,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/efefdd95133ce39fb2cad81a/"
     },
     {
       "thread_id": "222571",
@@ -5864,7 +6023,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/f4220035d16a30d6d8d41089/"
     },
     {
       "thread_id": "221961",
@@ -5969,7 +6131,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/567ea1940f283e6233c62895/"
     },
     {
       "thread_id": "222569",
@@ -6073,12 +6238,15 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/5d9e7eff22e291e8b1854377/"
     },
     {
       "thread_id": "221980",
       "source": "let",
-      "provider": "INTEL",
+      "provider": "商家待核实",
       "title": "[UK] INTEL | SSD | RDNS | Arbor Anti DDOS | IPv4 & IPv6 /64 | UNMETERED BW",
       "url": "https://lowendtalk.com/discussion/221980/uk-intel-ssd-rdns-arbor-anti-ddos-ipv4-ipv6-64-unmetered-bw",
       "vendor_url": null,
@@ -6148,7 +6316,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/afb109b0efca48e3757a3162/"
     },
     {
       "thread_id": "221896",
@@ -6257,7 +6428,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/bb1c437093aef06b06f75b79/"
     },
     {
       "thread_id": "221103",
@@ -6339,7 +6513,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "email",
+      "service_label": "邮箱托管",
+      "detail_path": "/deals/80ee22e94b21ac573218aca3/"
     },
     {
       "thread_id": "222186",
@@ -6444,7 +6621,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/1e48201caf670853eb02038d/"
     },
     {
       "thread_id": "222403",
@@ -6543,12 +6723,15 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/b96f3286434841de096a39f8/"
     },
     {
       "thread_id": "221311",
       "source": "let",
-      "provider": "KVM VPS",
+      "provider": "商家待核实",
       "title": "KVM VPS – From €6.99/year (~$8.03) – 512MB–16GB RAM – NVMe – 1Gbps – Amsterdam",
       "url": "https://lowendtalk.com/discussion/221311/kvm-vps-from-6-99-year-8-03-512mb-16gb-ram-nvme-1gbps-amsterdam",
       "vendor_url": null,
@@ -6734,7 +6917,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/834fcb10bbc2848468b6233a/"
     },
     {
       "thread_id": "222302",
@@ -6807,7 +6993,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/8a3938a79e4b4c807c71ef95/"
     },
     {
       "thread_id": "219781",
@@ -6945,7 +7134,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/7ce7e03a2de11fa3b611b161/"
     },
     {
       "thread_id": "222201",
@@ -7028,7 +7220,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/befb9023e5e1f741abe2ff9c/"
     },
     {
       "thread_id": "221777",
@@ -7132,7 +7327,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/ea9244b32476c50be3938961/"
     },
     {
       "thread_id": "221949",
@@ -7231,7 +7429,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/9cceb119049ee0498e5404b4/"
     },
     {
       "thread_id": "222121",
@@ -7342,7 +7543,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/c3609918fd41c962a9a7a16a/"
     },
     {
       "thread_id": "220098",
@@ -7500,7 +7704,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/35e4fcf89d36b234fc361c56/"
     },
     {
       "thread_id": "221060",
@@ -7606,7 +7813,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/7c4f7051faf8809e4a79ca09/"
     },
     {
       "thread_id": "221167",
@@ -7685,7 +7895,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/df2b062cfaad85cc0159d4f8/"
     },
     {
       "thread_id": "220060",
@@ -7816,7 +8029,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/addffacfa52047cb23e36c48/"
     },
     {
       "thread_id": "leb-hostnamaste-diwali-2026-early-bird-special-los-angeles-kvm-vps-from-17-99-year",
@@ -7906,7 +8122,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/483717b0902963334a77d612/"
     },
     {
       "thread_id": "leb-cheap-vps-deals-in-toronto-from-enderhost-get-a-4gb-vps-for-only-3-84-month",
@@ -8001,7 +8220,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/bd46650e52a37dcd33e1d7f9/"
     },
     {
       "thread_id": "leb-mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month",
@@ -8075,7 +8297,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T21:02:10+00:00"
-      }
+      },
+      "service_kind": "email",
+      "service_label": "邮箱托管",
+      "detail_path": "/deals/b7910c1032c0a471d06a6c84/"
     },
     {
       "thread_id": "leb-get-cheap-hosting-in-la-ny-or-atlanta-from-flipperhost-only-29-99-year-for-a-2gb-vps",
@@ -8186,7 +8411,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/2fba7a17c70bafd6e86f1f19/"
     },
     {
       "thread_id": "leb-early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium",
@@ -8277,7 +8505,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/6442666400663e2db1817bcc/"
     },
     {
       "thread_id": "leb-virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only",
@@ -8396,7 +8627,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-26T07:23:39+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/96b0e711a15e3d7e09587219/"
     },
     {
       "thread_id": "222735",
@@ -8466,7 +8700,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-30T06:01:56+00:00"
-      }
+      },
+      "service_kind": "email",
+      "service_label": "邮箱托管",
+      "detail_path": "/deals/75f2d36ecfb2b6eded1b9b6e/"
     },
     {
       "thread_id": "222878",
@@ -8537,7 +8774,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-11-02T21:02:07+00:00"
-      }
+      },
+      "service_kind": "hardware",
+      "service_label": "实体硬件出售（非 VPS）",
+      "detail_path": "/deals/2fba7f7b3c2c92ba05bd8b6b/"
     },
     {
       "thread_id": "222665",
@@ -8606,7 +8846,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-29T09:02:03+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/55a314c70063ab0f5fcd57fe/"
     },
     {
       "thread_id": "leb-dreamhost-urges-affected-customers-to-reset-all-email-and-ftp-passwords",
@@ -8665,7 +8908,10 @@
         "state": "observed",
         "last_seen": "2026-11-02T21:02:07+00:00",
         "first_seen": "2026-10-27T08:09:24+00:00"
-      }
+      },
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/0e8e8d60c44bca23252631c0/"
     },
     {
       "thread_id": "221991",
@@ -8803,7 +9049,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-11-02T21:02:07+00:00"
       },
-      "last_observed_availability": "ON_SALE"
+      "last_observed_availability": "ON_SALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/f2a9a7f5a57fcbd33e264e93/"
     },
     {
       "thread_id": "221924",
@@ -8910,7 +9159,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-11-02T21:02:07+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/c9ad2bfd6cca7e8201b5ae36/"
     },
     {
       "thread_id": "222107",
@@ -9028,7 +9280,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-11-02T21:02:07+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "dedicated",
+      "service_label": "独立服务器",
+      "detail_path": "/deals/fc8b287492ae9509828ad1be/"
     },
     {
       "thread_id": "221711",
@@ -9149,7 +9404,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-11-02T21:02:07+00:00"
       },
-      "last_observed_availability": "ON_SALE"
+      "last_observed_availability": "ON_SALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/4c8360d13910410ec7f0cc61/"
     },
     {
       "thread_id": "leb-more-of-racknerd-adminbolt-heres-50-more-free-vps-10-lifetime-licenses",
@@ -9216,7 +9474,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-11-02T21:02:07+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/942ee3dcb1fa13b981362911/"
     },
     {
       "thread_id": "leb-velohost-returns-with-even-cheaper-prices-get-a-4gb-vps-for-only-2-60e-month",
@@ -9323,7 +9584,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-11-01T13:49:56+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/c47eb69152901e57df75d9dd/"
     },
     {
       "thread_id": "220717",
@@ -9425,7 +9689,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-31T21:01:57+00:00"
       },
-      "last_observed_availability": "UNVERIFIED_STALE"
+      "last_observed_availability": "UNVERIFIED_STALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/9951a23703c41d1928f12974/"
     },
     {
       "thread_id": "220957",
@@ -9539,7 +9806,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-31T14:42:39+00:00"
       },
-      "last_observed_availability": "LIKELY_SOLD_OUT"
+      "last_observed_availability": "LIKELY_SOLD_OUT",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/46e65afcc955194604ce057f/"
     },
     {
       "thread_id": "221735",
@@ -9636,7 +9906,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-31T10:52:57+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/579f44df53382898eed976a6/"
     },
     {
       "thread_id": "220866",
@@ -9741,7 +10014,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-30T21:02:10+00:00"
       },
-      "last_observed_availability": "UNVERIFIED_STALE"
+      "last_observed_availability": "UNVERIFIED_STALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/a86945cd670f3b06227b4497/"
     },
     {
       "thread_id": "222110",
@@ -9837,7 +10113,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-30T21:02:10+00:00"
       },
-      "last_observed_availability": "ON_SALE"
+      "last_observed_availability": "ON_SALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/9222828a8e001fee205fce81/"
     },
     {
       "thread_id": "221641",
@@ -9950,7 +10229,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-30T21:02:10+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/3042e65f52841ab377e9d576/"
     },
     {
       "thread_id": "221186",
@@ -10061,7 +10343,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-30T21:02:10+00:00"
       },
-      "last_observed_availability": "UNVERIFIED_STALE"
+      "last_observed_availability": "UNVERIFIED_STALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/a39484a0789d15b7734ac210/"
     },
     {
       "thread_id": "221894",
@@ -10143,7 +10428,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-30T21:02:10+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/ffa90b7f03dd50cf94b9b8ef/"
     },
     {
       "thread_id": "leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
@@ -10244,7 +10532,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-30T01:57:53+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/b27d477e1d8df89f2b5ca3b4/"
     },
     {
       "thread_id": "221159",
@@ -10320,7 +10611,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-29T21:02:09+00:00"
       },
-      "last_observed_availability": "UNVERIFIED_STALE"
+      "last_observed_availability": "UNVERIFIED_STALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/153d13e7632310719419bad8/"
     },
     {
       "thread_id": "leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
@@ -10387,7 +10681,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-29T21:02:09+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/1459ea898e4df4efc56436d4/"
     },
     {
       "thread_id": "221321",
@@ -10519,7 +10816,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-29T09:02:03+00:00"
       },
-      "last_observed_availability": "ON_SALE"
+      "last_observed_availability": "ON_SALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/7993322cb4b599b9e83bd20d/"
     },
     {
       "thread_id": "leb-high-ram-low-prices-must-be-an-affordablebytes-offer-get-a-6gb-vps-for-only-e3-49-month",
@@ -10618,7 +10918,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-29T09:02:03+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/4c37c72ef8fbe205324562f1/"
     },
     {
       "thread_id": "220847",
@@ -10714,7 +11017,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-28T08:50:00+00:00"
       },
-      "last_observed_availability": "UNVERIFIED_STALE"
+      "last_observed_availability": "UNVERIFIED_STALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/bb16ef0f028e0b6a113a2578/"
     },
     {
       "thread_id": "222052",
@@ -10830,7 +11136,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-27T08:09:24+00:00"
       },
-      "last_observed_availability": "SOLD_OUT"
+      "last_observed_availability": "SOLD_OUT",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/cb3a45bc70c47aa76a9d4787/"
     },
     {
       "thread_id": "221747",
@@ -10941,7 +11250,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-27T08:09:24+00:00"
       },
-      "last_observed_availability": "UNVERIFIED"
+      "last_observed_availability": "UNVERIFIED",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/f7ca08f18a93dcff4dbf3a93/"
     },
     {
       "thread_id": "221418",
@@ -11040,7 +11352,10 @@
         "first_seen": "2026-10-26T07:23:39+00:00",
         "missing_since": "2026-10-27T08:09:24+00:00"
       },
-      "last_observed_availability": "UNVERIFIED_STALE"
+      "last_observed_availability": "UNVERIFIED_STALE",
+      "service_kind": "vps",
+      "service_label": "VPS / 综合优惠",
+      "detail_path": "/deals/c08103e19fa1b4dc11a21d27/"
     }
   ],
   "observed_count": 82,

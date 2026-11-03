@@ -21,8 +21,7 @@ CURRENCY_ISO = {"$": "USD", "€": "EUR", "£": "GBP"}
 # UNVERIFIED / UNVERIFIED_STALE / NOT_OBSERVED 不映射：
 # 未核实就向搜索引擎声称「有货」，比缺字段更糟。
 AVAIL_SCHEMA = {"ON_SALE": "InStock", "PARTIAL": "LimitedAvailability",
-                "RESTOCKING": "LimitedAvailability", "SOLD_OUT": "SoldOut",
-                "LIKELY_SOLD_OUT": "SoldOut", "ENDED": "SoldOut"}
+                "SOLD_OUT": "SoldOut", "ENDED": "SoldOut"}
 
 
 def _put(d: dict, key: str, value) -> None:
@@ -61,6 +60,8 @@ def _offer(rec: dict, url: str) -> dict | None:
     没有价格（或币种不在 CURRENCY_ISO 里）的 Offer 会被
     搜索引擎判为无效结构，宁可不输出。
     """
+    if not rec.get("price_bound"):
+        return None
     p = rec.get("sort_price") or rec.get("flagship_price")
     if not isinstance(p, dict) or not isinstance(p.get("amount"), (int, float)):
         return None
@@ -79,10 +80,8 @@ def item_list_schema(records: list, limit: int = 60) -> dict:
     保持调用方给出的顺序 —— 排序策略属于展示层，这里不重排。
     落地链接优先用联盟链接（vendor_url）：那是我们希望用户到达的地址。
 
-    Google 富摘要门槛（Semrush 2026-11-01 结构化数据 53 项的修法）：
-    - Merchant listing 要求 Product 有 image：帖文没有单品图，
-      统一用站内 og-image.png（与 render/bfpage 的 og:image 同一文件），
-      未绑定 SITE_URL 时不输出空 image。
+    Only bound plans may become Product entries on detail pages.
+    Never substitute the site's sharing image for a product image.
     - Product 富摘要要求 offers / aggregateRating / review 三者至少其一：
       拿不到数字价格的记录（到商家查价、未知币种）无法编造评分，
       直接不进结构化 ItemList —— 页面上的行照常展示，
@@ -91,8 +90,6 @@ def item_list_schema(records: list, limit: int = 60) -> dict:
       Product 里本来就有 url，不再在 ListItem 层重复写 url。
     """
     elements = []
-    image_url = (f"{config.SITE_URL}/og-image.png"
-                 if config.SITE_URL else None)
     for rec in records:
         if len(elements) >= limit:
             break
@@ -115,7 +112,6 @@ def item_list_schema(records: list, limit: int = 60) -> dict:
                    "name": ((rec.get("provider") or "") + " VPS 优惠").strip()}
         _put(product, "description", description)
         _put(product, "url", url)
-        _put(product, "image", image_url)
         product["offers"] = offer
 
         item = {"@type": "ListItem", "position": len(elements) + 1}

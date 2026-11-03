@@ -14,8 +14,10 @@
 - https://vps.869hr.uk/data/updates.json: 每日变化记录
 - https://vps.869hr.uk/feed.xml: RSS 订阅
 - https://vps.869hr.uk/black-friday-2026/: 2026 黑五专题页（低价年付清单与常见问题）
+- https://vps.869hr.uk/sitemap.xml: 站点页面与稳定优惠详情地址；详情链接也见 records[].detail_path
 
 ## 使用与免责
 
 - 信息来自公开帖子，库存与价格以商家为准；页面标注「待确认」表示未自动验证。
 - 本站仅聚合信息，不构成购买建议。部分出站链接为推广链接。
+- price_bound=false 的报价未与配置绑定；generated_at 是数据整理时间，不是商家确认时间。

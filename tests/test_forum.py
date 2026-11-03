@@ -64,8 +64,10 @@ def fake_client():
 
 
 @pytest.fixture(autouse=True)
-def _restore_config():
+def _restore_config(monkeypatch):
     """每个用例后恢复配置，避免互相污染。"""
+    monkeypatch.setattr(forum, "_request", lambda *args, **kwargs: {"data": {"id": "test"}})
+    monkeypatch.setattr(forum.time, "sleep", lambda _: None)
     saved = {k: getattr(config, k) for k in (
         "FORUM_ENABLED", "FORUM_DRY_RUN", "FORUM_API_KEY",
         "FORUM_BASE_URL", "FORUM_TAG_ID", "FORUM_MAX_PER_RUN",
