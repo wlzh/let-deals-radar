@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>低价年付 VPS 汇总｜年付便宜 VPS 清单，每日更新 - 大坝的VPS优惠大超市</title>
+<meta name="description" content="汇总 LowEndTalk / LowEndBox 公开的低价年付 VPS 优惠：年化价格、配置、折扣力度与库存状态，每日自动更新，已关闭活动已剔除。">
+<link rel="canonical" href="https://vps.869hr.uk/cheap-yearly/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="大坝的VPS优惠大超市">
+<meta property="og:title" content="低价年付 VPS 汇总｜年付便宜 VPS 清单，每日更新">
+<meta property="og:description" content="汇总 LowEndTalk / LowEndBox 公开的低价年付 VPS 优惠：年化价格、配置、折扣力度与库存状态，每日自动更新，已关闭活动已剔除。">
+<meta property="og:url" content="https://vps.869hr.uk/cheap-yearly/">
+<meta property="og:image" content="https://vps.869hr.uk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="低价年付 VPS 汇总｜年付便宜 VPS 清单，每日更新">
+<meta name="twitter:description" content="汇总 LowEndTalk / LowEndBox 公开的低价年付 VPS 优惠：年化价格、配置、折扣力度与库存状态，每日自动更新，已关闭活动已剔除。">
+<meta name="twitter:image" content="https://vps.869hr.uk/og-image.png">
+<link rel="icon" href="../favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../feed.xml">
+<meta name="theme-color" content="#75ADFB">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --ink:#16181d; --muted:#6b7280; --line:#e5e7eb;
+  --accent:#2563eb; --accent-soft:#eff6ff; --good:#059669; --warn:#d97706;
+  --bad:#dc2626; --chip:#f3f4f6;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0f1115; --card:#171a21; --ink:#e8eaed; --muted:#9aa0a6;
+         --line:#272b34; --accent:#60a5fa; --accent-soft:#1e293b;
+         --good:#34d399; --warn:#fbbf24; --bad:#f87171; --chip:#1f232b; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 18px 64px}
+.crumb{margin:0 0 12px;font-size:13px}
+header h1{margin:0 0 8px;font-size:26px;letter-spacing:-.3px}
+header .lead{margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+header .lead b{color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:16px;margin-top:18px}
+.card h2{margin:0 0 10px;font-size:17px}
+/* 倒计时：JS 每 30 秒刷新一次；无 JS 时由 noscript 显示固定开场时间 */
+.countdown{text-align:center;padding:22px 16px}
+.countdown #cd{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;
+  min-height:1.5em}
+.countdown noscript p{margin:0;color:var(--muted)}
+.tblwrap{overflow-x:auto;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{background:var(--card);font-weight:600;font-size:12px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+tr.row:hover{background:var(--accent-soft)}
+td{overflow-wrap:anywhere}
+.spec{min-width:150px;max-width:240px}
+.price{font-weight:600;white-space:nowrap}
+.price small,.spec small{display:block;color:var(--muted);font-size:11px;
+  white-space:normal;max-width:230px;font-weight:400;margin-top:5px}
+.badge{display:inline-block;border-radius:6px;padding:2px 7px;font-size:11.5px;
+  font-weight:600;white-space:nowrap}
+.b-anniversary,.b-black_friday{background:#fee2e2;color:#b91c1c}
+.b-holiday{background:#fef3c7;color:#b45309}
+.b-launch{background:#dbeafe;color:#1d4ed8}
+.b-restock{background:#d1fae5;color:#047857}
+.b-sale{background:#ede9fe;color:#6d28d9}
+.b-regular{background:var(--chip);color:var(--muted)}
+@media (prefers-color-scheme:dark){
+  .b-anniversary,.b-black_friday{background:#450a0a;color:#fca5a5}
+  .b-holiday{background:#451a03;color:#fcd34d}
+  .b-launch{background:#172554;color:#93c5fd}
+  .b-restock{background:#022c22;color:#6ee7b7}
+  .b-sale{background:#2e1065;color:#c4b5fd}
+}
+.av{font-size:12px;white-space:nowrap}
+.av-ON_SALE{color:var(--good);font-weight:600}
+.av-SOLD_OUT{color:var(--bad);font-weight:600}
+.av-ENDED{color:var(--bad)}
+.av-RESTOCKING{color:var(--warn);font-weight:600}
+.av-PARTIAL{color:var(--warn);font-weight:600}
+.av-LIKELY_SOLD_OUT{color:var(--warn)}
+.av-UNVERIFIED,.av-UNVERIFIED_STALE,.av-NOT_OBSERVED{color:var(--muted)}
+.purchase{display:inline-block;background:var(--accent);color:var(--bg);
+  font-weight:700;padding:8px 12px;border-radius:8px;text-decoration:none;
+  white-space:normal;line-height:1.5;margin-top:6px}
+.purchase:hover{filter:brightness(1.08);text-decoration:none}
+.note{background:var(--chip);border-left:3px solid var(--warn);
+  border-radius:0 8px 8px 0;padding:10px 14px;font-size:12.5px;
+  color:var(--muted);margin:0 0 10px}
+.empty{text-align:center;color:var(--muted);padding:32px 0}
+/* FAQ：details/summary 原生展开，无需 JS */
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-weight:600;padding:10px 0}
+.faq summary:hover{color:var(--accent)}
+.faq p{margin:0 0 12px;color:var(--muted);line-height:1.8}
+footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
+footer div{margin:4px 0}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);
+  outline-offset:3px}
+@media(max-width:700px){
+ .tblwrap{overflow:visible}.tblwrap>table>thead{display:none}
+ .tblwrap>table,.tblwrap>table>tbody,.tblwrap>table>tbody>tr,.tblwrap>table>tbody>tr>td{display:block;width:auto}
+ .tblwrap .row{padding:12px 0;border-bottom:1px solid var(--line)}
+ .tblwrap .row td{padding:4px 2px;border:0;white-space:normal;max-width:none;min-width:0}
+ .tblwrap .row td:before{content:attr(data-label);display:inline-block;color:var(--muted);font-size:11px;margin-right:10px}
+ .tblwrap .row td:first-child:before{display:none}
+ .price{white-space:normal}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://vps.869hr.uk/"},{"@type":"ListItem","position":2,"name":"低价年付 VPS 汇总","item":"https://vps.869hr.uk/cheap-yearly/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"年化价格是怎么算的？","acceptedAnswer":{"@type":"Answer","text":"本站把不同币种与付费周期统一折算成年化欧元近似值：美元乘 0.92、英镑乘 1.17，月付乘 12、季付乘 4；原始报价与结算页为准，折算值只用来排序和横向比较，不能当成实际扣款金额。"}},{"@type":"Question","name":"为什么很多条都标「待确认」？","acceptedAnswer":{"@type":"Answer","text":"库存优先采信商家在原帖回帖中的表态，没有商家表态时退回帖文关键词；仍无法判定则标「待确认」。「待确认」不等于有货，下单前请到商家核实。"}},{"@type":"Question","name":"低价年付要重点看什么？","acceptedAnswer":{"@type":"Answer","text":"先看续费价而不是首期价，循环折扣比一次性折扣更值钱；再看流量、机房与退款政策，低价套餐常在这些地方收紧。"}},{"@type":"Question","name":"数据从哪来？","acceptedAnswer":{"@type":"Answer","text":"数据来自 LowEndTalk Offers 与 LowEndBox 的公开帖子，自动抓取解析；每条优惠保留原帖链接，可点开溯源核对。"}}]}</script>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="crumb"><a href="../">← 返回 VPS 优惠总览</a></p>
+  <h1>低价年付 VPS 汇总</h1>
+  <p class="lead">低价年付总榜：年化 30 欧元以内、未关闭的优惠，按近似年价升序排列，共 <b>27</b> 条。已关闭活动已剔除；多数条目标注「待确认」，下单前请到商家核实。黑五期间先看 <a href="../black-friday-2026/">黑五 2026 专题</a>，按地区挑机房看 <a href="../by-region/">按地区选 VPS</a>。</p>
+</header>
+
+<section class="card">
+<h3>年化 15 欧元以内（13 条）</h3><div class="tblwrap"><table><thead><tr><th>商家</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">mailbig.net<br><a class="purchase" href="https://mailbig.net/client/order.php?step=2&amp;product=10&amp;paymentTerm=12&amp;currency=gbp" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：15 GB 存储</td><td data-label="报价">£3.37/年<small>帖文报价，未与配置绑定</small><small>≈ €3.94/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">SystemFreaks S3 Object Storage<br><a class="purchase" href="https://manager.systemfreaks.com/order/config/index/S3-Compatible-Object-storage/?group_id=38&amp;pricing_id=3752&amp;a=MTAwMg%3D%3D" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$7.2/年<small>帖文报价，未与配置绑定</small><small>≈ €6.62/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://calibernode.com/cloud-apps#catalog" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：2 核 / 2 GB 内存 / 30 GB 存储</td><td data-label="报价">$8/年<small>帖文报价，未与配置绑定</small><small>≈ €7.36/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">mailbig.net<br><a class="purchase" href="https://mailbig.net/client/order.php?step=2&amp;product=14&amp;paymentTerm=12&amp;currency=gbp" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$8.99/年<small>帖文报价，未与配置绑定</small><small>≈ €8.27/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">SoftShellWeb<br><a class="purchase" href="https://softshellweb.com/client/aff.php?aff=504" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–4 核 / 1–8 GB 内存 / 4–100 GB 存储</td><td data-label="报价">$9.95/年<small>帖文报价，未与配置绑定</small><small>≈ €9.15/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://portal.calibernode.com/own-servers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：15 GB 存储</td><td data-label="报价">$10/年<small>帖文报价，未与配置绑定</small><small>≈ €9.20/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">servitro.com<br><a class="purchase" href="https://my.servitro.com/aff.php?aff=235" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储</td><td data-label="报价">$12/年<small>帖文报价，未与配置绑定</small><small>≈ €11.04/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">serverscamp.com<br><a class="purchase" href="https://console.serverscamp.com/vps/new?plan=vps2-075" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–5 核 / 0.75–4 GB 内存 / 10–80 GB 存储</td><td data-label="报价">€1/月<small>帖文报价，未与配置绑定</small><small>≈ €12.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">ravnix.gg<br><a class="purchase" href="https://ravnix.gg" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$14/年<small>帖文报价，未与配置绑定</small><small>≈ €12.88/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">nolimitcloud.eu<br><a class="purchase" href="https://panel.nolimitcloud.eu/aff.php?t=d5b7f82f9b30fda818d044fd4760126b" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="配置">帖文提及：1–3 核 / 1–4 GB 内存 / 10–4096 GB 存储</td><td data-label="报价">€12.99/年<small>帖文报价，未与配置绑定</small><small>≈ €12.99/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">nolimitcloud.eu<br><a class="purchase" href="https://panel.nolimitcloud.eu/aff.php?t=d5b7f82f9b30fda818d044fd4760126b" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–5 核 / 1–16 GB 内存 / 10–500 GB 存储</td><td data-label="报价">€12.99/年<small>帖文报价，未与配置绑定</small><small>≈ €12.99/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">hyperhostsolutions.com<br><a class="purchase" href="https://clients.hyperhostsolutions.com/campaign/halloween-2026/L5EAbvY5o4soqYADbW6qDqNrLI2Ll8j4nrx9scIx/order/1?utm_source=lowendtalk&amp;utm_medium=forum&amp;utm_campaign=halloween2026" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：2–8 GB 内存</td><td data-label="报价">£1/月<small>帖文报价，未与配置绑定</small><small>≈ €14.04/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">svr4u.com<br><a class="purchase" href="https://billing.svr4u.com/aff.php?aff=56" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1 核 / 1–1024 GB 存储</td><td data-label="报价">$15.88/年<small>帖文报价，未与配置绑定</small><small>≈ €14.61/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr></tbody></table></div>
+<h3>年化 15–30 欧元（14 条）</h3><div class="tblwrap"><table><thead><tr><th>商家</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">vpshostingservice.co<br><a class="purchase" href="https://vpshostingservice.co/order/ai-ready-vps/open-claw-linux-vps-4-gb?billingcycle=annually&amp;promocode=OCSEPT4GB" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：0.25–16 GB 内存 / 30–480 GB 存储</td><td data-label="报价">$16.99/年<small>帖文报价，未与配置绑定</small><small>≈ €15.63/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">HostNamaste<br><a class="purchase" href="https://www.hostnamaste.com/clients/aff.php?aff=387" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–4 核 / 1–256 GB 内存 / 20–140 GB 存储</td><td data-label="报价">$17.99/年<small>帖文报价，未与配置绑定</small><small>≈ €16.55/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">HostNamaste Diwali 2026 Early-Bird Special<br><a class="purchase" href="https://www.hostnamaste.com/clients/aff.php?aff=387" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：256 GB 内存</td><td data-label="报价">$17.99/年<small>帖文报价，未与配置绑定</small><small>≈ €16.55/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">hostdare.com<br><a class="purchase" href="https://bill.hostdare.com/aff.php?aff=4796" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–2 核 / 0.75–2 GB 内存 / 25–50 GB 存储</td><td data-label="报价">$19.49/年<small>帖文报价，未与配置绑定</small><small>≈ €17.93/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">HostDZire<br><a class="purchase" href="https://hostdzire.com/billing/cart.php?a=add&amp;pid=1261&amp;currency=1&amp;billingcycle=annually" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–12 核 / 3–128 GB 内存 / 2048–8192 GB 存储</td><td data-label="报价">€18/年<small>帖文报价，未与配置绑定</small><small>≈ €18.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">LayerOne<br><a class="purchase" href="https://layeronecloud.com/r/KMA9RZRD/" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$20.16/年<small>帖文报价，未与配置绑定</small><small>≈ €18.55/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">vpshostingservice.co<br><a class="purchase" href="https://vpshostingservice.co/order/ryzen-i9-linux/2-gb?billingcycle=annually&amp;promocode=OCTRYZI92GB" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：0.25 GB 内存 / 50 GB 存储</td><td data-label="报价">$22.99/年<small>帖文报价，未与配置绑定</small><small>≈ €21.15/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">aspirehosting.net<br><a class="purchase" href="https://billing.aspirehosting.net/aff.php?aff=81" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="配置">帖文提及：4–8 核 / 8–32 GB 内存 / 50–300 GB 存储</td><td data-label="报价">$2/月<small>帖文报价，未与配置绑定</small><small>≈ €22.08/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">centrixnodes.net<br><a class="purchase" href="https://billing.centrixnodes.net/aff.php?aff=109" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：1–2 核 / 25–65 GB 存储</td><td data-label="报价">$25.5/年<small>帖文报价，未与配置绑定</small><small>≈ €23.46/年（近似折算）</small></td><td data-label="库存"><span class="av av-PARTIAL">部分售罄</span></td></tr>
+<tr class="row"><td data-label="商家">Ava.hosting<br><a class="purchase" href="https://my.ava.hosting/aff.php?aff=15927" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">€1.99/月<small>帖文报价，未与配置绑定</small><small>≈ €23.88/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">商家待核实<br><a href="https://lowendtalk.com/discussion/222765/black-friday-uk-vps-epyc-7642-up-to-60-off-ryzen-9950x-xeon-gold-9-epyc-vps-giveaways" target="_blank" rel="noopener">查看原帖</a></td><td data-label="配置">帖文提及：2–6 核 / 2–512 GB 内存 / 50–240 GB 存储</td><td data-label="报价">£1.75/月<small>帖文报价，未与配置绑定</small><small>≈ €24.57/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">EthernetServers<br><a class="purchase" href="https://www.ethernetservers.com/aff.php?aff=3294" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$2.25/月<small>帖文报价，未与配置绑定</small><small>≈ €24.84/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">HostSailor Halloween Special<br><a class="purchase" href="https://clients.hostsailor.com/modules/addons/promo_and_url_tracking/redirect.php" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：9534 核 / 1–4 GB 内存</td><td data-label="报价">$29.94/年<small>帖文报价，未与配置绑定</small><small>≈ €27.54/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">FlipperHost<br><a class="purchase" href="https://www.flipperhost.com/billing/aff.php?aff=386" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="配置">帖文提及：2–7 核 / 2–256 GB 内存 / 60–2048 GB 存储</td><td data-label="报价">$29.99/年<small>帖文报价，未与配置绑定</small><small>≈ €27.59/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr></tbody></table></div>
+</section>
+
+<section class="card faq">
+  <h2>常见问题</h2>
+<details><summary>年化价格是怎么算的？</summary><p>本站把不同币种与付费周期统一折算成年化欧元近似值：美元乘 0.92、英镑乘 1.17，月付乘 12、季付乘 4；原始报价与结算页为准，折算值只用来排序和横向比较，不能当成实际扣款金额。</p></details>
+<details><summary>为什么很多条都标「待确认」？</summary><p>库存优先采信商家在原帖回帖中的表态，没有商家表态时退回帖文关键词；仍无法判定则标「待确认」。「待确认」不等于有货，下单前请到商家核实。</p></details>
+<details><summary>低价年付要重点看什么？</summary><p>先看续费价而不是首期价，循环折扣比一次性折扣更值钱；再看流量、机房与退款政策，低价套餐常在这些地方收紧。</p></details>
+<details><summary>数据从哪来？</summary><p>数据来自 LowEndTalk Offers 与 LowEndBox 的公开帖子，自动抓取解析；每条优惠保留原帖链接，可点开溯源核对。</p></details>
+</section>
+
+<footer>
+  <div>价格与库存以商家官网为准，标注「待确认」≠有货。</div>
+  <div>下单前请核对首期与续费总价、机房、流量与退款条件。</div>
+  <div>部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；本站仅聚合公开信息，不构成购买建议。</div>
+  <div>数据更新时间 <time datetime="2026-11-04T02:49:43+00:00">2026-11-04 10:49:43</time>（北京时间） · <a href="../feed.xml">RSS 订阅</a> · <a href="../">返回主站</a></div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>按地区选 VPS｜美国 / 欧洲 / 香港 / 新加坡 VPS 优惠汇总 - 大坝的VPS优惠大超市</title>
+<meta name="description" content="按机房地区汇总 LowEndTalk / LowEndBox 的 VPS 优惠：美国、欧洲、新加坡、香港等地区分节清单，含配置、价格与库存状态，每日自动更新。">
+<link rel="canonical" href="https://vps.869hr.uk/by-region/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="大坝的VPS优惠大超市">
+<meta property="og:title" content="按地区选 VPS｜美国 / 欧洲 / 香港 / 新加坡 VPS 优惠汇总">
+<meta property="og:description" content="按机房地区汇总 LowEndTalk / LowEndBox 的 VPS 优惠：美国、欧洲、新加坡、香港等地区分节清单，含配置、价格与库存状态，每日自动更新。">
+<meta property="og:url" content="https://vps.869hr.uk/by-region/">
+<meta property="og:image" content="https://vps.869hr.uk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="按地区选 VPS｜美国 / 欧洲 / 香港 / 新加坡 VPS 优惠汇总">
+<meta name="twitter:description" content="按机房地区汇总 LowEndTalk / LowEndBox 的 VPS 优惠：美国、欧洲、新加坡、香港等地区分节清单，含配置、价格与库存状态，每日自动更新。">
+<meta name="twitter:image" content="https://vps.869hr.uk/og-image.png">
+<link rel="icon" href="../favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../feed.xml">
+<meta name="theme-color" content="#75ADFB">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --ink:#16181d; --muted:#6b7280; --line:#e5e7eb;
+  --accent:#2563eb; --accent-soft:#eff6ff; --good:#059669; --warn:#d97706;
+  --bad:#dc2626; --chip:#f3f4f6;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0f1115; --card:#171a21; --ink:#e8eaed; --muted:#9aa0a6;
+         --line:#272b34; --accent:#60a5fa; --accent-soft:#1e293b;
+         --good:#34d399; --warn:#fbbf24; --bad:#f87171; --chip:#1f232b; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 18px 64px}
+.crumb{margin:0 0 12px;font-size:13px}
+header h1{margin:0 0 8px;font-size:26px;letter-spacing:-.3px}
+header .lead{margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+header .lead b{color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:16px;margin-top:18px}
+.card h2{margin:0 0 10px;font-size:17px}
+/* 倒计时：JS 每 30 秒刷新一次；无 JS 时由 noscript 显示固定开场时间 */
+.countdown{text-align:center;padding:22px 16px}
+.countdown #cd{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;
+  min-height:1.5em}
+.countdown noscript p{margin:0;color:var(--muted)}
+.tblwrap{overflow-x:auto;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{background:var(--card);font-weight:600;font-size:12px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+tr.row:hover{background:var(--accent-soft)}
+td{overflow-wrap:anywhere}
+.spec{min-width:150px;max-width:240px}
+.price{font-weight:600;white-space:nowrap}
+.price small,.spec small{display:block;color:var(--muted);font-size:11px;
+  white-space:normal;max-width:230px;font-weight:400;margin-top:5px}
+.badge{display:inline-block;border-radius:6px;padding:2px 7px;font-size:11.5px;
+  font-weight:600;white-space:nowrap}
+.b-anniversary,.b-black_friday{background:#fee2e2;color:#b91c1c}
+.b-holiday{background:#fef3c7;color:#b45309}
+.b-launch{background:#dbeafe;color:#1d4ed8}
+.b-restock{background:#d1fae5;color:#047857}
+.b-sale{background:#ede9fe;color:#6d28d9}
+.b-regular{background:var(--chip);color:var(--muted)}
+@media (prefers-color-scheme:dark){
+  .b-anniversary,.b-black_friday{background:#450a0a;color:#fca5a5}
+  .b-holiday{background:#451a03;color:#fcd34d}
+  .b-launch{background:#172554;color:#93c5fd}
+  .b-restock{background:#022c22;color:#6ee7b7}
+  .b-sale{background:#2e1065;color:#c4b5fd}
+}
+.av{font-size:12px;white-space:nowrap}
+.av-ON_SALE{color:var(--good);font-weight:600}
+.av-SOLD_OUT{color:var(--bad);font-weight:600}
+.av-ENDED{color:var(--bad)}
+.av-RESTOCKING{color:var(--warn);font-weight:600}
+.av-PARTIAL{color:var(--warn);font-weight:600}
+.av-LIKELY_SOLD_OUT{color:var(--warn)}
+.av-UNVERIFIED,.av-UNVERIFIED_STALE,.av-NOT_OBSERVED{color:var(--muted)}
+.purchase{display:inline-block;background:var(--accent);color:var(--bg);
+  font-weight:700;padding:8px 12px;border-radius:8px;text-decoration:none;
+  white-space:normal;line-height:1.5;margin-top:6px}
+.purchase:hover{filter:brightness(1.08);text-decoration:none}
+.note{background:var(--chip);border-left:3px solid var(--warn);
+  border-radius:0 8px 8px 0;padding:10px 14px;font-size:12.5px;
+  color:var(--muted);margin:0 0 10px}
+.empty{text-align:center;color:var(--muted);padding:32px 0}
+/* FAQ：details/summary 原生展开，无需 JS */
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-weight:600;padding:10px 0}
+.faq summary:hover{color:var(--accent)}
+.faq p{margin:0 0 12px;color:var(--muted);line-height:1.8}
+footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.9}
+footer div{margin:4px 0}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);
+  outline-offset:3px}
+@media(max-width:700px){
+ .tblwrap{overflow:visible}.tblwrap>table>thead{display:none}
+ .tblwrap>table,.tblwrap>table>tbody,.tblwrap>table>tbody>tr,.tblwrap>table>tbody>tr>td{display:block;width:auto}
+ .tblwrap .row{padding:12px 0;border-bottom:1px solid var(--line)}
+ .tblwrap .row td{padding:4px 2px;border:0;white-space:normal;max-width:none;min-width:0}
+ .tblwrap .row td:before{content:attr(data-label);display:inline-block;color:var(--muted);font-size:11px;margin-right:10px}
+ .tblwrap .row td:first-child:before{display:none}
+ .price{white-space:normal}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://vps.869hr.uk/"},{"@type":"ListItem","position":2,"name":"按地区选 VPS","item":"https://vps.869hr.uk/by-region/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"地区应该怎么选？","acceptedAnswer":{"@type":"Answer","text":"先看你的用户或自己常在哪个地区，再看机房与线路；只看价格不看地区，容易买到延迟高、体验差的套餐。"}},{"@type":"Question","name":"一个商家为什么出现在多个地区？","acceptedAnswer":{"@type":"Answer","text":"说明该商家在多个机房都有活动，本页按机房分节列出，同一商家在不同地区的套餐与价格可能不同，下单时以结算页的机房为准。"}},{"@type":"Question","name":"为什么有的地区只有几条？","acceptedAnswer":{"@type":"Answer","text":"本页只列未关闭的活动，不凑数；香港、阿姆斯特丹等小节当前条数少，是真实供给少，不是漏抓，新增活动会在每日更新里补上。"}},{"@type":"Question","name":"本站为什么不写具体延迟数字？","acceptedAnswer":{"@type":"Answer","text":"延迟因测试地点、时段与线路而异，抓取到的帖文也不含可信的统一测速；不编数字，下单前请用商家提供的测试 IP 自行验证。"}},{"@type":"Question","name":"数据从哪来？","acceptedAnswer":{"@type":"Answer","text":"数据来自 LowEndTalk Offers 与 LowEndBox 的公开帖子，自动抓取解析；每条优惠保留原帖链接，可点开溯源核对。"}}]}</script>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="crumb"><a href="../">← 返回 VPS 优惠总览</a></p>
+  <h1>按地区选 VPS</h1>
+  <p class="lead">按机房地区分节的 VPS 优惠清单，只列未关闭活动，不凑数；同一商家在多个机房有活动时会在多个小节出现。想按价格挑，先看 <a href="../cheap-yearly/">低价年付总榜</a>，黑五活动看 <a href="../black-friday-2026/">黑五 2026 专题</a>。</p>
+</header>
+
+<section class="card">
+<h3>美国（18 条）</h3><p class="note">美国机房选择多，适合面向北美用户或对价格敏感的场景；下单前确认具体城市与线路，同一国家不同城市体验可能差很多。</p><div class="tblwrap"><table><thead><tr><th>商家</th><th>机房</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">EthernetServers<br><a class="purchase" href="https://www.ethernetservers.com/aff.php?aff=3294" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles, Miami, London, Frankfurt</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$2.25/月<small>帖文报价，未与配置绑定</small><small>≈ €24.84/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">BudgetVM<br><a class="purchase" href="https://www.budgetvm.com/cheap-amd-server-hosting/?affid=23706" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Detroit, Miami, Hong Kong</td><td data-label="配置">帖文提及：12–128 核 / 32 GB 内存 / 500–1024 GB 存储</td><td data-label="报价">$74/月<small>帖文报价，未与配置绑定</small><small>≈ €816.96/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">PrivateByte<br><a class="purchase" href="https://my.privatebyte.com/order/configure/66?ref=PBT4TBQY" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">London, Amsterdam, Dallas</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$5.99/月<small>帖文报价，未与配置绑定</small><small>≈ €66.13/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">d4networks.com<br><a class="purchase" href="https://my.d4networks.com/cart.php?a=add&amp;pid=59" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas</td><td data-label="配置">帖文提及：56 核 / 1966.08 GB 存储</td><td data-label="报价">$175/月<small>帖文报价，未与配置绑定</small><small>≈ €1932.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">D4 Networks<br><a class="purchase" href="https://my.d4networks.com/index.php?rp=/store/let-special/dallas-let-special" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Amsterdam, New York</td><td data-label="配置">帖文提及：2 核 / 4 GB 内存 / 80–120 GB 存储</td><td data-label="报价">$49/年<small>帖文报价，未与配置绑定</small><small>≈ €45.08/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://calibernode.com/cloud-apps#catalog" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Los Angeles, Warsaw, Singapore, Tokyo</td><td data-label="配置">帖文提及：2 核 / 2 GB 内存 / 30 GB 存储</td><td data-label="报价">$8/年<small>帖文报价，未与配置绑定</small><small>≈ €7.36/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">ravnix.gg<br><a class="purchase" href="https://ravnix.gg" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Atlanta</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$14/年<small>帖文报价，未与配置绑定</small><small>≈ €12.88/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">extravm.com<br><a class="purchase" href="https://extravm.com/billing/store/kvm-nvme-vps-dallas-tx/5gb-ram-promo" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Texas</td><td data-label="配置">帖文提及：2 核 / 5 GB 内存 / 75 GB 存储</td><td data-label="报价">$6.7/月<small>帖文报价，未与配置绑定</small><small>≈ €73.97/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">HostNamaste<br><a class="purchase" href="https://www.hostnamaste.com/clients/aff.php?aff=387" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles</td><td data-label="配置">帖文提及：1–4 核 / 1–256 GB 内存 / 20–140 GB 存储</td><td data-label="报价">$17.99/年<small>帖文报价，未与配置绑定</small><small>≈ €16.55/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">aspirehosting.net<br><a class="purchase" href="https://billing.aspirehosting.net/aff.php?aff=81" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="机房">Miami</td><td data-label="配置">帖文提及：4–8 核 / 8–32 GB 内存 / 50–300 GB 存储</td><td data-label="报价">$2/月<small>帖文报价，未与配置绑定</small><small>≈ €22.08/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://portal.calibernode.com/own-servers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Singapore, Germany</td><td data-label="配置">帖文提及：15 GB 存储</td><td data-label="报价">$10/年<small>帖文报价，未与配置绑定</small><small>≈ €9.20/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">SoftShellWeb<br><a class="purchase" href="https://softshellweb.com/client/aff.php?aff=504" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles</td><td data-label="配置">帖文提及：1–4 核 / 1–8 GB 内存 / 4–100 GB 存储</td><td data-label="报价">$9.95/年<small>帖文报价，未与配置绑定</small><small>≈ €9.15/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">bgp.sa<br><a class="purchase" href="https://bgp.sa" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Kansas</td><td data-label="配置">帖文提及：1 核 / 2 GB 存储</td><td data-label="报价">$9.99/月<small>帖文报价，未与配置绑定</small><small>≈ €110.29/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">hostdare.com<br><a class="purchase" href="https://bill.hostdare.com/aff.php?aff=4796" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Japan, Los Angeles</td><td data-label="配置">帖文提及：1–2 核 / 0.75–2 GB 内存 / 25–50 GB 存储</td><td data-label="报价">$19.49/年<small>帖文报价，未与配置绑定</small><small>≈ €17.93/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">HostNamaste Diwali 2026 Early-Bird Special<br><a class="purchase" href="https://www.hostnamaste.com/clients/aff.php?aff=387" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles</td><td data-label="配置">帖文提及：256 GB 内存</td><td data-label="报价">$17.99/年<small>帖文报价，未与配置绑定</small><small>≈ €16.55/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">FlipperHost<br><a class="purchase" href="https://www.flipperhost.com/billing/aff.php?aff=386" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Atlanta, Los Angeles, New York</td><td data-label="配置">帖文提及：2–7 核 / 2–256 GB 内存 / 60–2048 GB 存储</td><td data-label="报价">$29.99/年<small>帖文报价，未与配置绑定</small><small>≈ €27.59/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">cloudnium.net<br><a class="purchase" href="https://portal.cloudnium.net/cart/phoenix--az-/?affid=359" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Phoenix, Arizona</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$29/月<small>帖文报价，未与配置绑定</small><small>≈ €320.16/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">mailbig.net<br><a class="purchase" href="https://mailbig.net/blackfriday" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles, Singapore</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">到商家查价<small>价格周期待核对</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr></tbody></table></div>
+<h3>欧洲（26 条）</h3><p class="note">欧洲机房以法兰克福、阿姆斯特丹、伦敦为主；面向欧洲用户优先选当地机房，面向国内用户则要看具体线路。</p><div class="tblwrap"><table><thead><tr><th>商家</th><th>机房</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">EthernetServers<br><a class="purchase" href="https://www.ethernetservers.com/aff.php?aff=3294" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles, Miami, London, Frankfurt</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$2.25/月<small>帖文报价，未与配置绑定</small><small>≈ €24.84/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">serverpoint.com<br><a class="purchase" href="https://portal.serverpoint.com/public/cart/vs/letsep26amd" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="机房">Singapore, Milan</td><td data-label="配置">帖文提及：1–6 核</td><td data-label="报价">$3.33/月<small>帖文报价，未与配置绑定</small><small>≈ €36.76/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">Halloween VPS @ Frankfurt Equinix<br><a href="https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more" target="_blank" rel="noopener">查看原帖</a></td><td data-label="机房">Frankfurt, Germany</td><td data-label="配置">帖文提及：2–3 核 / 3–10 GB 内存 / 50–100 GB 存储</td><td data-label="报价">€31/年<small>帖文报价，未与配置绑定</small><small>≈ €31.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">Hostishere<br><a class="purchase" href="https://my.hostishere.com/store/halloween-vps-specials/halloween-nano-vps" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Frankfurt</td><td data-label="配置">帖文提及：2 核 / 2–6 GB 内存 / 25–60 GB 存储</td><td data-label="报价">€3.49/月<small>帖文报价，未与配置绑定</small><small>≈ €41.88/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">PrivateByte<br><a class="purchase" href="https://my.privatebyte.com/order/configure/66?ref=PBT4TBQY" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">London, Amsterdam, Dallas</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">$5.99/月<small>帖文报价，未与配置绑定</small><small>≈ €66.13/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">servitro.com<br><a class="purchase" href="https://my.servitro.com/aff.php?aff=235" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Frankfurt</td><td data-label="配置">帖文提及：1 核 / 1–4 GB 内存 / 10–25 GB 存储</td><td data-label="报价">$12/年<small>帖文报价，未与配置绑定</small><small>≈ €11.04/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">D4 Networks<br><a class="purchase" href="https://my.d4networks.com/index.php?rp=/store/let-special/dallas-let-special" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Amsterdam, New York</td><td data-label="配置">帖文提及：2 核 / 4 GB 内存 / 80–120 GB 存储</td><td data-label="报价">$49/年<small>帖文报价，未与配置绑定</small><small>≈ €45.08/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://calibernode.com/cloud-apps#catalog" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Los Angeles, Warsaw, Singapore, Tokyo</td><td data-label="配置">帖文提及：2 核 / 2 GB 内存 / 30 GB 存储</td><td data-label="报价">$8/年<small>帖文报价，未与配置绑定</small><small>≈ €7.36/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Infrawire<br><a class="purchase" href="https://infrawire.net/vps/usa?aff=81#offers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Hong Kong, France, Germany</td><td data-label="配置">帖文提及：1–2 核 / 2–4 GB 内存 / 25–40 GB 存储</td><td data-label="报价">$4.3/月<small>帖文报价，未与配置绑定</small><small>≈ €47.47/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Halloween Specials at ST-Hosting!<br><a class="purchase" href="https://st-hosting.com/en/halloween" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Frankfurt</td><td data-label="配置">帖文提及：8 GB 内存 / 50 GB 存储</td><td data-label="报价">€4.44/月<small>帖文报价，未与配置绑定</small><small>≈ €53.28/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">godlike.host<br><a class="purchase" href="https://godlike.host/letoffer" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Romania</td><td data-label="配置">帖文提及：1–2 核 / 2–4 GB 内存 / 30–50 GB 存储</td><td data-label="报价">$4/月<small>帖文报价，未与配置绑定</small><small>≈ €44.16/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">HostSailor Halloween Special<br><a class="purchase" href="https://clients.hostsailor.com/modules/addons/promo_and_url_tracking/redirect.php" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Netherlands</td><td data-label="配置">帖文提及：9534 核 / 1–4 GB 内存</td><td data-label="报价">$29.94/年<small>帖文报价，未与配置绑定</small><small>≈ €27.54/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">bero-host.de<br><a class="purchase" href="https://bero-host.de/affiliate/TGdu8zEWPF" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="机房">Frankfurt, Germany</td><td data-label="配置">8 核 / 32.0 GB 内存 / 300.0 GB 存储</td><td data-label="报价">€129/年<small>Anniversary XXL · 自动解析，需核对</small><small>≈ €129.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">clusterhosting.cloud<br><a class="purchase" href="https://panel.clusterhosting.cloud/order/17ca48e1-47c8-4e93-9d97-06ea26a393ef" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Frankfurt, Germany</td><td data-label="配置">帖文提及：6150 核 / 40–50 GB 存储</td><td data-label="报价">到商家查价<small>价格周期待核对</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">nolimitcloud.eu<br><a class="purchase" href="https://panel.nolimitcloud.eu/aff.php?t=d5b7f82f9b30fda818d044fd4760126b" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="机房">Netherlands, Germany</td><td data-label="配置">帖文提及：1–3 核 / 1–4 GB 内存 / 10–4096 GB 存储</td><td data-label="报价">€12.99/年<small>帖文报价，未与配置绑定</small><small>≈ €12.99/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">nolimitcloud.eu<br><a class="purchase" href="https://panel.nolimitcloud.eu/aff.php?t=d5b7f82f9b30fda818d044fd4760126b" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Frankfurt, Germany</td><td data-label="配置">帖文提及：1–5 核 / 1–16 GB 内存 / 10–500 GB 存储</td><td data-label="报价">€12.99/年<small>帖文报价，未与配置绑定</small><small>≈ €12.99/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">servers_guru<br><a class="purchase" href="https://servers.guru/anonymous-10gbps-vps/?aff=80" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Netherlands, Finland, Germany, Singapore, Canada</td><td data-label="配置">帖文提及：16 核 / 2–4 GB 内存 / 20–40 GB 存储</td><td data-label="报价">€38/年<small>帖文报价，未与配置绑定</small><small>≈ €38.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">ServersCamp: Database-Tuned Cloud<br><a class="purchase" href="https://serverscamp.com/?utm_source=lowendtalk&amp;utm_medium=forum&amp;utm_campaign=testers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Milan</td><td data-label="配置">帖文提及：2 核 / 4 GB 内存</td><td data-label="报价">到商家查价<small>价格周期待核对</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">HostNoc<br><a class="purchase" href="https://members.hostnoc.com/store/france/hn-fr1?utm_source=let&amp;utm_medium=offers&amp;utm_campaign=dedicated+servers+2" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Paris, London</td><td data-label="配置">帖文提及：128 GB 内存 / 500–2048 GB 存储</td><td data-label="报价">$15.95/月<small>帖文报价，未与配置绑定</small><small>≈ €176.09/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://portal.calibernode.com/own-servers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Singapore, Germany</td><td data-label="配置">帖文提及：15 GB 存储</td><td data-label="报价">$10/年<small>帖文报价，未与配置绑定</small><small>≈ €9.20/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">hostnamaste.com<br><a class="purchase" href="https://www.hostnamaste.com/clients/aff.php?aff=387" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">France, Canada</td><td data-label="配置">帖文提及：2 核 / 2–256 GB 内存 / 50–120 GB 存储</td><td data-label="报价">$48/年<small>帖文报价，未与配置绑定</small><small>≈ €44.16/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Linceris.com<br><a class="purchase" href="https://dashboard.linceris.com/aff.php?aff=28" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Frankfurt, Germany</td><td data-label="配置">帖文提及：2 核 / 4 GB 内存 / 50 GB 存储</td><td data-label="报价">到商家查价<small>价格周期待核对</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">INET.WS<br><a class="purchase" href="https://inet.ws/manage/store/vps?utm_source=lowendtalk&amp;utm_medium=offer&amp;utm_campaign=let_offer_2026_08&amp;utm_content=order_top" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Paris</td><td data-label="配置">帖文提及：14 核 / 40 GB 内存 / 600 GB 存储</td><td data-label="报价">$3/月<small>帖文报价，未与配置绑定</small><small>≈ €33.12/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Infrawire<br><a class="purchase" href="https://infrawire.net/vps/turkey?aff=81" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">France, Germany, Hong Kong</td><td data-label="配置">帖文提及：2 核 / 4 GB 内存 / 40 GB 存储</td><td data-label="报价">$9.3/月<small>帖文报价，未与配置绑定</small><small>≈ €102.67/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Meet Arct Cloud<br><a class="purchase" href="https://console.arct.cloud/servers/new?loc=lon&amp;tier=cost_optimized" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">London, Frankfurt, Milan</td><td data-label="配置">帖文提及：1–2 核 / 1–4 GB 内存 / 15–40 GB 存储</td><td data-label="报价">$3.89/月<small>帖文报价，未与配置绑定</small><small>≈ €42.95/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">virtbase.com<br><a class="purchase" href="https://virtbase.com/en/checkout/pck_1KDXCGQDKT1MECV86BWER517A?utm_source=lowendbox" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Eygelshoven, Netherlands</td><td data-label="配置">帖文提及：1–12 核 / 4–64 GB 内存 / 50–300 GB 存储</td><td data-label="报价">€3.99/月<small>帖文报价，未与配置绑定</small><small>≈ €47.88/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr></tbody></table></div>
+<h3>新加坡（7 条）</h3><p class="note">新加坡机房面向亚太用户延迟通常较友好，也是不少低价年付活动的常见机房。</p><div class="tblwrap"><table><thead><tr><th>商家</th><th>机房</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">serverpoint.com<br><a class="purchase" href="https://portal.serverpoint.com/public/cart/vs/letsep26amd" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="机房">Singapore, Milan</td><td data-label="配置">帖文提及：1–6 核</td><td data-label="报价">$3.33/月<small>帖文报价，未与配置绑定</small><small>≈ €36.76/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://calibernode.com/cloud-apps#catalog" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Los Angeles, Warsaw, Singapore, Tokyo</td><td data-label="配置">帖文提及：2 核 / 2 GB 内存 / 30 GB 存储</td><td data-label="报价">$8/年<small>帖文报价，未与配置绑定</small><small>≈ €7.36/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">MEJIRO NETWORK<br><a class="purchase" href="https://billing.mejiro.io/store/singapore-standard-vps/sin-std-sp-1g" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Singapore, Hong Kong</td><td data-label="配置">帖文提及：256 GB 内存 / 480 GB 存储</td><td data-label="报价">$3/月<small>帖文报价，未与配置绑定</small><small>≈ €33.12/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">servers_guru<br><a class="purchase" href="https://servers.guru/anonymous-10gbps-vps/?aff=80" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Netherlands, Finland, Germany, Singapore, Canada</td><td data-label="配置">帖文提及：16 核 / 2–4 GB 内存 / 20–40 GB 存储</td><td data-label="报价">€38/年<small>帖文报价，未与配置绑定</small><small>≈ €38.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://portal.calibernode.com/own-servers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Singapore, Germany</td><td data-label="配置">帖文提及：15 GB 存储</td><td data-label="报价">$10/年<small>帖文报价，未与配置绑定</small><small>≈ €9.20/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">SVR4U<br><a class="purchase" href="https://billing.svr4u.com/aff.php?aff=56" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Singapore</td><td data-label="配置">帖文提及：8 核 / 32 GB 内存 / 400 GB 存储</td><td data-label="报价">$3.15/月<small>帖文报价，未与配置绑定</small><small>≈ €34.78/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">mailbig.net<br><a class="purchase" href="https://mailbig.net/blackfriday" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Los Angeles, Singapore</td><td data-label="配置">查看原帖核对配置</td><td data-label="报价">到商家查价<small>价格周期待核对</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr></tbody></table></div>
+<h3>香港（5 条）</h3><p class="note">香港机房当前未关闭活动较少，本节不凑数；新增活动会在每日更新里补上。</p><div class="tblwrap"><table><thead><tr><th>商家</th><th>机房</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">BudgetVM<br><a class="purchase" href="https://www.budgetvm.com/cheap-amd-server-hosting/?affid=23706" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Detroit, Miami, Hong Kong</td><td data-label="配置">帖文提及：12–128 核 / 32 GB 内存 / 500–1024 GB 存储</td><td data-label="报价">$74/月<small>帖文报价，未与配置绑定</small><small>≈ €816.96/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">Infrawire<br><a class="purchase" href="https://infrawire.net/vps/usa?aff=81#offers" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Hong Kong, France, Germany</td><td data-label="配置">帖文提及：1–2 核 / 2–4 GB 内存 / 25–40 GB 存储</td><td data-label="报价">$4.3/月<small>帖文报价，未与配置绑定</small><small>≈ €47.47/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">wlx.hk<br><a class="purchase" href="https://wlx.hk/cart.php?a=add&amp;pid=5" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Hong Kong</td><td data-label="配置">帖文提及：24 核 / 2048 GB 存储</td><td data-label="报价">$181.37/月<small>帖文报价，未与配置绑定</small><small>≈ €2002.32/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">MEJIRO NETWORK<br><a class="purchase" href="https://billing.mejiro.io/store/singapore-standard-vps/sin-std-sp-1g" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Singapore, Hong Kong</td><td data-label="配置">帖文提及：256 GB 内存 / 480 GB 存储</td><td data-label="报价">$3/月<small>帖文报价，未与配置绑定</small><small>≈ €33.12/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED_STALE">待确认(较旧)</span></td></tr>
+<tr class="row"><td data-label="商家">Infrawire<br><a class="purchase" href="https://infrawire.net/vps/turkey?aff=81" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">France, Germany, Hong Kong</td><td data-label="配置">帖文提及：2 核 / 4 GB 内存 / 40 GB 存储</td><td data-label="报价">$9.3/月<small>帖文报价，未与配置绑定</small><small>≈ €102.67/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr></tbody></table></div>
+<h3>其他地区（5 条）</h3><p class="note">日本、加拿大、印度、澳大利亚等机房的未关闭活动较少，统一放在本节，表格里仍标注原始机房名。</p><div class="tblwrap"><table><thead><tr><th>商家</th><th>机房</th><th>配置</th><th>报价</th><th>库存</th></tr></thead><tbody><tr class="row"><td data-label="商家">Caliber Node<br><a class="purchase" href="https://calibernode.com/cloud-apps#catalog" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Dallas, Los Angeles, Warsaw, Singapore, Tokyo</td><td data-label="配置">帖文提及：2 核 / 2 GB 内存 / 30 GB 存储</td><td data-label="报价">$8/年<small>帖文报价，未与配置绑定</small><small>≈ €7.36/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">servers_guru<br><a class="purchase" href="https://servers.guru/anonymous-10gbps-vps/?aff=80" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Netherlands, Finland, Germany, Singapore, Canada</td><td data-label="配置">帖文提及：16 核 / 2–4 GB 内存 / 20–40 GB 存储</td><td data-label="报价">€38/年<small>帖文报价，未与配置绑定</small><small>≈ €38.00/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">SmokyHosts<br><a class="purchase" href="https://members.smokyhosts.com/aff.php?aff=70" target="_blank" rel="noopener nofollow sponsored">查看活动与下单</a></td><td data-label="机房">India</td><td data-label="配置">帖文提及：1–2 核 / 1–2 GB 内存 / 500–5120 GB 存储</td><td data-label="报价">$35.95/年<small>帖文报价，未与配置绑定</small><small>≈ €33.07/年（近似折算）</small></td><td data-label="库存"><span class="av av-ON_SALE">在售</span></td></tr>
+<tr class="row"><td data-label="商家">hostnamaste.com<br><a class="purchase" href="https://www.hostnamaste.com/clients/aff.php?aff=387" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">France, Canada</td><td data-label="配置">帖文提及：2 核 / 2–256 GB 内存 / 50–120 GB 存储</td><td data-label="报价">$48/年<small>帖文报价，未与配置绑定</small><small>≈ €44.16/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr>
+<tr class="row"><td data-label="商家">hostdare.com<br><a class="purchase" href="https://bill.hostdare.com/aff.php?aff=4796" target="_blank" rel="noopener nofollow sponsored">到商家核对价格与库存</a></td><td data-label="机房">Japan, Los Angeles</td><td data-label="配置">帖文提及：1–2 核 / 0.75–2 GB 内存 / 25–50 GB 存储</td><td data-label="报价">$19.49/年<small>帖文报价，未与配置绑定</small><small>≈ €17.93/年（近似折算）</small></td><td data-label="库存"><span class="av av-UNVERIFIED">待确认</span></td></tr></tbody></table></div>
+</section>
+
+<section class="card faq">
+  <h2>常见问题</h2>
+<details><summary>地区应该怎么选？</summary><p>先看你的用户或自己常在哪个地区，再看机房与线路；只看价格不看地区，容易买到延迟高、体验差的套餐。</p></details>
+<details><summary>一个商家为什么出现在多个地区？</summary><p>说明该商家在多个机房都有活动，本页按机房分节列出，同一商家在不同地区的套餐与价格可能不同，下单时以结算页的机房为准。</p></details>
+<details><summary>为什么有的地区只有几条？</summary><p>本页只列未关闭的活动，不凑数；香港、阿姆斯特丹等小节当前条数少，是真实供给少，不是漏抓，新增活动会在每日更新里补上。</p></details>
+<details><summary>本站为什么不写具体延迟数字？</summary><p>延迟因测试地点、时段与线路而异，抓取到的帖文也不含可信的统一测速；不编数字，下单前请用商家提供的测试 IP 自行验证。</p></details>
+<details><summary>数据从哪来？</summary><p>数据来自 LowEndTalk Offers 与 LowEndBox 的公开帖子，自动抓取解析；每条优惠保留原帖链接，可点开溯源核对。</p></details>
+</section>
+
+<footer>
+  <div>价格与库存以商家官网为准，标注「待确认」≠有货。</div>
+  <div>下单前请核对首期与续费总价、机房、流量与退款条件。</div>
+  <div>部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；本站仅聚合公开信息，不构成购买建议。</div>
+  <div>数据更新时间 <time datetime="2026-11-04T02:49:43+00:00">2026-11-04 10:49:43</time>（北京时间） · <a href="../feed.xml">RSS 订阅</a> · <a href="../">返回主站</a></div>
+</footer>
+
+</div>
+</body>
+</html>

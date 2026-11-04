@@ -1,110 +1,32 @@
 {
   "latest": {
-    "generated_at": "2026-11-03T21:02:11+00:00",
+    "generated_at": "2026-11-04T02:49:43+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:221796",
-        "provider": "Infrawire",
-        "title": "Infrawire - VPS IFW Series now in USA & Hong Kong | Linux & Windows | Starting at $4.30/mo",
-        "url": "https://lowendtalk.com/discussion/221796/infrawire-vps-ifw-series-now-in-usa-hong-kong-linux-windows-starting-at-4-30-mo",
-        "summary": "上新/回归 · $4.3/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222906",
-        "provider": "BudgetVM",
-        "title": "BudgetVM –> Ryzen 5900XT Giveaway | EPYC 9754 Instant Deploy | Up to 100G Unmetered",
-        "url": "https://lowendtalk.com/discussion/222906/budgetvm-ryzen-5900xt-giveaway-epyc-9754-instant-deploy-up-to-100g-unmetered",
-        "summary": "周年庆 · $74/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222905",
-        "provider": "zenlayer.com",
-        "title": "Black Friday | Zenlayer | LA 64GB/960GB SSD/10Gbps $68.20/mo all in | Top up $100 get $150",
-        "url": "https://lowendtalk.com/discussion/222905/black-friday-zenlayer-la-64gb-960gb-ssd-10gbps-68-20-mo-all-in-top-up-100-get-150",
-        "summary": "黑五 · $68.2/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:222894",
-        "provider": "aaPanel Black Friday 2026",
-        "title": "aaPanel Black Friday 2026 | Starts Nov 13 | Pro from $98 | Lifetime from $174.95/License",
-        "url": "https://lowendtalk.com/discussion/222894/aapanel-black-friday-2026-starts-nov-13-pro-from-98-lifetime-from-174-95-license",
-        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
+        "id": "let:222926",
+        "provider": "d4networks.com",
+        "title": "D4 Networks Dedicated Deals | Dallas 2x Platinum 8173M, 128 GB, 10 Gbps | 175 USD/mo, no setup",
+        "url": "https://lowendtalk.com/discussion/222926/d4-networks-dedicated-deals-dallas-2x-platinum-8173m-128-gb-10-gbps-175-usd-mo-no-setup",
+        "summary": "常规帖 · $175/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
-    "changed": [
-      {
-        "id": "let:222883",
-        "provider": "DeluxHost.net",
-        "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
-        "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
-        "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 售罄",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "SOLD_OUT"
-          }
-        }
-      },
-      {
-        "id": "let:221558",
-        "provider": "D4 Networks",
-        "title": "D4 Networks | 4GB KVM, 80-120GB NVMe | $49/year, renews at $49 | Dallas, Amsterdam, New York",
-        "url": "https://lowendtalk.com/discussion/221558/d4-networks-4gb-kvm-80-120gb-nvme-49-year-renews-at-49-dallas-amsterdam-new-york",
-        "summary": "常规帖 · $49/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "changes": {
-          "库存": {
-            "before": "ON_SALE",
-            "after": "UNVERIFIED_STALE"
-          }
-        }
-      }
-    ],
+    "changed": [],
     "missing": [
       {
-        "id": "let:220098",
-        "provider": "SmokyHosts",
-        "title": "SmokyHosts - Great Freedom Sale | Upto 60% discount | India, Hong Kong, Singapore, Australia",
-        "url": "https://lowendtalk.com/discussion/220098/smokyhosts-great-freedom-sale-upto-60-discount-india-hong-kong-singapore-australia",
-        "summary": "节日促销 · $38.21/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221060",
-        "provider": "prohosting24.de",
-        "title": "ph24 first vps deal in 2026 + flash sale (EPYC 7XX3)",
-        "url": "https://lowendtalk.com/discussion/221060/ph24-first-vps-deal-in-2026-flash-sale-epyc-7xx3",
-        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221167",
-        "provider": "Ava.hosting",
-        "title": "Ava.hosting - NEW! Deploy Self-Hosted Apps (Cloud Apps) + 15% OFF Discount!!",
-        "url": "https://lowendtalk.com/discussion/221167/ava-hosting-new-deploy-self-hosted-apps-cloud-apps-15-off-discount",
-        "summary": "常规促销 · €12/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:220060",
-        "provider": "Royal-Server.Ro",
-        "title": "Royal-Server.Ro | KVM VPS | Ryzen 9 9950X & Intel Core i9 | 10Gbps | Own Datacenter | Since 2017",
-        "url": "https://lowendtalk.com/discussion/220060/royal-server-ro-kvm-vps-ryzen-9-9950x-intel-core-i9-10gbps-own-datacenter-since-2017",
-        "summary": "常规帖 · €5/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222121",
+        "provider": "centrixnodes.net",
+        "title": "[US] Dedicated Servers from $93.50/mo | VPS from $2.04/mo | 10Gbps | Recurring Discounts | Buffalo,",
+        "url": "https://lowendtalk.com/discussion/222121/us-dedicated-servers-from-93-50-mo-vps-from-2-04-mo-10gbps-recurring-discounts-buffalo",
+        "summary": "常规促销 · $2.04/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
-    "expired": [
-      {
-        "id": "let:219781",
-        "provider": "quickservers.net",
-        "title": "6 Dedicated Servers Under $65 | Dual CPU | 1Gbps Unmetered | DDoS Protection Available",
-        "url": "https://lowendtalk.com/discussion/219781/6-dedicated-servers-under-65-dual-cpu-1gbps-unmetered-ddos-protection-available",
-        "summary": "常规帖 · $29.99/月 · 帖文报价，未与配置绑定 · 售罄",
-        "reason": "超出保留窗口；不代表确认停售"
-      }
-    ]
+    "expired": []
   },
   "history": [
     {
-      "generated_at": "2026-11-03T21:02:11+00:00",
+      "generated_at": "2026-11-04T02:49:43+00:00",
       "baseline": false,
       "added": [
         {
@@ -134,6 +56,13 @@
           "title": "aaPanel Black Friday 2026 | Starts Nov 13 | Pro from $98 | Lifetime from $174.95/License",
           "url": "https://lowendtalk.com/discussion/222894/aapanel-black-friday-2026-starts-nov-13-pro-from-98-lifetime-from-174-95-license",
           "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
+        },
+        {
+          "id": "let:222926",
+          "provider": "d4networks.com",
+          "title": "D4 Networks Dedicated Deals | Dallas 2x Platinum 8173M, 128 GB, 10 Gbps | 175 USD/mo, no setup",
+          "url": "https://lowendtalk.com/discussion/222926/d4-networks-dedicated-deals-dallas-2x-platinum-8173m-128-gb-10-gbps-175-usd-mo-no-setup",
+          "summary": "常规帖 · $175/月 · 帖文报价，未与配置绑定 · 待确认"
         }
       ],
       "changed": [
@@ -192,6 +121,13 @@
           "title": "Royal-Server.Ro | KVM VPS | Ryzen 9 9950X & Intel Core i9 | 10Gbps | Own Datacenter | Since 2017",
           "url": "https://lowendtalk.com/discussion/220060/royal-server-ro-kvm-vps-ryzen-9-9950x-intel-core-i9-10gbps-own-datacenter-since-2017",
           "summary": "常规帖 · €5/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222121",
+          "provider": "centrixnodes.net",
+          "title": "[US] Dedicated Servers from $93.50/mo | VPS from $2.04/mo | 10Gbps | Recurring Discounts | Buffalo,",
+          "url": "https://lowendtalk.com/discussion/222121/us-dedicated-servers-from-93-50-mo-vps-from-2-04-mo-10gbps-recurring-discounts-buffalo",
+          "summary": "常规促销 · $2.04/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
       "restored": [],
