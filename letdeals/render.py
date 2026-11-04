@@ -614,6 +614,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="aff-quick"><b>直达商家活动</b> @@AFF_SHORTCUTS@@</div>
   <div class="quick"><button type="button" data-preset="budget">找低预算年付</button><button type="button" data-preset="new">看最近发布</button><button type="button" data-preset="sale">看标注在售</button><button type="button" id="reset">重置筛选</button></div>
   <a class="bf-promo" href="black-friday-2026/">🛒 黑五 2026 专题：倒计时 · 已公布活动 · 低价年付清单 · 常见问题</a>
+  <a class="bf-promo" href="cheap-yearly/">💰 低价年付总榜：年化 30 欧元以内、未关闭优惠</a>
+  <a class="bf-promo" href="by-region/">🌍 按地区选 VPS：美国 / 欧洲 / 香港 / 新加坡分节清单</a>
   <details class="merchants"><summary class="merchants-title" style="cursor:pointer">已有心仪商家</summary><p style="margin:0;color:var(--muted);font-size:12.5px">以下为长期在用的商家，通过链接下单可享与官网相同的价格。</p><div class="feat">@@MERCHANTS@@</div></details>
   <p class="disclosure">部分链接为推广链接，符合商家规则的订单可能为本站带来佣金；价格、续费与优惠资格以结算页为准。</p>
 </section>
@@ -1087,7 +1089,7 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
 
     # ---- SEO/GEO 附属模块（在函数内导入：这些模块较新且独立，避免顶部
     #      导入在单测环境里形成强耦合）----
-    from . import bfpage, feed as feedgen, structured
+    from . import bfpage, evergreen, feed as feedgen, structured
 
     # 结构化数据：WebSite 实体 + ItemList(Offer) + 与页面可见 FAQ 同源的 FAQPage
     jsonld = "".join([
@@ -1166,6 +1168,24 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
         ])))
     bf_path = bfpage.write_bf_page(payload, out_dir, jsonld_html="".join(bf_jsonld))
 
+    # ---- 常青落地页：低价年付 + 按地区（与黑五页同一 SSR 路数）----
+    # 黑五页保活：这里只新增常青页，不改黑五页的 URL、内容与更新节奏；
+    # 常青页与黑五页互相回链，避免两张低价表抢词。
+    evergreen_map = {}
+    for path, title, faq in (
+            (evergreen.CHEAP_PATH, "低价年付 VPS 汇总", evergreen.CHEAP_FAQ),
+            (evergreen.REGION_PATH, "按地区选 VPS", evergreen.REGION_FAQ)):
+        parts = [structured.script_html(structured.faq_schema(faq))]
+        if config.SITE_URL:
+            parts.insert(0, structured.script_html(
+                structured.breadcrumb_schema([
+                    ("首页", f"{config.SITE_URL}/"),
+                    (title, f"{config.SITE_URL}/{path}/"),
+                ])))
+        evergreen_map[path] = "".join(parts)
+    evergreen_paths = evergreen.write_evergreen_pages(
+        payload, out_dir, jsonld_map=evergreen_map)
+
     # 部署辅助文件
     with open(os.path.join(out_dir, ".nojekyll"), "w", encoding="utf-8") as f:
         f.write("")
@@ -1179,8 +1199,11 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     # 未配置域名时用相对路径，避免生成无效的绝对地址
     base = f"{config.SITE_URL}" if config.SITE_URL else ""
-    # 黑五专题页是独立 URL，单独列入 sitemap 才能被收录
-    locs = [f"{base}/", f"{base}/{bfpage.BF_PATH}/"] + [base + p for p in detail_paths]
+    # 黑五专题页、详情页、常青页都是独立 URL，全部列入 sitemap 才能被收录
+    locs = ([f"{base}/", f"{base}/{bfpage.BF_PATH}/"]
+            + [base + p for p in detail_paths]
+            + [f"{base}/{evergreen.CHEAP_PATH}/",
+               f"{base}/{evergreen.REGION_PATH}/"])
     with open(os.path.join(out_dir, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1199,6 +1222,10 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
         print("  feed.xml        %8.1f KB" % (os.path.getsize(feed_path) / 1024))
         print("  llms.txt        %8.1f KB" % (os.path.getsize(llms_path) / 1024))
         print("  黑五专题页       %8.1f KB" % (os.path.getsize(bf_path) / 1024))
+        for p in evergreen_paths:
+            print("  常青页 %-12s %8.1f KB" % (
+                os.path.basename(os.path.dirname(p)),
+                os.path.getsize(p) / 1024))
     return out_dir
 
 
