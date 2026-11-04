@@ -1,26 +1,10 @@
 {
   "latest": {
-    "generated_at": "2026-11-04T02:49:43+00:00",
+    "generated_at": "2026-11-04T03:35:54+00:00",
     "baseline": false,
-    "added": [
-      {
-        "id": "let:222926",
-        "provider": "d4networks.com",
-        "title": "D4 Networks Dedicated Deals | Dallas 2x Platinum 8173M, 128 GB, 10 Gbps | 175 USD/mo, no setup",
-        "url": "https://lowendtalk.com/discussion/222926/d4-networks-dedicated-deals-dallas-2x-platinum-8173m-128-gb-10-gbps-175-usd-mo-no-setup",
-        "summary": "常规帖 · $175/月 · 帖文报价，未与配置绑定 · 待确认"
-      }
-    ],
+    "added": [],
     "changed": [],
-    "missing": [
-      {
-        "id": "let:222121",
-        "provider": "centrixnodes.net",
-        "title": "[US] Dedicated Servers from $93.50/mo | VPS from $2.04/mo | 10Gbps | Recurring Discounts | Buffalo,",
-        "url": "https://lowendtalk.com/discussion/222121/us-dedicated-servers-from-93-50-mo-vps-from-2-04-mo-10gbps-recurring-discounts-buffalo",
-        "summary": "常规促销 · $2.04/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      }
-    ],
+    "missing": [],
     "restored": [],
     "expired": []
   },
