@@ -102,7 +102,7 @@ def test_write_bf_page_creates_subdir(tmp_path):
     assert path == str(out / bfpage.BF_PATH / "index.html")
     assert os.path.exists(path)
     out_html = open(path, encoding="utf-8").read()
-    assert "<h1>2026 黑五 VPS 优惠汇总</h1>" in out_html
+    assert "<h1>2026 黑五便宜 VPS 年付汇总</h1>" in out_html
     assert 'data-start="%s"' % bfpage.BF_START_UTC in out_html
     assert 'data-end="%s"' % bfpage.BF_END_UTC in out_html
     assert "2026 年黑五从北京时间 11 月 27 日 13:00 开始" in out_html
@@ -113,8 +113,8 @@ def test_write_bf_page_creates_subdir(tmp_path):
 
 def test_title_and_meta_description():
     out = bfpage.render_bf_page(_payload([]))
-    assert ("<title>2026 黑五 VPS 优惠汇总｜Black Friday 便宜 VPS "
-            "与低价年付实时清单 - %s</title>" % config.SITE_TITLE) in out
+    assert ("<title>2026 黑五便宜 VPS 年付汇总｜Black Friday 黑五 VPS "
+            "活动与低价清单 - %s</title>" % config.SITE_TITLE) in out
     for kw in ("黑五 VPS", "Black Friday", "低价年付", "优惠码", "LowEndTalk"):
         assert kw in out
 

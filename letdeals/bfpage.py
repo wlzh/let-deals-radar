@@ -27,12 +27,12 @@ BF_END_UTC = "2026-12-01T05:00:00+00:00"
 BF_PATH = "black-friday-2026"
 
 # 页面主标题（<title> 再拼上站点名；OG 标签复用同一份）。
-_TITLE = "2026 黑五 VPS 优惠汇总｜Black Friday 便宜 VPS 与低价年付实时清单"
+# 激进套餐（2026-11-04）：主词前置，贴合 Bing/GSC 已实测的“2026黑五vps / 黑五便宜vps年付”查询词。
+_TITLE = "2026 黑五便宜 VPS 年付汇总｜Black Friday 黑五 VPS 活动与低价清单"
 
 # meta description：控制在 120 字内，覆盖核心搜索词与来源站名。
-_META_DESC = ("汇总 LowEndTalk / LowEndBox 公开的 2026 黑五 VPS 优惠："
-              "Black Friday 低价年付套餐、优惠码、折扣力度与库存状态，"
-              "每日自动更新。")
+_META_DESC = ("2026 黑五 VPS 活动汇总：Black Friday 黑五便宜 VPS 年付、优惠码与折扣力度，"
+              "LowEndTalk / LowEndBox 公开活动每日自动更新，11 月 27 日正式开始。")
 
 # 常见问题：只写不会过期的内容（不点名具体价格、商家或库存）。
 BF_FAQ: list[tuple[str, str]] = [
@@ -54,6 +54,17 @@ BF_FAQ: list[tuple[str, str]] = [
     ("数据从哪来？",
      "数据来自 LowEndTalk Offers 与 LowEndBox 的公开帖子，自动抓取解析；"
      "每条优惠保留原帖链接，可点开溯源核对。"),
+    ("2026黑五vps活动什么时候开始？",
+     "正式开始是 2026 年 11 月 27 日北京时间 13:00（美东零点），活动到 "
+     "12 月 1 日结束；但 VPS 厂商通常 11 月上旬就陆续公布，本页每天更新"
+     "已公布的活动，不用等到 27 日才看。"),
+    ("黑五便宜vps年付怎么选？",
+     "先看年付总价和续费价，再看配置与机房；循环折扣比一次性折扣更值钱，"
+     "标注「待确认」的要到商家核实库存。本页低价榜按近似欧元年价排序。"),
+    ("黑五vps活动和平时优惠有什么区别？",
+     "本页第一张表只收活动性质为黑五 / 大促的优惠，第二张低价榜是全站"
+     "当前低价年付、不分是不是黑五；同一条优惠可能两边都出现，黑五表"
+     "看活动本身，低价榜看年付价格。"),
 ]
 
 # 黑五识别：标题与折扣说明里找关键词。
@@ -377,14 +388,24 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);
 
 <header>
   <p class="crumb"><a href="@@HOME@@">← 返回 VPS 优惠总览</a></p>
-  <h1>2026 黑五 VPS 优惠汇总</h1>
-  <p class="lead">汇总 LowEndTalk / LowEndBox 公开黑五活动的 VPS 优惠，自动标注折扣力度、库存状态与优惠码，数据每日北京时间 05:00 自动更新；共 <b>@@COUNT@@</b> 条在跟踪优惠中。</p>
+  <h1>2026 黑五便宜 VPS 年付汇总</h1>
+  <p class="lead">汇总 LowEndTalk / LowEndBox 公开的 2026 黑五 VPS 活动：黑五便宜年付、优惠码与折扣力度，数据每日北京时间 05:00 自动更新；11 月上旬陆续公布，11 月 27 日正式开始，共 <b>@@COUNT@@</b> 条在跟踪优惠中。</p>
 </header>
 
 <div class="card countdown" data-start="@@START@@" data-end="@@END@@">
   <noscript><p>2026 年黑五从北京时间 11 月 27 日 13:00 开始。</p></noscript>
   <div id="cd" aria-live="polite"></div>
 </div>
+
+<section class="card">
+  <h2>黑五活动时间线</h2>
+  <p>11 月上旬：厂商陆续公布黑五 / 大促活动，本页每天更新已公布的活动。11 月 27 日北京时间 13:00（美东零点）：黑五正式开始。12 月 1 日：活动结束，之后本页转为已结束清单与常青低价指引。</p>
+</section>
+
+<section class="card">
+  <h2>黑五专属 vs 平时低价：怎么分</h2>
+  <p>第一张表只收活动性质为黑五 / 大促的优惠，看活动本身；第二张表是全站当前低价年付，不分是不是黑五，看年付价格。同一条优惠可能两边都出现。黑五之外想按全年低价找，看<a href="../cheap-yearly/">低价年付总榜</a>；想按机房找，看<a href="../by-region/">按地区选 VPS</a>。</p>
+</section>
 
 <section class="card">
   <h2>已公布的黑五 / 大促活动</h2>

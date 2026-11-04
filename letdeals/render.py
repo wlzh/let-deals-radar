@@ -567,6 +567,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
 .bf-promo{display:block;margin-top:14px;padding:11px 14px;border:1px dashed var(--accent);
   border-radius:10px;color:var(--accent);font-weight:600;text-decoration:none}
 .bf-promo:hover{text-decoration:none;background:var(--accent-soft)}
+/* 激进套餐（2026-11-04）：首页首屏黑五横幅，黑五窗口结束后撤掉 */
+.bf-hero{display:block;margin:0 0 18px;padding:14px 16px;border-radius:12px;
+  background:var(--accent);color:#fff;font-weight:700;font-size:15px;text-decoration:none}
+.bf-hero:hover{text-decoration:none;filter:brightness(1.08)}
 .faq h2{font-size:18px;margin:0 0 6px}
 .faq-note{color:var(--muted);font-size:12px;margin:0 0 10px}
 .faq details{border-bottom:1px solid var(--line);padding:10px 0}
@@ -604,6 +608,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
     @@HEADER_LINKS@@
   </div>
 </header>
+
+<a class="bf-hero" href="black-friday-2026/">🔥 2026 黑五便宜 VPS 年付汇总 · 已公布活动每日更新 →</a>
 
 @@UPDATES@@
 
