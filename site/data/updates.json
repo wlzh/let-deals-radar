@@ -1,14 +1,87 @@
 {
   "latest": {
-    "generated_at": "2026-11-04T03:35:54+00:00",
+    "generated_at": "2026-11-04T21:01:46+00:00",
     "baseline": false,
-    "added": [],
+    "added": [
+      {
+        "id": "let:221097",
+        "provider": "BAGEVM",
+        "title": "BAGEVM - AMD EPYC KVM VPS Sale Starting From $2.24/month more locations at JP/HK/SG",
+        "url": "https://lowendtalk.com/discussion/221097/bagevm-amd-epyc-kvm-vps-sale-starting-from-2-24-month-more-locations-at-jp-hk-sg",
+        "summary": "节日促销 · $2.24/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
+      }
+    ],
     "changed": [],
-    "missing": [],
+    "missing": [
+      {
+        "id": "let:221949",
+        "provider": "Meet Arct Cloud",
+        "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
+        "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
+        "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "leb:leb-virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only",
+        "provider": "virtbase.com",
+        "title": "Virtbase, the EU Provider with an Open Source Control/Billing Panel! Awesome Deals for EU Customers Only!",
+        "url": "https://lowendbox.com/blog/virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only/",
+        "summary": "常规帖 · €3.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
-    "expired": []
+    "expired": [
+      {
+        "id": "let:219837",
+        "provider": "ColoCrossing",
+        "title": "ColoCrossing Special Offers: Dedicated Servers from Just $25/month + Limited Flash Offers!!!",
+        "url": "https://lowendtalk.com/discussion/219837/colocrossing-special-offers-dedicated-servers-from-just-25-month-limited-flash-offers",
+        "summary": "补货 · $25/月 · 帖文报价，未与配置绑定 · 补货中",
+        "reason": "超出保留窗口；不代表确认停售"
+      }
+    ]
   },
   "history": [
+    {
+      "generated_at": "2026-11-04T21:01:46+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:221097",
+          "provider": "BAGEVM",
+          "title": "BAGEVM - AMD EPYC KVM VPS Sale Starting From $2.24/month more locations at JP/HK/SG",
+          "url": "https://lowendtalk.com/discussion/221097/bagevm-amd-epyc-kvm-vps-sale-starting-from-2-24-month-more-locations-at-jp-hk-sg",
+          "summary": "节日促销 · $2.24/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
+        }
+      ],
+      "changed": [],
+      "missing": [
+        {
+          "id": "let:221949",
+          "provider": "Meet Arct Cloud",
+          "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
+          "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
+          "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only",
+          "provider": "virtbase.com",
+          "title": "Virtbase, the EU Provider with an Open Source Control/Billing Panel! Awesome Deals for EU Customers Only!",
+          "url": "https://lowendbox.com/blog/virtbase-the-eu-provider-with-an-open-source-control-billing-panel-awesome-deals-for-eu-customers-only/",
+          "summary": "常规帖 · €3.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": [
+        {
+          "id": "let:219837",
+          "provider": "ColoCrossing",
+          "title": "ColoCrossing Special Offers: Dedicated Servers from Just $25/month + Limited Flash Offers!!!",
+          "url": "https://lowendtalk.com/discussion/219837/colocrossing-special-offers-dedicated-servers-from-just-25-month-limited-flash-offers",
+          "summary": "补货 · $25/月 · 帖文报价，未与配置绑定 · 补货中",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
+    },
     {
       "generated_at": "2026-11-04T02:49:43+00:00",
       "baseline": false,
