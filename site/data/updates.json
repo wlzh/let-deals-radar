@@ -1,28 +1,139 @@
 {
   "latest": {
-    "generated_at": "2026-11-05T02:47:01+00:00",
+    "generated_at": "2026-11-05T21:01:40+00:00",
     "baseline": false,
-    "added": [],
-    "changed": [
+    "added": [
       {
-        "id": "let:222883",
-        "provider": "DeluxHost.net",
-        "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
-        "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
-        "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 待确认",
-        "changes": {
-          "库存": {
-            "before": "SOLD_OUT",
-            "after": "UNVERIFIED"
-          }
-        }
+        "id": "let:222984",
+        "provider": "Infrawire",
+        "title": "Infrawire – United Kingdom now available | NVMe VPS, High Performance, from $9.55/mo",
+        "url": "https://lowendtalk.com/discussion/222984/infrawire-united-kingdom-now-available-nvme-vps-high-performance-from-9-55-mo",
+        "summary": "上新/回归 · $9.55/月 · 帖文报价，未与配置绑定 · 在售"
+      },
+      {
+        "id": "let:222976",
+        "provider": "CorePanel 1.13 is out",
+        "title": "CorePanel 1.13 is out - free up to 20 sites",
+        "url": "https://lowendtalk.com/discussion/222976/corepanel-1-13-is-out-free-up-to-20-sites",
+        "summary": "常规帖 · $14.9/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:222977",
+        "provider": "bgp.sa",
+        "title": "[Kansas City] BGP VPS $9.99/mo | BYOASN + BYOIP | 1Gbps Unmetered | Fully Automated BGP + IRR",
+        "url": "https://lowendtalk.com/discussion/222977/kansas-city-bgp-vps-9-99-mo-byoasn-byoip-1gbps-unmetered-fully-automated-bgp-irr",
+        "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
-    "missing": [],
+    "changed": [],
+    "missing": [
+      {
+        "id": "let:222403",
+        "provider": "Infrawire",
+        "title": "Infrawire - VPS now in Turkey | 10 Gbps | Linux & Windows | Starting at $9.30/mo",
+        "url": "https://lowendtalk.com/discussion/222403/infrawire-vps-now-in-turkey-10-gbps-linux-windows-starting-at-9-30-mo",
+        "summary": "上新/回归 · $9.3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:222302",
+        "provider": "ipye.com",
+        "title": "Instant setup, automatic RPKI ROA, rDNS, and WHOIS changes - Free /48 IPv6 for everyone - IPYE.com",
+        "url": "https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:222201",
+        "provider": "bgp.sa",
+        "title": "[Kansas City] BGP VPS $9.99/mo | Fully Automated BGP + IRR | 1Gbps | Tier 1 & Global IX Connectivity",
+        "url": "https://lowendtalk.com/discussion/222201/kansas-city-bgp-vps-9-99-mo-fully-automated-bgp-irr-1gbps-tier-1-global-ix-connectivity",
+        "summary": "常规帖 · $9.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:221777",
+        "provider": "hostdare.com",
+        "title": "HostDare VPS Sale - Limited Time Offer! Our New Discount coupons !",
+        "url": "https://lowendtalk.com/discussion/221777/hostdare-vps-sale-limited-time-offer-our-new-discount-coupons",
+        "summary": "常规促销 · $19.49/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "leb:leb-early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium",
+        "provider": "cloudnium.net",
+        "title": "Early Bird Discounts on Cheap Colocation! $29/Month in Phoenix from Cloudnium!",
+        "url": "https://lowendbox.com/blog/early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium/",
+        "summary": "上新/回归 · $29/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-11-05T21:01:40+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:222984",
+          "provider": "Infrawire",
+          "title": "Infrawire – United Kingdom now available | NVMe VPS, High Performance, from $9.55/mo",
+          "url": "https://lowendtalk.com/discussion/222984/infrawire-united-kingdom-now-available-nvme-vps-high-performance-from-9-55-mo",
+          "summary": "上新/回归 · $9.55/月 · 帖文报价，未与配置绑定 · 在售"
+        },
+        {
+          "id": "let:222976",
+          "provider": "CorePanel 1.13 is out",
+          "title": "CorePanel 1.13 is out - free up to 20 sites",
+          "url": "https://lowendtalk.com/discussion/222976/corepanel-1-13-is-out-free-up-to-20-sites",
+          "summary": "常规帖 · $14.9/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:222977",
+          "provider": "bgp.sa",
+          "title": "[Kansas City] BGP VPS $9.99/mo | BYOASN + BYOIP | 1Gbps Unmetered | Fully Automated BGP + IRR",
+          "url": "https://lowendtalk.com/discussion/222977/kansas-city-bgp-vps-9-99-mo-byoasn-byoip-1gbps-unmetered-fully-automated-bgp-irr",
+          "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "changed": [],
+      "missing": [
+        {
+          "id": "let:222403",
+          "provider": "Infrawire",
+          "title": "Infrawire - VPS now in Turkey | 10 Gbps | Linux & Windows | Starting at $9.30/mo",
+          "url": "https://lowendtalk.com/discussion/222403/infrawire-vps-now-in-turkey-10-gbps-linux-windows-starting-at-9-30-mo",
+          "summary": "上新/回归 · $9.3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222302",
+          "provider": "ipye.com",
+          "title": "Instant setup, automatic RPKI ROA, rDNS, and WHOIS changes - Free /48 IPv6 for everyone - IPYE.com",
+          "url": "https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222201",
+          "provider": "bgp.sa",
+          "title": "[Kansas City] BGP VPS $9.99/mo | Fully Automated BGP + IRR | 1Gbps | Tier 1 & Global IX Connectivity",
+          "url": "https://lowendtalk.com/discussion/222201/kansas-city-bgp-vps-9-99-mo-fully-automated-bgp-irr-1gbps-tier-1-global-ix-connectivity",
+          "summary": "常规帖 · $9.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221777",
+          "provider": "hostdare.com",
+          "title": "HostDare VPS Sale - Limited Time Offer! Our New Discount coupons !",
+          "url": "https://lowendtalk.com/discussion/221777/hostdare-vps-sale-limited-time-offer-our-new-discount-coupons",
+          "summary": "常规促销 · $19.49/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium",
+          "provider": "cloudnium.net",
+          "title": "Early Bird Discounts on Cheap Colocation! $29/Month in Phoenix from Cloudnium!",
+          "url": "https://lowendbox.com/blog/early-bird-discounts-on-cheap-colocation-29-month-in-phoenix-from-cloudnium/",
+          "summary": "上新/回归 · $29/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-11-05T02:47:01+00:00",
       "baseline": false,
