@@ -1,101 +1,213 @@
 {
   "latest": {
-    "generated_at": "2026-11-08T21:01:41+00:00",
+    "generated_at": "2026-11-09T21:01:39+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223070",
-        "provider": "MailBig",
-        "title": "MailBig - $5.09/yr for 20 Mailboxes - Diwali Sale - Private Email",
-        "url": "https://lowendtalk.com/discussion/223070/mailbig-5-09-yr-for-20-mailboxes-diwali-sale-private-email",
-        "summary": "常规促销 · $5.09/年 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223122",
+        "provider": "Paradise Hosting",
+        "title": "Paradise Hosting | Buffalo, NY | KVM VPS from $3.25/mo | 20% OFF VPS & Dedicated | 50% OFF Game Host",
+        "url": "https://lowendtalk.com/discussion/223122/paradise-hosting-buffalo-ny-kvm-vps-from-3-25-mo-20-off-vps-dedicated-50-off-game-host",
+        "summary": "常规促销 · $3.25/月 · 帖文报价，未与配置绑定 · 待确认"
       },
       {
-        "id": "let:223081",
-        "provider": "KhanWebHost",
-        "title": "KhanWebHost | Brings Exclusive Deals| NZ,SE,SG,JP,TR,IN,USA,UK,CA,SA,HK,SE,NL,DE & FR",
-        "url": "https://lowendtalk.com/discussion/223081/khanwebhost-brings-exclusive-deals-nz-se-sg-jp-tr-in-usa-uk-ca-sa-hk-se-nl-de-fr",
-        "summary": "常规帖 · $5.5/年 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223104",
+        "provider": "xgpu.store",
+        "title": "XGPU Store: GPU rental from $0.17/hour",
+        "url": "https://lowendtalk.com/discussion/223104/xgpu-store-gpu-rental-from-0-17-hour",
+        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 待确认"
       },
+      {
+        "id": "let:223109",
+        "provider": "hostpapa.ca",
+        "title": "[HostPapa] Black Friday Web Hosting – $1.25/mo | 25 GB NVMe | cPanel | FREE Domain Y1 | CA/US/EU |",
+        "url": "https://lowendtalk.com/discussion/223109/hostpapa-black-friday-web-hosting-1-25-mo-25-gb-nvme-cpanel-free-domain-y1-ca-us-eu",
+        "summary": "黑五 · $1.25/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "leb:leb-genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps",
+        "provider": "genixnode.com",
+        "title": "GenixNode: Amazing Low Prizes in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS!",
+        "url": "https://lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/",
+        "summary": "常规促销 · $2.39/月 · 帖文报价，未与配置绑定 · 待确认"
+      }
+    ],
+    "changed": [
       {
         "id": "let:223062",
         "provider": "NetDynamics24",
         "title": "[NetDynamics LLC Crazy Sales] Dedicated Storage Servers 24 TB up to 168 TB from $42/mo",
         "url": "https://lowendtalk.com/discussion/223062/netdynamics-llc-crazy-sales-dedicated-storage-servers-24-tb-up-to-168-tb-from-42-mo",
-        "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:223058",
-        "provider": "XeniaHosting.com",
-        "title": "XeniaHosting.com | Optimized Network | New Guarantees | VPS up to 25G | IT",
-        "url": "https://lowendtalk.com/discussion/223058/xeniahosting-com-optimized-network-new-guarantees-vps-up-to-25g-it",
-        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认"
-      },
-      {
-        "id": "let:221719",
-        "provider": "metricservers.co.uk",
-        "title": "West Midlands | Dedicated Servers | KVM | GPU | Colocation",
-        "url": "https://lowendtalk.com/discussion/221719/west-midlands-dedicated-servers-kvm-gpu-colocation",
-        "summary": "常规促销 · £4/月 · 帖文报价，未与配置绑定 · 待确认(较旧)"
-      }
-    ],
-    "changed": [
-      {
-        "id": "let:222157",
-        "provider": "nolimitcloud.eu",
-        "title": "NolimitHost Budget Sale│Offers from €12.99/year! | NVMe KVM VPS | Freebie | DE",
-        "url": "https://lowendtalk.com/discussion/222157/nolimithost-budget-sale-offers-from-12-99-year-nvme-kvm-vps-freebie-de",
-        "summary": "常规促销 · €12.99/年 · 帖文报价，未与配置绑定 · 售罄",
+        "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 售罄",
         "changes": {
           "库存": {
             "before": "UNVERIFIED",
             "after": "SOLD_OUT"
           }
         }
+      },
+      {
+        "id": "let:222883",
+        "provider": "DeluxHost.net",
+        "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
+        "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
+        "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 待确认",
+        "changes": {
+          "库存": {
+            "before": "LIKELY_SOLD_OUT",
+            "after": "UNVERIFIED"
+          }
+        }
       }
     ],
     "missing": [
       {
-        "id": "let:222571",
-        "provider": "reliablesite.net",
-        "title": "Our Hardware. Our Network. Our Platform. | Dedicated Servers from $49/mo.",
-        "url": "https://lowendtalk.com/discussion/222571/our-hardware-our-network-our-platform-dedicated-servers-from-49-mo",
-        "summary": "上新/回归 · $49/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:223051",
+        "provider": "ByteHosty KVM VPS",
+        "title": "ByteHosty KVM VPS | Ultra-Low Prices | Enterprise NVMe | DDR4 ECC | 10Gbps",
+        "url": "https://lowendtalk.com/discussion/223051/bytehosty-kvm-vps-ultra-low-prices-enterprise-nvme-ddr4-ecc-10gbps",
+        "summary": "常规促销 · $4.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:221961",
-        "provider": "VM6",
-        "title": "Only 6: UK Ryzen 5900X 4GB/100GB NVMe £6/mo | 9950X from £6 | Gold 6230 from £1.75 | Win £50 credit!",
-        "url": "https://lowendtalk.com/discussion/221961/only-6-uk-ryzen-5900x-4gb-100gb-nvme-6-mo-9950x-from-6-gold-6230-from-1-75-win-50-credit",
-        "summary": "常规帖 · £6/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222269",
+        "provider": "Linceris.com",
+        "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
+        "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:222569",
-        "provider": "INET.WS",
-        "title": "INET.WS – KVM VPS | 14 locations USA/CA/EU | from $3/mo | 25% off 3 months | Paris NEW",
-        "url": "https://lowendtalk.com/discussion/222569/inet-ws-kvm-vps-14-locations-usa-ca-eu-from-3-mo-25-off-3-months-paris-new",
-        "summary": "常规促销 · $3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221980",
-        "provider": "商家待核实",
-        "title": "[UK] INTEL | SSD | RDNS | Arbor Anti DDOS | IPv4 & IPv6 /64 | UNMETERED BW",
-        "url": "https://lowendtalk.com/discussion/221980/uk-intel-ssd-rdns-arbor-anti-ddos-ipv4-ipv6-64-unmetered-bw",
+        "id": "let:222165",
+        "provider": "quickservers.net",
+        "title": "Big RAM Servers | Raw Storage Monsters | and Dedicated Mac Minis | from $44.99",
+        "url": "https://lowendtalk.com/discussion/222165/big-ram-servers-raw-storage-monsters-and-dedicated-mac-minis-from-44-99",
         "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [
       {
-        "id": "let:221896",
-        "provider": "onlyservers.com",
-        "title": "25G Unmetered 30% lifetime discount - Dedicated Servers",
-        "url": "https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers",
-        "summary": "常规促销 · $150.5/月 · 帖文报价，未与配置绑定 · 售罄"
+        "id": "let:222107",
+        "provider": "NUXOA",
+        "title": "Frankfurt Dedicated Servers from €95/mo. | Ryzen & Xeon | NUXOA",
+        "url": "https://lowendtalk.com/discussion/222107/frankfurt-dedicated-servers-from-95-mo-ryzen-xeon-nuxoa",
+        "summary": "常规帖 · €95/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
-    "expired": []
+    "expired": [
+      {
+        "id": "let:220041",
+        "provider": "HostAddon VPS",
+        "title": "HostAddon VPS - 1/2/10Gbps | NVMe | From $3.99/mo | 25% Off | 30 Locales | Storage | Streaming | VPN",
+        "url": "https://lowendtalk.com/discussion/220041/hostaddon-vps-1-2-10gbps-nvme-from-3-99-mo-25-off-30-locales-storage-streaming-vpn",
+        "summary": "常规促销 · $3.99/月 · 帖文报价，未与配置绑定 · 售罄",
+        "reason": "超出保留窗口；不代表确认停售"
+      }
+    ]
   },
   "history": [
+    {
+      "generated_at": "2026-11-09T21:01:39+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223122",
+          "provider": "Paradise Hosting",
+          "title": "Paradise Hosting | Buffalo, NY | KVM VPS from $3.25/mo | 20% OFF VPS & Dedicated | 50% OFF Game Host",
+          "url": "https://lowendtalk.com/discussion/223122/paradise-hosting-buffalo-ny-kvm-vps-from-3-25-mo-20-off-vps-dedicated-50-off-game-host",
+          "summary": "常规促销 · $3.25/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223104",
+          "provider": "xgpu.store",
+          "title": "XGPU Store: GPU rental from $0.17/hour",
+          "url": "https://lowendtalk.com/discussion/223104/xgpu-store-gpu-rental-from-0-17-hour",
+          "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 待确认"
+        },
+        {
+          "id": "let:223109",
+          "provider": "hostpapa.ca",
+          "title": "[HostPapa] Black Friday Web Hosting – $1.25/mo | 25 GB NVMe | cPanel | FREE Domain Y1 | CA/US/EU |",
+          "url": "https://lowendtalk.com/discussion/223109/hostpapa-black-friday-web-hosting-1-25-mo-25-gb-nvme-cpanel-free-domain-y1-ca-us-eu",
+          "summary": "黑五 · $1.25/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "leb:leb-genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps",
+          "provider": "genixnode.com",
+          "title": "GenixNode: Amazing Low Prizes in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS!",
+          "url": "https://lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/",
+          "summary": "常规促销 · $2.39/月 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:223062",
+          "provider": "NetDynamics24",
+          "title": "[NetDynamics LLC Crazy Sales] Dedicated Storage Servers 24 TB up to 168 TB from $42/mo",
+          "url": "https://lowendtalk.com/discussion/223062/netdynamics-llc-crazy-sales-dedicated-storage-servers-24-tb-up-to-168-tb-from-42-mo",
+          "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "SOLD_OUT"
+            }
+          }
+        },
+        {
+          "id": "let:222883",
+          "provider": "DeluxHost.net",
+          "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
+          "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
+          "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 待确认",
+          "changes": {
+            "库存": {
+              "before": "LIKELY_SOLD_OUT",
+              "after": "UNVERIFIED"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:223051",
+          "provider": "ByteHosty KVM VPS",
+          "title": "ByteHosty KVM VPS | Ultra-Low Prices | Enterprise NVMe | DDR4 ECC | 10Gbps",
+          "url": "https://lowendtalk.com/discussion/223051/bytehosty-kvm-vps-ultra-low-prices-enterprise-nvme-ddr4-ecc-10gbps",
+          "summary": "常规促销 · $4.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222269",
+          "provider": "Linceris.com",
+          "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
+          "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222165",
+          "provider": "quickservers.net",
+          "title": "Big RAM Servers | Raw Storage Monsters | and Dedicated Mac Minis | from $44.99",
+          "url": "https://lowendtalk.com/discussion/222165/big-ram-servers-raw-storage-monsters-and-dedicated-mac-minis-from-44-99",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [
+        {
+          "id": "let:222107",
+          "provider": "NUXOA",
+          "title": "Frankfurt Dedicated Servers from €95/mo. | Ryzen & Xeon | NUXOA",
+          "url": "https://lowendtalk.com/discussion/222107/frankfurt-dedicated-servers-from-95-mo-ryzen-xeon-nuxoa",
+          "summary": "常规帖 · €95/月 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "expired": [
+        {
+          "id": "let:220041",
+          "provider": "HostAddon VPS",
+          "title": "HostAddon VPS - 1/2/10Gbps | NVMe | From $3.99/mo | 25% Off | 30 Locales | Storage | Streaming | VPN",
+          "url": "https://lowendtalk.com/discussion/220041/hostaddon-vps-1-2-10gbps-nvme-from-3-99-mo-25-off-30-locales-storage-streaming-vpn",
+          "summary": "常规促销 · $3.99/月 · 帖文报价，未与配置绑定 · 售罄",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
+    },
     {
       "generated_at": "2026-11-08T21:01:41+00:00",
       "baseline": false,
