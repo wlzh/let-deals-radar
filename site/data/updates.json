@@ -1,35 +1,21 @@
 {
   "latest": {
-    "generated_at": "2026-11-10T21:01:35+00:00",
+    "generated_at": "2026-11-11T21:01:37+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223148",
-        "provider": "SmokyHosts",
-        "title": "11.11 Sale | $11.11 VPS | 11 x $11.11 giveaway | SmokyHosts VPS exclusive sale!",
-        "url": "https://lowendtalk.com/discussion/223148/11-11-sale-11-11-vps-11-x-11-11-giveaway-smokyhosts-vps-exclusive-sale",
-        "summary": "黑五 · $11.11/年 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223162",
+        "provider": "EnderHost",
+        "title": "[11.11 FLASH SALE] EnderHost | Toronto KVM VPS | 512MB DDR4 | 1Gbps | IPv4 | $11.11/Year Recurring |",
+        "url": "https://lowendtalk.com/discussion/223162/11-11-flash-sale-enderhost-toronto-kvm-vps-512mb-ddr4-1gbps-ipv4-11-11-year-recurring",
+        "summary": "常规促销 · $11.11/年 · 帖文报价，未与配置绑定 · 疑似售罄"
       },
       {
-        "id": "let:223154",
-        "provider": "INET.WS",
-        "title": "INET.WS – KVM VPS | 14 locations USA/CA/EU | from $3/mo | 25% off 3 months | Paris NEW",
-        "url": "https://lowendtalk.com/discussion/223154/inet-ws-kvm-vps-14-locations-usa-ca-eu-from-3-mo-25-off-3-months-paris-new",
-        "summary": "常规促销 · $3/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:223142",
-        "provider": "HostNoc",
-        "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $22.50/mo",
-        "url": "https://lowendtalk.com/discussion/223142/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-22-50-mo",
-        "summary": "常规促销 · $22.5/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "leb:leb-felwares-limited-time-holiday-sale-starts-now-50-off-everything",
-        "provider": "Felware’s Limited Time Holiday",
-        "title": "Felware’s Limited Time Holiday Sale Starts NOW! 50% Off Everything!",
-        "url": "https://lowendbox.com/blog/felwares-limited-time-holiday-sale-starts-now-50-off-everything/",
-        "summary": "常规促销 · $69.99/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "leb:leb-if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year",
+        "provider": "If You Missed the Godlike.Host",
+        "title": "If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!",
+        "url": "https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/",
+        "summary": "常规帖 · $1.83/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
     "changed": [
@@ -38,33 +24,20 @@
         "provider": "DeluxHost.net",
         "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
         "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
-        "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 疑似售罄",
+        "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 待确认",
         "changes": {
           "库存": {
-            "before": "UNVERIFIED",
-            "after": "LIKELY_SOLD_OUT"
+            "before": "LIKELY_SOLD_OUT",
+            "after": "UNVERIFIED"
           }
         }
       },
       {
-        "id": "let:222988",
-        "provider": "Xeon Gold VPS",
-        "title": "[UK] Xeon Gold VPS – 2GB RAM / 30GB SSD / 1Gbps Unmetered – £25/YR",
-        "url": "https://lowendtalk.com/discussion/222988/uk-xeon-gold-vps-2gb-ram-30gb-ssd-1gbps-unmetered-25-yr",
-        "summary": "常规帖 · £25/年 · 帖文报价，未与配置绑定 · 在售",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "ON_SALE"
-          }
-        }
-      },
-      {
-        "id": "let:221937",
-        "provider": "ravnix.gg",
-        "title": "RAVNIX is Back! New Atlanta Location, Upgraded Network & VPS Offers Starting at $14/Year!",
-        "url": "https://lowendtalk.com/discussion/221937/ravnix-is-back-new-atlanta-location-upgraded-network-vps-offers-starting-at-14-year",
-        "summary": "上新/回归 · $14/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+        "id": "let:221949",
+        "provider": "Meet Arct Cloud",
+        "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
+        "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
+        "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 待确认(较旧)",
         "changes": {
           "库存": {
             "before": "UNVERIFIED",
@@ -75,62 +48,138 @@
     ],
     "missing": [
       {
-        "id": "let:221552",
-        "provider": "svr4u.com",
-        "title": "[MY] SVR4U $15.88/Yr KVM | FREE 1Gbps + 1 TB BW Upgrade | Ryzen 5700G | P100 16GB GPU",
-        "url": "https://lowendtalk.com/discussion/221552/my-svr4u-15-88-yr-kvm-free-1gbps-1-tb-bw-upgrade-ryzen-5700g-p100-16gb-gpu",
-        "summary": "常规帖 · $15.88/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:221603",
+        "provider": "Caliber Node",
+        "title": "Caliber Node | $10/Year Cloud Apps — Dallas, Nuremberg & Singapore | NEW: Bring Your Own Server",
+        "url": "https://lowendtalk.com/discussion/221603/caliber-node-10-year-cloud-apps-dallas-nuremberg-singapore-new-bring-your-own-server",
+        "summary": "常规促销 · $10/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:222597",
-        "provider": "rafftechnologies.com",
-        "title": "Raff Technologies: KVM VPS from $4.99/mo · Managed Databases · AMD EPYC · NVMe · Unmetered",
-        "url": "https://lowendtalk.com/discussion/222597/raff-technologies-kvm-vps-from-4-99-mo-managed-databases-amd-epyc-nvme-unmetered",
-        "summary": "黑五 · $4.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:220831",
+        "provider": "SmokyHosts",
+        "title": "SmokyHosts - 3 Days Only | Summer Storage VPS Sale | 50% off | 20GB SSD OR 50% addon HDD | Unmetered",
+        "url": "https://lowendtalk.com/discussion/220831/smokyhosts-3-days-only-summer-storage-vps-sale-50-off-20gb-ssd-or-50-addon-hdd-unmetered",
+        "summary": "常规促销 · $35.95/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:222078",
-        "provider": "hostnamaste.com",
-        "title": "Yearly KVM VPS in US FR CA | SSD RAID10 | IPv4 + IPv6 | Since 2016 - HostNamaste",
-        "url": "https://lowendtalk.com/discussion/222078/yearly-kvm-vps-in-us-fr-ca-ssd-raid10-ipv4-ipv6-since-2016-hostnamaste",
-        "summary": "常规帖 · $48/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:222614",
-        "provider": "Ava.hosting",
-        "title": "Ava.hosting - Boooh! Halloween Discount 15% OFF!!",
-        "url": "https://lowendtalk.com/discussion/222614/ava-hosting-boooh-halloween-discount-15-off",
-        "summary": "黑五 · €1.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:222665",
-        "provider": "Alexhost.com",
-        "title": "Alexhost.com - Happy Halloween! 15% OFF",
-        "url": "https://lowendtalk.com/discussion/222665/alexhost-com-happy-halloween-15-off",
-        "summary": "节日促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        "id": "let:221687",
+        "provider": "LayerOne",
+        "title": "LayerOne VPS Hosting - Up to 30% off - New NVME Backed Storage + Routed IPv6 Support",
+        "url": "https://lowendtalk.com/discussion/221687/layerone-vps-hosting-up-to-30-off-new-nvme-backed-storage-routed-ipv6-support",
+        "summary": "常规促销 · $20.16/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [
       {
-        "id": "let:221060",
-        "provider": "prohosting24.de",
-        "title": "ph24 first vps deal in 2026 + flash sale (EPYC 7XX3)",
-        "url": "https://lowendtalk.com/discussion/221060/ph24-first-vps-deal-in-2026-flash-sale-epyc-7xx3",
-        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 待确认(较旧)"
+        "id": "let:222269",
+        "provider": "Linceris.com",
+        "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
+        "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认"
       }
     ],
     "expired": [
       {
-        "id": "let:220060",
-        "provider": "Royal-Server.Ro",
-        "title": "Royal-Server.Ro | KVM VPS | Ryzen 9 9950X & Intel Core i9 | 10Gbps | Own Datacenter | Since 2017",
-        "url": "https://lowendtalk.com/discussion/220060/royal-server-ro-kvm-vps-ryzen-9-9950x-intel-core-i9-10gbps-own-datacenter-since-2017",
-        "summary": "常规帖 · €5/月 · 帖文报价，未与配置绑定；本轮未检出，上次检出 2026-11-03T02:01:27+00:00 · 本轮未检出（非确认停售）",
+        "id": "let:220098",
+        "provider": "SmokyHosts",
+        "title": "SmokyHosts - Great Freedom Sale | Upto 60% discount | India, Hong Kong, Singapore, Australia",
+        "url": "https://lowendtalk.com/discussion/220098/smokyhosts-great-freedom-sale-upto-60-discount-india-hong-kong-singapore-australia",
+        "summary": "节日促销 · $38.21/年 · 帖文报价，未与配置绑定；本轮未检出，上次检出 2026-11-03T02:01:27+00:00 · 本轮未检出（非确认停售）",
         "reason": "超出保留窗口；不代表确认停售"
       }
     ]
   },
   "history": [
+    {
+      "generated_at": "2026-11-11T21:01:37+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223162",
+          "provider": "EnderHost",
+          "title": "[11.11 FLASH SALE] EnderHost | Toronto KVM VPS | 512MB DDR4 | 1Gbps | IPv4 | $11.11/Year Recurring |",
+          "url": "https://lowendtalk.com/discussion/223162/11-11-flash-sale-enderhost-toronto-kvm-vps-512mb-ddr4-1gbps-ipv4-11-11-year-recurring",
+          "summary": "常规促销 · $11.11/年 · 帖文报价，未与配置绑定 · 疑似售罄"
+        },
+        {
+          "id": "leb:leb-if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year",
+          "provider": "If You Missed the Godlike.Host",
+          "title": "If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!",
+          "url": "https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/",
+          "summary": "常规帖 · $1.83/月 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:222883",
+          "provider": "DeluxHost.net",
+          "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
+          "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
+          "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 待确认",
+          "changes": {
+            "库存": {
+              "before": "LIKELY_SOLD_OUT",
+              "after": "UNVERIFIED"
+            }
+          }
+        },
+        {
+          "id": "let:221949",
+          "provider": "Meet Arct Cloud",
+          "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
+          "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
+          "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:221603",
+          "provider": "Caliber Node",
+          "title": "Caliber Node | $10/Year Cloud Apps — Dallas, Nuremberg & Singapore | NEW: Bring Your Own Server",
+          "url": "https://lowendtalk.com/discussion/221603/caliber-node-10-year-cloud-apps-dallas-nuremberg-singapore-new-bring-your-own-server",
+          "summary": "常规促销 · $10/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:220831",
+          "provider": "SmokyHosts",
+          "title": "SmokyHosts - 3 Days Only | Summer Storage VPS Sale | 50% off | 20GB SSD OR 50% addon HDD | Unmetered",
+          "url": "https://lowendtalk.com/discussion/220831/smokyhosts-3-days-only-summer-storage-vps-sale-50-off-20gb-ssd-or-50-addon-hdd-unmetered",
+          "summary": "常规促销 · $35.95/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221687",
+          "provider": "LayerOne",
+          "title": "LayerOne VPS Hosting - Up to 30% off - New NVME Backed Storage + Routed IPv6 Support",
+          "url": "https://lowendtalk.com/discussion/221687/layerone-vps-hosting-up-to-30-off-new-nvme-backed-storage-routed-ipv6-support",
+          "summary": "常规促销 · $20.16/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [
+        {
+          "id": "let:222269",
+          "provider": "Linceris.com",
+          "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
+          "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "expired": [
+        {
+          "id": "let:220098",
+          "provider": "SmokyHosts",
+          "title": "SmokyHosts - Great Freedom Sale | Upto 60% discount | India, Hong Kong, Singapore, Australia",
+          "url": "https://lowendtalk.com/discussion/220098/smokyhosts-great-freedom-sale-upto-60-discount-india-hong-kong-singapore-australia",
+          "summary": "节日促销 · $38.21/年 · 帖文报价，未与配置绑定；本轮未检出，上次检出 2026-11-03T02:01:27+00:00 · 本轮未检出（非确认停售）",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
+    },
     {
       "generated_at": "2026-11-10T21:01:35+00:00",
       "baseline": false,
