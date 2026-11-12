@@ -291,9 +291,9 @@ def _initial_rows(records):
         if r.get("availability") in closed:
             continue
         esc = html.escape
-        link = r.get("vendor_url") or r.get("url")
+        link = r.get("vendor_url")
         action = ('<a class="purchase" href="%s" target="_blank" rel="noopener nofollow sponsored">%s</a>' %
-                  (esc(link, quote=True), esc(r["purchase_label"] if r.get("vendor_url") else "查看原帖找购买入口"))) if link else ""
+                  (esc(link, quote=True), esc(r["purchase_label"]))) if link else '<small>购买入口待核实</small>'
         if r.get("detail_path"):
             action += '<br><a href="%s">优惠详情与核验说明</a>' % esc(r["detail_path"], quote=True)
         action += '<br>' + esc(r.get("service_label") or "")
@@ -921,18 +921,15 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
     if(r.detail_path) h+='<a class="lk lk-sub" href="'+esc(r.detail_path)+'">优惠详情与核验说明</a>';
     if(r.service_label) h+='<span class="tag">'+esc(r.service_label)+'</span>';
     if(r.vendor_url){
-      if(r.order_url){
-        h+='<a class="lk lk-main purchase" href="'+esc(r.order_url)+'" target="_blank" rel="noopener nofollow sponsored">下单</a>';
-        h+='<a class="lk lk-sub" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">注册</a>';
-      }else{
-        h+='<a class="lk lk-main purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
-      }
-    }
-    if(r.url){
-      h+='<a class="lk lk-sub" href="'+esc(r.url)+
-         '" target="_blank" rel="noopener">查看原帖与完整条款</a>';
+      h+='<a class="lk lk-main purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+    }else{
+      h+='<span>购买入口待核实，请先核对优惠详情。</span>';
     }
     h+='</div>';
+    if(r.url){
+      h+='<details><summary>信息来源与条款核验</summary><a href="'+esc(r.url)+
+         '" target="_blank" rel="noopener">查看原帖与完整条款</a></details>';
+    }
     return h+'</div>';
   }
   function render(){
@@ -953,10 +950,9 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
       if(r.service_kind && r.service_kind!=='vps') out+='<small>'+esc(r.service_label)+'</small>';
       out+='<div class="actions">';
       if(r.vendor_url){
-        if(r.order_url) out+='<a class="purchase" href="'+esc(r.order_url)+'" target="_blank" rel="noopener nofollow sponsored">下单</a> <a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">注册</a>';
-        else out+='<a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
+        out+='<a class="purchase" href="'+esc(r.vendor_url)+'" target="_blank" rel="noopener nofollow sponsored">'+esc(r.purchase_label)+'</a>';
       }
-      else if(r.url) out+='<a href="'+esc(r.url)+'" target="_blank" rel="noopener">查看原帖找购买入口</a>';
+      else if(r.detail_path) out+='<a href="'+esc(r.detail_path)+'">查看优惠详情</a><small>购买入口待核实</small>';
       out+='<button type="button" aria-expanded="'+open+'">'+(open?'收起详情':'核对套餐与优惠码')+'</button></div></td>';
       out+='<td data-label="活动"><span class="badge b-'+esc(r.event_type)+'">'+
            esc(EVENT_CN[r.event_type]||r.event_type)+'</span></td>';

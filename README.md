@@ -7,7 +7,7 @@
 
 **零运行时依赖**（仅 Python 标准库）· 产物是纯静态文件
 
-当前版本：**0.4.1**。本轮升级说明与验收方法见 [SEO/GEO 与佣金入口说明](docs/SEO-GEO.md)。
+当前版本：**0.4.2**。购买按钮与推广归属规则见 [收益入口复盘](docs/PURCHASE-ROUTING.md)，SEO/GEO 说明见 [相关文档](docs/SEO-GEO.md)。
 
 [![在线体验](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E4%BD%93%E9%AA%8C-vps.869hr.uk-2563eb?style=for-the-badge)](https://vps.869hr.uk)
 [![博客](https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-869hr.uk-16a34a?style=for-the-badge)](https://869hr.uk)
@@ -258,7 +258,7 @@ LDR_SITE_FOOTER=...
 ### 论坛搬运（可选）
 
 还能把优惠帖**自动搬运到自己的 Flarum 论坛**，方便中文用户阅读。
-站点上每行的「查看原帖」会变成「中文详情 →」+「原帖 →」（有对应帖时）。
+这是旧版旁路集成功能，当前生产站点不再引导到论坛。列表优先使用商家推广入口，缺失商家地址时转站内详情；原帖保留在折叠溯源区。
 
 **默认关闭且默认演练**，需显式开启：
 

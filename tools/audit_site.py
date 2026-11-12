@@ -20,6 +20,7 @@ def audit(root):
     assert rows and payload["count"] == len(rows), "Empty or inconsistent records"
     assert "@@MERCHANTS@@" not in page and "@@ROWS@@" not in page, "Unrendered template"
     assert "lowseek.ai/d/" not in page, "Legacy forum traffic leakage"
+    assert "查看原帖找购买入口" not in page, "Source promoted as checkout fallback"
     assert 'rel="canonical"' in page, "Missing canonical URL"
     class Links(HTMLParser):
         def __init__(self):
@@ -32,6 +33,10 @@ def audit(root):
 
     parser = Links()
     parser.feed(page)
+    for name in ("black-friday-2026", "cheap-yearly", "by-region"):
+        document = (root / name / "index.html").read_text()
+        assert "查看原帖</a>" not in document, "Listing bypasses site detail"
+        parser.feed(document)
     mapping = affiliate._load()
     for domain in affiliate.DEFAULTS:
         cfg = mapping.get(domain)
@@ -44,6 +49,7 @@ def audit(root):
         assert all(affiliate.rewrite(url) == url for url in matches), f"Wrong merchant ID: {domain}"
     covered = 0
     for r in rows:
+        assert not r.get("order_url"), "Raw checkout bypasses affiliate entrance"
         assert not r.get("forum_url"), "Legacy forum URL"
         assert r.get("display_price_note") and r.get("display_spec"), "Missing price context"
         url = r.get("vendor_url")
@@ -82,6 +88,7 @@ def seo_geo_audit(root: Path, payload: dict, page: str, result: dict) -> None:
             continue
         assert rec.get("detail_path") == path, "Unstable detail URL"
         document = (root / path.strip("/") / "index.html").read_text()
+        assert '<details><summary>信息来源与条款核验</summary>' in document, "Source must be secondary evidence"
         if rec.get("vendor_url"):
             assert 'href="' + html.escape(rec["vendor_url"], quote=True) + '"' in document, "Detail lost affiliate destination"
         links = re.findall(r'<script type="application/ld\+json">(.*?)</script>', document, re.S)

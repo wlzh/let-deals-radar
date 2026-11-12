@@ -120,7 +120,7 @@ def _purchase_html(rec: dict) -> str:
     """商家单元格的行动链接。
 
     有推广/官网链接时用 sponsored 标注（rel 带 nofollow sponsored）；
-    没有时退回原帖链接，仅 noopener —— 原帖不是推广位，不该带 sponsored。
+    没有时仅引导站内详情，原帖留在详情页的溯源折叠区。
     """
     esc = html.escape
     vendor = rec.get("vendor_url")
@@ -129,11 +129,12 @@ def _purchase_html(rec: dict) -> str:
                 'rel="noopener nofollow sponsored">%s</a>' %
                 (esc(vendor, quote=True),
                  esc(rec.get("purchase_label") or "查看活动与下单")))
-    url = rec.get("url")
-    if url:
-        return ('<a href="%s" target="_blank" rel="noopener">查看原帖</a>'
-                % esc(url, quote=True))
-    return ""
+    from .details import detail_path
+    path = detail_path(rec)
+    if path:
+        return ('<a href="%s">查看优惠详情</a><small>购买入口待核实</small>'
+                % esc(path, quote=True))
+    return "购买入口待核实"
 
 
 def _av_html(rec: dict) -> str:

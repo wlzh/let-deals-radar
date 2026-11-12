@@ -82,9 +82,9 @@ def prepare(r):
         r["order_url"] = None
     elif r.get("availability") != "ON_SALE":
         r["purchase_label"] = "到商家核对价格与库存"
-    # order_url 只允许安全的 http(s) 链接透传到页面。
-    if r.get("order_url") and not safe_url(r.get("order_url")):
-        r["order_url"] = None
+    # Legacy raw checkout links bypass dedicated affiliate entrances.
+    # Only vendor_url, rewritten above, may be a purchase destination.
+    r["order_url"] = None
     if (r.get("tracking") or {}).get("state") == "missing":
         r["availability"] = "NOT_OBSERVED"
         r["purchase_label"] = "本轮未检出，请到商家核实"

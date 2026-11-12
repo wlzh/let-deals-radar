@@ -21,6 +21,8 @@ FILES = (
     "feed.xml",
     "llms.txt",
     "black-friday-2026/index.html",
+    "cheap-yearly/index.html",
+    "by-region/index.html",
 )
 _CF_BEACON = re.compile(
     rb'\n?<script\b(?=[^>]*\bdata-cf-beacon=)[^>]*\bsrc=["\x27]'

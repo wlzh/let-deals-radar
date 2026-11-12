@@ -68,7 +68,9 @@ def write_details(payload, out_dir, style):
         vendor = safe_url(rec.get("vendor_url"))
         if vendor:
             actions += f'<p><a class="purchase" rel="noopener nofollow sponsored" href="{esc(vendor, quote=True)}">{esc(rec.get("purchase_label") or "查看商家活动")}</a></p>'
-        actions += f'<p><a rel="noopener" href="{esc(rec["url"], quote=True)}">查看原帖与完整条款</a></p>'
+        if not vendor:
+            actions += '<p>购买入口待核实，暂不提供下单按钮。可返回<a href="/">全部优惠与商家目录</a>浏览其他活动。</p>'
+        actions += f'<details><summary>信息来源与条款核验</summary><p><a rel="noopener" href="{esc(rec["url"], quote=True)}">查看原帖与完整条款</a></p></details>'
         generated = payload.get("generated_at") or ""
         document = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

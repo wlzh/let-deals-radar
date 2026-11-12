@@ -169,11 +169,12 @@ def test_purchase_links_carry_sponsored_rel():
             'target="_blank" rel="noopener nofollow sponsored">'in out)
 
 
-def test_thread_fallback_link_rel_noopener_only():
+def test_missing_vendor_links_to_internal_detail():
     rec = _rec(vendor_url=None)
     out = bfpage.render_bf_page(_payload([rec]))
-    assert 'target="_blank" rel="noopener">查看原帖</a>' in out
-    # 原帖不是推广位，不应出现 sponsored 标注
+    from letdeals.details import detail_path
+    assert f'href="{detail_path(rec)}">查看优惠详情</a>' in out
+    assert '查看原帖</a>' not in out
     assert 'rel="noopener nofollow sponsored"' not in out
 
 
