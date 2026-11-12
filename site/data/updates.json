@@ -1,44 +1,55 @@
 {
   "latest": {
-    "generated_at": "2026-11-12T02:38:54+00:00",
+    "generated_at": "2026-11-12T21:01:39+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223203",
-        "provider": "paypal.com",
-        "title": "Low End Dedicated Server Share, Vint Hill, Virginia, USA",
-        "url": "https://lowendtalk.com/discussion/223203/low-end-dedicated-server-share-vint-hill-virginia-usa",
-        "summary": "上新/回归 · $15/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223221",
+        "provider": "ST-Hosting",
+        "title": "ST-Hosting | Frankfurt KVM VPS | Intel Xeon, 8 GB RAM, 75 GB NVMe | €8.33/month incl. VAT",
+        "url": "https://lowendtalk.com/discussion/223221/st-hosting-frankfurt-kvm-vps-intel-xeon-8-gb-ram-75-gb-nvme-8-33-month-incl-vat",
+        "summary": "常规帖 · €8.33/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
-    "changed": [
-      {
-        "id": "let:222988",
-        "provider": "Xeon Gold VPS",
-        "title": "[UK] Xeon Gold VPS – 2GB RAM / 30GB SSD / 1Gbps Unmetered – £25/YR",
-        "url": "https://lowendtalk.com/discussion/222988/uk-xeon-gold-vps-2gb-ram-30gb-ssd-1gbps-unmetered-25-yr",
-        "summary": "常规帖 · £25/年 · 帖文报价，未与配置绑定 · 待确认",
-        "changes": {
-          "库存": {
-            "before": "ON_SALE",
-            "after": "UNVERIFIED"
-          }
-        }
-      }
-    ],
+    "changed": [],
     "missing": [
       {
-        "id": "let:220764",
-        "provider": "vpshostingservice.co",
-        "title": "ServerHost September Savings – OpenClaw VPS - Ryzen/i9 - KVM VPS from $16.99/YEAR",
-        "url": "https://lowendtalk.com/discussion/220764/serverhost-september-savings-openclaw-vps-ryzen-i9-kvm-vps-from-16-99-year",
-        "summary": "上新/回归 · $16.99/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222752",
+        "provider": "leapswitch",
+        "title": "AMD Ryzen 9 Dedicated Servers for High Performance Workloads",
+        "url": "https://lowendtalk.com/discussion/222752/amd-ryzen-9-dedicated-servers-for-high-performance-workloads",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-11-12T21:01:39+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223221",
+          "provider": "ST-Hosting",
+          "title": "ST-Hosting | Frankfurt KVM VPS | Intel Xeon, 8 GB RAM, 75 GB NVMe | €8.33/month incl. VAT",
+          "url": "https://lowendtalk.com/discussion/223221/st-hosting-frankfurt-kvm-vps-intel-xeon-8-gb-ram-75-gb-nvme-8-33-month-incl-vat",
+          "summary": "常规帖 · €8.33/月 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "changed": [],
+      "missing": [
+        {
+          "id": "let:222752",
+          "provider": "leapswitch",
+          "title": "AMD Ryzen 9 Dedicated Servers for High Performance Workloads",
+          "url": "https://lowendtalk.com/discussion/222752/amd-ryzen-9-dedicated-servers-for-high-performance-workloads",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-11-12T02:38:54+00:00",
       "baseline": false,
