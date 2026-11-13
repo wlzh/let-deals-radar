@@ -1,30 +1,139 @@
 {
   "latest": {
-    "generated_at": "2026-11-12T21:01:39+00:00",
+    "generated_at": "2026-11-13T21:01:48+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223221",
-        "provider": "ST-Hosting",
-        "title": "ST-Hosting | Frankfurt KVM VPS | Intel Xeon, 8 GB RAM, 75 GB NVMe | €8.33/month incl. VAT",
-        "url": "https://lowendtalk.com/discussion/223221/st-hosting-frankfurt-kvm-vps-intel-xeon-8-gb-ram-75-gb-nvme-8-33-month-incl-vat",
-        "summary": "常规帖 · €8.33/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223243",
+        "provider": "Pre-BF Frankfurt EPYC KVM",
+        "title": "[Prepaid-Host] Pre-BF Frankfurt EPYC KVM | 8GB €58.80/yr | 16GB €7.99/mo",
+        "url": "https://lowendtalk.com/discussion/223243/prepaid-host-pre-bf-frankfurt-epyc-kvm-8gb-58-80-yr-16gb-7-99-mo",
+        "summary": "常规帖 · €58.8/年 · 帖文报价，未与配置绑定 · 售罄"
+      },
+      {
+        "id": "let:223268",
+        "provider": "fourplex.net",
+        "title": "NYC Ryzen 9000 VPS | 50% OFF SALE | 2GB @ $4/mo | 4GB @ $8/mo | Unmetered BW",
+        "url": "https://lowendtalk.com/discussion/223268/nyc-ryzen-9000-vps-50-off-sale-2gb-4-mo-4gb-8-mo-unmetered-bw",
+        "summary": "上新/回归 · $4/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223259",
+        "provider": "DediRock",
+        "title": "The Future Arrives Early >> THE 4K WRITE SENSATION™ & THE DEDIROCK HIGH-RAM VPS™",
+        "url": "https://lowendtalk.com/discussion/223259/the-future-arrives-early-the-4k-write-sensation-the-dedirock-high-ram-vps",
+        "summary": "常规促销 · $10.88/年 · 帖文报价，未与配置绑定 · 疑似售罄"
+      },
+      {
+        "id": "let:223241",
+        "provider": "netzdachs.com",
+        "title": "[Netzdachs] DE Dedicated Servers from 49.99 €/mo | Instant Ryzen 7700 & 7800X3D | 1 Gbps | No Setup",
+        "url": "https://lowendtalk.com/discussion/223241/netzdachs-de-dedicated-servers-from-49-99-mo-instant-ryzen-7700-7800x3d-1-gbps-no-setup",
+        "summary": "常规促销 · €49.99/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223255",
+        "provider": "fairyhosting.com",
+        "title": "[FairyHosting] Dedicated Server in Estonia — Xeon E3/8GB ECC/480GB SSD/1Gbps — €59/mo — No Setup Fee",
+        "url": "https://lowendtalk.com/discussion/223255/fairyhosting-dedicated-server-in-estonia-xeon-e3-8gb-ecc-480gb-ssd-1gbps-59-mo-no-setup-fee",
+        "summary": "常规帖 · €59/月 · 帖文报价，未与配置绑定 · 待确认"
       }
     ],
-    "changed": [],
+    "changed": [
+      {
+        "id": "let:223062",
+        "provider": "NetDynamics24",
+        "title": "[NetDynamics LLC Crazy Sales] Dedicated Storage Servers 24 TB up to 168 TB from $42/mo",
+        "url": "https://lowendtalk.com/discussion/223062/netdynamics-llc-crazy-sales-dedicated-storage-servers-24-tb-up-to-168-tb-from-42-mo",
+        "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 部分售罄",
+        "changes": {
+          "库存": {
+            "before": "SOLD_OUT",
+            "after": "PARTIAL"
+          }
+        }
+      }
+    ],
     "missing": [
       {
-        "id": "let:222752",
-        "provider": "leapswitch",
-        "title": "AMD Ryzen 9 Dedicated Servers for High Performance Workloads",
-        "url": "https://lowendtalk.com/discussion/222752/amd-ryzen-9-dedicated-servers-for-high-performance-workloads",
-        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        "id": "let:222136",
+        "provider": "servers_guru",
+        "title": "[SERVERS.GURU] Netherlands 10Gbps : 30% off recurring! VPS from 3.84€ !",
+        "url": "https://lowendtalk.com/discussion/222136/servers-guru-netherlands-10gbps-30-off-recurring-vps-from-3-84",
+        "summary": "常规促销 · €38/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-11-13T21:01:48+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223243",
+          "provider": "Pre-BF Frankfurt EPYC KVM",
+          "title": "[Prepaid-Host] Pre-BF Frankfurt EPYC KVM | 8GB €58.80/yr | 16GB €7.99/mo",
+          "url": "https://lowendtalk.com/discussion/223243/prepaid-host-pre-bf-frankfurt-epyc-kvm-8gb-58-80-yr-16gb-7-99-mo",
+          "summary": "常规帖 · €58.8/年 · 帖文报价，未与配置绑定 · 售罄"
+        },
+        {
+          "id": "let:223268",
+          "provider": "fourplex.net",
+          "title": "NYC Ryzen 9000 VPS | 50% OFF SALE | 2GB @ $4/mo | 4GB @ $8/mo | Unmetered BW",
+          "url": "https://lowendtalk.com/discussion/223268/nyc-ryzen-9000-vps-50-off-sale-2gb-4-mo-4gb-8-mo-unmetered-bw",
+          "summary": "上新/回归 · $4/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223259",
+          "provider": "DediRock",
+          "title": "The Future Arrives Early >> THE 4K WRITE SENSATION™ & THE DEDIROCK HIGH-RAM VPS™",
+          "url": "https://lowendtalk.com/discussion/223259/the-future-arrives-early-the-4k-write-sensation-the-dedirock-high-ram-vps",
+          "summary": "常规促销 · $10.88/年 · 帖文报价，未与配置绑定 · 疑似售罄"
+        },
+        {
+          "id": "let:223241",
+          "provider": "netzdachs.com",
+          "title": "[Netzdachs] DE Dedicated Servers from 49.99 €/mo | Instant Ryzen 7700 & 7800X3D | 1 Gbps | No Setup",
+          "url": "https://lowendtalk.com/discussion/223241/netzdachs-de-dedicated-servers-from-49-99-mo-instant-ryzen-7700-7800x3d-1-gbps-no-setup",
+          "summary": "常规促销 · €49.99/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223255",
+          "provider": "fairyhosting.com",
+          "title": "[FairyHosting] Dedicated Server in Estonia — Xeon E3/8GB ECC/480GB SSD/1Gbps — €59/mo — No Setup Fee",
+          "url": "https://lowendtalk.com/discussion/223255/fairyhosting-dedicated-server-in-estonia-xeon-e3-8gb-ecc-480gb-ssd-1gbps-59-mo-no-setup-fee",
+          "summary": "常规帖 · €59/月 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:223062",
+          "provider": "NetDynamics24",
+          "title": "[NetDynamics LLC Crazy Sales] Dedicated Storage Servers 24 TB up to 168 TB from $42/mo",
+          "url": "https://lowendtalk.com/discussion/223062/netdynamics-llc-crazy-sales-dedicated-storage-servers-24-tb-up-to-168-tb-from-42-mo",
+          "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 部分售罄",
+          "changes": {
+            "库存": {
+              "before": "SOLD_OUT",
+              "after": "PARTIAL"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:222136",
+          "provider": "servers_guru",
+          "title": "[SERVERS.GURU] Netherlands 10Gbps : 30% off recurring! VPS from 3.84€ !",
+          "url": "https://lowendtalk.com/discussion/222136/servers-guru-netherlands-10gbps-30-off-recurring-vps-from-3-84",
+          "summary": "常规促销 · €38/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-11-12T21:01:39+00:00",
       "baseline": false,
