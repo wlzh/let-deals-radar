@@ -1,138 +1,83 @@
 {
   "latest": {
-    "generated_at": "2026-11-16T21:01:39+00:00",
+    "generated_at": "2026-11-17T21:01:34+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223377",
-        "provider": "petrosky.io",
-        "title": "PetroSky Black Friday Sale | 30% OFF KVM VPS in Canada & France | From €4.89/mo",
-        "url": "https://lowendtalk.com/discussion/223377/petrosky-black-friday-sale-30-off-kvm-vps-in-canada-france-from-4-89-mo",
-        "summary": "黑五 · €4.89/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223393",
+        "provider": "Streamline-Servers.com",
+        "title": "Streamline-Servers.com - Sydney Dedicated Servers - Early-Black Friday",
+        "url": "https://lowendtalk.com/discussion/223393/streamline-servers-com-sydney-dedicated-servers-early-black-friday",
+        "summary": "黑五 · $45/月 · 帖文报价，未与配置绑定 · 待确认"
       },
       {
-        "id": "let:223370",
-        "provider": "godlike.host",
-        "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
-        "url": "https://lowendtalk.com/discussion/223370/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
-        "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:223379",
-        "provider": "Dewlance USA",
-        "title": "Dewlance USA - Pre-Black Friday - Fast VPS - AMD EPYC 7351P - 4GB RAM, $64/Year - KVM",
-        "url": "https://lowendtalk.com/discussion/223379/dewlance-usa-pre-black-friday-fast-vps-amd-epyc-7351p-4gb-ram-64-year-kvm",
-        "summary": "黑五 · $64/年 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:223355",
-        "provider": "HyperHost",
-        "title": "HyperHost | GTA VI | 50% Recurring | VPS from £0.63/mo · DirectAdmin from £1/mo",
-        "url": "https://lowendtalk.com/discussion/223355/hyperhost-gta-vi-50-recurring-vps-from-0-63-mo-directadmin-from-1-mo",
-        "summary": "上新/回归 · £0.63/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "leb:leb-lowendlols-customers-to-avoid",
+        "provider": "LowEndLOLs: Customers to Avoid",
+        "title": "LowEndLOLs: Customers to Avoid",
+        "url": "https://lowendbox.com/blog/lowendlols-customers-to-avoid/",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认"
       }
     ],
-    "changed": [
+    "changed": [],
+    "missing": [
       {
-        "id": "let:222883",
-        "provider": "DeluxHost.net",
-        "title": "DeluxHost.net | Pre-Black Friday | X Series back from €6/yr | Storage VPS & Storage Boxes! | NL",
-        "url": "https://lowendtalk.com/discussion/222883/deluxhost-net-pre-black-friday-x-series-back-from-6-yr-storage-vps-storage-boxes-nl",
-        "summary": "黑五 · €6/年 · 帖文报价，未与配置绑定 · 待确认",
-        "changes": {
-          "库存": {
-            "before": "ON_SALE",
-            "after": "UNVERIFIED"
-          }
-        }
-      },
-      {
-        "id": "let:223320",
-        "provider": "centrixnodes.net",
-        "title": "[US] Pre-Black Friday Sale | 50% OFF Intel VPS Monthly & Yearly | VPS from $2.13/mo | Free 10Gbps",
-        "url": "https://lowendtalk.com/discussion/223320/us-pre-black-friday-sale-50-off-intel-vps-monthly-yearly-vps-from-2-13-mo-free-10gbps",
-        "summary": "黑五 · $2.13/月 · 帖文报价，未与配置绑定 · 在售",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "ON_SALE"
-          }
-        }
-      },
-      {
-        "id": "let:222164",
-        "provider": "HostDZire",
-        "title": "[Early Black Friday Sale] VPS & Dedicated Server Deals | Starting at Just €18/Year!",
-        "url": "https://lowendtalk.com/discussion/222164/early-black-friday-sale-vps-dedicated-server-deals-starting-at-just-18-year",
-        "summary": "黑五 · €18/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "UNVERIFIED_STALE"
-          }
-        }
-      },
-      {
-        "id": "let:222168",
-        "provider": "vpshostingservice.co",
-        "title": "ServerHost Ryzen/i9 VPS from $22.99/year - October Haunt",
-        "url": "https://lowendtalk.com/discussion/222168/serverhost-ryzen-i9-vps-from-22-99-year-october-haunt",
-        "summary": "常规促销 · $22.99/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "UNVERIFIED_STALE"
-          }
-        }
+        "id": "let:222415",
+        "provider": "Halloween VPS @ Frankfurt Equinix",
+        "title": "Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more",
+        "url": "https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more",
+        "summary": "节日促销 · €31/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
         "id": "let:222143",
         "provider": "wlx.hk",
         "title": "WLX HK Dedicated Servers Oct Promo | Ryzen 9955HX & EPYC · Instant Setup",
         "url": "https://lowendtalk.com/discussion/222143/wlx-hk-dedicated-servers-oct-promo-ryzen-9955hx-epyc-instant-setup",
-        "summary": "常规促销 · $181.37/月 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "UNVERIFIED_STALE"
-          }
-        }
-      }
-    ],
-    "missing": [
-      {
-        "id": "let:222871",
-        "provider": "godlike.host",
-        "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
-        "url": "https://lowendtalk.com/discussion/222871/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
-        "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:221411",
-        "provider": "MEJIRO NETWORK",
-        "title": "MEJIRO NETWORK | Singapore VPS @3USD/mo, Hong Kong Dedicated Server @55USD/mo",
-        "url": "https://lowendtalk.com/discussion/221411/mejiro-network-singapore-vps-3usd-mo-hong-kong-dedicated-server-55usd-mo",
-        "summary": "常规帖 · $3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:222790",
-        "provider": "Halloween Specials at ST-Hosting!",
-        "title": "Halloween Specials at ST-Hosting!",
-        "url": "https://lowendtalk.com/discussion/222790/halloween-specials-at-st-hosting",
-        "summary": "节日促销 · €4.44/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      },
-      {
-        "id": "let:222782",
-        "provider": "Servury Blackbox",
-        "title": "Servury Blackbox - Anonymous encrypted VPS from $8/mo - 20% off",
-        "url": "https://lowendtalk.com/discussion/222782/servury-blackbox-anonymous-encrypted-vps-from-8-mo-20-off",
-        "summary": "常规促销 · $8/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "summary": "常规促销 · $181.37/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-11-17T21:01:34+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223393",
+          "provider": "Streamline-Servers.com",
+          "title": "Streamline-Servers.com - Sydney Dedicated Servers - Early-Black Friday",
+          "url": "https://lowendtalk.com/discussion/223393/streamline-servers-com-sydney-dedicated-servers-early-black-friday",
+          "summary": "黑五 · $45/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "leb:leb-lowendlols-customers-to-avoid",
+          "provider": "LowEndLOLs: Customers to Avoid",
+          "title": "LowEndLOLs: Customers to Avoid",
+          "url": "https://lowendbox.com/blog/lowendlols-customers-to-avoid/",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "changed": [],
+      "missing": [
+        {
+          "id": "let:222415",
+          "provider": "Halloween VPS @ Frankfurt Equinix",
+          "title": "Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more",
+          "url": "https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more",
+          "summary": "节日促销 · €31/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222143",
+          "provider": "wlx.hk",
+          "title": "WLX HK Dedicated Servers Oct Promo | Ryzen 9955HX & EPYC · Instant Setup",
+          "url": "https://lowendtalk.com/discussion/222143/wlx-hk-dedicated-servers-oct-promo-ryzen-9955hx-epyc-instant-setup",
+          "summary": "常规促销 · $181.37/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": []
+    },
     {
       "generated_at": "2026-11-16T21:01:39+00:00",
       "baseline": false,
