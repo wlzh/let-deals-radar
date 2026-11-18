@@ -1,44 +1,223 @@
 {
   "latest": {
-    "generated_at": "2026-11-17T21:01:34+00:00",
+    "generated_at": "2026-11-18T21:02:05+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223393",
-        "provider": "Streamline-Servers.com",
-        "title": "Streamline-Servers.com - Sydney Dedicated Servers - Early-Black Friday",
-        "url": "https://lowendtalk.com/discussion/223393/streamline-servers-com-sydney-dedicated-servers-early-black-friday",
-        "summary": "黑五 · $45/月 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223492",
+        "provider": "Ava.hosting",
+        "title": "Ava.hosting - Black Friday Deals + BIG Restock VPS Nano! + Giveaways!",
+        "url": "https://lowendtalk.com/discussion/223492/ava-hosting-black-friday-deals-big-restock-vps-nano-giveaways",
+        "summary": "黑五 · €11/年 · 帖文报价，未与配置绑定 · 在售"
       },
       {
-        "id": "leb:leb-lowendlols-customers-to-avoid",
-        "provider": "LowEndLOLs: Customers to Avoid",
-        "title": "LowEndLOLs: Customers to Avoid",
-        "url": "https://lowendbox.com/blog/lowendlols-customers-to-avoid/",
-        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认"
+        "id": "let:223462",
+        "provider": "commander1.com",
+        "title": "OVHcloud • Black Friday • 30+ Dedicated Servers in EU/NAM/APAC • From US$16.60/month",
+        "url": "https://lowendtalk.com/discussion/223462/ovhcloud-black-friday-30-dedicated-servers-in-eu-nam-apac-from-us-16-60-month",
+        "summary": "黑五 · $16.6/月 · 帖文报价，未与配置绑定 · 疑似售罄"
+      },
+      {
+        "id": "let:223445",
+        "provider": "D4 Networks",
+        "title": "D4 Networks | KVM VPS Deals from $69/yr | NVMe, IPv4 + /64 | New York, Dallas, Amsterdam",
+        "url": "https://lowendtalk.com/discussion/223445/d4-networks-kvm-vps-deals-from-69-yr-nvme-ipv4-64-new-york-dallas-amsterdam",
+        "summary": "常规帖 · $69/年 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "leb:leb-the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-99-year",
+        "provider": "dedirock.com",
+        "title": "The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR!",
+        "url": "https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-99-year/",
+        "summary": "常规帖 · $24.99/年 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223494",
+        "provider": "LukeRhino",
+        "title": "HARDWARE SALE 11x Supermicro 4029GP-TVRT, 8x V100 16GB SXM2, 128GB VRAM per server",
+        "url": "https://lowendtalk.com/discussion/223494/hardware-sale-11x-supermicro-4029gp-tvrt-8x-v100-16gb-sxm2-128gb-vram-per-server",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认"
       }
     ],
-    "changed": [],
+    "changed": [
+      {
+        "id": "let:222738",
+        "provider": "servitro.com",
+        "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
+        "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
+        "summary": "常规促销 · $12/年 · 帖文报价，未与配置绑定 · 待确认",
+        "changes": {
+          "库存": {
+            "before": "LIKELY_SOLD_OUT",
+            "after": "UNVERIFIED"
+          }
+        }
+      },
+      {
+        "id": "let:222157",
+        "provider": "nolimitcloud.eu",
+        "title": "NolimitHost Budget Sale│Offers from €12.99/year! | NVMe KVM VPS | Freebie | DE",
+        "url": "https://lowendtalk.com/discussion/222157/nolimithost-budget-sale-offers-from-12-99-year-nvme-kvm-vps-freebie-de",
+        "summary": "常规促销 · €12.99/年 · 帖文报价，未与配置绑定 · 在售",
+        "changes": {
+          "库存": {
+            "before": "SOLD_OUT",
+            "after": "ON_SALE"
+          }
+        }
+      }
+    ],
     "missing": [
       {
-        "id": "let:222415",
-        "provider": "Halloween VPS @ Frankfurt Equinix",
-        "title": "Halloween VPS @ Frankfurt Equinix | from €7.26/mo | IPv6 EPYC €31/year and more",
-        "url": "https://lowendtalk.com/discussion/222415/halloween-vps-frankfurt-equinix-from-7-26-mo-ipv6-epyc-31-year-and-more",
-        "summary": "节日促销 · €31/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:223320",
+        "provider": "centrixnodes.net",
+        "title": "[US] Pre-Black Friday Sale | 50% OFF Intel VPS Monthly & Yearly | VPS from $2.13/mo | Free 10Gbps",
+        "url": "https://lowendtalk.com/discussion/223320/us-pre-black-friday-sale-50-off-intel-vps-monthly-yearly-vps-from-2-13-mo-free-10gbps",
+        "summary": "黑五 · $2.13/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:222143",
-        "provider": "wlx.hk",
-        "title": "WLX HK Dedicated Servers Oct Promo | Ryzen 9955HX & EPYC · Instant Setup",
-        "url": "https://lowendtalk.com/discussion/222143/wlx-hk-dedicated-servers-oct-promo-ryzen-9955hx-epyc-instant-setup",
-        "summary": "常规促销 · $181.37/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:221826",
+        "provider": "PrivateByte",
+        "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
+        "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
+        "summary": "常规促销 · $5.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:222878",
+        "provider": "LukeRhino",
+        "title": "HARDWARE SALE Supermicro AS-4124GQ-TNMI, 4x AMD Instinct MI250 128GB OAM GPU Server (73x available)",
+        "url": "https://lowendtalk.com/discussion/222878/hardware-sale-supermicro-as-4124gq-tnmi-4x-amd-instinct-mi250-128gb-oam-gpu-server-73x-available",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
       }
     ],
-    "restored": [],
+    "restored": [
+      {
+        "id": "let:221311",
+        "provider": "商家待核实",
+        "title": "KVM VPS – From €6.99/year (~$8.03) – 512MB–16GB RAM – NVMe – 1Gbps – Amsterdam",
+        "url": "https://lowendtalk.com/discussion/221311/kvm-vps-from-6-99-year-8-03-512mb-16gb-ram-nvme-1gbps-amsterdam",
+        "summary": "补货 · €6.99/年 · 帖文报价，未与配置绑定 · 补货中"
+      },
+      {
+        "id": "let:222809",
+        "provider": "HostSailor Halloween Special",
+        "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
+        "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
+        "summary": "节日促销 · $29.94/年 · 帖文报价，未与配置绑定 · 待确认"
+      }
+    ],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-11-18T21:02:05+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223492",
+          "provider": "Ava.hosting",
+          "title": "Ava.hosting - Black Friday Deals + BIG Restock VPS Nano! + Giveaways!",
+          "url": "https://lowendtalk.com/discussion/223492/ava-hosting-black-friday-deals-big-restock-vps-nano-giveaways",
+          "summary": "黑五 · €11/年 · 帖文报价，未与配置绑定 · 在售"
+        },
+        {
+          "id": "let:223462",
+          "provider": "commander1.com",
+          "title": "OVHcloud • Black Friday • 30+ Dedicated Servers in EU/NAM/APAC • From US$16.60/month",
+          "url": "https://lowendtalk.com/discussion/223462/ovhcloud-black-friday-30-dedicated-servers-in-eu-nam-apac-from-us-16-60-month",
+          "summary": "黑五 · $16.6/月 · 帖文报价，未与配置绑定 · 疑似售罄"
+        },
+        {
+          "id": "let:223445",
+          "provider": "D4 Networks",
+          "title": "D4 Networks | KVM VPS Deals from $69/yr | NVMe, IPv4 + /64 | New York, Dallas, Amsterdam",
+          "url": "https://lowendtalk.com/discussion/223445/d4-networks-kvm-vps-deals-from-69-yr-nvme-ipv4-64-new-york-dallas-amsterdam",
+          "summary": "常规帖 · $69/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "leb:leb-the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-99-year",
+          "provider": "dedirock.com",
+          "title": "The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR!",
+          "url": "https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-99-year/",
+          "summary": "常规帖 · $24.99/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223494",
+          "provider": "LukeRhino",
+          "title": "HARDWARE SALE 11x Supermicro 4029GP-TVRT, 8x V100 16GB SXM2, 128GB VRAM per server",
+          "url": "https://lowendtalk.com/discussion/223494/hardware-sale-11x-supermicro-4029gp-tvrt-8x-v100-16gb-sxm2-128gb-vram-per-server",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:222738",
+          "provider": "servitro.com",
+          "title": "Frankfurt VPS at $12/Year + $50 Giveaway – Another Servitro LET Deal!",
+          "url": "https://lowendtalk.com/discussion/222738/frankfurt-vps-at-12-year-50-giveaway-another-servitro-let-deal",
+          "summary": "常规促销 · $12/年 · 帖文报价，未与配置绑定 · 待确认",
+          "changes": {
+            "库存": {
+              "before": "LIKELY_SOLD_OUT",
+              "after": "UNVERIFIED"
+            }
+          }
+        },
+        {
+          "id": "let:222157",
+          "provider": "nolimitcloud.eu",
+          "title": "NolimitHost Budget Sale│Offers from €12.99/year! | NVMe KVM VPS | Freebie | DE",
+          "url": "https://lowendtalk.com/discussion/222157/nolimithost-budget-sale-offers-from-12-99-year-nvme-kvm-vps-freebie-de",
+          "summary": "常规促销 · €12.99/年 · 帖文报价，未与配置绑定 · 在售",
+          "changes": {
+            "库存": {
+              "before": "SOLD_OUT",
+              "after": "ON_SALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:223320",
+          "provider": "centrixnodes.net",
+          "title": "[US] Pre-Black Friday Sale | 50% OFF Intel VPS Monthly & Yearly | VPS from $2.13/mo | Free 10Gbps",
+          "url": "https://lowendtalk.com/discussion/223320/us-pre-black-friday-sale-50-off-intel-vps-monthly-yearly-vps-from-2-13-mo-free-10gbps",
+          "summary": "黑五 · $2.13/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221826",
+          "provider": "PrivateByte",
+          "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
+          "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
+          "summary": "常规促销 · $5.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222878",
+          "provider": "LukeRhino",
+          "title": "HARDWARE SALE Supermicro AS-4124GQ-TNMI, 4x AMD Instinct MI250 128GB OAM GPU Server (73x available)",
+          "url": "https://lowendtalk.com/discussion/222878/hardware-sale-supermicro-as-4124gq-tnmi-4x-amd-instinct-mi250-128gb-oam-gpu-server-73x-available",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [
+        {
+          "id": "let:221311",
+          "provider": "商家待核实",
+          "title": "KVM VPS – From €6.99/year (~$8.03) – 512MB–16GB RAM – NVMe – 1Gbps – Amsterdam",
+          "url": "https://lowendtalk.com/discussion/221311/kvm-vps-from-6-99-year-8-03-512mb-16gb-ram-nvme-1gbps-amsterdam",
+          "summary": "补货 · €6.99/年 · 帖文报价，未与配置绑定 · 补货中"
+        },
+        {
+          "id": "let:222809",
+          "provider": "HostSailor Halloween Special",
+          "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
+          "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
+          "summary": "节日促销 · $29.94/年 · 帖文报价，未与配置绑定 · 待确认"
+        }
+      ],
+      "expired": []
+    },
     {
       "generated_at": "2026-11-17T21:01:34+00:00",
       "baseline": false,
