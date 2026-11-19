@@ -1,22 +1,207 @@
 {
   "latest": {
-    "generated_at": "2026-11-19T03:35:05+00:00",
+    "generated_at": "2026-11-19T21:01:32+00:00",
     "baseline": false,
-    "added": [],
-    "changed": [],
-    "missing": [],
+    "added": [
+      {
+        "id": "let:223558",
+        "provider": "racknerd.com",
+        "title": "RackNerd’s BLACK FRIDAY TAKEOVER! NEW DEALS, NEW TECH, AdminBolt HOSTING + HUNDREDS OF GIVEAWAYS!",
+        "url": "https://lowendtalk.com/discussion/223558/racknerd-s-black-friday-takeover-new-deals-new-tech-adminbolt-hosting-hundreds-of-giveaways",
+        "summary": "黑五 · $9.49/年 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223518",
+        "provider": "noez.de",
+        "title": "noez.de – Prepaid Hosting from Frankfurt, since 2012",
+        "url": "https://lowendtalk.com/discussion/223518/noez-de-prepaid-hosting-from-frankfurt-since-2012",
+        "summary": "常规帖 · €0.5/月 · 帖文报价，未与配置绑定 · 售罄"
+      },
+      {
+        "id": "let:223509",
+        "provider": "aaPanel_team",
+        "title": "Looking for a cPanel alternative? Get aaPanel Pro for $98 for one year and save $190",
+        "url": "https://lowendtalk.com/discussion/223509/looking-for-a-cpanel-alternative-get-aapanel-pro-for-98-for-one-year-and-save-190",
+        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
+      }
+    ],
+    "changed": [
+      {
+        "id": "let:223355",
+        "provider": "HyperHost",
+        "title": "HyperHost | GTA VI | 50% Recurring | VPS from £0.63/mo · DirectAdmin from £1/mo",
+        "url": "https://lowendtalk.com/discussion/223355/hyperhost-gta-vi-50-recurring-vps-from-0-63-mo-directadmin-from-1-mo",
+        "summary": "上新/回归 · £0.63/月 · 帖文报价，未与配置绑定 · 部分售罄",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "PARTIAL"
+          }
+        }
+      },
+      {
+        "id": "let:223462",
+        "provider": "commander1.com",
+        "title": "OVHcloud • Black Friday • 30+ Dedicated Servers in EU/NAM/APAC • From US$16.60/month",
+        "url": "https://lowendtalk.com/discussion/223462/ovhcloud-black-friday-30-dedicated-servers-in-eu-nam-apac-from-us-16-60-month",
+        "summary": "黑五 · $16.6/月 · 帖文报价，未与配置绑定 · 待确认",
+        "changes": {
+          "库存": {
+            "before": "LIKELY_SOLD_OUT",
+            "after": "UNVERIFIED"
+          }
+        }
+      },
+      {
+        "id": "let:222269",
+        "provider": "Linceris.com",
+        "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
+        "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "UNVERIFIED_STALE"
+          }
+        }
+      }
+    ],
+    "missing": [
+      {
+        "id": "let:222539",
+        "provider": "HostNoc",
+        "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $15.95/mo",
+        "url": "https://lowendtalk.com/discussion/222539/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-15-95-mo",
+        "summary": "常规促销 · $15.95/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:221949",
+        "provider": "Meet Arct Cloud",
+        "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
+        "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
+        "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:222772",
+        "provider": "extravm.com",
+        "title": "$6.7/m 5GB RAM Dallas Ryzen VPS - PP/CC/Crypto",
+        "url": "https://lowendtalk.com/discussion/222772/6-7-m-5gb-ram-dallas-ryzen-vps-pp-cc-crypto",
+        "summary": "常规促销 · $6.7/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      }
+    ],
     "restored": [
       {
-        "id": "let:221687",
-        "provider": "LayerOne",
-        "title": "LayerOne VPS Hosting - Up to 30% off - New NVME Backed Storage + Routed IPv6 Support",
-        "url": "https://lowendtalk.com/discussion/221687/layerone-vps-hosting-up-to-30-off-new-nvme-backed-storage-routed-ipv6-support",
-        "summary": "常规促销 · $20.16/年 · 帖文报价，未与配置绑定 · 待确认(较旧)"
+        "id": "let:223320",
+        "provider": "centrixnodes.net",
+        "title": "[US] Pre-Black Friday Sale | 50% OFF Intel VPS Monthly & Yearly | VPS from $2.13/mo | Free 10Gbps",
+        "url": "https://lowendtalk.com/discussion/223320/us-pre-black-friday-sale-50-off-intel-vps-monthly-yearly-vps-from-2-13-mo-free-10gbps",
+        "summary": "黑五 · $2.13/月 · 帖文报价，未与配置绑定 · 在售"
       }
     ],
     "expired": []
   },
   "history": [
+    {
+      "generated_at": "2026-11-19T21:01:32+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223558",
+          "provider": "racknerd.com",
+          "title": "RackNerd’s BLACK FRIDAY TAKEOVER! NEW DEALS, NEW TECH, AdminBolt HOSTING + HUNDREDS OF GIVEAWAYS!",
+          "url": "https://lowendtalk.com/discussion/223558/racknerd-s-black-friday-takeover-new-deals-new-tech-adminbolt-hosting-hundreds-of-giveaways",
+          "summary": "黑五 · $9.49/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223518",
+          "provider": "noez.de",
+          "title": "noez.de – Prepaid Hosting from Frankfurt, since 2012",
+          "url": "https://lowendtalk.com/discussion/223518/noez-de-prepaid-hosting-from-frankfurt-since-2012",
+          "summary": "常规帖 · €0.5/月 · 帖文报价，未与配置绑定 · 售罄"
+        },
+        {
+          "id": "let:223509",
+          "provider": "aaPanel_team",
+          "title": "Looking for a cPanel alternative? Get aaPanel Pro for $98 for one year and save $190",
+          "url": "https://lowendtalk.com/discussion/223509/looking-for-a-cpanel-alternative-get-aapanel-pro-for-98-for-one-year-and-save-190",
+          "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:223355",
+          "provider": "HyperHost",
+          "title": "HyperHost | GTA VI | 50% Recurring | VPS from £0.63/mo · DirectAdmin from £1/mo",
+          "url": "https://lowendtalk.com/discussion/223355/hyperhost-gta-vi-50-recurring-vps-from-0-63-mo-directadmin-from-1-mo",
+          "summary": "上新/回归 · £0.63/月 · 帖文报价，未与配置绑定 · 部分售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "PARTIAL"
+            }
+          }
+        },
+        {
+          "id": "let:223462",
+          "provider": "commander1.com",
+          "title": "OVHcloud • Black Friday • 30+ Dedicated Servers in EU/NAM/APAC • From US$16.60/month",
+          "url": "https://lowendtalk.com/discussion/223462/ovhcloud-black-friday-30-dedicated-servers-in-eu-nam-apac-from-us-16-60-month",
+          "summary": "黑五 · $16.6/月 · 帖文报价，未与配置绑定 · 待确认",
+          "changes": {
+            "库存": {
+              "before": "LIKELY_SOLD_OUT",
+              "after": "UNVERIFIED"
+            }
+          }
+        },
+        {
+          "id": "let:222269",
+          "provider": "Linceris.com",
+          "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
+          "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:222539",
+          "provider": "HostNoc",
+          "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $15.95/mo",
+          "url": "https://lowendtalk.com/discussion/222539/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-15-95-mo",
+          "summary": "常规促销 · $15.95/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221949",
+          "provider": "Meet Arct Cloud",
+          "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
+          "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
+          "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222772",
+          "provider": "extravm.com",
+          "title": "$6.7/m 5GB RAM Dallas Ryzen VPS - PP/CC/Crypto",
+          "url": "https://lowendtalk.com/discussion/222772/6-7-m-5gb-ram-dallas-ryzen-vps-pp-cc-crypto",
+          "summary": "常规促销 · $6.7/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [
+        {
+          "id": "let:223320",
+          "provider": "centrixnodes.net",
+          "title": "[US] Pre-Black Friday Sale | 50% OFF Intel VPS Monthly & Yearly | VPS from $2.13/mo | Free 10Gbps",
+          "url": "https://lowendtalk.com/discussion/223320/us-pre-black-friday-sale-50-off-intel-vps-monthly-yearly-vps-from-2-13-mo-free-10gbps",
+          "summary": "黑五 · $2.13/月 · 帖文报价，未与配置绑定 · 在售"
+        }
+      ],
+      "expired": []
+    },
     {
       "generated_at": "2026-11-19T03:35:05+00:00",
       "baseline": false,
