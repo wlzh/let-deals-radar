@@ -83,3 +83,17 @@ def test_build_site_writes_evergreen_and_sitemap(tmp_path, monkeypatch):
     assert 'href="cheap-yearly/"' in home
     assert 'href="by-region/"' in home
     assert 'href="black-friday-2026/"' in home
+
+
+def test_build_site_writes_redirects_and_home_body_link(tmp_path, monkeypatch):
+    # /年 301 到低价年付页：_redirects 由 build_site 每次生成，刷新后不丢；
+    # 首页除推广卡片外，正文里也有一条直指低价年付页的内链。
+    monkeypatch.setattr(config, "SITE_URL", "https://deals.example.com")
+    payload = _payload([_rec("cheap", annual=12, locations=["Dallas"])])
+    render.build_site(payload, str(tmp_path), verbose=False)
+    redirects = (tmp_path / "_redirects").read_text(encoding="utf-8")
+    assert "/年 /cheap-yearly/ 301" in redirects
+    assert "/%E5%B9%B4 /cheap-yearly/ 301" in redirects
+    home = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert home.count('href="cheap-yearly/"') >= 2
+    assert "低价年付总榜" in home

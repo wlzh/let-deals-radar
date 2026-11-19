@@ -616,7 +616,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
 <section class="card intro">
   <p id="stale" hidden>数据更新已超过 48 小时，活动和库存可能变化，请务必到商家复核。</p>
   <h2>少翻帖子，找到合适的 VPS 优惠。</h2>
-  <p>对比预算、机房与续费条件，复制优惠码，直达商家活动页。先选适合自己的，再看实际到手价。</p>
+  <p>对比预算、机房与续费条件，复制优惠码，直达商家活动页。先选适合自己的，再看实际到手价。想按年付价挑，先看<a href="cheap-yearly/">低价年付总榜</a>（年化 30 欧元以内、未关闭优惠）。</p>
   <div class="aff-quick"><b>直达商家活动</b> @@AFF_SHORTCUTS@@</div>
   <div class="quick"><button type="button" data-preset="budget">找低预算年付</button><button type="button" data-preset="new">看最近发布</button><button type="button" data-preset="sale">看标注在售</button><button type="button" id="reset">重置筛选</button></div>
   <a class="bf-promo" href="black-friday-2026/">🛒 黑五 2026 专题：倒计时 · 已公布活动 · 低价年付清单 · 常见问题</a>
@@ -1191,6 +1191,12 @@ def build_site(payload: dict, out_dir=None, verbose: bool = True) -> str:
     # 部署辅助文件
     with open(os.path.join(out_dir, ".nojekyll"), "w", encoding="utf-8") as f:
         f.write("")
+
+    # Cloudflare Pages _redirects：/年 是首页的重复内容（无独立标题与内容，
+    # 不在 sitemap），301 到最接近“年付”意图的常青页。两行分别覆盖解码路径
+    # 与百分号编码路径，任一匹配即跳转；build_site 每次生成，保证刷新后不丢。
+    with open(os.path.join(out_dir, "_redirects"), "w", encoding="utf-8") as f:
+        f.write("/年 /cheap-yearly/ 301\n/%E5%B9%B4 /cheap-yearly/ 301\n")
 
     robots = ["User-agent: *", "Allow: /"]
     if config.SITE_URL:
