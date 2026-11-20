@@ -1,37 +1,44 @@
 {
   "latest": {
-    "generated_at": "2026-11-19T21:01:32+00:00",
+    "generated_at": "2026-11-20T21:01:57+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223558",
-        "provider": "racknerd.com",
-        "title": "RackNerd’s BLACK FRIDAY TAKEOVER! NEW DEALS, NEW TECH, AdminBolt HOSTING + HUNDREDS OF GIVEAWAYS!",
-        "url": "https://lowendtalk.com/discussion/223558/racknerd-s-black-friday-takeover-new-deals-new-tech-adminbolt-hosting-hundreds-of-giveaways",
-        "summary": "黑五 · $9.49/年 · 帖文报价，未与配置绑定 · 待确认"
+        "id": "let:223597",
+        "provider": "bgp.sa",
+        "title": "[Kansas City] BGP VPS – $9.99/mo | 1Gbps Unmetered | NO FUP | BYOASN + BYOIP | Automated BGP",
+        "url": "https://lowendtalk.com/discussion/223597/kansas-city-bgp-vps-9-99-mo-1gbps-unmetered-no-fup-byoasn-byoip-automated-bgp",
+        "summary": "常规帖 · $9.99/月 · 帖文报价，未与配置绑定 · 待确认"
       },
       {
-        "id": "let:223518",
-        "provider": "noez.de",
-        "title": "noez.de – Prepaid Hosting from Frankfurt, since 2012",
-        "url": "https://lowendtalk.com/discussion/223518/noez-de-prepaid-hosting-from-frankfurt-since-2012",
-        "summary": "常规帖 · €0.5/月 · 帖文报价，未与配置绑定 · 售罄"
+        "id": "let:223582",
+        "provider": "Alexhost.com",
+        "title": "Alexhost.com - BlackFriday Deal - Up to 30% OFF Recurring (LIMITED!) + VPN offer",
+        "url": "https://lowendtalk.com/discussion/223582/alexhost-com-blackfriday-deal-up-to-30-off-recurring-limited-vpn-offer",
+        "summary": "黑五 · €77/月 · 帖文报价，未与配置绑定 · 待确认"
       },
       {
-        "id": "let:223509",
-        "provider": "aaPanel_team",
-        "title": "Looking for a cPanel alternative? Get aaPanel Pro for $98 for one year and save $190",
-        "url": "https://lowendtalk.com/discussion/223509/looking-for-a-cpanel-alternative-get-aapanel-pro-for-98-for-one-year-and-save-190",
-        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
+        "id": "leb:leb-black-friday-early-bird-sale-from-fast-moose-15-99-year-for-shared-hosting-with-unlimited-accounts-unmetered-bandwidth",
+        "provider": "fastmoose.com",
+        "title": "Black Friday Early Bird Sale from Fast Moose! $15.99/YEAR for Shared Hosting with Unlimited Accounts, Unmetered Bandwidth!",
+        "url": "https://lowendbox.com/blog/black-friday-early-bird-sale-from-fast-moose-15-99-year-for-shared-hosting-with-unlimited-accounts-unmetered-bandwidth/",
+        "summary": "黑五 · $15.99/年 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:220454",
+        "provider": "NiuProxy",
+        "title": "NiuProxy | Residential Proxies from USD $0.35/GB | ISP from USD $3/IP | 10% OFF with Code PAY2",
+        "url": "https://lowendtalk.com/discussion/220454/niuproxy-residential-proxies-from-usd-0-35-gb-isp-from-usd-3-ip-10-off-with-code-pay2",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认(较旧)"
       }
     ],
     "changed": [
       {
-        "id": "let:223355",
-        "provider": "HyperHost",
-        "title": "HyperHost | GTA VI | 50% Recurring | VPS from £0.63/mo · DirectAdmin from £1/mo",
-        "url": "https://lowendtalk.com/discussion/223355/hyperhost-gta-vi-50-recurring-vps-from-0-63-mo-directadmin-from-1-mo",
-        "summary": "上新/回归 · £0.63/月 · 帖文报价，未与配置绑定 · 部分售罄",
+        "id": "let:222926",
+        "provider": "d4networks.com",
+        "title": "D4 Networks Dedicated Deals | Dallas 2x Platinum 8173M, 128 GB, 10 Gbps | 175 USD/mo, no setup",
+        "url": "https://lowendtalk.com/discussion/222926/d4-networks-dedicated-deals-dallas-2x-platinum-8173m-128-gb-10-gbps-175-usd-mo-no-setup",
+        "summary": "常规帖 · $175/月 · 帖文报价，未与配置绑定 · 部分售罄",
         "changes": {
           "库存": {
             "before": "UNVERIFIED",
@@ -40,67 +47,165 @@
         }
       },
       {
-        "id": "let:223462",
-        "provider": "commander1.com",
-        "title": "OVHcloud • Black Friday • 30+ Dedicated Servers in EU/NAM/APAC • From US$16.60/month",
-        "url": "https://lowendtalk.com/discussion/223462/ovhcloud-black-friday-30-dedicated-servers-in-eu-nam-apac-from-us-16-60-month",
-        "summary": "黑五 · $16.6/月 · 帖文报价，未与配置绑定 · 待确认",
-        "changes": {
-          "库存": {
-            "before": "LIKELY_SOLD_OUT",
-            "after": "UNVERIFIED"
-          }
-        }
-      },
-      {
-        "id": "let:222269",
-        "provider": "Linceris.com",
-        "title": "Linceris.com - Frankfurt Ryzen 9 9950X KVM VPS | 10Gbps | DataForest DDoS Protection | Free IPs",
-        "url": "https://lowendtalk.com/discussion/222269/linceris-com-frankfurt-ryzen-9-9950x-kvm-vps-10gbps-dataforest-ddos-protection-free-ips",
-        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
+        "id": "let:223221",
+        "provider": "ST-Hosting",
+        "title": "ST-Hosting | Frankfurt KVM VPS | Intel Xeon, 8 GB RAM, 75 GB NVMe | €8.33/month incl. VAT",
+        "url": "https://lowendtalk.com/discussion/223221/st-hosting-frankfurt-kvm-vps-intel-xeon-8-gb-ram-75-gb-nvme-8-33-month-incl-vat",
+        "summary": "常规帖 · €8.33/月 · 帖文报价，未与配置绑定 · 疑似售罄",
         "changes": {
           "库存": {
             "before": "UNVERIFIED",
-            "after": "UNVERIFIED_STALE"
+            "after": "LIKELY_SOLD_OUT"
           }
         }
       }
     ],
     "missing": [
       {
-        "id": "let:222539",
-        "provider": "HostNoc",
-        "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $15.95/mo",
-        "url": "https://lowendtalk.com/discussion/222539/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-15-95-mo",
-        "summary": "常规促销 · $15.95/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222977",
+        "provider": "bgp.sa",
+        "title": "[Kansas City] BGP VPS $9.99/mo | BYOASN + BYOIP | 1Gbps Unmetered | Fully Automated BGP + IRR",
+        "url": "https://lowendtalk.com/discussion/222977/kansas-city-bgp-vps-9-99-mo-byoasn-byoip-1gbps-unmetered-fully-automated-bgp-irr",
+        "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:221949",
-        "provider": "Meet Arct Cloud",
-        "title": "Meet Arct Cloud | AMD EPYC KVM VPS from $3.89/mo | NVMe, IPv4 & Custom Control Panel",
-        "url": "https://lowendtalk.com/discussion/221949/meet-arct-cloud-amd-epyc-kvm-vps-from-3-89-mo-nvme-ipv4-custom-control-panel",
-        "summary": "常规帖 · $3.89/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222905",
+        "provider": "zenlayer.com",
+        "title": "Black Friday | Zenlayer | LA 64GB/960GB SSD/10Gbps $68.20/mo all in | Top up $100 get $150",
+        "url": "https://lowendtalk.com/discussion/222905/black-friday-zenlayer-la-64gb-960gb-ssd-10gbps-68-20-mo-all-in-top-up-100-get-150",
+        "summary": "黑五 · $68.2/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:222772",
-        "provider": "extravm.com",
-        "title": "$6.7/m 5GB RAM Dallas Ryzen VPS - PP/CC/Crypto",
-        "url": "https://lowendtalk.com/discussion/222772/6-7-m-5gb-ram-dallas-ryzen-vps-pp-cc-crypto",
-        "summary": "常规促销 · $6.7/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-      }
-    ],
-    "restored": [
+        "id": "let:221165",
+        "provider": "SoftShellWeb",
+        "title": "[SoftShellWeb] From $9.95/yr - NVMe · 10 Gbps · DDoS Protection · 2× bandwidth",
+        "url": "https://lowendtalk.com/discussion/221165/softshellweb-from-9-95-yr-nvme-10-gbps-ddos-protection-2-bandwidth",
+        "summary": "常规帖 · $9.95/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
       {
-        "id": "let:223320",
-        "provider": "centrixnodes.net",
-        "title": "[US] Pre-Black Friday Sale | 50% OFF Intel VPS Monthly & Yearly | VPS from $2.13/mo | Free 10Gbps",
-        "url": "https://lowendtalk.com/discussion/223320/us-pre-black-friday-sale-50-off-intel-vps-monthly-yearly-vps-from-2-13-mo-free-10gbps",
-        "summary": "黑五 · $2.13/月 · 帖文报价，未与配置绑定 · 在售"
+        "id": "leb:leb-mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month",
+        "provider": "Mango Mail Halloween",
+        "title": "Mango Mail Halloween Sale: Up to 40% Perfect Off on High Quality Email Hosting! 100GB Plan Only $8.70/Month!",
+        "url": "https://lowendbox.com/blog/mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month/",
+        "summary": "节日促销 · $8.7/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
-    "expired": []
+    "restored": [],
+    "expired": [
+      {
+        "id": "let:220354",
+        "provider": "aspirehosting.net",
+        "title": "End of Summer Sale | Free Bonus + Giveaway Inside | Up to 55% Off | Aspire Hosting",
+        "url": "https://lowendtalk.com/discussion/220354/end-of-summer-sale-free-bonus-giveaway-inside-up-to-55-off-aspire-hosting",
+        "summary": "节日促销 · $2/月 · 帖文报价，未与配置绑定 · 在售",
+        "reason": "超出保留窗口；不代表确认停售"
+      }
+    ]
   },
   "history": [
+    {
+      "generated_at": "2026-11-20T21:01:57+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223597",
+          "provider": "bgp.sa",
+          "title": "[Kansas City] BGP VPS – $9.99/mo | 1Gbps Unmetered | NO FUP | BYOASN + BYOIP | Automated BGP",
+          "url": "https://lowendtalk.com/discussion/223597/kansas-city-bgp-vps-9-99-mo-1gbps-unmetered-no-fup-byoasn-byoip-automated-bgp",
+          "summary": "常规帖 · $9.99/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223582",
+          "provider": "Alexhost.com",
+          "title": "Alexhost.com - BlackFriday Deal - Up to 30% OFF Recurring (LIMITED!) + VPN offer",
+          "url": "https://lowendtalk.com/discussion/223582/alexhost-com-blackfriday-deal-up-to-30-off-recurring-limited-vpn-offer",
+          "summary": "黑五 · €77/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "leb:leb-black-friday-early-bird-sale-from-fast-moose-15-99-year-for-shared-hosting-with-unlimited-accounts-unmetered-bandwidth",
+          "provider": "fastmoose.com",
+          "title": "Black Friday Early Bird Sale from Fast Moose! $15.99/YEAR for Shared Hosting with Unlimited Accounts, Unmetered Bandwidth!",
+          "url": "https://lowendbox.com/blog/black-friday-early-bird-sale-from-fast-moose-15-99-year-for-shared-hosting-with-unlimited-accounts-unmetered-bandwidth/",
+          "summary": "黑五 · $15.99/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:220454",
+          "provider": "NiuProxy",
+          "title": "NiuProxy | Residential Proxies from USD $0.35/GB | ISP from USD $3/IP | 10% OFF with Code PAY2",
+          "url": "https://lowendtalk.com/discussion/220454/niuproxy-residential-proxies-from-usd-0-35-gb-isp-from-usd-3-ip-10-off-with-code-pay2",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认(较旧)"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:222926",
+          "provider": "d4networks.com",
+          "title": "D4 Networks Dedicated Deals | Dallas 2x Platinum 8173M, 128 GB, 10 Gbps | 175 USD/mo, no setup",
+          "url": "https://lowendtalk.com/discussion/222926/d4-networks-dedicated-deals-dallas-2x-platinum-8173m-128-gb-10-gbps-175-usd-mo-no-setup",
+          "summary": "常规帖 · $175/月 · 帖文报价，未与配置绑定 · 部分售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "PARTIAL"
+            }
+          }
+        },
+        {
+          "id": "let:223221",
+          "provider": "ST-Hosting",
+          "title": "ST-Hosting | Frankfurt KVM VPS | Intel Xeon, 8 GB RAM, 75 GB NVMe | €8.33/month incl. VAT",
+          "url": "https://lowendtalk.com/discussion/223221/st-hosting-frankfurt-kvm-vps-intel-xeon-8-gb-ram-75-gb-nvme-8-33-month-incl-vat",
+          "summary": "常规帖 · €8.33/月 · 帖文报价，未与配置绑定 · 疑似售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "LIKELY_SOLD_OUT"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:222977",
+          "provider": "bgp.sa",
+          "title": "[Kansas City] BGP VPS $9.99/mo | BYOASN + BYOIP | 1Gbps Unmetered | Fully Automated BGP + IRR",
+          "url": "https://lowendtalk.com/discussion/222977/kansas-city-bgp-vps-9-99-mo-byoasn-byoip-1gbps-unmetered-fully-automated-bgp-irr",
+          "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222905",
+          "provider": "zenlayer.com",
+          "title": "Black Friday | Zenlayer | LA 64GB/960GB SSD/10Gbps $68.20/mo all in | Top up $100 get $150",
+          "url": "https://lowendtalk.com/discussion/222905/black-friday-zenlayer-la-64gb-960gb-ssd-10gbps-68-20-mo-all-in-top-up-100-get-150",
+          "summary": "黑五 · $68.2/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221165",
+          "provider": "SoftShellWeb",
+          "title": "[SoftShellWeb] From $9.95/yr - NVMe · 10 Gbps · DDoS Protection · 2× bandwidth",
+          "url": "https://lowendtalk.com/discussion/221165/softshellweb-from-9-95-yr-nvme-10-gbps-ddos-protection-2-bandwidth",
+          "summary": "常规帖 · $9.95/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month",
+          "provider": "Mango Mail Halloween",
+          "title": "Mango Mail Halloween Sale: Up to 40% Perfect Off on High Quality Email Hosting! 100GB Plan Only $8.70/Month!",
+          "url": "https://lowendbox.com/blog/mango-mail-halloween-sale-up-to-40-perfect-off-on-high-quality-email-hosting-100gb-plan-only-8-70-month/",
+          "summary": "节日促销 · $8.7/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [],
+      "expired": [
+        {
+          "id": "let:220354",
+          "provider": "aspirehosting.net",
+          "title": "End of Summer Sale | Free Bonus + Giveaway Inside | Up to 55% Off | Aspire Hosting",
+          "url": "https://lowendtalk.com/discussion/220354/end-of-summer-sale-free-bonus-giveaway-inside-up-to-55-off-aspire-hosting",
+          "summary": "节日促销 · $2/月 · 帖文报价，未与配置绑定 · 在售",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
+    },
     {
       "generated_at": "2026-11-19T21:01:32+00:00",
       "baseline": false,
