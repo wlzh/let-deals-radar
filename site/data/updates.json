@@ -1,47 +1,53 @@
 {
   "latest": {
-    "generated_at": "2026-11-23T21:01:45+00:00",
+    "generated_at": "2026-11-25T00:57:57+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223758",
-        "provider": "DEDICATED SERVER CLEARANCE",
-        "title": "[UK] DEDICATED SERVER CLEARANCE | 64GB RAM | SSD | UNMETERED BANDWIDTH",
-        "url": "https://lowendtalk.com/discussion/223758/uk-dedicated-server-clearance-64gb-ram-ssd-unmetered-bandwidth",
-        "summary": "常规促销 · £45/月 · 帖文报价，未与配置绑定 · 待确认"
-      },
-      {
-        "id": "let:223719",
-        "provider": "CloudBlast",
-        "title": "CloudBlast - NEW STOCK + 20% BONUS ON DEPOSITS (2 Weeks Only) - Hourly VPS, AMD EPYC, NVMe, 10Gbps",
-        "url": "https://lowendtalk.com/discussion/223719/cloudblast-new-stock-20-bonus-on-deposits-2-weeks-only-hourly-vps-amd-epyc-nvme-10gbps",
-        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认"
+        "id": "let:223766",
+        "provider": "zenlayer.com",
+        "title": "Black Friday | Zenlayer | Select Dedicated Servers 50% Off from $98.60/mo, Traffic 40% Off, $50 Top-",
+        "url": "https://lowendtalk.com/discussion/223766/black-friday-zenlayer-select-dedicated-servers-50-off-from-98-60-mo-traffic-40-off-50-top",
+        "summary": "黑五 · $98.6/月 · 帖文报价，未与配置绑定 · 在售"
       }
     ],
     "changed": [
       {
-        "id": "let:222157",
-        "provider": "nolimitcloud.eu",
-        "title": "NolimitHost Budget Sale│Offers from €12.99/year! | NVMe KVM VPS | Freebie | DE",
-        "url": "https://lowendtalk.com/discussion/222157/nolimithost-budget-sale-offers-from-12-99-year-nvme-kvm-vps-freebie-de",
-        "summary": "常规促销 · €12.99/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+        "id": "let:223558",
+        "provider": "racknerd.com",
+        "title": "RackNerd’s BLACK FRIDAY TAKEOVER! NEW DEALS, NEW TECH, AdminBolt HOSTING + HUNDREDS OF GIVEAWAYS!",
+        "url": "https://lowendtalk.com/discussion/223558/racknerd-s-black-friday-takeover-new-deals-new-tech-adminbolt-hosting-hundreds-of-giveaways",
+        "summary": "黑五 · $9.49/年 · 帖文报价，未与配置绑定 · 在售",
         "changes": {
           "库存": {
-            "before": "ON_SALE",
+            "before": "UNVERIFIED",
+            "after": "ON_SALE"
+          }
+        }
+      },
+      {
+        "id": "let:222462",
+        "provider": "SystemFreaks S3 Object Storage",
+        "title": "SystemFreaks S3 Object Storage | 100 GB from $7.20/year | 1 TB from $6/month | Free Unmetered Egress",
+        "url": "https://lowendtalk.com/discussion/222462/systemfreaks-s3-object-storage-100-gb-from-7-20-year-1-tb-from-6-month-free-unmetered-egress",
+        "summary": "常规促销 · $7.2/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
             "after": "UNVERIFIED_STALE"
           }
         }
       },
       {
-        "id": "let:223647",
-        "provider": "GenixNode",
-        "title": "GenixNode | KVM NVMe VPS in 14 Locations | 4GB RAM from $2.99/mo | +1 Week Free for LET",
-        "url": "https://lowendtalk.com/discussion/223647/genixnode-kvm-nvme-vps-in-14-locations-4gb-ram-from-2-99-mo-1-week-free-for-let",
-        "summary": "黑五 · $2.99/月 · 帖文报价，未与配置绑定 · 售罄",
+        "id": "let:222302",
+        "provider": "ipye.com",
+        "title": "Instant setup, automatic RPKI ROA, rDNS, and WHOIS changes - Free /48 IPv6 for everyone - IPYE.com",
+        "url": "https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 在售",
         "changes": {
           "库存": {
-            "before": "ON_SALE",
-            "after": "SOLD_OUT"
+            "before": "UNVERIFIED",
+            "after": "ON_SALE"
           }
         }
       },
@@ -50,24 +56,11 @@
         "provider": "NetDynamics24",
         "title": "[NetDynamics LLC Crazy Sales] Dedicated Storage Servers 24 TB up to 168 TB from $42/mo",
         "url": "https://lowendtalk.com/discussion/223062/netdynamics-llc-crazy-sales-dedicated-storage-servers-24-tb-up-to-168-tb-from-42-mo",
-        "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 售罄",
+        "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 部分售罄",
         "changes": {
           "库存": {
-            "before": "ON_SALE",
-            "after": "SOLD_OUT"
-          }
-        }
-      },
-      {
-        "id": "let:222988",
-        "provider": "Xeon Gold VPS",
-        "title": "[UK] Xeon Gold VPS – 2GB RAM / 30GB SSD / 1Gbps Unmetered – £25/YR",
-        "url": "https://lowendtalk.com/discussion/222988/uk-xeon-gold-vps-2gb-ram-30gb-ssd-1gbps-unmetered-25-yr",
-        "summary": "常规帖 · £25/年 · 帖文报价，未与配置绑定 · 售罄",
-        "changes": {
-          "库存": {
-            "before": "UNVERIFIED",
-            "after": "SOLD_OUT"
+            "before": "SOLD_OUT",
+            "after": "PARTIAL"
           }
         }
       },
@@ -76,77 +69,263 @@
         "provider": "prohosting24.de",
         "title": "ph24 first vps deal in 2026 + flash sale (EPYC 7XX3)",
         "url": "https://lowendtalk.com/discussion/221060/ph24-first-vps-deal-in-2026-flash-sale-epyc-7xx3",
-        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 在售",
+        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
         "changes": {
           "库存": {
-            "before": "UNVERIFIED_STALE",
-            "after": "ON_SALE"
+            "before": "ON_SALE",
+            "after": "UNVERIFIED_STALE"
           }
         }
       },
       {
-        "id": "let:221924",
-        "provider": "SmokyHosts",
-        "title": "SmokyHosts - 10.10 Deal - 10GB VPS @ $10/month | 10 Locations",
-        "url": "https://lowendtalk.com/discussion/221924/smokyhosts-10-10-deal-10gb-vps-10-month-10-locations",
-        "summary": "常规促销 · $10/月 · 帖文报价，未与配置绑定 · 在售",
+        "id": "let:222474",
+        "provider": "Caliber Node",
+        "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
+        "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
+        "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
         "changes": {
           "库存": {
             "before": "UNVERIFIED",
-            "after": "ON_SALE"
+            "after": "UNVERIFIED_STALE"
           }
         }
       }
     ],
     "missing": [
       {
-        "id": "let:222976",
-        "provider": "CorePanel 1.13 is out",
-        "title": "CorePanel 1.13 is out - free up to 20 sites",
-        "url": "https://lowendtalk.com/discussion/222976/corepanel-1-13-is-out-free-up-to-20-sites",
-        "summary": "常规帖 · $14.9/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:223154",
+        "provider": "INET.WS",
+        "title": "INET.WS – KVM VPS | 14 locations USA/CA/EU | from $3/mo | 25% off 3 months | Paris NEW",
+        "url": "https://lowendtalk.com/discussion/223154/inet-ws-kvm-vps-14-locations-usa-ca-eu-from-3-mo-25-off-3-months-paris-new",
+        "summary": "常规促销 · $3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:222778",
-        "provider": "hyperhostsolutions.com",
-        "title": "HyperHost Halloween | 50% OFF Recurring | UK VPS £1.50/mo · Web £1/mo · HA £2/mo",
-        "url": "https://lowendtalk.com/discussion/222778/hyperhost-halloween-50-off-recurring-uk-vps-1-50-mo-web-1-mo-ha-2-mo",
-        "summary": "节日促销 · £1/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:221796",
+        "provider": "Infrawire",
+        "title": "Infrawire - VPS IFW Series now in USA & Hong Kong | Linux & Windows | Starting at $4.30/mo",
+        "url": "https://lowendtalk.com/discussion/221796/infrawire-vps-ifw-series-now-in-usa-hong-kong-linux-windows-starting-at-4-30-mo",
+        "summary": "上新/回归 · $4.3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "let:221896",
-        "provider": "onlyservers.com",
-        "title": "25G Unmetered 30% lifetime discount - Dedicated Servers",
-        "url": "https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers",
-        "summary": "常规促销 · $150.5/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:221289",
+        "provider": "ServersCamp: Database-Tuned Cloud",
+        "title": "ServersCamp: Database-Tuned Cloud | €25 Free Test Credit",
+        "url": "https://lowendtalk.com/discussion/221289/serverscamp-database-tuned-cloud-25-free-test-credit",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
       },
       {
-        "id": "leb:leb-cheap-vps-deals-in-toronto-from-enderhost-get-a-4gb-vps-for-only-3-84-month",
-        "provider": "enderhost.co",
-        "title": "Cheap VPS Deals in Toronto from EnderHost! Get a 4GB VPS for Only $3.84/Month!",
-        "url": "https://lowendbox.com/blog/cheap-vps-deals-in-toronto-from-enderhost-get-a-4gb-vps-for-only-3-84-month/",
-        "summary": "常规帖 · $3.84/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        "id": "let:222107",
+        "provider": "NUXOA",
+        "title": "Frankfurt Dedicated Servers from €95/mo. | Ryzen & Xeon | NUXOA",
+        "url": "https://lowendtalk.com/discussion/222107/frankfurt-dedicated-servers-from-95-mo-ryzen-xeon-nuxoa",
+        "summary": "常规帖 · €95/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:223109",
+        "provider": "hostpapa.ca",
+        "title": "[HostPapa] Black Friday Web Hosting – $1.25/mo | 25 GB NVMe | cPanel | FREE Domain Y1 | CA/US/EU |",
+        "url": "https://lowendtalk.com/discussion/223109/hostpapa-black-friday-web-hosting-1-25-mo-25-gb-nvme-cpanel-free-domain-y1-ca-us-eu",
+        "summary": "黑五 · $1.25/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "leb:leb-hostnamaste-diwali-2026-early-bird-special-los-angeles-kvm-vps-from-17-99-year",
+        "provider": "HostNamaste Diwali 2026 Early-Bird Special",
+        "title": "HostNamaste Diwali 2026 Early-Bird Special — Los Angeles KVM VPS from $17.99/Year!",
+        "url": "https://lowendbox.com/blog/hostnamaste-diwali-2026-early-bird-special-los-angeles-kvm-vps-from-17-99-year/",
+        "summary": "节日促销 · $17.99/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
     "restored": [
       {
-        "id": "let:221924",
-        "provider": "SmokyHosts",
-        "title": "SmokyHosts - 10.10 Deal - 10GB VPS @ $10/month | 10 Locations",
-        "url": "https://lowendtalk.com/discussion/221924/smokyhosts-10-10-deal-10gb-vps-10-month-10-locations",
-        "summary": "常规促销 · $10/月 · 帖文报价，未与配置绑定 · 在售"
+        "id": "let:222302",
+        "provider": "ipye.com",
+        "title": "Instant setup, automatic RPKI ROA, rDNS, and WHOIS changes - Free /48 IPv6 for everyone - IPYE.com",
+        "url": "https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 在售"
       },
       {
-        "id": "let:220764",
-        "provider": "vpshostingservice.co",
-        "title": "ServerHost September Savings – OpenClaw VPS - Ryzen/i9 - KVM VPS from $16.99/YEAR",
-        "url": "https://lowendtalk.com/discussion/220764/serverhost-september-savings-openclaw-vps-ryzen-i9-kvm-vps-from-16-99-year",
-        "summary": "上新/回归 · $16.99/年 · 帖文报价，未与配置绑定 · 待确认(较旧)"
+        "id": "let:222878",
+        "provider": "LukeRhino",
+        "title": "HARDWARE SALE Supermicro AS-4124GQ-TNMI, 4x AMD Instinct MI250 128GB OAM GPU Server (73x available)",
+        "url": "https://lowendtalk.com/discussion/222878/hardware-sale-supermicro-as-4124gq-tnmi-4x-amd-instinct-mi250-128gb-oam-gpu-server-73x-available",
+        "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 在售"
       }
     ],
-    "expired": []
+    "expired": [
+      {
+        "id": "let:220454",
+        "provider": "NiuProxy",
+        "title": "NiuProxy | Residential Proxies from USD $0.35/GB | ISP from USD $3/IP | 10% OFF with Code PAY2",
+        "url": "https://lowendtalk.com/discussion/220454/niuproxy-residential-proxies-from-usd-0-35-gb-isp-from-usd-3-ip-10-off-with-code-pay2",
+        "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
+        "reason": "超出保留窗口；不代表确认停售"
+      }
+    ]
   },
   "history": [
+    {
+      "generated_at": "2026-11-25T00:57:57+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223766",
+          "provider": "zenlayer.com",
+          "title": "Black Friday | Zenlayer | Select Dedicated Servers 50% Off from $98.60/mo, Traffic 40% Off, $50 Top-",
+          "url": "https://lowendtalk.com/discussion/223766/black-friday-zenlayer-select-dedicated-servers-50-off-from-98-60-mo-traffic-40-off-50-top",
+          "summary": "黑五 · $98.6/月 · 帖文报价，未与配置绑定 · 在售"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:223558",
+          "provider": "racknerd.com",
+          "title": "RackNerd’s BLACK FRIDAY TAKEOVER! NEW DEALS, NEW TECH, AdminBolt HOSTING + HUNDREDS OF GIVEAWAYS!",
+          "url": "https://lowendtalk.com/discussion/223558/racknerd-s-black-friday-takeover-new-deals-new-tech-adminbolt-hosting-hundreds-of-giveaways",
+          "summary": "黑五 · $9.49/年 · 帖文报价，未与配置绑定 · 在售",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "ON_SALE"
+            }
+          }
+        },
+        {
+          "id": "let:222462",
+          "provider": "SystemFreaks S3 Object Storage",
+          "title": "SystemFreaks S3 Object Storage | 100 GB from $7.20/year | 1 TB from $6/month | Free Unmetered Egress",
+          "url": "https://lowendtalk.com/discussion/222462/systemfreaks-s3-object-storage-100-gb-from-7-20-year-1-tb-from-6-month-free-unmetered-egress",
+          "summary": "常规促销 · $7.2/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        },
+        {
+          "id": "let:222302",
+          "provider": "ipye.com",
+          "title": "Instant setup, automatic RPKI ROA, rDNS, and WHOIS changes - Free /48 IPv6 for everyone - IPYE.com",
+          "url": "https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 在售",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "ON_SALE"
+            }
+          }
+        },
+        {
+          "id": "let:223062",
+          "provider": "NetDynamics24",
+          "title": "[NetDynamics LLC Crazy Sales] Dedicated Storage Servers 24 TB up to 168 TB from $42/mo",
+          "url": "https://lowendtalk.com/discussion/223062/netdynamics-llc-crazy-sales-dedicated-storage-servers-24-tb-up-to-168-tb-from-42-mo",
+          "summary": "黑五 · $42/月 · 帖文报价，未与配置绑定 · 部分售罄",
+          "changes": {
+            "库存": {
+              "before": "SOLD_OUT",
+              "after": "PARTIAL"
+            }
+          }
+        },
+        {
+          "id": "let:221060",
+          "provider": "prohosting24.de",
+          "title": "ph24 first vps deal in 2026 + flash sale (EPYC 7XX3)",
+          "url": "https://lowendtalk.com/discussion/221060/ph24-first-vps-deal-in-2026-flash-sale-epyc-7xx3",
+          "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "ON_SALE",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        },
+        {
+          "id": "let:222474",
+          "provider": "Caliber Node",
+          "title": "Caliber Node | Halloween Sale — 7 Days of Cloud Apps, VPS & BYOH Deals + $200 Giveaway!",
+          "url": "https://lowendtalk.com/discussion/222474/caliber-node-halloween-sale-7-days-of-cloud-apps-vps-byoh-deals-200-giveaway",
+          "summary": "节日促销 · $8/年 · 帖文报价，未与配置绑定 · 待确认(较旧)",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "UNVERIFIED_STALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:223154",
+          "provider": "INET.WS",
+          "title": "INET.WS – KVM VPS | 14 locations USA/CA/EU | from $3/mo | 25% off 3 months | Paris NEW",
+          "url": "https://lowendtalk.com/discussion/223154/inet-ws-kvm-vps-14-locations-usa-ca-eu-from-3-mo-25-off-3-months-paris-new",
+          "summary": "常规促销 · $3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221796",
+          "provider": "Infrawire",
+          "title": "Infrawire - VPS IFW Series now in USA & Hong Kong | Linux & Windows | Starting at $4.30/mo",
+          "url": "https://lowendtalk.com/discussion/221796/infrawire-vps-ifw-series-now-in-usa-hong-kong-linux-windows-starting-at-4-30-mo",
+          "summary": "上新/回归 · $4.3/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221289",
+          "provider": "ServersCamp: Database-Tuned Cloud",
+          "title": "ServersCamp: Database-Tuned Cloud | €25 Free Test Credit",
+          "url": "https://lowendtalk.com/discussion/221289/serverscamp-database-tuned-cloud-25-free-test-credit",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222107",
+          "provider": "NUXOA",
+          "title": "Frankfurt Dedicated Servers from €95/mo. | Ryzen & Xeon | NUXOA",
+          "url": "https://lowendtalk.com/discussion/222107/frankfurt-dedicated-servers-from-95-mo-ryzen-xeon-nuxoa",
+          "summary": "常规帖 · €95/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:223109",
+          "provider": "hostpapa.ca",
+          "title": "[HostPapa] Black Friday Web Hosting – $1.25/mo | 25 GB NVMe | cPanel | FREE Domain Y1 | CA/US/EU |",
+          "url": "https://lowendtalk.com/discussion/223109/hostpapa-black-friday-web-hosting-1-25-mo-25-gb-nvme-cpanel-free-domain-y1-ca-us-eu",
+          "summary": "黑五 · $1.25/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-hostnamaste-diwali-2026-early-bird-special-los-angeles-kvm-vps-from-17-99-year",
+          "provider": "HostNamaste Diwali 2026 Early-Bird Special",
+          "title": "HostNamaste Diwali 2026 Early-Bird Special — Los Angeles KVM VPS from $17.99/Year!",
+          "url": "https://lowendbox.com/blog/hostnamaste-diwali-2026-early-bird-special-los-angeles-kvm-vps-from-17-99-year/",
+          "summary": "节日促销 · $17.99/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [
+        {
+          "id": "let:222302",
+          "provider": "ipye.com",
+          "title": "Instant setup, automatic RPKI ROA, rDNS, and WHOIS changes - Free /48 IPv6 for everyone - IPYE.com",
+          "url": "https://lowendtalk.com/discussion/222302/instant-setup-automatic-rpki-roa-rdns-and-whois-changes-free-48-ipv6-for-everyone-ipye-com",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 在售"
+        },
+        {
+          "id": "let:222878",
+          "provider": "LukeRhino",
+          "title": "HARDWARE SALE Supermicro AS-4124GQ-TNMI, 4x AMD Instinct MI250 128GB OAM GPU Server (73x available)",
+          "url": "https://lowendtalk.com/discussion/222878/hardware-sale-supermicro-as-4124gq-tnmi-4x-amd-instinct-mi250-128gb-oam-gpu-server-73x-available",
+          "summary": "常规促销 · 到商家查价 · 价格周期待核对 · 在售"
+        }
+      ],
+      "expired": [
+        {
+          "id": "let:220454",
+          "provider": "NiuProxy",
+          "title": "NiuProxy | Residential Proxies from USD $0.35/GB | ISP from USD $3/IP | 10% OFF with Code PAY2",
+          "url": "https://lowendtalk.com/discussion/220454/niuproxy-residential-proxies-from-usd-0-35-gb-isp-from-usd-3-ip-10-off-with-code-pay2",
+          "summary": "常规帖 · 到商家查价 · 价格周期待核对 · 待确认(较旧)",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
+    },
     {
       "generated_at": "2026-11-23T21:01:45+00:00",
       "baseline": false,
@@ -2722,444 +2901,6 @@
           "summary": "上新/回归 · $25/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
         }
       ],
-      "restored": [],
-      "expired": []
-    },
-    {
-      "generated_at": "2026-10-26T08:33:17+00:00",
-      "baseline": false,
-      "added": [],
-      "changed": [
-        {
-          "id": "let:221713",
-          "provider": "bero-host.de",
-          "title": "BERO HOST 10th Anniversary Deals – EPYC Turin / Ryzen 9950X / IPv6-only VPS",
-          "url": "https://lowendtalk.com/discussion/221713/bero-host-10th-anniversary-deals-epyc-turin-ryzen-9950x-ipv6-only-vps",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 10,
-                "codes": [
-                  "LET10"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": 10,
-                "codes": [
-                  "LET10"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:222136",
-          "provider": "servers_guru",
-          "title": "[SERVERS.GURU] Netherlands 10Gbps : 30% off recurring! VPS from 3.84€ !",
-          "url": "https://lowendtalk.com/discussion/222136/servers-guru-netherlands-10gbps-30-off-recurring-vps-from-3-84",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 30,
-                "codes": [],
-                "extras": [
-                  "12 months for the price of 10",
-                  "2 months free"
-                ]
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": 30,
-                "codes": [],
-                "extras": [
-                  "12 months for the price of 10",
-                  "2 months free"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "id": "let:222539",
-          "provider": "HostNoc",
-          "title": "Additional 10% Off First Month Promo code: LET10 - Dedicated Servers from $15.95/mo",
-          "url": "https://lowendtalk.com/discussion/222539/additional-10-off-first-month-promo-code-let10-dedicated-servers-from-15-95-mo",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 10,
-                "codes": [
-                  "LET10"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": 10,
-                "codes": [
-                  "LET10"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:221473",
-          "provider": "DartNode",
-          "title": "DartNode - Countdown to Black Friday - Dedicated Server Deals and Giveaway! Live now!",
-          "url": "https://lowendtalk.com/discussion/221473/dartnode-countdown-to-black-friday-dedicated-server-deals-and-giveaway-live-now",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 30,
-                "codes": [],
-                "extras": [
-                  "12 months free"
-                ]
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": 30,
-                "codes": [],
-                "extras": [
-                  "12 months free"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "id": "let:222403",
-          "provider": "Infrawire",
-          "title": "Infrawire - VPS now in Turkey | 10 Gbps | Linux & Windows | Starting at $9.30/mo",
-          "url": "https://lowendtalk.com/discussion/222403/infrawire-vps-now-in-turkey-10-gbps-linux-windows-starting-at-9-30-mo",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": false,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 15,
-                "codes": [
-                  "LOWENDTALK"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": false,
-                "percent_max": 15,
-                "codes": [
-                  "LOWENDTALK"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:222121",
-          "provider": "centrixnodes.net",
-          "title": "[US] Dedicated Servers from $93.50/mo | VPS from $2.04/mo | 10Gbps | Recurring Discounts | Buffalo,",
-          "url": "https://lowendtalk.com/discussion/222121/us-dedicated-servers-from-93-50-mo-vps-from-2-04-mo-10gbps-recurring-discounts-buffalo",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 20,
-                "codes": [
-                  "LOWENDTALKDEDI",
-                  "LOWENDTALKVPS"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": 20,
-                "codes": [
-                  "LOWENDTALKDEDI",
-                  "LOWENDTALKVPS"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:220041",
-          "provider": "HostAddon VPS",
-          "title": "HostAddon VPS - 1/2/10Gbps | NVMe | From $3.99/mo | 25% Off | 30 Locales | Storage | Streaming | VPN",
-          "url": "https://lowendtalk.com/discussion/220041/hostaddon-vps-1-2-10gbps-nvme-from-3-99-mo-25-off-30-locales-storage-streaming-vpn",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": false,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 25,
-                "codes": [
-                  "LET25"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": false,
-                "percent_max": 25,
-                "codes": [
-                  "LET25"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:221826",
-          "provider": "PrivateByte",
-          "title": "PrivateByte | KVM VPS from $5.99/mo | 2-4GB Unmetered | London, Amsterdam, Dallas | 25% off: LET25",
-          "url": "https://lowendtalk.com/discussion/221826/privatebyte-kvm-vps-from-5-99-mo-2-4gb-unmetered-london-amsterdam-dallas-25-off-let25",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": false,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 25,
-                "codes": [
-                  "LET25"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": false,
-                "percent_max": 25,
-                "codes": [
-                  "LET25"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:220957",
-          "provider": "TierNet",
-          "title": "Tier.Net Dedis Starting $45/mo - No Bait-and-Switch, Multiple US Locations",
-          "url": "https://lowendtalk.com/discussion/220957/tier-net-dedis-starting-45-mo-no-bait-and-switch-multiple-us-locations",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": false,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": null,
-                "codes": [],
-                "extras": [
-                  "triple the"
-                ]
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": false,
-                "percent_max": null,
-                "codes": [],
-                "extras": [
-                  "triple the"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "id": "let:221165",
-          "provider": "SoftShellWeb",
-          "title": "[SoftShellWeb] From $9.95/yr - NVMe · 10 Gbps · DDoS Protection · 2× bandwidth",
-          "url": "https://lowendtalk.com/discussion/221165/softshellweb-from-9-95-yr-nvme-10-gbps-ddos-protection-2-bandwidth",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": null,
-                "codes": [],
-                "extras": [
-                  "double bandwidth"
-                ]
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": null,
-                "codes": [],
-                "extras": [
-                  "double bandwidth"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "id": "let:220775",
-          "provider": "just.hosting",
-          "title": "[JUST.HOSTING] AI-Ready VPS from $7.90 | VPN from $3.30 | Classic VPS from $5.26 | Promo VPS $1.99",
-          "url": "https://lowendtalk.com/discussion/220775/just-hosting-ai-ready-vps-from-7-90-vpn-from-3-30-classic-vps-from-5-26-promo-vps-1-99",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 40,
-                "codes": [
-                  "CLASSIC",
-                  "CLASSIC35",
-                  "JUSTVIBE",
-                  "PERSONAL",
-                  "PRIVATE"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": 40,
-                "codes": [
-                  "CLASSIC",
-                  "CLASSIC35",
-                  "JUSTVIBE",
-                  "PERSONAL",
-                  "PRIVATE"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "let:221747",
-          "provider": "godlike.host",
-          "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
-          "url": "https://lowendtalk.com/discussion/221747/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": false,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": 50,
-                "codes": [
-                  "LEB50"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": false,
-                "percent_max": 50,
-                "codes": [
-                  "LEB50"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "leb:leb-exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back",
-          "provider": "godlike.host",
-          "title": "Exclusive LowEndBox Pricing: 2GB KVM VPS for $1.83/Month First Year! Godlike.Host is Back!",
-          "url": "https://lowendbox.com/blog/exclusive-lowendbox-pricing-2gb-kvm-vps-for-1-83-month-first-year-godlike-host-is-back/",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": false,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": null,
-                "codes": [
-                  "LEB50"
-                ],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": false,
-                "percent_max": null,
-                "codes": [
-                  "LEB50"
-                ],
-                "extras": []
-              }
-            }
-          }
-        },
-        {
-          "id": "leb:leb-racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses",
-          "provider": "RackNerd & AdminBolt Are Giving Away 100",
-          "title": "RackNerd & AdminBolt Are Giving Away 100 FREE VPS for a Year + 20 LIFETIME Licenses!",
-          "url": "https://lowendbox.com/blog/racknerd-adminbolt-are-giving-away-100-free-vps-for-a-year-20-lifetime-licenses/",
-          "changes": {
-            "优惠规则": {
-              "before": {
-                "recurring": true,
-                "introductory": false,
-                "rule_conflict": false,
-                "percent_max": null,
-                "codes": [],
-                "extras": []
-              },
-              "after": {
-                "recurring": false,
-                "introductory": true,
-                "rule_conflict": true,
-                "percent_max": null,
-                "codes": [],
-                "extras": []
-              }
-            }
-          }
-        }
-      ],
-      "missing": [],
       "restored": [],
       "expired": []
     }
