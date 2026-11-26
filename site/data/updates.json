@@ -1,30 +1,337 @@
 {
   "latest": {
-    "generated_at": "2026-11-26T05:49:19+00:00",
+    "generated_at": "2026-11-26T21:01:20+00:00",
     "baseline": false,
     "added": [
       {
-        "id": "let:223883",
-        "provider": "HOSTODO BLACK FRIDAY",
-        "title": "HOSTODO BLACK FRIDAY | Tampa NVMe VPS from $129 for 3 Years | Capacity Pools | $150 Credit Giveaway",
-        "url": "https://lowendtalk.com/discussion/223883/hostodo-black-friday-tampa-nvme-vps-from-129-for-3-years-capacity-pools-150-credit-giveaway",
-        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 在售"
+        "id": "let:223923",
+        "provider": "Equinix Frankfurt",
+        "title": "Equinix Frankfurt | Ryzen VPS from €5.00/mo | 12GB EPYC VPS €60/year | 25% OFF on GRE Tunnels",
+        "url": "https://lowendtalk.com/discussion/223923/equinix-frankfurt-ryzen-vps-from-5-00-mo-12gb-epyc-vps-60-year-25-off-on-gre-tunnels",
+        "summary": "常规促销 · €5/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223921",
+        "provider": "WebDeck",
+        "title": "WebDeck - A hosting control panel built around isolation, now in free open beta for everyone!",
+        "url": "https://lowendtalk.com/discussion/223921/webdeck-a-hosting-control-panel-built-around-isolation-now-in-free-open-beta-for-everyone",
+        "summary": "常规帖 · £1.75/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223895",
+        "provider": "NolimitHost Black Friday Giveaway",
+        "title": "NolimitHost Black Friday Giveaway│26% OFF (Almost) Everything | NVMe KVM VPS | Freebie | DE, CHI, NL",
+        "url": "https://lowendtalk.com/discussion/223895/nolimithost-black-friday-giveaway-26-off-almost-everything-nvme-kvm-vps-freebie-de-chi-nl",
+        "summary": "黑五 · €8.13/季 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223904",
+        "provider": "ST-Hosting Black Week",
+        "title": "ST-Hosting Black Week | Germany | LXC €1.91 & EPYC KVM €5.94 first month | Dedicated -10% recurring",
+        "url": "https://lowendtalk.com/discussion/223904/st-hosting-black-week-germany-lxc-1-91-epyc-kvm-5-94-first-month-dedicated-10-recurring",
+        "summary": "常规促销 · €6.99/年 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:223909",
+        "provider": "CubePath Black Friday 2026",
+        "title": "CubePath Black Friday 2026 | Double your first top-up + 3 months of free S3",
+        "url": "https://lowendtalk.com/discussion/223909/cubepath-black-friday-2026-double-your-first-top-up-3-months-of-free-s3",
+        "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
       }
     ],
-    "changed": [],
+    "changed": [
+      {
+        "id": "let:223853",
+        "provider": "ServerHost Black Friday",
+        "title": "ServerHost Black Friday | $7/yr Linux VPS | $19.99/yr Ryzen/i9 | $1000+ in Prizes",
+        "url": "https://lowendtalk.com/discussion/223853/serverhost-black-friday-7-yr-linux-vps-19-99-yr-ryzen-i9-1000-in-prizes",
+        "summary": "黑五 · $7/年 · 帖文报价，未与配置绑定 · 售罄",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "SOLD_OUT"
+          }
+        }
+      },
+      {
+        "id": "let:223835",
+        "provider": "softshellweb.com",
+        "title": "[SoftShellWeb] BLACK FRIDAY 🔥 Yearly servers from $9.95 · NEW Ryzen LXC $11.95 · 2× Bandwidth",
+        "url": "https://lowendtalk.com/discussion/223835/softshellweb-black-friday-yearly-servers-from-9-95-new-ryzen-lxc-11-95-2-bandwidth",
+        "summary": "黑五 · $8/年 · 帖文报价，未与配置绑定 · 售罄",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "SOLD_OUT"
+          }
+        }
+      },
+      {
+        "id": "let:223597",
+        "provider": "bgp.sa",
+        "title": "[Kansas City] BGP VPS – $9.99/mo | 1Gbps Unmetered | NO FUP | BYOASN + BYOIP | Automated BGP",
+        "url": "https://lowendtalk.com/discussion/223597/kansas-city-bgp-vps-9-99-mo-1gbps-unmetered-no-fup-byoasn-byoip-automated-bgp",
+        "summary": "常规帖 · $9.99/月 · 帖文报价，未与配置绑定 · 在售",
+        "changes": {
+          "库存": {
+            "before": "UNVERIFIED",
+            "after": "ON_SALE"
+          }
+        }
+      }
+    ],
     "missing": [
       {
-        "id": "let:223104",
-        "provider": "xgpu.store",
-        "title": "XGPU Store: GPU rental from $0.17/hour",
-        "url": "https://lowendtalk.com/discussion/223104/xgpu-store-gpu-rental-from-0-17-hour",
-        "summary": "上新/回归 · 到商家查价 · 价格周期待核对 · 本轮未检出（非确认停售）"
+        "id": "let:222871",
+        "provider": "godlike.host",
+        "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+        "url": "https://lowendtalk.com/discussion/222871/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+        "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:223277",
+        "provider": "vpspioneer.com",
+        "title": "[New Location] Bursa, Türkiye KVM VPS - 15% Off for Life + Bonus vCore or 20GB Disk",
+        "url": "https://lowendtalk.com/discussion/223277/new-location-bursa-tuerkiye-kvm-vps-15-off-for-life-bonus-vcore-or-20gb-disk",
+        "summary": "节日促销 · $46.67/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:222906",
+        "provider": "BudgetVM",
+        "title": "BudgetVM –> Ryzen 5900XT Giveaway | EPYC 9754 Instant Deploy | Up to 100G Unmetered",
+        "url": "https://lowendtalk.com/discussion/222906/budgetvm-ryzen-5900xt-giveaway-epyc-9754-instant-deploy-up-to-100g-unmetered",
+        "summary": "周年庆 · $74/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:222809",
+        "provider": "HostSailor Halloween Special",
+        "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
+        "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
+        "summary": "节日促销 · $29.94/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:221558",
+        "provider": "D4 Networks",
+        "title": "D4 Networks | 4GB KVM, 80-120GB NVMe | $49/year, renews at $49 | Dallas, Amsterdam, New York",
+        "url": "https://lowendtalk.com/discussion/221558/d4-networks-4gb-kvm-80-120gb-nvme-49-year-renews-at-49-dallas-amsterdam-new-york",
+        "summary": "常规帖 · $49/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:223268",
+        "provider": "fourplex.net",
+        "title": "NYC Ryzen 9000 VPS | 50% OFF SALE | 2GB @ $4/mo | 4GB @ $8/mo | Unmetered BW",
+        "url": "https://lowendtalk.com/discussion/223268/nyc-ryzen-9000-vps-50-off-sale-2gb-4-mo-4gb-8-mo-unmetered-bw",
+        "summary": "上新/回归 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "let:223203",
+        "provider": "paypal.com",
+        "title": "Low End Dedicated Server Share, Vint Hill, Virginia, USA",
+        "url": "https://lowendtalk.com/discussion/223203/low-end-dedicated-server-share-vint-hill-virginia-usa",
+        "summary": "上新/回归 · $15/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+      },
+      {
+        "id": "leb:leb-need-cheap-quality-email-hosting-check-out-franklymail-and-their-special-offer-exclusively-for-our-readers",
+        "provider": "Need Cheap, Quality Email Hosting? Check",
+        "title": "Need Cheap, Quality Email Hosting? Check Out FranklyMail – and Their Special Offer Exclusively for Our Readers!",
+        "url": "https://lowendbox.com/blog/need-cheap-quality-email-hosting-check-out-franklymail-and-their-special-offer-exclusively-for-our-readers/",
+        "summary": "常规促销 · $9/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
       }
     ],
-    "restored": [],
-    "expired": []
+    "restored": [
+      {
+        "id": "let:223370",
+        "provider": "godlike.host",
+        "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+        "url": "https://lowendtalk.com/discussion/223370/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+        "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 待确认"
+      },
+      {
+        "id": "let:221896",
+        "provider": "onlyservers.com",
+        "title": "25G Unmetered 30% lifetime discount - Dedicated Servers",
+        "url": "https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers",
+        "summary": "常规促销 · $150.5/月 · 帖文报价，未与配置绑定 · 售罄"
+      }
+    ],
+    "expired": [
+      {
+        "id": "let:220847",
+        "provider": "servury.com",
+        "title": "Blackbox : 2 vCPU / 4 GB / 50 GB NVMe, Encrypted RAM & Disk, 100% Anonymous - $9.99/mo",
+        "url": "https://lowendtalk.com/discussion/220847/blackbox-2-vcpu-4-gb-50-gb-nvme-encrypted-ram-disk-100-anonymous-9-99-mo",
+        "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定；本轮未检出，上次检出 2026-10-27T08:56:45+00:00 · 本轮未检出（非确认停售）",
+        "reason": "超出保留窗口；不代表确认停售"
+      }
+    ]
   },
   "history": [
+    {
+      "generated_at": "2026-11-26T21:01:20+00:00",
+      "baseline": false,
+      "added": [
+        {
+          "id": "let:223923",
+          "provider": "Equinix Frankfurt",
+          "title": "Equinix Frankfurt | Ryzen VPS from €5.00/mo | 12GB EPYC VPS €60/year | 25% OFF on GRE Tunnels",
+          "url": "https://lowendtalk.com/discussion/223923/equinix-frankfurt-ryzen-vps-from-5-00-mo-12gb-epyc-vps-60-year-25-off-on-gre-tunnels",
+          "summary": "常规促销 · €5/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223921",
+          "provider": "WebDeck",
+          "title": "WebDeck - A hosting control panel built around isolation, now in free open beta for everyone!",
+          "url": "https://lowendtalk.com/discussion/223921/webdeck-a-hosting-control-panel-built-around-isolation-now-in-free-open-beta-for-everyone",
+          "summary": "常规帖 · £1.75/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223895",
+          "provider": "NolimitHost Black Friday Giveaway",
+          "title": "NolimitHost Black Friday Giveaway│26% OFF (Almost) Everything | NVMe KVM VPS | Freebie | DE, CHI, NL",
+          "url": "https://lowendtalk.com/discussion/223895/nolimithost-black-friday-giveaway-26-off-almost-everything-nvme-kvm-vps-freebie-de-chi-nl",
+          "summary": "黑五 · €8.13/季 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223904",
+          "provider": "ST-Hosting Black Week",
+          "title": "ST-Hosting Black Week | Germany | LXC €1.91 & EPYC KVM €5.94 first month | Dedicated -10% recurring",
+          "url": "https://lowendtalk.com/discussion/223904/st-hosting-black-week-germany-lxc-1-91-epyc-kvm-5-94-first-month-dedicated-10-recurring",
+          "summary": "常规促销 · €6.99/年 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:223909",
+          "provider": "CubePath Black Friday 2026",
+          "title": "CubePath Black Friday 2026 | Double your first top-up + 3 months of free S3",
+          "url": "https://lowendtalk.com/discussion/223909/cubepath-black-friday-2026-double-your-first-top-up-3-months-of-free-s3",
+          "summary": "黑五 · 到商家查价 · 价格周期待核对 · 待确认"
+        }
+      ],
+      "changed": [
+        {
+          "id": "let:223853",
+          "provider": "ServerHost Black Friday",
+          "title": "ServerHost Black Friday | $7/yr Linux VPS | $19.99/yr Ryzen/i9 | $1000+ in Prizes",
+          "url": "https://lowendtalk.com/discussion/223853/serverhost-black-friday-7-yr-linux-vps-19-99-yr-ryzen-i9-1000-in-prizes",
+          "summary": "黑五 · $7/年 · 帖文报价，未与配置绑定 · 售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "SOLD_OUT"
+            }
+          }
+        },
+        {
+          "id": "let:223835",
+          "provider": "softshellweb.com",
+          "title": "[SoftShellWeb] BLACK FRIDAY 🔥 Yearly servers from $9.95 · NEW Ryzen LXC $11.95 · 2× Bandwidth",
+          "url": "https://lowendtalk.com/discussion/223835/softshellweb-black-friday-yearly-servers-from-9-95-new-ryzen-lxc-11-95-2-bandwidth",
+          "summary": "黑五 · $8/年 · 帖文报价，未与配置绑定 · 售罄",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "SOLD_OUT"
+            }
+          }
+        },
+        {
+          "id": "let:223597",
+          "provider": "bgp.sa",
+          "title": "[Kansas City] BGP VPS – $9.99/mo | 1Gbps Unmetered | NO FUP | BYOASN + BYOIP | Automated BGP",
+          "url": "https://lowendtalk.com/discussion/223597/kansas-city-bgp-vps-9-99-mo-1gbps-unmetered-no-fup-byoasn-byoip-automated-bgp",
+          "summary": "常规帖 · $9.99/月 · 帖文报价，未与配置绑定 · 在售",
+          "changes": {
+            "库存": {
+              "before": "UNVERIFIED",
+              "after": "ON_SALE"
+            }
+          }
+        }
+      ],
+      "missing": [
+        {
+          "id": "let:222871",
+          "provider": "godlike.host",
+          "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+          "url": "https://lowendtalk.com/discussion/222871/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+          "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:223277",
+          "provider": "vpspioneer.com",
+          "title": "[New Location] Bursa, Türkiye KVM VPS - 15% Off for Life + Bonus vCore or 20GB Disk",
+          "url": "https://lowendtalk.com/discussion/223277/new-location-bursa-tuerkiye-kvm-vps-15-off-for-life-bonus-vcore-or-20gb-disk",
+          "summary": "节日促销 · $46.67/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222906",
+          "provider": "BudgetVM",
+          "title": "BudgetVM –> Ryzen 5900XT Giveaway | EPYC 9754 Instant Deploy | Up to 100G Unmetered",
+          "url": "https://lowendtalk.com/discussion/222906/budgetvm-ryzen-5900xt-giveaway-epyc-9754-instant-deploy-up-to-100g-unmetered",
+          "summary": "周年庆 · $74/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:222809",
+          "provider": "HostSailor Halloween Special",
+          "title": "HostSailor Halloween Special - 50% OFF Lifetime on KVM NVMe VPS",
+          "url": "https://lowendtalk.com/discussion/222809/hostsailor-halloween-special-50-off-lifetime-on-kvm-nvme-vps",
+          "summary": "节日促销 · $29.94/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:221558",
+          "provider": "D4 Networks",
+          "title": "D4 Networks | 4GB KVM, 80-120GB NVMe | $49/year, renews at $49 | Dallas, Amsterdam, New York",
+          "url": "https://lowendtalk.com/discussion/221558/d4-networks-4gb-kvm-80-120gb-nvme-49-year-renews-at-49-dallas-amsterdam-new-york",
+          "summary": "常规帖 · $49/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:223268",
+          "provider": "fourplex.net",
+          "title": "NYC Ryzen 9000 VPS | 50% OFF SALE | 2GB @ $4/mo | 4GB @ $8/mo | Unmetered BW",
+          "url": "https://lowendtalk.com/discussion/223268/nyc-ryzen-9000-vps-50-off-sale-2gb-4-mo-4gb-8-mo-unmetered-bw",
+          "summary": "上新/回归 · $4/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "let:223203",
+          "provider": "paypal.com",
+          "title": "Low End Dedicated Server Share, Vint Hill, Virginia, USA",
+          "url": "https://lowendtalk.com/discussion/223203/low-end-dedicated-server-share-vint-hill-virginia-usa",
+          "summary": "上新/回归 · $15/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        },
+        {
+          "id": "leb:leb-need-cheap-quality-email-hosting-check-out-franklymail-and-their-special-offer-exclusively-for-our-readers",
+          "provider": "Need Cheap, Quality Email Hosting? Check",
+          "title": "Need Cheap, Quality Email Hosting? Check Out FranklyMail – and Their Special Offer Exclusively for Our Readers!",
+          "url": "https://lowendbox.com/blog/need-cheap-quality-email-hosting-check-out-franklymail-and-their-special-offer-exclusively-for-our-readers/",
+          "summary": "常规促销 · $9/年 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
+        }
+      ],
+      "restored": [
+        {
+          "id": "let:223370",
+          "provider": "godlike.host",
+          "title": "Godlike.host KVM VPS from $4/mo | 50% off your first payment, any billing term | EPYC 75F3 / Ryzen 9",
+          "url": "https://lowendtalk.com/discussion/223370/godlike-host-kvm-vps-from-4-mo-50-off-your-first-payment-any-billing-term-epyc-75f3-ryzen-9",
+          "summary": "常规帖 · $4/月 · 帖文报价，未与配置绑定 · 待确认"
+        },
+        {
+          "id": "let:221896",
+          "provider": "onlyservers.com",
+          "title": "25G Unmetered 30% lifetime discount - Dedicated Servers",
+          "url": "https://lowendtalk.com/discussion/221896/25g-unmetered-30-lifetime-discount-dedicated-servers",
+          "summary": "常规促销 · $150.5/月 · 帖文报价，未与配置绑定 · 售罄"
+        }
+      ],
+      "expired": [
+        {
+          "id": "let:220847",
+          "provider": "servury.com",
+          "title": "Blackbox : 2 vCPU / 4 GB / 50 GB NVMe, Encrypted RAM & Disk, 100% Anonymous - $9.99/mo",
+          "url": "https://lowendtalk.com/discussion/220847/blackbox-2-vcpu-4-gb-50-gb-nvme-encrypted-ram-disk-100-anonymous-9-99-mo",
+          "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定；本轮未检出，上次检出 2026-10-27T08:56:45+00:00 · 本轮未检出（非确认停售）",
+          "reason": "超出保留窗口；不代表确认停售"
+        }
+      ]
+    },
     {
       "generated_at": "2026-11-26T05:49:19+00:00",
       "baseline": false,
@@ -2894,54 +3201,6 @@
       ],
       "restored": [],
       "expired": []
-    },
-    {
-      "generated_at": "2026-10-28T08:50:00+00:00",
-      "baseline": false,
-      "added": [
-        {
-          "id": "let:222634",
-          "provider": "🪔 [Diwali 2026 Early-Bird Special] HostNamaste",
-          "title": "🪔 [Diwali 2026 Early-Bird Special] HostNamaste — Los Angeles KVM VPS from $17.99/Year!",
-          "url": "https://lowendtalk.com/discussion/222634/diwali-2026-early-bird-special-hostnamaste-los-angeles-kvm-vps-from-17-99-year",
-          "summary": "常规促销 · $17.99/年 · 帖文报价，未与配置绑定 · 待确认"
-        },
-        {
-          "id": "let:222614",
-          "provider": "Ava.hosting",
-          "title": "Ava.hosting - Boooh! Halloween Discount 15% OFF!!",
-          "url": "https://lowendtalk.com/discussion/222614/ava-hosting-boooh-halloween-discount-15-off",
-          "summary": "黑五 · €1.99/月 · 帖文报价，未与配置绑定 · 待确认"
-        },
-        {
-          "id": "let:222597",
-          "provider": "rafftechnologies.com",
-          "title": "Raff Technologies: KVM VPS from $4.99/mo · Managed Databases · AMD EPYC · NVMe · Unmetered",
-          "url": "https://lowendtalk.com/discussion/222597/raff-technologies-kvm-vps-from-4-99-mo-managed-databases-amd-epyc-nvme-unmetered",
-          "summary": "黑五 · $4.99/月 · 帖文报价，未与配置绑定 · 疑似售罄"
-        }
-      ],
-      "changed": [],
-      "missing": [
-        {
-          "id": "let:220847",
-          "provider": "servury.com",
-          "title": "Blackbox : 2 vCPU / 4 GB / 50 GB NVMe, Encrypted RAM & Disk, 100% Anonymous - $9.99/mo",
-          "url": "https://lowendtalk.com/discussion/220847/blackbox-2-vcpu-4-gb-50-gb-nvme-encrypted-ram-disk-100-anonymous-9-99-mo",
-          "summary": "上新/回归 · $9.99/月 · 帖文报价，未与配置绑定 · 本轮未检出（非确认停售）"
-        }
-      ],
-      "restored": [],
-      "expired": [
-        {
-          "id": "let:219603",
-          "provider": "budgetvm.com",
-          "title": "Ryzen 9900X Giveaway | EPYC Instant Deploy | Ryzen 10G Unmetered | Scalable Bare Metal",
-          "url": "https://lowendtalk.com/discussion/219603/ryzen-9900x-giveaway-epyc-instant-deploy-ryzen-10g-unmetered-scalable-bare-metal",
-          "summary": "周年庆 · $74/月 · 帖文报价，未与配置绑定 · 待确认(较旧)",
-          "reason": "超出保留窗口；不代表确认停售"
-        }
-      ]
     }
   ]
 }
